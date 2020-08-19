@@ -1,0 +1,36 @@
+$medium-devices: 960px;
+$small-devices: 480px;
+$extra-small-devices: 320px;
+
+@mixin clear {
+	&:after {
+		content: '';
+		display: block;
+		clear: both;
+	}
+}
+
+@mixin icon-font {
+	font-style: normal;
+	font-family: 'metlife-icon';
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+@mixin align-middle {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+@mixin inline-align-middle {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
+
+
+
