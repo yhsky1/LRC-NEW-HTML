@@ -323,9 +323,3 @@ html {
 		padding-right: #{$i * 5}px;
 	}
 }
-
-@for $c from 1 through 12 {
-	.col-#{$c}{
-		width: calc(100% / 12 * #{$c});
-	}
-}

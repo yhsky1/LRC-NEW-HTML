@@ -1,0 +1,344 @@
+/* Slider */
+.slick-slider {
+	position: relative;
+	display: block;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-ms-touch-action: pan-y;
+	touch-action: pan-y;
+	-webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+	position: relative;
+	overflow: hidden;
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+.slick-list:focus {
+	outline: none;
+}
+
+.slick-list.dragging {
+	cursor: pointer;
+	cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+	-webkit-transform: translate3d(0, 0, 0);
+	-moz-transform: translate3d(0, 0, 0);
+	-ms-transform: translate3d(0, 0, 0);
+	-o-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+	position: relative;
+	left: 0;
+	top: 0;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.slick-track:before, .slick-track:after {
+	content: "";
+	display: table;
+}
+
+.slick-track:after {
+	clear: both;
+}
+
+.slick-loading .slick-track {
+	visibility: hidden;
+}
+
+.slick-slide {
+	float: left;
+	height: 100%;
+	min-height: 1px;
+	display: none;
+}
+
+[dir="rtl"] .slick-slide {
+	float: right;
+}
+
+.slick-slide img {
+	display: block;
+}
+
+.slick-slide.slick-loading img {
+	display: none;
+}
+
+.slick-slide.dragging img {
+	pointer-events: none;
+}
+
+.slick-initialized .slick-slide {
+	display: block;
+}
+
+.slick-loading .slick-slide {
+	visibility: hidden;
+}
+
+.slick-vertical .slick-slide {
+	display: block;
+	height: auto;
+	border: 1px solid transparent;
+}
+
+.slick-arrow.slick-hidden {
+	display: none;
+}
+
+.slide-list,
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+	height: 100%;
+}
+
+.slick-slide {
+	outline: none;
+}
+
+.slick-arrow {
+	position: absolute;
+	top: 50%;
+	width: 24px;
+	height: 24px;
+	font: 0/0 a;
+	border-top: 3px solid rgba(255, 255, 255, 0.4);
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+	-webkit-border-radius: 2px;
+	   -moz-border-radius: 2px;
+	        border-radius: 2px;
+	z-index: 1;
+}
+
+.slick-arrow.slick-prev {
+	left: 20px;
+	-webkit-transform: rotate(-45deg);
+	   -moz-transform: rotate(-45deg);
+	    -ms-transform: rotate(-45deg);
+	     -o-transform: rotate(-45deg);
+	        transform: rotate(-45deg);
+}
+
+.slick-arrow.slick-next {
+	right: 20px;
+	-webkit-transform: rotate(135deg);
+	   -moz-transform: rotate(135deg);
+	    -ms-transform: rotate(135deg);
+	     -o-transform: rotate(135deg);
+	        transform: rotate(135deg);
+}
+
+.slide-controls {
+	position: absolute;
+	bottom: 56px;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	   -moz-transform: translateX(-50%);
+	    -ms-transform: translateX(-50%);
+	     -o-transform: translateX(-50%);
+	        transform: translateX(-50%);
+	z-index: 1;
+}
+
+.slide-controls .btn-pause,
+.slide-controls .btn-play {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	margin: 0 2px;
+	padding-top: 4px;
+	text-align: center;
+	font: 0/0 a;
+	-webkit-border-radius: 50%;
+	   -moz-border-radius: 50%;
+	        border-radius: 50%;
+	background-color: rgba(0, 0, 0, 0.3);
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+.slide-controls .btn-pause:before,
+.slide-controls .btn-pause:after {
+	content: '';
+	display: inline-block;
+	width: 2px;
+	height: 12px;
+	margin: -4px 2px 0;
+	background-color: #fff;
+}
+
+.slide-controls .btn-play {
+	/*
+		&:after{
+			content: '';
+			display: inline-block;
+			margin-top: -4px;
+			margin-left: -3px;
+			border-top: 5px solid #fff;
+			border-right: 5px solid #fff;
+			border-bottom: 5px solid transparent;
+			border-left: 5px solid transparent;
+			transform: rotate(45deg);
+		}
+		*/
+}
+
+.slide-controls .btn-play .icon {
+	margin-top: -4px;
+	margin-left: 2px;
+}
+
+.slide-controls .slick-dots {
+	padding-left: 28px;
+}
+
+.slide-controls .slick-dots li {
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	margin: 0 2px;
+	padding-top: 4px;
+	text-align: center;
+	-webkit-border-radius: 50%;
+	   -moz-border-radius: 50%;
+	        border-radius: 50%;
+	background-color: rgba(0, 0, 0, 0.3);
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+.slide-controls .slick-dots li button {
+	width: 16px;
+	height: 16px;
+	border: 1px solid #fff;
+	font: 0/0 a;
+	-webkit-border-radius: 50%;
+	   -moz-border-radius: 50%;
+	        border-radius: 50%;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+	vertical-align: top;
+}
+
+.slide-controls .slick-dots li.slick-active button {
+	background: #fff;
+}
+
+.slide {
+	position: relative;
+	height: 791px;
+	-webkit-background-size: cover;
+	   -moz-background-size: cover;
+	        background-size: cover;
+	background-position: 50% 50%;
+}
+
+.slide:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: block;
+	height: 100%;
+	-webkit-background-size: cover;
+	   -moz-background-size: cover;
+	        background-size: cover;
+}
+
+.slide h2 strong,
+.slide .content strong {
+	font-weight: 700;
+}
+
+.slide .content {
+	position: relative;
+}
+
+.tab-menu {
+	max-width: 880px;
+	margin: 40px auto 65px;
+	border: 1px solid #0061a0;
+	border-left: none;
+}
+
+.tab-menu ul {
+	display: table;
+	table-layout: fixed;
+	width: 100%;
+}
+
+.tab-menu li {
+	display: table-cell;
+	height: 40px;
+	border-left: 1px solid #0061a0;
+	text-align: center;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+.tab-menu li a {
+	display: block;
+	color: #0061a0;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 40px;
+}
+
+.tab-menu li.active {
+	background-color: #0061a0;
+}
+
+.tab-menu li.active a {
+	color: #fff;
+}
+
+.tab-menu li.is-mobile {
+	display: none;
+}
+
+.tab-btns {
+	display: block;
+	max-width: 880px;
+	margin: 0 auto;
+}
+
+.tab-btns .btn {
+	display: inline-block;
+	margin: 0 2px;
+	padding: 0;
+	-webkit-box-shadow: none;
+	   -moz-box-shadow: none;
+	        box-shadow: none;
+	-webkit-border-radius: 0;
+	   -moz-border-radius: 0;
+	        border-radius: 0;
+}
+
+/*# sourceMappingURL=../maps/modules.css.map */
