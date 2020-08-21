@@ -125,74 +125,74 @@ Undefined: 정책 적용 안함.<br />
 - HEAD
    : 문서에 대한 정보, 즉 문서의 제목, 검색 엔진에 유용한 키워드, 문서 내용에 담기지 않은 다른 자료등을 포함한다.
 
-    a. 문서형 선언
-         → 상호 운용성을 위하여 반드시 선언
-    b. 언어지정
-         → 웹페이지에 주로 사용하는 언어를 lang 속성을 지정하여 명시
-    c. 문자셋(Charset) 지정
-    d. 파일경로
-         → 로컬 브라우저와 다양한 OS에서 확인 가능하도록 "상대경로" 작업
-    e. Link & Script (html5인 경우 일부 속성 생략가능)
-         → <link rel="stylesheet" type="text/css" href="" />
-         → <script type="text/javascript" src=""></script>
-    f. Meta Tag (sns tag 포함)
-         → 페이지별로 제공할지 의논필요 (description,keywords)
-         →  Author, content, keywords, description
-         ※ SEO를 위해 meta 지정은 필수이며, 접근성 차원에서 title은 반드시 제공해야한다. 
-    g. title 정의
-         → 접근성에 맞게 각 페이지별 title 제공 
-    h. 렌더링 모드 적용
-         → <meta http-equiv="X-UA-Compatible" content="IE=edge">
-         →  최신모드로 지정된 DOCTYPE에 상관없이 IE8 이상 버전에서 항상 최신 표준 모드로 렌더링됩니다. (IE에서만 작동하는 비표준 속성)
-                ※ W3C에서 제공하는 유효성 검사에서는 이 속성값이 적용되어 있을 경우 오류로 판단.
-                과거에는 content="IE=edge,chrome=1" 처럼 대체 방법으로 크롬 프레임이라는 ActiveX를 설치하라는 것을 추천했는데 크롬 프레임의 
-                개발 종료로 이제 더 이상 추천하지 않는다.
-         →  고객 PC IE에 호환성 설정이 된 경우 서버단 세팅으로 호환성 해제를 해줘야 한다.
-               ＊아파치 서버일 경우
-                   httpd.conf 파일에 헤덜스모듈 추가
-                  <IfModule headers_module>
-                       Header set X-UA-Compatible:IE=Edge
-                  </IfModule>
-                   ※ 톰캣을 단독으로 사용 시 아래 주소를 참조하여 변경
+    - a. 문서형 선언
+         → 상호 운용성을 위하여 반드시 선언<br/>
+    - b. 언어지정
+         → 웹페이지에 주로 사용하는 언어를 lang 속성을 지정하여 명시<br/>
+    - c. 문자셋(Charset) 지정
+    - d. 파일경로
+         → 로컬 브라우저와 다양한 OS에서 확인 가능하도록 "상대경로" 작업<br/>
+    - e. Link & Script (html5인 경우 일부 속성 생략가능)
+         → <link rel="stylesheet" type="text/css" href="" /><br/>
+         → <script type="text/javascript" src=""></script><br/>
+    - f. Meta Tag (sns tag 포함)
+         → 페이지별로 제공할지 의논필요 (description,keywords)<br/>
+         →  Author, content, keywords, description<br/>
+         ※ SEO를 위해 meta 지정은 필수이며, 접근성 차원에서 title은 반드시 제공해야한다. <br/>
+    - g. title 정의
+         → 접근성에 맞게 각 페이지별 title 제공 <br/>
+    - h. 렌더링 모드 적용
+         → <meta http-equiv="X-UA-Compatible" content="IE=edge"><br/>
+         →  최신모드로 지정된 DOCTYPE에 상관없이 IE8 이상 버전에서 항상 최신 표준 모드로 렌더링됩니다. (IE에서만 작동하는 비표준 속성)<br/>
+                ※ W3C에서 제공하는 유효성 검사에서는 이 속성값이 적용되어 있을 경우 오류로 판단.<br/>
+                과거에는 content="IE=edge,chrome=1" 처럼 대체 방법으로 크롬 프레임이라는 ActiveX를 설치하라는 것을 추천했는데 크롬 프레임의 <br/>
+                개발 종료로 이제 더 이상 추천하지 않는다.<br/>
+         →  고객 PC IE에 호환성 설정이 된 경우 서버단 세팅으로 호환성 해제를 해줘야 한다.<br/>
+               ＊아파치 서버일 경우<br/>
+                   httpd.conf 파일에 헤덜스모듈 추가<br/>
+                  <IfModule headers_module><br/>
+                       Header set X-UA-Compatible:IE=Edge<br/>
+                  </IfModule><br/>
+                   ※ 톰캣을 단독으로 사용 시 아래 주소를 참조하여 변경<br/>
                         https://www3.ntu.edu.sg/home/ehchua/programming/java/JavaServletExamples.html
 
 - BODY
-     a. 들여쓰기
-         → 코드의 가독성을 높이고 마크업 구조를 쉽게 파악하기 위해 규칙 준수
-     b. 주석정의
-         → 마크업 구조(영역) 파악과 협업을 위해 반드시 명시
-         → 주석은 간결하게 표기
-         → Start,End 구분하며, 종료 주석에는 반드시 "//" 표기
-     c. Table
-         → 레이아웃 구성으로 사용 시 thead,tbody,tfoot,th,scope등 사용금지
-         → 의미에 맞게 구성 (caption.summary,thead,tbody,tfoot,scope등)
-              ※ HTML5에서는 caption만 제공함.
-         → 각 셀 넓이 지정을 위해 colgroup > col > style=width %를 제공한다.
-      d. Button
-         → type="button"은 반드시 제공해야함. 제공하지 않을 경우 submit으로 제공됨.
-         → 사용목적에 맞게 타입 설정
-      e. Form
-         → 서식요소가 2개 이상일 경우 fieldset > legend를 반드시 사용한다.
-         → width값은 inline style로 제공하며, 정확한 사이즈 또는 일정한 사이즈의 경우에는 class를 사용한다.
-      f. 프레임셋 및 아이프레임
-         → 각 프레임을 구분할 수 있는 title 속성을 제공한다.
-         → 프레임을 지원하지 않는 환경을 위해서 noframes을 제공한다.
+     - a. 들여쓰기
+         → 코드의 가독성을 높이고 마크업 구조를 쉽게 파악하기 위해 규칙 준수<br/>
+     - b. 주석정의
+         → 마크업 구조(영역) 파악과 협업을 위해 반드시 명시<br/>
+         → 주석은 간결하게 표기<br/>
+         → Start,End 구분하며, 종료 주석에는 반드시 "//" 표기<br/>
+     - c. Table
+         → 레이아웃 구성으로 사용 시 thead,tbody,tfoot,th,scope등 사용금지<br/>
+         → 의미에 맞게 구성 (caption.summary,thead,tbody,tfoot,scope등)<br/>
+              ※ HTML5에서는 caption만 제공함.<br/>
+         → 각 셀 넓이 지정을 위해 colgroup > col > style=width %를 제공한다.<br/>
+      - d. Button
+         → type="button"은 반드시 제공해야함. 제공하지 않을 경우 submit으로 제공됨.<br/>
+         → 사용목적에 맞게 타입 설정<br/>
+      - e. Form
+         → 서식요소가 2개 이상일 경우 fieldset > legend를 반드시 사용한다.<br/>
+         → width값은 inline style로 제공하며, 정확한 사이즈 또는 일정한 사이즈의 경우에는 class를 사용한다.<br/>
+      - f. 프레임셋 및 아이프레임
+         → 각 프레임을 구분할 수 있는 title 속성을 제공한다.<br/>
+         → 프레임을 지원하지 않는 환경을 위해서 noframes을 제공한다.<br/>
               <frameset><noframes></noframes></frameset>
 
 2. 폼
-a. 입력 양식의 경우, <fieldset>을 이용한다.
-b. 텍스트박스의 width값은 size로 지정을 해야하나 다양한 사이즈를 제공하기 위해선 Inline Style 방식을 우선한다.
+- a. 입력 양식의 경우, <fieldset>을 이용한다.
+- b. 텍스트박스의 width값은 size로 지정을 해야하나 다양한 사이즈를 제공하기 위해선 Inline Style 방식을 우선한다.
    → <input type="type" id="" name="" class="" style="width:300px;">
-c. 폼타입별 필수 속성 제공값
-   ※ title제공은 필수이며, label 제공시에는 제공하지 않는다.
-   → <input type="text" id="" name="" maxlength="">
-   → <input type="text" id="" name="" maxlength="" class="">
-   → <input type="text" id="" name="" maxlength="" style="">
-   → <input type="radio" id="" name="" checked="checked">
-       _체크가 된 경우 반드시 checked="checked" 제공
-   → <input type="checkbox" id="" name="" checked="checked">
-   → <select id="" name=""><option value=""></option></select>
-   → <textarea cols="" rows="">
+- c. 폼타입별 필수 속성 제공값
+   ※ title제공은 필수이며, label 제공시에는 제공하지 않는다.<br/>
+   → <input type="text" id="" name="" maxlength=""><br/>
+   → <input type="text" id="" name="" maxlength="" class=""><br/>
+   → <input type="text" id="" name="" maxlength="" style=""><br/>
+   → <input type="radio" id="" name="" checked="checked"><br/>
+       _체크가 된 경우 반드시 checked="checked" 제공<br/>
+   → <input type="checkbox" id="" name="" checked="checked"><br/>
+   → <select id="" name=""><option value=""></option></select><br/>
+   → <textarea cols="" rows=""><br/>
 
 3. 테이블
 ※ 테이블에서 펼침목록 기능을 제공할 경우 col width값을 %제공하게 되면 IE에서 셀영역들이 움직이게 되므로 반드시 "px" 단위로 제공해야한다.
