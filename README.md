@@ -133,8 +133,8 @@ Undefined: 정책 적용 안함.<br />
     - d. 파일경로
          → 로컬 브라우저와 다양한 OS에서 확인 가능하도록 "상대경로" 작업<br/>
     - e. Link & Script (html5인 경우 일부 속성 생략가능)
-         → <link rel="stylesheet" type="text/css" href="" /><br/>
-         → <script type="text/javascript" src=""></script><br/>
+         → `<link rel="stylesheet" type="text/css" href="" />`<br/>
+         → `<script type="text/javascript" src=""></script>`<br/>
     - f. Meta Tag (sns tag 포함)
          → 페이지별로 제공할지 의논필요 (description,keywords)<br/>
          →  Author, content, keywords, description<br/>
@@ -150,9 +150,9 @@ Undefined: 정책 적용 안함.<br />
          →  고객 PC IE에 호환성 설정이 된 경우 서버단 세팅으로 호환성 해제를 해줘야 한다.<br/>
                ＊아파치 서버일 경우<br/>
                    httpd.conf 파일에 헤덜스모듈 추가<br/>
-                  <IfModule headers_module><br/>
-                       Header set X-UA-Compatible:IE=Edge<br/>
-                  </IfModule><br/>
+                  `<IfModule headers_module><br/>`
+                       `Header set X-UA-Compatible:IE=Edge`<br/>
+                  `</IfModule>`<br/>
                    ※ 톰캣을 단독으로 사용 시 아래 주소를 참조하여 변경<br/>
                         https://www3.ntu.edu.sg/home/ehchua/programming/java/JavaServletExamples.html
 
@@ -177,7 +177,7 @@ Undefined: 정책 적용 안함.<br />
       - f. 프레임셋 및 아이프레임
          → 각 프레임을 구분할 수 있는 title 속성을 제공한다.<br/>
          → 프레임을 지원하지 않는 환경을 위해서 noframes을 제공한다.<br/>
-              <frameset><noframes></noframes></frameset>
+              `<frameset><noframes></noframes></frameset>`
 
 2. 폼
 - a. 입력 양식의 경우, <fieldset>을 이용한다.
@@ -185,14 +185,14 @@ Undefined: 정책 적용 안함.<br />
    → <input type="type" id="" name="" class="" style="width:300px;">
 - c. 폼타입별 필수 속성 제공값
    ※ title제공은 필수이며, label 제공시에는 제공하지 않는다.<br/>
-   → <input type="text" id="" name="" maxlength=""><br/>
-   → <input type="text" id="" name="" maxlength="" class=""><br/>
-   → <input type="text" id="" name="" maxlength="" style=""><br/>
-   → <input type="radio" id="" name="" checked="checked"><br/>
+   → `<input type="text" id="" name="" maxlength="">`<br/>
+   → `<input type="text" id="" name="" maxlength="" class="">`<br/>
+   → `<input type="text" id="" name="" maxlength="" style="">`<br/>
+   → `<input type="radio" id="" name="" checked="checked">`<br/>
        _체크가 된 경우 반드시 checked="checked" 제공<br/>
-   → <input type="checkbox" id="" name="" checked="checked"><br/>
-   → <select id="" name=""><option value=""></option></select><br/>
-   → <textarea cols="" rows=""><br/>
+   → `<input type="checkbox" id="" name="" checked="checked">`<br/>
+   → `<select id="" name=""><option value=""></option></select>`<br/>
+   → `<textarea cols="" rows="">`<br/>
 
 3. 테이블
 ※ 테이블에서 펼침목록 기능을 제공할 경우 col width값을 %제공하게 되면 IE에서 셀영역들이 움직이게 되므로 반드시 "px" 단위로 제공해야한다.
