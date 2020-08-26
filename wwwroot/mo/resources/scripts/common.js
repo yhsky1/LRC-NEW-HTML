@@ -12,6 +12,9 @@ $(function(){
 
     //리사이즈시 rem폰트설정, 호스트환경 체크
     MUI.resize.resize($BODY);
+
+    //상단네비 엑티브시 센터
+    MUI.event.navCenter($('.header-nav'), 'active');
     
 
     //하단 퀵메뉴 모션

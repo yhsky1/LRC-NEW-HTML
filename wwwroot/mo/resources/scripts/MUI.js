@@ -461,6 +461,13 @@ var MUI = MUI || {
 			//최종 스크롤 값 기준 데이터 리턴
 			this.fixedBottomScrollvalue = initScrollvalue;
 		},
+		navCenter: function($target, active){
+			var $activeTarget = $target.find('.'+active),
+				left = $activeTarget.offset().left,
+				width = $activeTarget.outerWidth(true);
+			$target.scrollLeft(left - ($(document).width() - width) / 2);
+		},
+
 
 	},
 	iscrolls: {
