@@ -1,0 +1,24 @@
+.fixedBottom {
+	display: flex;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 41;
+    width: 100%;
+    height: 50px;
+    padding: 0 13px;
+    font: 0/0 a;
+    background-color: #222;
+    box-sizing: border-box;
+    transform: translate3d(0, 0, 0);
+    transition: transform .2s;
+    button {
+        color: #fff;
+        width: 40px;
+        font-size: 1rem;
+    }
+    &.close {
+        transform: translate3d(0, 100%, 0);
+    }
+}

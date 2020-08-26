@@ -1,8 +1,8 @@
-$medium-devices: 960px;
+$medium-devices: 768px;
 $small-devices: 480px;
 $extra-small-devices: 320px;
 
-@mixin clear {
+@mixin Clear {
 	&:after {
 		content: '';
 		display: block;
@@ -10,7 +10,7 @@ $extra-small-devices: 320px;
 	}
 }
 
-@mixin icon-font {
+@mixin Icon-font {
 	font-style: normal;
 	font-family: 'metlife-icon';
 	text-rendering: auto;
@@ -18,17 +18,86 @@ $extra-small-devices: 320px;
 	-moz-osx-font-smoothing: grayscale;
 }
 
-@mixin align-middle {
+@mixin Vertical-inline {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+@mixin Align-middle {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
 
-@mixin inline-align-middle {
+@mixin Inline-align-middle {
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
 }
+
+/*폰트만 삭제시킴*/
+@mixin Hide_txt {
+    font:0/0 a;
+}
+
+/*투명도 믹스인*/
+@mixin Opacity($opacity) {
+	opacity: $opacity; /* All modern browsers */
+	$opacityIE: $opacity * 100;
+	filter: alpha(opacity=$opacityIE); /* For IE5~IE9 */
+}
+
+/*포지션 믹스인*/
+@mixin Position($position:absolute, $top: null, $right: null, $bottom: null, $left: null) {
+	position: $position;
+	top: $top;
+	right: $right;
+	bottom: $bottom;
+	left: $left;
+}
+
+/*백그라운드 믹스인*/
+//@include sprite($sprite:'error', $type:'png', $x:right, $y:center); ---  사용법
+//@include sprite($sprite:'error', $type:'jpg', $y:0); ---  사용법
+//@include sprite($sprite:'error', $type:'jpg', $x:20%, $y:20%, $size:100%); ---  사용법
+@mixin Background($sprite, $type, $x:0, $y:0, $size:auto) {
+	background-repeat: no-repeat;
+	background-image: url('../../resources/images/icons/#{$sprite}.#{$type}');
+	background-position: $x, $y;
+	background-size: $size;
+}
+
+/* 말줄임표 */
+// 인자 값의 기본 값은 1
+// @include Ellipsis($w:100px, $lines:2); --- 사용법
+@mixin Ellipsis($w:100%, $lines:1, $display:block) { 
+	@if ($lines == 1) {
+		width:$w;
+		display:$display;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	} @else {
+		width:$w;
+		display: -webkit-box;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		-webkit-line-clamp: $lines;
+		-webkit-box-orient: vertical;
+		word-break: break-all;
+	}
+}
+
+/*미디어쿼리 믹스인*/
+//@include media( $queryPoint: "(max-width:480px)" ){
+	//width : 50%;
+//}
+@mixin media( $queryPoint ){
+	@media #{ $queryPoint } {
+		@content;
+	}
+}
+
 
 
 

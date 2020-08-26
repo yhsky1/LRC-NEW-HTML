@@ -63,7 +63,7 @@
 		width: 100%;
 		max-width: 1300px;
 		margin: 0 auto 65px;
-		@include clear;
+		@include Clear;
 		.menu-item{
 			display: table-cell;
 			width: 25%;
@@ -100,7 +100,7 @@
 		}
 	}
 	&-info{
-		@include clear;
+		@include Clear;
 		padding-bottom: 75px;
 		border-top: 1px solid #ccc;
 	}
@@ -124,7 +124,7 @@
 				}
 			}
 			&-policy {
-				@include clear;
+				@include Clear;
 				margin-bottom: 13px;
 				li{
 					float: left;

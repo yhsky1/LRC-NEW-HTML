@@ -144,7 +144,7 @@
 			}
 		}
 		&-menubox{
-			@include clear;
+			@include Clear;
 			max-width: 1300px;
 			margin: 0 auto;
 			border-top: 1px solid #ccc;
@@ -188,7 +188,7 @@
 			margin: 0 auto;
 		}
 		ul{
-			@include clear;
+			@include Clear;
 			display: inline-block;
 		}
 		.gnb{
@@ -254,7 +254,7 @@
 			background: #fff;
 			z-index: 2;
 			ul{
-				@include clear;
+				@include Clear;
 				display: flex;
 				max-width: 800px;
 				width: 100%;

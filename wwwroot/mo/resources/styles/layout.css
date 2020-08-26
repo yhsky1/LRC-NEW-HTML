@@ -1,3 +1,10 @@
+@charset "UTF-8";
+/*폰트만 삭제시킴*/
+/*투명도 믹스인*/
+/*포지션 믹스인*/
+/*백그라운드 믹스인*/
+/* 말줄임표 */
+/*미디어쿼리 믹스인*/
 .header {
 	padding-top: 70px;
 }
@@ -120,12 +127,12 @@
 	    -ms-transform-origin: center;
 	     -o-transform-origin: center;
 	        transform-origin: center;
-	-webkit-transition: margin-top 0.15s ease-in-out 0.3s, opacity 0.15s ease-in-out 0.3s, background 0.3s ease, -webkit-transform 0.3s ease-in-out;
-	transition: margin-top 0.15s ease-in-out 0.3s, opacity 0.15s ease-in-out 0.3s, background 0.3s ease, -webkit-transform 0.3s ease-in-out;
-	-o-transition: margin-top 0.15s ease-in-out 0.3s, opacity 0.15s ease-in-out 0.3s, background 0.3s ease, -o-transform 0.3s ease-in-out;
-	-moz-transition: transform 0.3s ease-in-out, margin-top 0.15s ease-in-out 0.3s, opacity 0.15s ease-in-out 0.3s, background 0.3s ease, -moz-transform 0.3s ease-in-out;
-	transition: transform 0.3s ease-in-out, margin-top 0.15s ease-in-out 0.3s, opacity 0.15s ease-in-out 0.3s, background 0.3s ease;
-	transition: transform 0.3s ease-in-out, margin-top 0.15s ease-in-out 0.3s, opacity 0.15s ease-in-out 0.3s, background 0.3s ease, -webkit-transform 0.3s ease-in-out, -moz-transform 0.3s ease-in-out, -o-transform 0.3s ease-in-out;
+	-webkit-transition: margin-top 0.15s ease-in-out 0.3s, opacity 0.15s ease-in-out 0.3s, background 0.3s ease, -webkit-transform 0.3s ease-in-out;
+	transition: margin-top 0.15s ease-in-out 0.3s, opacity 0.15s ease-in-out 0.3s, background 0.3s ease, -webkit-transform 0.3s ease-in-out;
+	-o-transition: margin-top 0.15s ease-in-out 0.3s, opacity 0.15s ease-in-out 0.3s, background 0.3s ease, -o-transform 0.3s ease-in-out;
+	-moz-transition: transform 0.3s ease-in-out, margin-top 0.15s ease-in-out 0.3s, opacity 0.15s ease-in-out 0.3s, background 0.3s ease, -moz-transform 0.3s ease-in-out;
+	transition: transform 0.3s ease-in-out, margin-top 0.15s ease-in-out 0.3s, opacity 0.15s ease-in-out 0.3s, background 0.3s ease;
+	transition: transform 0.3s ease-in-out, margin-top 0.15s ease-in-out 0.3s, opacity 0.15s ease-in-out 0.3s, background 0.3s ease, -webkit-transform 0.3s ease-in-out, -moz-transform 0.3s ease-in-out, -o-transform 0.3s ease-in-out;
 }
 
 .header-megamenu .btn-megamenu .line-1 {
@@ -152,12 +159,12 @@
 }
 
 .header-megamenu .btn-megamenu.btn-current-layer .line {
-	-webkit-transition: margin-top 0.15s ease-in-out, opacity 0.15s ease-in-out 0.1s, -webkit-transform 0.3s ease-in-out;
-	transition: margin-top 0.15s ease-in-out, opacity 0.15s ease-in-out 0.1s, -webkit-transform 0.3s ease-in-out;
-	-o-transition: margin-top 0.15s ease-in-out, opacity 0.15s ease-in-out 0.1s, -o-transform 0.3s ease-in-out;
-	-moz-transition: transform 0.3s ease-in-out, margin-top 0.15s ease-in-out, opacity 0.15s ease-in-out 0.1s, -moz-transform 0.3s ease-in-out;
-	transition: transform 0.3s ease-in-out, margin-top 0.15s ease-in-out, opacity 0.15s ease-in-out 0.1s;
-	transition: transform 0.3s ease-in-out, margin-top 0.15s ease-in-out, opacity 0.15s ease-in-out 0.1s, -webkit-transform 0.3s ease-in-out, -moz-transform 0.3s ease-in-out, -o-transform 0.3s ease-in-out;
+	-webkit-transition: margin-top 0.15s ease-in-out, opacity 0.15s ease-in-out 0.1s, -webkit-transform 0.3s ease-in-out;
+	transition: margin-top 0.15s ease-in-out, opacity 0.15s ease-in-out 0.1s, -webkit-transform 0.3s ease-in-out;
+	-o-transition: margin-top 0.15s ease-in-out, opacity 0.15s ease-in-out 0.1s, -o-transform 0.3s ease-in-out;
+	-moz-transition: transform 0.3s ease-in-out, margin-top 0.15s ease-in-out, opacity 0.15s ease-in-out 0.1s, -moz-transform 0.3s ease-in-out;
+	transition: transform 0.3s ease-in-out, margin-top 0.15s ease-in-out, opacity 0.15s ease-in-out 0.1s;
+	transition: transform 0.3s ease-in-out, margin-top 0.15s ease-in-out, opacity 0.15s ease-in-out 0.1s, -webkit-transform 0.3s ease-in-out, -moz-transform 0.3s ease-in-out, -o-transform 0.3s ease-in-out;
 }
 
 .header-megamenu .btn-megamenu.btn-current-layer .line-1 {
@@ -632,6 +639,52 @@
 	font-size: 12px;
 	line-height: 1.5;
 	color: #666;
+}
+
+.fixedBottom {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	   -moz-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	z-index: 41;
+	width: 100%;
+	height: 50px;
+	padding: 0 13px;
+	font: 0/0 a;
+	background-color: #222;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+	-webkit-transform: translate3d(0, 0, 0);
+	   -moz-transform: translate3d(0, 0, 0);
+	        transform: translate3d(0, 0, 0);
+	-webkit-transition: -webkit-transform .2s;
+	transition: -webkit-transform .2s;
+	-o-transition: -o-transform .2s;
+	-moz-transition: transform .2s, -moz-transform .2s;
+	transition: transform .2s;
+	transition: transform .2s, -webkit-transform .2s, -moz-transform .2s, -o-transform .2s;
+}
+
+.fixedBottom button {
+	color: #fff;
+	width: 40px;
+	font-size: 1rem;
+}
+
+.fixedBottom.close {
+	-webkit-transform: translate3d(0, 100%, 0);
+	   -moz-transform: translate3d(0, 100%, 0);
+	        transform: translate3d(0, 100%, 0);
 }
 
 /*# sourceMappingURL=../maps/layout.css.map */

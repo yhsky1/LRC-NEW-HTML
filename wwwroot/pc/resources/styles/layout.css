@@ -1,3 +1,10 @@
+@charset "UTF-8";
+/*폰트만 삭제시킴*/
+/*투명도 믹스인*/
+/*포지션 믹스인*/
+/*백그라운드 믹스인*/
+/* 말줄임표 */
+/*미디어쿼리 믹스인*/
 .header {
 	padding-top: 70px;
 }
@@ -120,12 +127,12 @@
 	    -ms-transform-origin: center;
 	     -o-transform-origin: center;
 	        transform-origin: center;
-	-webkit-transition: margin-top 0.15s ease-in-out 0.3s, opacity 0.15s ease-in-out 0.3s, background 0.3s ease, -webkit-transform 0.3s ease-in-out;
-	transition: margin-top 0.15s ease-in-out 0.3s, opacity 0.15s ease-in-out 0.3s, background 0.3s ease, -webkit-transform 0.3s ease-in-out;
-	-o-transition: margin-top 0.15s ease-in-out 0.3s, opacity 0.15s ease-in-out 0.3s, background 0.3s ease, -o-transform 0.3s ease-in-out;
-	-moz-transition: transform 0.3s ease-in-out, margin-top 0.15s ease-in-out 0.3s, opacity 0.15s ease-in-out 0.3s, background 0.3s ease, -moz-transform 0.3s ease-in-out;
-	transition: transform 0.3s ease-in-out, margin-top 0.15s ease-in-out 0.3s, opacity 0.15s ease-in-out 0.3s, background 0.3s ease;
-	transition: transform 0.3s ease-in-out, margin-top 0.15s ease-in-out 0.3s, opacity 0.15s ease-in-out 0.3s, background 0.3s ease, -webkit-transform 0.3s ease-in-out, -moz-transform 0.3s ease-in-out, -o-transform 0.3s ease-in-out;
+	-webkit-transition: margin-top 0.15s ease-in-out 0.3s, opacity 0.15s ease-in-out 0.3s, background 0.3s ease, -webkit-transform 0.3s ease-in-out;
+	transition: margin-top 0.15s ease-in-out 0.3s, opacity 0.15s ease-in-out 0.3s, background 0.3s ease, -webkit-transform 0.3s ease-in-out;
+	-o-transition: margin-top 0.15s ease-in-out 0.3s, opacity 0.15s ease-in-out 0.3s, background 0.3s ease, -o-transform 0.3s ease-in-out;
+	-moz-transition: transform 0.3s ease-in-out, margin-top 0.15s ease-in-out 0.3s, opacity 0.15s ease-in-out 0.3s, background 0.3s ease, -moz-transform 0.3s ease-in-out;
+	transition: transform 0.3s ease-in-out, margin-top 0.15s ease-in-out 0.3s, opacity 0.15s ease-in-out 0.3s, background 0.3s ease;
+	transition: transform 0.3s ease-in-out, margin-top 0.15s ease-in-out 0.3s, opacity 0.15s ease-in-out 0.3s, background 0.3s ease, -webkit-transform 0.3s ease-in-out, -moz-transform 0.3s ease-in-out, -o-transform 0.3s ease-in-out;
 }
 
 .header-megamenu .btn-megamenu .line-1 {
@@ -152,12 +159,12 @@
 }
 
 .header-megamenu .btn-megamenu.btn-current-layer .line {
-	-webkit-transition: margin-top 0.15s ease-in-out, opacity 0.15s ease-in-out 0.1s, -webkit-transform 0.3s ease-in-out;
-	transition: margin-top 0.15s ease-in-out, opacity 0.15s ease-in-out 0.1s, -webkit-transform 0.3s ease-in-out;
-	-o-transition: margin-top 0.15s ease-in-out, opacity 0.15s ease-in-out 0.1s, -o-transform 0.3s ease-in-out;
-	-moz-transition: transform 0.3s ease-in-out, margin-top 0.15s ease-in-out, opacity 0.15s ease-in-out 0.1s, -moz-transform 0.3s ease-in-out;
-	transition: transform 0.3s ease-in-out, margin-top 0.15s ease-in-out, opacity 0.15s ease-in-out 0.1s;
-	transition: transform 0.3s ease-in-out, margin-top 0.15s ease-in-out, opacity 0.15s ease-in-out 0.1s, -webkit-transform 0.3s ease-in-out, -moz-transform 0.3s ease-in-out, -o-transform 0.3s ease-in-out;
+	-webkit-transition: margin-top 0.15s ease-in-out, opacity 0.15s ease-in-out 0.1s, -webkit-transform 0.3s ease-in-out;
+	transition: margin-top 0.15s ease-in-out, opacity 0.15s ease-in-out 0.1s, -webkit-transform 0.3s ease-in-out;
+	-o-transition: margin-top 0.15s ease-in-out, opacity 0.15s ease-in-out 0.1s, -o-transform 0.3s ease-in-out;
+	-moz-transition: transform 0.3s ease-in-out, margin-top 0.15s ease-in-out, opacity 0.15s ease-in-out 0.1s, -moz-transform 0.3s ease-in-out;
+	transition: transform 0.3s ease-in-out, margin-top 0.15s ease-in-out, opacity 0.15s ease-in-out 0.1s;
+	transition: transform 0.3s ease-in-out, margin-top 0.15s ease-in-out, opacity 0.15s ease-in-out 0.1s, -webkit-transform 0.3s ease-in-out, -moz-transform 0.3s ease-in-out, -o-transform 0.3s ease-in-out;
 }
 
 .header-megamenu .btn-megamenu.btn-current-layer .line-1 {

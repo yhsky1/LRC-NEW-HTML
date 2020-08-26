@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=1200, initial-scale=1">
+<title>롯데렌터카</title>
+<link rel="shortcut icon" href="../../resources/images/favicon.ico">
+<link rel="stylesheet" href="../../resources/styles/reset.css">
+<link rel="stylesheet" href="../../resources/styles/layout.css">
+<link rel="stylesheet" href="../../resources/styles/modules.css">
+<link rel="stylesheet" href="../../resources/styles/contents.css">
+
+<script src="../../resources/scripts/jquery/jquery-1.9.1.min.js"></script>
+<script src="../../resources/scripts/jquery/jquery-ui.min.js"></script>
+<script src="../../resources/scripts/jquery/plugins/slick.min.js"></script>
+<script src="../../resources/scripts/jquery/plugins/iscroll.js"></script>
+<script src="../../resources/scripts/MUI.js"></script>
+<script src="../../resources/scripts/common.js"></script>
+
+</head>
+
+<body>
+	<header class="header"><!-- 스크롤시 상단 고정 : fixed -->
+		<div class="header-top">
+			<h1><a href="#none"></a></h1>
+			<div class="header-megamenu">
+				<div class="megamenu"><!-- 전체 메뉴 열림 : active -->
+					<button type="button" class="btn-megamenu" data-trigger="layer" data-target=".megamenu-menulist">
+						<i class="icon">
+							<i class="line line-1"></i>
+							<i class="line line-2"></i>
+							<i class="line line-3"></i>
+						</i>
+						<span class="btn-megamenu-text btn-megamenu-opentext">메뉴<span class="screen_out">열기</span></span>
+						<span class="btn-megamenu-text btn-megamenu-closetext"><span class="screen_out">메뉴</span> 닫기</span>
+					</button>
+					<div class="megamenu-menulist">
+						<div class="megamenu-list-container">
+							<div class="megamenu-menubox">
+								<div class="megamenu-menubox-list1">
+									<div>
+										<a href="">나눔스토리</a>
+										<div class="megamenu-dropdown">
+											<ul>
+												<li><a href="">사업성과</a></li>
+												<li><a href="">Stories</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+
+								<div class="megamenu-menubox-list1">
+									<div>
+										<a href="">사업소개</a>
+										<div class="megamenu-dropdown">
+											<ul>
+												<li><a href="">금융포용</a></li>
+												<li><a href="">지역사회나눔</a></li>
+												<li><a href="">지난사업</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+
+								<div class="megamenu-menubox-list1">
+									<div>
+										<a href="">재단소식</a>
+										<div class="megamenu-dropdown">
+											<ul>
+												<li><a href="">공지사항</a></li>
+												<li><a href="">뉴스</a></li>
+												<li><a href="">자료실</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+
+								<div class="megamenu-menubox-list1">
+									<div>
+										<a href="">재단소개</a>
+										<div class="megamenu-dropdown">
+											<ul>
+												<li><a href="">비전과 전략</a></li>
+												<li><a href="">인사말</a></li>
+												<li><a href="">함께하는 사람들</a></li>
+												<li><a href="">재단연혁</a></li>
+												<li><a href="">기부금 활용실적</a></li>
+												<!--메트라이프 별건1차-->
+												<li><a href="">MetLife금융그룹</a></li>
+												<!--//메트라이프 별건1차-->
+												<li><a href="">찾아오시는 길</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="megamenu-menubox is-mobile">
+								<div class="megamenu-menubox-list1">
+									<div>
+										<a href="">마이페이지</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<a href="" class="btn-home"><i class="icon icon-home"></i><em>홈</em></a>
+			<div class="util">
+				<!-- <a href=""><em>LOG IN</em><i class="icon icon-login"></i></a> -->
+				<a href="" class="btn-mypage"><em>마이페이지</em><i class="icon icon-mypage"></i></a>
+				<a href="" class="btn-log-inout"><em>로그아웃</em><i class="icon icon-login"></i></a>
+			</div>
+		</div>
+		<div class="gnb-wrap">
+			<nav>
+				<ul>
+					<li class="gnb gnb-1"><!-- active -->
+						<strong class="depth-1"><a href="">나눔 스토리</a></strong>
+						<div class="depth-2">
+							<ul>
+								<li>
+									<a href="">
+										<em><i class="icon icon-heart"></i></em>
+										<span>사업성과</span>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<em><i class="icon icon-note"></i></em>
+										<span>Stories</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="gnb gnb-2">
+						<strong class="depth-1"><a href="">사업소개</a></strong>
+						<div class="depth-2">
+							<ul>
+								<li>
+									<a href="">
+										<em><i class="icon icon-finance"></i></em>
+										<span>금융포용</span>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<em><i class="icon icon-house-support"></i></em>
+										<span>지역사회나눔</span>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<em><i class="icon icon-sandglass"></i></em>
+										<span>지난사업</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="gnb gnb-3">
+						<strong class="depth-1"><a href="">재단소식</a></strong>
+						<div class="depth-2">
+							<ul>
+								<li>
+									<a href="">
+										<em><i class="icon icon-notice"></i></em>
+										<span>공지사항</span>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<em><i class="icon icon-news"></i></em>
+										<span>뉴스</span>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<em><i class="icon icon-library"></i></em>
+										<span>자료실</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="gnb gnb-4">
+						<strong class="depth-1"><a href="">재단소개</a></strong>
+						<div class="depth-2">
+							<ul>
+								<li>
+									<a href="">
+										<em><i class="icon icon-vision"></i></em>
+										<span>비전과 전략</span>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<em><i class="icon icon-greeting"></i></em>
+										<span>인사말</span>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<em><i class="icon icon-people"></i></em>
+										<span>함께하는 사람들</span>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<em><i class="icon icon-history"></i></em>
+										<span>재단 연혁</span>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<em><i class="icon icon-donation"></i></em>
+										<span>기부금 활용실적</span>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<em><i class="icon icon-map"></i></em>
+										<span>찾아오시는 길</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<main id="wrap">
+
+		<div class="main-wrap">
+			<section class="section section-error">
+				testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest
+			</section>
+
+			<section class="section section-activity">
+
+			</section>
+		</div>
+
+	</main>
+	<footer class="footer">
+		<div class="inner">
+			<div class="footer-menu-list">
+				<div class="menu-item">
+					<strong><a href="">나눔스토리</a></strong>
+					<ul>
+						<li><a href="">사업성과</a></li>
+						<li><a href="">Stories</a></li>
+					</ul>
+				</div>
+				<div class="menu-item">
+					<strong><a href="">사업소개</a></strong>
+					<ul>
+						<li><a href="">금융포용</a></li>
+						<li><a href="">지역사회나눔</a></li>
+						<li><a href="">지난사업</a></li>
+					</ul>
+				</div>
+				<div class="menu-item">
+					<strong><a href="">재단소식</a></strong>
+					<ul>
+						<li><a href="">공지사항</a></li>
+						<li><a href="">뉴스</a></li>
+						<li><a href="">자료실</a></li>
+					</ul>
+				</div>
+				<div class="menu-item">
+					<strong><a href="">재단소개</a></strong>
+					<ul>
+						<li><a href="">비전과 전략</a></li>
+						<li><a href="">인사말</a></li>
+						<li><a href="">함께하는 사람들</a></li>
+						<li><a href="">재단 연혁</a></li>
+						<li><a href="">기부금 활용실적</a></li>
+						<li><a href="">찾아오시는 길</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer-site">
+				<div class="family link-list">
+					<div class="selectbox">
+						<button type="button" class="label">패밀리 사이트</button>
+						<ul>
+							<li><a href="http://www.metlife.co.kr/ML09_HOME/main.jsp" target="_blank">메트라이프생명</a></li>
+							<li><a href="http://www.metlife.org/" target="_blank">MetLife Foundation</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="sns">
+					<a href="https://www.facebook.com/koreametlife/" target="_blank"><i class="icon icon-facebook">페이스북</i></a>
+					<a href="https://post.naver.com/metlife_kr" target="_blank"><i class="icon icon-naver">네이버</i></a>
+				</div>
+			</div>
+			<div class="footer-info">
+				<div class="footer-logo"><img src="../resources/images/logo.png" alt="MetLife Foundation"></div>
+				<div class="footer-etc">
+					<div class="link-list">
+						<button type="button" class="label">이용약관</button>
+						<ul class="link-policy">
+							<li><a href="/terms/termsForUse">이용약관</a></li>
+							<li><a href="/terms/protectionPolicy">개인정보보호정책</a></li>
+						</ul>
+					</div>
+					<address>
+						<span>서울시 강남구 테헤란로 316 (역삼2동, 메트라이프타워)</span>
+						<span>TEL : 02-553-3732(3780)</span>
+					</address>
+					<span>&copy; 2018 MetLife Korea Foundation All Rights Reserved.</span>
+				</div>
+				<div class="footer-award">
+					<i class="icon icon-award"></i>
+					<span>웹어워드 코리아 2018<br>사회공헌분야 최우수상</span>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+</body>
+</html>
+

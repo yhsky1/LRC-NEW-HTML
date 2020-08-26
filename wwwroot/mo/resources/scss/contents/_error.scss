@@ -1,7 +1,7 @@
 
-.section-error{
-	@include align-middle;
-	@include clear;
+.error-wrap {
+	@include Align-middle;
+	@include Clear;
 	padding: {
 		top: 70px;
 		bottom: 70px;
@@ -15,7 +15,7 @@
 		padding: 70px 0;
 		text-align: center;
 		background-color: #fff;
-		@include clear;
+		@include Clear;
 	}
 	.bg-error{
 		width: 267px;

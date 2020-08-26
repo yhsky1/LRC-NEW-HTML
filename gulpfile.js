@@ -182,6 +182,7 @@ gulp.task('watch', function () {
     gulp.series('sassMO', 'buildMO')
   );
   gulp.watch('wwwroot/**/*.html').on('change', browserSync.reload);
+  gulp.watch('wwwroot/**/*.js').on('change', browserSync.reload);
 });
 
 gulp.task(

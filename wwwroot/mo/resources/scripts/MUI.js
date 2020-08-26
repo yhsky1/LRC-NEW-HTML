@@ -428,7 +428,40 @@ var MUI = MUI || {
 
 				beScrollTop = enScrollTop;
 			});
-		},	
+		},
+		fixedBottomScrollvalue: 0,
+		fixedBottom: function($target){
+			var that = this;
+			$(window).on('scroll', function() {
+				that.fixedBottomCaculate($target);
+			});
+		},
+		fixedBottomCaculate: function($target){
+			var initScrollvalue = $(window).scrollTop(),                          
+				MaxScroll = $(document).height() - $(window).height();  //최대 가능한 스크롤 범위
+				
+			//console.log('스크롤 가능한 최대값: ' + MaxScroll);
+			//console.log('현재 스크롤 값: ' +  initScrollvalue);
+
+			//IOS 스크롤 시 스크롤 바운스 범위 지정
+			if(initScrollvalue < (MaxScroll - 100) && this.fixedBottomScrollvalue > 50){
+				console.log('fixedBottomScrollvalue', this.fixedBottomScrollvalue);
+				//console.log('최대 바운스 범위');
+				if(initScrollvalue > this.fixedBottomScrollvalue){
+					console.log('스크롤 다운');
+					$target.addClass('close');
+				}else{
+					console.log('스크롤 업');
+					$target.removeClass('close');
+				}
+			}else{
+				//console.log('마지막 스크롤, 최상단 바운스 되는중');
+			}
+
+			//최종 스크롤 값 기준 데이터 리턴
+			this.fixedBottomScrollvalue = initScrollvalue;
+		},
+
 	},
 	iscrolls: {
         cash: null,
@@ -461,5 +494,3 @@ var MUI = MUI || {
 	},
 
 };
-/* 코어 end */
-
