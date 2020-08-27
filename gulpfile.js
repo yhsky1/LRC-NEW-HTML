@@ -28,18 +28,18 @@ gulp.task('uglify', function (done) {
   done();
   return (
     gulp
-      .src(['wwwroot/pc/resources/scripts/**/*.js', BABEL_POLYFILL]) //src 폴더 아래의 모든 js 파일을
+      .src(['wwwroot/pc/resources-pc/scripts/**/*.js', BABEL_POLYFILL]) //src 폴더 아래의 모든 js 파일을
       .pipe(plumber(plumberOption))
       .pipe(babel())
       //.pipe(concat('all.js'))
       //.pipe(uglify()) //minify 해서
-      .pipe(gulp.dest('wwwroot/pc/resources/scripts/dist'))
+      .pipe(gulp.dest('wwwroot/pc/resources-pc/scripts/dist'))
   ); //dist 폴더에 저장
 });
 
 gulp.task('sassPC', function () {
   return gulp
-    .src('wwwroot/pc/resources/scss/**/*.scss')
+    .src('wwwroot/pc/resources-pc/scss/**/*.scss')
     .pipe(plumber(plumberOption))
     .pipe(
       sourcemaps.init({
@@ -60,13 +60,13 @@ gulp.task('sassPC', function () {
       })
 	)
     .pipe(sourcemaps.write('../maps'))
-    .pipe(gulp.dest('wwwroot/pc/resources/styles'))
+    .pipe(gulp.dest('wwwroot/pc/resources-pc/styles'))
     .pipe(browserSync.reload({ stream: true }));
 });
 
 gulp.task('buildPC', function () {
   return gulp
-    .src('wwwroot/pc/resources/scss/**/*.scss')
+    .src('wwwroot/pc/resources-pc/scss/**/*.scss')
     .pipe(plumber(plumberOption))
     .pipe(
       sass({
@@ -79,7 +79,7 @@ gulp.task('buildPC', function () {
         cascade: true,
       })
     )
-    .pipe(gulp.dest('wwwroot/pc/resources/styles/dist'))
+    .pipe(gulp.dest('wwwroot/pc/resources-pc/styles/dist'))
     .pipe(browserSync.reload({ stream: true }))
     .on('end', function () {
       console.log('-------- appned css --------');
@@ -89,7 +89,7 @@ gulp.task('buildPC', function () {
 gulp.task('sassMO', function () {
   return (
     gulp
-      .src('wwwroot/mo/resources/scss/**/*.scss')
+      .src('wwwroot/mo/resources-mo/scss/**/*.scss')
       .pipe(plumber(plumberOption))
       .pipe(
         sourcemaps.init({
@@ -119,7 +119,7 @@ gulp.task('sassMO', function () {
 		}))
 		*/
       .pipe(sourcemaps.write('../maps'))
-      .pipe(gulp.dest('wwwroot/mo/resources/styles'))
+      .pipe(gulp.dest('wwwroot/mo/resources-mo/styles'))
       .pipe(browserSync.reload({ stream: true }))
   );
 });
@@ -127,7 +127,7 @@ gulp.task('sassMO', function () {
 gulp.task('buildMO', function () {
   return (
     gulp
-      .src('wwwroot/mo/resources/scss/**/*.scss')
+      .src('wwwroot/mo/resources-mo/scss/**/*.scss')
       .pipe(plumber(plumberOption))
       .pipe(
         sass({
@@ -154,7 +154,7 @@ gulp.task('buildMO', function () {
 			},
 		}))
 		*/
-      .pipe(gulp.dest('wwwroot/mo/resources/styles/dist'))
+      .pipe(gulp.dest('wwwroot/mo/resources-mo/styles/dist'))
       .pipe(browserSync.reload({ stream: true }))
       .on('end', function () {
         console.log('-------- appned css --------');
@@ -174,11 +174,11 @@ gulp.task('watch', function () {
 
   //gulp.watch('wwwroot/pc/resources/scripts/**/*.js',  gulp.series('uglify'));
   gulp.watch(
-    'wwwroot/pc/resources/scss/**/*.scss',
+    'wwwroot/pc/resources-pc/scss/**/*.scss',
     gulp.series('sassPC', 'buildPC')
   );
   gulp.watch(
-    'wwwroot/mo/resources/scss/**/*.scss',
+    'wwwroot/mo/resources-mo/scss/**/*.scss',
     gulp.series('sassMO', 'buildMO')
   );
   gulp.watch('wwwroot/**/*.html').on('change', browserSync.reload);
