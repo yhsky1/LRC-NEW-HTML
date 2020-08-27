@@ -136,7 +136,8 @@ var MUI = MUI || {
 
 		},
 		openClick: function(target, dimmed, parent, callback){
-            var that = this;
+			var that = this,
+				TOUCH_CLICK = ('ontouchstart' in window) ? 'touchstart' : 'click';
             $(document).on('click', target, function(e){
                 var layer = '.'+$(this).data('layer');
                 var targetDom = $(this);
@@ -148,30 +149,34 @@ var MUI = MUI || {
                 else{
                     show();
                 }
-                
                 function show(){
                     that.open(layer, dimmed, parent);
-                }
-
-                e.preventDefault();
+				}
             });
         },
         open: function(layer, dimmed, parent, callback){
-            var that = this;
+			var that = this;
+			
             that.scrollTop = $(window).scrollTop();
             $('body').addClass('fixed');
             $('body').css({top:-that.scrollTop});
             if(dimmed) $(dimmed).fadeIn();
 			if(callback) callback(layer);
-            $(parent + layer).show();
+			if($(layer).data('type') === 'slide') {
+				$(layer).css({opacity:1});
+				$(layer).addClass('active');
+				return;
+			}
+			$(parent + layer).show();
             that.calculate(layer);
             $(window).on('resize.layer', function(){
                 that.calculate(layer);
             });
         },
         closeClick: function(target, dimmed, parent, callback){
-            var that = this;
-            $(document).on('click', target, function(e){
+			var that = this,
+				TOUCH_CLICK = ('ontouchstart' in window) ? 'touchstart' : 'click';
+            $(document).on(TOUCH_CLICK, target, function(e){
                 var layer;
                 var targetDom = $(this);
                 if(target == dimmed){
@@ -192,22 +197,28 @@ var MUI = MUI || {
                     that.close(layer, dimmed, parent);
                 }
 
-                e.preventDefault();
             });
         },
         close :function(layer, dimmed, parent, callback){
             var that = this;
-            if(layer != dimmed) {
-				$(layer).hide();
-            }
-            else {
-                $(parent).hide();
-            }
 			if(dimmed) $(dimmed).fadeOut();
 			if(callback) callback(layer);
             $('body').removeClass('fixed');
             $('body').css({top:0});
 			$(window).scrollTop(that.scrollTop);
+			if($(layer).data('type') === 'slide') {
+				$(layer).removeClass('active');
+				setTimeout(function(){
+					$(layer).css({opacity:0});
+				}, 400);
+				return;
+			}
+			if(layer != dimmed) {
+				$(layer).hide();
+            }
+            else {
+                $(parent).hide();
+            }
             $(window).off('resize.layer');
         },
 	},
@@ -445,13 +456,13 @@ var MUI = MUI || {
 
 			//IOS 스크롤 시 스크롤 바운스 범위 지정
 			if(initScrollvalue < (MaxScroll - 100) && this.fixedBottomScrollvalue > 50){
-				console.log('fixedBottomScrollvalue', this.fixedBottomScrollvalue);
+				//console.log('fixedBottomScrollvalue', this.fixedBottomScrollvalue);
 				//console.log('최대 바운스 범위');
 				if(initScrollvalue > this.fixedBottomScrollvalue){
-					console.log('스크롤 다운');
+					//console.log('스크롤 다운');
 					$target.addClass('close');
 				}else{
-					console.log('스크롤 업');
+					//console.log('스크롤 업');
 					$target.removeClass('close');
 				}
 			}else{

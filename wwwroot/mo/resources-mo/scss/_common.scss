@@ -10,6 +10,14 @@ $extra-small-devices: 320px;
 	}
 }
 
+@mixin NoscrollBar {
+	scrollbar-width: none;
+    -ms-overflow-style: none;
+	&::-webkit-scrollbar {
+		display: none;
+	}
+}
+
 @mixin Icon-font {
 	font-style: normal;
 	font-family: 'metlife-icon';

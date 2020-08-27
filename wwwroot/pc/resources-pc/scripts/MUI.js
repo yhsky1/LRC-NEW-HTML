@@ -136,8 +136,9 @@ var MUI = MUI || {
 
 		},
 		openClick: function(target, dimmed, parent, callback){
-            var that = this;
-            $(document).on('click', target, function(e){
+            var that = this,
+				TOUCH_CLICK = ('ontouchstart' in window) ? 'touchstart' : 'click';
+            $(document).on(TOUCH_CLICK, target, function(e){
                 var layer = '.'+$(this).data('layer');
                 var targetDom = $(this);
                 //that.scrollTop = $(window).scrollTop();
@@ -152,8 +153,6 @@ var MUI = MUI || {
                 function show(){
                     that.open(layer, dimmed, parent);
                 }
-
-                e.preventDefault();
             });
         },
         open: function(layer, dimmed, parent, callback){

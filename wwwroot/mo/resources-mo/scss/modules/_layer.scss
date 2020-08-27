@@ -1,12 +1,47 @@
-.show-layer{
+body.fixed {
 	overflow: hidden;
+    position: fixed;
+}
+.bg-dimmed {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: {
+		color: #000;
+	}
+	opacity: 0.5;
+	z-index: 50;
 }
 .layer {
 	&-wrap {
+		z-index: 60;
+	}
+	&-slide {
+		opacity: 0;
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		background-color: #fff;
+		padding:3rem;
+		transform: translateY(120%);
+		transition: transform .4s;
+		&-close {
+			cursor: pointer;
+		}
+		&.active {
+			transform: translateY(0);
+		}
+	}
+
+
+	&-popup {
 		position: fixed;
 		top: 0;
 		left: 0;
-		z-index: 500;
 		width: 100%;
 		height: 100%;
 		display: none;
@@ -15,206 +50,5 @@
 			display: block;
 		}
 	}
-
-	&-box {
-		position: absolute;
-		top: 110px;
-		left: 50%;
-		z-index: 10;
-		box-sizing: border-box;
-		margin-bottom: 50px;
-		padding: {
-			top: 40px;
-			right: 40px;
-			bottom: 40px;
-			left: 40px;
-		};
-		border-top: 5px solid #0061a0;
-		background-color: #fff;
-		transform: translateX(-50%);
-	}
-
-	&-dim {
-		position: fixed;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		background: {
-			color: #000;
-		}
-		opacity: 0.5;
-		-ms-pointer-events: none;
-		pointer-events: none;
-	}
-
-	&-close {
-		position: absolute;
-		top: 20px;
-		right: 20px;
-	}
-
-	&-partner {
-		.layer {
-			&-head {
-				margin-bottom: 64px;
-				h1 {
-					color: #333;
-					font: {
-						size: 42px;
-						weight: 700;
-					};
-					text-align: center;
-				}
-			}
-			&-foot {
-				margin: 30px 0;
-				text-align: center;
-				.btn {
-					width: 160px;
-				}
-			}
-			&-box {
-				width: 720px;
-			}
-			&-search {
-				text-align: right;
-				margin: {
-					bottom: 30px;
-				};
-				.label{
-					float: left;
-					margin-top: 8px;
-				}
-				.form-inline{
-					display: inline-block;
-				}
-				.input-box {
-					width: 220px;
-				}
-			}
-			&-sort {
-				@include Clear;
-				text-align: right;
-				margin: {
-					bottom: 10px;
-				}
-				.selectbox-inline {
-					width: 140px;
-				}
-				.label {
-					float: left;
-					margin-top: 12px;
-					font-size: 14px;
-					em {
-						color: #0061a0;
-						text-decoration: underline;
-					}
-				}
-			}
-			&-partner-list {
-				border-top: 1px solid #000;
-				border-bottom: 1px solid #ccc;
-				background: {
-					color: #f9f9f9;
-				}
-				@include Clear;
-				dt,
-				dd {
-					float: left;
-					padding: {
-						top: 23px;
-						left: 20px;
-						bottom: 10px;
-					}
-				}
-				dt {
-					font: {
-						weight: bold;
-					};
-					width: 33%;
-				}
-				dd {
-					color: #717171;
-					font: {
-						size: 14px;
-					}
-					span {
-						white-space: nowrap;
-						display: inline-block;
-						margin: {
-							right: 20px;
-							bottom: 20px;
-						}
-					}
-				}
-				.btn {
-					line-height: 0;
-					width: 26px;
-					height: 26px;
-					padding: 0;
-				}
-			}
-		}
-		.pagination-wrap {
-			margin: {
-				top: 40px;
-				bottom: 40px;
-			}
-		}
-		.table {
-			.cell {
-				&-title {
-					color: #0061a0;
-					font: {
-						weight: bold;
-					}
-				}
-			}
-			&-thead > ul {
-				padding: {
-					top: 57px;
-				}
-				> li:first-child > *:before {
-					top: -58px;
-					line-height: 57px;
-					height: 57px;
-				}
-			}
-		}
-	}
-
-	&-table{
-		table{
-			width: 100%;
-		}
-		thead{
-			th{
-				padding: 18px 0;
-				border-bottom: 1px solid #000;
-				text-align: center;
-			}
-		}
-		tbody{
-			td{
-				padding: 17px 0;
-				text-align: center;
-				border-bottom: 1px solid #ccc;
-				vertical-align: middle;
-				.checkbox{
-					display: inline-block;
-					width: 20px;
-					height: 20px;
-					margin-right: 0;
-					input[type="checkbox"] + label{
-						padding-left: 0;
-					}
-				}
-				.btn-link{
-					margin: 0;
-					padding: 0
-				}
-			}
-		}
-	}
+	
 }
