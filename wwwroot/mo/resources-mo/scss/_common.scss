@@ -70,7 +70,7 @@ $extra-small-devices: 320px;
 //@include sprite($sprite:'error', $type:'jpg', $x:20%, $y:20%, $size:100%); ---  사용법
 @mixin Background($sprite, $type, $x:0, $y:0, $size:auto) {
 	background-repeat: no-repeat;
-	background-image: url('../../resources/images/icons/#{$sprite}.#{$type}');
+	background-image: url('../../resources-mo/images/icons/#{$sprite}.#{$type}');
 	background-position: $x, $y;
 	background-size: $size;
 }

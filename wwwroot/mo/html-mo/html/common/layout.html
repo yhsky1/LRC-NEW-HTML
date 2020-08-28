@@ -15,7 +15,7 @@
 <script src="../../../resources-mo/scripts/jquery/jquery-1.9.1.min.js"></script>
 <script src="../../../resources-mo/scripts/jquery/jquery-ui.min.js"></script>
 <script src="../../../resources-mo/scripts/jquery/plugins/slick.min.js"></script>
-<script src="../../../resources-mo/scripts/jquery/plugins/iscroll.js"></script>
+<script src="../../../resources-mo/scripts/jquery/plugins/iscroll.min.js"></script>
 <script src="../../../resources-mo/scripts/MUI.js"></script>
 <script src="../../../resources-mo/scripts/common.js"></script>
 
@@ -26,7 +26,7 @@
 	<header class="header">
 		<div class="header-top">
 			<h1><a href="#none">해더부분</a></h1>
-			<button type="button" class="btn-drawer" >
+			<button type="button" class="btn-drawer" data-target="drawer" data-on="true" data-sort="none">
 				<i class="icon">
 					<i class="line line-1"></i>
 					<i class="line line-2"></i>
@@ -68,6 +68,7 @@
 
 	<!--drawer 컴포넌트-->
 	<div class="drawer">
+		<button type="button" class="btn-drawer-close"  data-target="drawer" data-on="true" data-sort="none">레이어닫기</button>
 		전체메뉴 부분
 	</div>
 	<!--//drawer 컴포넌트-->

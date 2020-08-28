@@ -29,13 +29,25 @@ $(function(){
         hide();
     });
 
+    //bg-dimmed 클릭시 열린 레이어 들 닫기
     MUI.layer.closeClick(LAYER_DIM, LAYER_DIM, LAYER_PARENT, function(hide){
         console.log('close');
         hide();
     });
 
-    //bg-dimmed 클릭시 열린 레이어 들 닫기
- 
+    //토글버튼 열기
+    MUI.event.toggle('.btn-drawer', null, function(logic, layer) {
+        $BODY.addClass("fixed");
+        $('.btn-drawer-close').addClass('on');
+        logic();
+    });
+
+    //토글버튼 닫기
+    MUI.event.toggle('.btn-drawer-close', null, function(logic, layer) {
+        $BODY.removeClass("fixed");
+        $('.btn-drawer').removeClass('on');
+        logic();
+    });
     
 
     //하단 퀵메뉴 모션

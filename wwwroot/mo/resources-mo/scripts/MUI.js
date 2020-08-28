@@ -96,9 +96,11 @@ var MUI = MUI || {
 	},
 	slide: {
 		init: function(target, sort, option){
-			if(sort == 'slick') {
-				//console.log('slick');
+			if(sort === 'slick') {
 				return target.slick(option);
+			}
+			if(sort === 'swiper') {
+				return new Swiper(target, option);
 			}
 		},
 	},
