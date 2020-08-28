@@ -140,7 +140,7 @@ var MUI = MUI || {
 		openClick: function(target, dimmed, parent, callback){
 			var that = this,
 				TOUCH_CLICK = ('ontouchstart' in window) ? 'touchstart' : 'click';
-            $(document).on('click', target, function(e){
+            $(document).on(TOUCH_CLICK, target, function(e){
                 var layer = '.'+$(this).data('layer');
                 var targetDom = $(this);
                 //that.scrollTop = $(window).scrollTop();
@@ -180,7 +180,8 @@ var MUI = MUI || {
 				TOUCH_CLICK = ('ontouchstart' in window) ? 'touchstart' : 'click';
             $(document).on(TOUCH_CLICK, target, function(e){
                 var layer;
-                var targetDom = $(this);
+				var targetDom = $(this);
+				//console.log(targetDom.data('layer'));
                 if(target == dimmed){
                     layer = parent;
                 }
@@ -202,13 +203,14 @@ var MUI = MUI || {
             });
         },
         close :function(layer, dimmed, parent, callback){
+			console.log(layer);
             var that = this;
 			if(dimmed) $(dimmed).fadeOut();
 			if(callback) callback(layer);
             $('body').removeClass('fixed');
             $('body').css({top:0});
 			$(window).scrollTop(that.scrollTop);
-			if($(layer).data('type') === 'slide') {
+			if($(layer).data('type') === 'slide') {	
 				$(layer).removeClass('active');
 				setTimeout(function(){
 					$(layer).css({opacity:0});
@@ -235,7 +237,7 @@ var MUI = MUI || {
 				var onClass = $this.data('on');
 				var siblings = $this.data('siblings');
 				var $parent =$(parent);
-				console.log(sort, onClass, siblings, $parent);
+				//console.log(sort, onClass, siblings, $parent);
 
 				function logic(){
 					
@@ -512,5 +514,9 @@ var MUI = MUI || {
 			}
 		},
 	},
-
+	Masonry: {
+		init: function($target, option){
+			return $target.masonry(option);
+		},
+	},
 };

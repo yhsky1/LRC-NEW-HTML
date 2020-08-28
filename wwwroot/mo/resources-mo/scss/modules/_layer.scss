@@ -29,6 +29,7 @@ body.fixed {
 		padding:3rem;
 		transform: translateY(120%);
 		transition: transform .4s;
+		box-sizing: border-box;
 		&-close {
 			cursor: pointer;
 		}
