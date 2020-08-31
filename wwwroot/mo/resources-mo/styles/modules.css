@@ -1966,7 +1966,7 @@ body.fixed {
 	left: 0;
 	width: 100%;
 	background-color: #fff;
-	padding: 3rem;
+	padding: 0 3rem;
 	-webkit-transform: translateY(120%);
 	   -moz-transform: translateY(120%);
 	    -ms-transform: translateY(120%);
@@ -1995,18 +1995,56 @@ body.fixed {
 	        transform: translateY(0);
 }
 
+.layer-slide .slide-inner {
+	overflow-y: auto;
+	overflow-x: hidden;
+	max-height: -webkit-calc(100vh - 86px);
+	max-height: -moz-calc(100vh - 86px);
+	max-height: calc(100vh - 86px);
+}
+
 .layer-popup {
 	position: fixed;
-	top: 0;
-	left: 0;
+	opacity: 0;
 	width: 100%;
-	height: 100%;
-	display: none;
-	overflow: auto;
+	max-width: 30rem;
+	-webkit-transform: translateY(120%);
+	   -moz-transform: translateY(120%);
+	    -ms-transform: translateY(120%);
+	     -o-transform: translateY(120%);
+	        transform: translateY(120%);
+	-webkit-transition: -webkit-transform .4s;
+	transition: -webkit-transform .4s;
+	-o-transition: -o-transform .4s;
+	-moz-transition: transform .4s, -moz-transform .4s;
+	transition: transform .4s;
+	transition: transform .4s, -webkit-transform .4s, -moz-transform .4s, -o-transform .4s;
 }
 
 .layer-popup.active {
-	display: block;
+	-webkit-transform: translateY(0);
+	   -moz-transform: translateY(0);
+	    -ms-transform: translateY(0);
+	     -o-transform: translateY(0);
+	        transform: translateY(0);
+}
+
+.layer-popup .pop-inner {
+	overflow: hidden;
+	-webkit-border-radius: 0.625rem;
+	   -moz-border-radius: 0.625rem;
+	        border-radius: 0.625rem;
+	background-color: #f4f4f4;
+	margin: 0.9375rem;
+	position: relative;
+}
+
+.layer-popup .pop-cont {
+	padding: 4.0625rem 1.25rem 2.5rem;
+	position: relative;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	     box-sizing: border-box;
 }
 
 .selectbox {

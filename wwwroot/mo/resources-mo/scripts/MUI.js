@@ -108,10 +108,10 @@ var MUI = MUI || {
 		scrollTop: 0,
 		calculate: function(layer){
 			var layer = $(layer),
-				layerIn = layer.find('.pop_inner'),
+				layerIn = layer.find('.pop-inner'),
 				winH = $(window).height(),
 				winW = $(window).width();
-				layerIn.find('.pop_scroll').removeAttr('style');
+				layerIn.find('.pop-scroll').removeAttr('style');
 
 			var layerH = layer.height(),
 				layerW = layer.width(),
@@ -119,7 +119,7 @@ var MUI = MUI || {
 			//console.log(layer, winH, winW, layerH, layerW, marginH);
 			
 			if(winH < layerH){
-				layerIn.find('.pop_scroll').css({
+				layerIn.find('.pop-scroll').css({
 					height: winH - marginH,
 					overflow: 'auto',
 				});
@@ -129,7 +129,7 @@ var MUI = MUI || {
 				});
 			}
 			else{
-				layerIn.find('.pop_scroll').removeAttr('style');
+				layerIn.find('.pop-scroll').removeAttr('style');
 				layer.css({
 					top: (winH - layerH) / 2,
 					left: (winW - layerW) / 2,
@@ -164,12 +164,13 @@ var MUI = MUI || {
             $('body').css({top:-that.scrollTop});
             if(dimmed) $(dimmed).fadeIn();
 			if(callback) callback(layer);
-			if($(layer).data('type') === 'slide') {
+			//if($(layer).data('type') === 'slide') {
 				$(layer).css({opacity:1});
 				$(layer).addClass('active');
-				return;
-			}
-			$(parent + layer).show();
+				//return;
+			//}
+			if($(layer).data('type') === 'slide')  return;
+			//$(parent + layer).show();
             that.calculate(layer);
             $(window).on('resize.layer', function(){
                 that.calculate(layer);
@@ -210,18 +211,26 @@ var MUI = MUI || {
             $('body').removeClass('fixed');
             $('body').css({top:0});
 			$(window).scrollTop(that.scrollTop);
-			if($(layer).data('type') === 'slide') {	
+			//if($(layer).data('type') === 'slide') {	
+				//$(layer).removeClass('active');
+				//setTimeout(function(){
+					//$(layer).css({opacity:0});
+				//}, 400);
+				//return;
+			//}
+			if(layer != dimmed) {
+				//$(layer).hide();
 				$(layer).removeClass('active');
 				setTimeout(function(){
 					$(layer).css({opacity:0});
 				}, 400);
-				return;
-			}
-			if(layer != dimmed) {
-				$(layer).hide();
             }
             else {
-                $(parent).hide();
+				//$(parent).hide();
+				$(parent).removeClass('active');
+				setTimeout(function(){
+					$(parent).css({opacity:0});
+				}, 400);
             }
             $(window).off('resize.layer');
         },

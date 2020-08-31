@@ -90,6 +90,8 @@
 		<button type="button" id="layer-open1" data-layer="layer-slide">하단 레이어 버튼</button>
 		<br/><br/>
 
+		<button type="button" id="layer-open2" data-layer="layer-common">일반 레이어 열기</button>
+
 		
 	</main>
 	<!--//container 컴포넌트-->
@@ -121,7 +123,7 @@
 
 	<!--layer-slide 컴포넌트-->
 	<style>
-		.price_box .ui-slider {width: 100%;}
+		.price_box .ui-slider {width: 100%;touch-action : none;}
 	</style>
 	<div class="layer-wrap layer-slide" data-type="slide">
 		<button type="button" class="layer-slide-close" data-layer="layer-slide">닫기 버튼</button>
@@ -136,10 +138,37 @@
 				<input type="hidden" name="min_price" id="min_slider_price" value="0">
 				<input type="hidden" name="max_price" id="max_slider_price" value="70">
 			</div>
-
+			layer-slide 컴포넌트<br/>layer-slide 컴포넌트<br/>
+			layer-slide 컴포넌트<br/>layer-slide 컴포넌트<br/>
+			layer-slide 컴포넌트<br/>layer-slide 컴포넌트<br/>
+			layer-slide 컴포넌트<br/>layer-slide 컴포넌트<br/>
+			layer-slide 컴포넌트<br/>layer-slide 컴포넌트<br/>
+			layer-slide 컴포넌트<br/>layer-slide 컴포넌트<br/>
+			layer-slide 컴포넌트<br/>layer-slide 컴포넌트<br/>
+			layer-slide 컴포넌트<br/>layer-slide 컴포넌트<br/>
 		</div>
 	</div>
 	<!--//layer-slide 컴포넌트-->
+
+	<!--일반 레이어 테스트-->
+	<div class="layer-wrap layer-popup layer-common">
+		<div class="pop-inner">
+			<div class="pop-scroll">
+
+				<div class="pop-cont">
+					
+					<div class="btn-wrap">
+						<a href="javascript:void(0)" class="close-window">확인</a>
+						<a href="javascript:void(0)" class="close-layer-link" id="layer-close1">취소</a>
+					</div>
+
+				</div>
+				<button type="button" class="layer-close-bt" id="layer-close2" data-layer="layer-common">닫기</button>	
+				
+			</div>
+		</div>
+	</div>
+	<!--//반 레이어 테스트-->
 
 	<!--bg-dimmed 컴포넌트-->
 	<div class="bg-dimmed">딤(Dim)처리 배경</div>
