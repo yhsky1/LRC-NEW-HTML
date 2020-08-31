@@ -46,11 +46,11 @@ body.fixed {
 
 	&-popup {
 		position: fixed;
-		opacity: 0;
 		width:100%;
 		max-width:30rem;
-		transform: translateY(120%);
-		transition: transform .4s;
+		display: none;
+		//transform: translateY(120%);
+		//transition: transform .4s;
 		&.active {
 			transform: translateY(0);
 		}

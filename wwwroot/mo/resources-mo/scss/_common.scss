@@ -31,16 +31,36 @@ $extra-small-devices: 320px;
 	vertical-align: middle;
 }
 
+@mixin Align-box {
+	display: flex;
+	flex-wrap: wrap;
+}
+
 @mixin Align-middle {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+@mixin Align-between {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
 
 @mixin Inline-align-middle {
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
+}
+
+/*인라인 가로스크롤*/
+@mixin Inline-scrolling {
+	box-sizing: border-box;
+    overflow-x: visible;
+    overflow-y: hidden;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    width: 100%;
 }
 
 /*폰트만 삭제시킴*/
@@ -56,6 +76,7 @@ $extra-small-devices: 320px;
 }
 
 /*포지션 믹스인*/
+//@include Position($top: 0, $left: 0)
 @mixin Position($position:absolute, $top: null, $right: null, $bottom: null, $left: null) {
 	position: $position;
 	top: $top;
@@ -65,13 +86,13 @@ $extra-small-devices: 320px;
 }
 
 /*백그라운드 믹스인*/
-//@include sprite($sprite:'error', $type:'png', $x:right, $y:center); ---  사용법
-//@include sprite($sprite:'error', $type:'jpg', $y:0); ---  사용법
-//@include sprite($sprite:'error', $type:'jpg', $x:20%, $y:20%, $size:100%); ---  사용법
-@mixin Background($sprite, $type, $x:0, $y:0, $size:auto) {
+//@include Background($sprite:'error', $type:'png', $position:right center); ---  사용법
+//@include Background($sprite:'error', $type:'jpg', $y:0); ---  사용법
+//@include Background($sprite:'error', $type:'jpg', $position:20% 20%, $size:100%); ---  사용법
+@mixin Background($sprite, $type, $position:0 0, $size:auto) {
 	background-repeat: no-repeat;
 	background-image: url('../../resources-mo/images/icons/#{$sprite}.#{$type}');
-	background-position: $x, $y;
+	background-position: $position;
 	background-size: $size;
 }
 

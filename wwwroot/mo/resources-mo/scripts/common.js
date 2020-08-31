@@ -19,11 +19,11 @@ $(function(){
     //리사이즈시 rem폰트설정, 호스트환경 체크
     MUI.resize.resize($BODY);
 
-    //상단네비 엑티브시 센터
-    MUI.event.navCenter($('.header-nav'), 'active');
+    //해더 상단네비 엑티브시 센터
+    if($('.header-nav').length) MUI.event.navCenter($('.header-nav'), 'active');
 
-
-
+    //견적 상단네비 엑티브시 센터
+    if($('.estimate-wrap .section-nav').length) MUI.event.navCenter($('.estimate-wrap .section-nav'), 'active');
 
 
     //후터하단 슬라이드팝업 테스트 1
@@ -128,6 +128,8 @@ $(function(){
 
     /*브라우저 모든 resources 다운 완료시점(프레임)*/
     $(window).on('load', function(){
+
+        /*
         //Masonry 테스트1
         MUI.Masonry.init($('.grid'), {
             // options
@@ -136,6 +138,8 @@ $(function(){
             fitwidth: true,
             
         });
+        */
+
     });
 
 });

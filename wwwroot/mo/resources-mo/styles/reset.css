@@ -44,19 +44,33 @@ html {
 
 body {
 	width: 100%;
-	font: 13px/1.3;
+	line-height: 1;
 	letter-spacing: -.05em;
 	word-break: keep-all;
 	color: #111;
 	background-color: #fff;
-	font-family: "NotoL", serif;
+	font-family: "ManropeL", "NotoL", serif;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-flow: column;
+	   -moz-box-orient: vertical;
+	   -moz-box-direction: normal;
+	    -ms-flex-flow: column;
+	        flex-flow: column;
+	min-height: 100vh;
+	color: #2B2B2B;
+	font-size: 1.2rem;
 }
 
 input, button, select, textarea {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 1em;
 	font-family: inherit;
 	color: inherit;
 	-webkit-box-sizing: border-box;
@@ -64,10 +78,13 @@ input, button, select, textarea {
 	        box-sizing: border-box;
 	-webkit-appearance: none;
 	vertical-align: middle;
+	outline: none;
 	-webkit-border-radius: 0;
 	   -moz-border-radius: 0;
 	        border-radius: 0;
 	background-color: transparent;
+	color: #2B2B2B;
+	font-size: 1.2rem;
 }
 
 caption, legend, hr {
@@ -90,7 +107,7 @@ a {
 }
 
 strong, b {
-	font-weight: 700;
+	font-weight: normal;
 }
 
 a, button, input, img, div, span {
@@ -123,6 +140,20 @@ a, button, input, img, div, span {
 @font-face {
 	font-family: "NotoB";
 	src: url("../font/Noto/notokr-bold.eot") format("embedded-opentype"), url("../font/Noto/notokr-bold.woff") format("woff"), url("../font/Noto/notokr-bold.woff2") format("woff2");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "ManropeL";
+	src: url("../font/Manrope/Manrope-Light.woff") format("woff"), url("../font/Manrope/Manrope-Light.woff2") format("woff2");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "ManropeB";
+	src: url("../font/Manrope/Manrope-Bold.woff") format("woff"), url("../font/Manrope/Manrope-Bold.woff2") format("woff2");
 	font-weight: normal;
 	font-style: normal;
 }

@@ -1,0 +1,35 @@
+.icon {
+    @include Vertical-inline;
+    @include Hide_txt;
+    &.filter {
+        @include Background($sprite:'ico-select', $type:'png', $size:100% auto, $position:center center);
+        width: 1.1rem;
+        height: 1.1rem; 
+    }
+    &.filterClose {
+        @include Background($sprite:'ico-close', $type:'png', $size:100% auto, $position:center center);
+        width: 0.7rem;
+        height: 0.7rem;
+    }
+    &.fast {
+        @include Background($sprite:'ico-estimate-btn1', $type:'png', $size:100% auto, $position:center center);
+        width: 0.9rem;
+        height: 0.9rem;
+    }
+    &.pro {
+        @include Background($sprite:'ico-estimate-btn2', $type:'png', $size:100% auto, $position:center center);
+        width: 0.9rem;
+        height: 0.9rem;
+    }
+    &.prev {
+        @include Background($sprite:'ico-prev', $type:'png', $size:100% auto, $position:center center);
+        width: 0.5rem;
+        height: 1rem;
+    }
+    &.draw {
+        @include Background($sprite:'ico-draw', $type:'png', $size:100% auto, $position:center center);
+        width: 1.7rem;
+        height: 1.7rem;
+    }
+}
+

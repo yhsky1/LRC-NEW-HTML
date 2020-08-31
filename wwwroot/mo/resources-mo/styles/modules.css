@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/*인라인 가로스크롤*/
 /*폰트만 삭제시킴*/
 /*투명도 믹스인*/
 /*포지션 믹스인*/
@@ -1356,6 +1357,78 @@ a.btn {
 	        justify-content: center;
 }
 
+.icon {
+	display: inline-block;
+	vertical-align: middle;
+	font: 0/0 a;
+}
+
+.icon.filter {
+	background-repeat: no-repeat;
+	background-image: url("../../resources-mo/images/icons/ico-select.png");
+	background-position: center center;
+	-webkit-background-size: 100% auto;
+	   -moz-background-size: 100% auto;
+	        background-size: 100% auto;
+	width: 1.1rem;
+	height: 1.1rem;
+}
+
+.icon.filterClose {
+	background-repeat: no-repeat;
+	background-image: url("../../resources-mo/images/icons/ico-close.png");
+	background-position: center center;
+	-webkit-background-size: 100% auto;
+	   -moz-background-size: 100% auto;
+	        background-size: 100% auto;
+	width: 0.7rem;
+	height: 0.7rem;
+}
+
+.icon.fast {
+	background-repeat: no-repeat;
+	background-image: url("../../resources-mo/images/icons/ico-estimate-btn1.png");
+	background-position: center center;
+	-webkit-background-size: 100% auto;
+	   -moz-background-size: 100% auto;
+	        background-size: 100% auto;
+	width: 0.9rem;
+	height: 0.9rem;
+}
+
+.icon.pro {
+	background-repeat: no-repeat;
+	background-image: url("../../resources-mo/images/icons/ico-estimate-btn2.png");
+	background-position: center center;
+	-webkit-background-size: 100% auto;
+	   -moz-background-size: 100% auto;
+	        background-size: 100% auto;
+	width: 0.9rem;
+	height: 0.9rem;
+}
+
+.icon.prev {
+	background-repeat: no-repeat;
+	background-image: url("../../resources-mo/images/icons/ico-prev.png");
+	background-position: center center;
+	-webkit-background-size: 100% auto;
+	   -moz-background-size: 100% auto;
+	        background-size: 100% auto;
+	width: 0.5rem;
+	height: 1rem;
+}
+
+.icon.draw {
+	background-repeat: no-repeat;
+	background-image: url("../../resources-mo/images/icons/ico-draw.png");
+	background-position: center center;
+	-webkit-background-size: 100% auto;
+	   -moz-background-size: 100% auto;
+	        background-size: 100% auto;
+	width: 1.7rem;
+	height: 1.7rem;
+}
+
 .list {
 	position: relative;
 }
@@ -2005,20 +2078,9 @@ body.fixed {
 
 .layer-popup {
 	position: fixed;
-	opacity: 0;
 	width: 100%;
 	max-width: 30rem;
-	-webkit-transform: translateY(120%);
-	   -moz-transform: translateY(120%);
-	    -ms-transform: translateY(120%);
-	     -o-transform: translateY(120%);
-	        transform: translateY(120%);
-	-webkit-transition: -webkit-transform .4s;
-	transition: -webkit-transform .4s;
-	-o-transition: -o-transform .4s;
-	-moz-transition: transform .4s, -moz-transform .4s;
-	transition: transform .4s;
-	transition: transform .4s, -webkit-transform .4s, -moz-transform .4s, -o-transform .4s;
+	display: none;
 }
 
 .layer-popup.active {
