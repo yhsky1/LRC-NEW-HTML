@@ -211,13 +211,13 @@ var MUI = MUI || {
             $('body').removeClass('fixed');
             $('body').css({top:0});
 			$(window).scrollTop(that.scrollTop);
-			//if($(layer).data('type') === 'slide') {	
-				//$(layer).removeClass('active');
-				//setTimeout(function(){
-					//$(layer).css({opacity:0});
-				//}, 400);
-				//return;
-			//}
+			if($(layer).data('type') === 'slide') {	
+				$(layer).removeClass('active');
+				setTimeout(function(){
+					$(layer).css({opacity:0});
+				}, 400);
+				return;
+			}
 			if(layer != dimmed) {
 				//$(layer).hide();
 				$(layer).removeClass('active');
