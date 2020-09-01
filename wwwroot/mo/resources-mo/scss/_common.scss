@@ -52,6 +52,7 @@ $extra-small-devices: 320px;
 
 /*인라인 가로스크롤*/
 @mixin Inline-scrolling {
+	font-size:0;
 	overflow-x: visible;
     overflow-y: hidden;
     white-space: nowrap;
