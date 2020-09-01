@@ -18,12 +18,16 @@
 	left: 0;
 	scrollbar-width: none;
 	-ms-overflow-style: none;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
 	font-size: 0;
 	overflow-x: visible;
 	overflow-y: hidden;
 	white-space: nowrap;
 	-webkit-overflow-scrolling: touch;
 	width: 100%;
+	padding-bottom: .2rem;
 	font-family: "ManropeB", "NotoM", serif;
 	font-weight: normal;
 	background-color: #EFF2F7;
@@ -148,12 +152,16 @@
 }
 
 .estimate-wrap .section-filter .result .filter-list {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
 	font-size: 0;
 	overflow-x: visible;
 	overflow-y: hidden;
 	white-space: nowrap;
 	-webkit-overflow-scrolling: touch;
 	width: 100%;
+	padding-bottom: .2rem;
 	scrollbar-width: none;
 	-ms-overflow-style: none;
 	padding-left: 1.7rem;
@@ -180,7 +188,6 @@
 	   -moz-box-pack: center;
 	    -ms-flex-pack: center;
 	        justify-content: center;
-	vertical-align: top;
 	background-color: #fff;
 	margin-right: .8rem;
 	height: 2.8rem;

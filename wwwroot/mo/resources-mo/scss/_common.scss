@@ -52,12 +52,14 @@ $extra-small-devices: 320px;
 
 /*인라인 가로스크롤*/
 @mixin Inline-scrolling {
+	box-sizing: border-box;
 	font-size:0;
 	overflow-x: visible;
     overflow-y: hidden;
     white-space: nowrap;
     -webkit-overflow-scrolling: touch;
 	width: 100%;
+	padding-bottom: .2rem;
 }
 
 /*폰트만 삭제시킴*/
