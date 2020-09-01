@@ -30,22 +30,22 @@
 			height: 3.4rem;
 			border-radius: .7rem;
 			background-color: #DCDFE4;
-			@include Inline-align-middle;
+			@include Align-middle;
 			@include Position( $top: 1.5rem, $right: 1.7rem);
 		}
 
 	}
 
 	&-top.sub {
-		@include Inline-align-middle;
+		@include Align-middle;
 		background-color: #EFF2F7;
-		h1 {@include Bold;}
+		h1 {@include Bold;padding: 0 6rem;word-break: break-all;flex-shrink: 1;font-size: 1.2rem;}
 		.btn-prev {
 			width: 3.4rem;
 			height: 3.4rem;
 			border-radius: .7rem;
 			background-color: #fff;
-			@include Inline-align-middle;
+			@include Align-middle;
 			@include Position( $top: 1.5rem, $left: 1.7rem);
 		}
 		

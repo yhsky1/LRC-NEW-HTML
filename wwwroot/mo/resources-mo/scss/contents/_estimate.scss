@@ -140,5 +140,78 @@
             }
         }
     }
+
+    .section-detail {
+
+        .detail-view{
+            position: sticky;
+            top: 0;
+            left: 0;
+            margin-bottom: -1.5rem;
+
+            .swiper-pagination-wrap{
+                @include Position($bottom:2rem, $left:0);
+                @include Align-middle;
+                width: 100%;
+                z-index: 1;
+                .swiper-pagination {
+                    position: static;
+                    background-color: rgba(255, 255, 255, .7);
+                    height: 2rem;
+                    padding: 0 1.4rem;
+                    border-radius: 1rem;
+                    @include Align-middle;
+                    .swiper-pagination-bullet {
+                        @include Inline-align-middle;
+                        margin: 0 .4rem;
+                        width: auto;
+                        height: auto;
+                        border-radius: none;
+                        background-color: transparent;
+                        border:0;
+                        opacity: 1;
+                        //transition: all .4s;
+                        &:before {
+                            display: inline-block;
+                            content: '';
+                            width: .5rem;
+                            height: .5rem;
+                            border-radius: 100%;
+                            background-color: #ccc;
+                        }
+                        &:after {
+                            display: inline-block;
+                            content: '';
+                            width: 0;
+                            transition: width .6s;
+                        }
+                        &.swiper-pagination-bullet-active {
+                            &:before {
+                                background-color: transparent;
+                                border: 0.3rem solid #2B2B2B;
+                                width: .3rem;
+                                height: .3rem;
+                            }
+                            
+                            &:after {
+                                width: 1.3rem;
+                                height: .3rem;
+                                background-color: #2B2B2B;
+                                border-radius: 0 .5rem .5rem 0;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+
+        .detail-layout {
+            position: relative;
+            z-index: 1;
+            background-color: #fff;
+            border-radius: 2rem 2rem 0 0;
+        }
+    }
     
 }
