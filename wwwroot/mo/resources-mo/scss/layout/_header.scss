@@ -39,7 +39,7 @@
 	&-top.sub {
 		@include Inline-align-middle;
 		background-color: #EFF2F7;
-		h1 {font-family:"NotoM";}
+		h1 {@include Bold;}
 		.btn-prev {
 			width: 3.4rem;
 			height: 3.4rem;

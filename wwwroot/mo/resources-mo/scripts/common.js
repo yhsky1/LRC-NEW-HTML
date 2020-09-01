@@ -20,21 +20,49 @@ $(function(){
     MUI.resize.resize($BODY);
 
     //해더 상단네비 엑티브시 센터
-    if($('.header-nav').length) MUI.event.navCenter($('.header-nav'), 'active');
+    if($('.header-nav').length) { MUI.event.navCenter($('.header-nav'), 'active'); }
 
     //견적 상단네비 엑티브시 센터
-    if($('.estimate-wrap .section-nav').length) MUI.event.navCenter($('.estimate-wrap .section-nav'), 'active');
+    if($('.estimate-wrap .section-nav').length) { MUI.event.navCenter($('.estimate-wrap .section-nav'), 'active'); }
 
 
-    //후터하단 슬라이드팝업 테스트 1
-    MUI.layer.openClick('#layer-open1', LAYER_DIM, LAYER_PARENT, function(show){
-        //console.log('open');
-        show();
-    });
-    MUI.layer.closeClick('.layer-slide-close', LAYER_DIM, LAYER_PARENT, function(hide){
-        //console.log('close');
-        hide();
-    });
+    //필터 슬라이드 팝업
+    if($('.layer-filter').length) {
+        MUI.layer.openClick('.layer-filter-open', LAYER_DIM, LAYER_PARENT, function(show){
+            //console.log('open');
+            show();
+        });
+        MUI.layer.closeClick('.layer-slide-close', LAYER_DIM, LAYER_PARENT, function(hide){
+            //console.log('close');
+            hide();
+        });
+
+        //필터 슬라이드 내 슬라이드
+        $('#slider-price').slider({
+            range: true,
+            min: 0,							// 최저
+            max: 60,						// 최고
+            orientation: 'horizontal',		// 바타입 수평
+            step: 10,						// 스텝
+            values: [0, 60],				// 디폴트 값
+            start: function(event, ui) {	// start
+            },
+            slide: function(event, ui) {	// mouse movement
+            },
+            stop: function(event, ui) {		// stop
+            },
+            change: function(event, ui) {
+                var min = 10 <= ui.values[0] && ui.values[0] <= 60 ? ui.values[0] + 10 : ui.values[0],
+                    max = 10 <= ui.values[1] && ui.values[1] <= 60 ? ui.values[1] + 10 : ui.values[1];
+
+                // update form fields
+                $('#min_slider_price').val(min);
+                $('#max_slider_price').val(max);
+
+            }
+        });
+    
+    }
 
     //일반 레이어팝업 테스트
     MUI.layer.openClick('#layer-open2', LAYER_DIM, LAYER_PARENT, function(show){
@@ -68,33 +96,8 @@ $(function(){
     
 
     //하단 퀵메뉴 모션
-    MUI.event.fixedBottom($('.fixedBottom'));
+    if($('.fixedBottom').length) { MUI.event.fixedBottom($('.fixedBottom')); }
 
-    //제이쿼리 슬라이드 ui
-    $('#slider-price').slider({
-        range: true,
-        min: 0,							// 최저
-        max: 60,						// 최고
-        orientation: 'horizontal',		// 바타입 수평
-        step: 10,						// 스텝
-        values: [0, 60],				// 디폴트 값
-        start: function(event, ui) {	// start
-        },
-        slide: function(event, ui) {	// mouse movement
-        },
-        stop: function(event, ui) {		// stop
-        },
-        change: function(event, ui) {
-            var min = 10 <= ui.values[0] && ui.values[0] <= 60 ? ui.values[0] + 10 : ui.values[0],
-                max = 10 <= ui.values[1] && ui.values[1] <= 60 ? ui.values[1] + 10 : ui.values[1];
-
-            // update form fields
-            $('#min_slider_price').val(min);
-            $('#max_slider_price').val(max);
-
-        }
-    });
-    
 
 
 

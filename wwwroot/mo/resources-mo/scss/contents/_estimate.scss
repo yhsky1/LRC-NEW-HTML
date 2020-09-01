@@ -1,15 +1,13 @@
 .estimate-wrap {
     background-color: #EFF2F7;
+    line-height: 1;
     .section-nav {
         @include Position( $position:sticky, $top: 0, $left: 0);
         @include NoscrollBar;
-        font-family:"NotoM";
+        @include Inline-scrolling;
+        @include Bold;
         background-color: #EFF2F7;
 		font-size:2.4rem;
-		overflow-x: visible;
-		overflow-y: hidden;
-		white-space: nowrap;
-		-webkit-overflow-scrolling: touch;
 		padding-left: 1.7rem;
 		color: #000;
         letter-spacing: 0;
@@ -117,7 +115,7 @@
                     .flag {
                         @include Position($top: .5rem, $left: .5rem);
                         font-size: 1rem;
-                        font-family:"NotoM";
+                        @include Bold;
                         color: #fff;
                         height: 1.7rem;
                         border-radius: 1rem;

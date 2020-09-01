@@ -96,7 +96,8 @@
 }
 
 .header-top.sub h1 {
-	font-family: "NotoM";
+	font-family: "ManropeB", "NotoM", serif;
+	font-weight: normal;
 }
 
 .header-top.sub .btn-prev {

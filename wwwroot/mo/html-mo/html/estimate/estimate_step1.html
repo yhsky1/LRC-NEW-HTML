@@ -14,6 +14,7 @@
 
 <script src="../../../resources-mo/scripts/jquery/jquery-1.9.1.min.js"></script>
 <script src="../../../resources-mo/scripts/jquery/jquery-ui.min.js"></script>
+<script src="../../../resources-mo/scripts/jquery/jquery.ui.touch-punch.min.js"></script>
 <script src="../../../resources-mo/scripts/jquery/plugins/slick.min.js"></script>
 <script src="../../../resources-mo/scripts/jquery/plugins/iscroll.min.js"></script>
 <script src="../include_sub_header_type1.js"></script><!--인크루드용..-->
@@ -34,6 +35,7 @@
 		<!--견적-->
 		<div class="estimate-wrap">
 
+			<!--상단 네비-->
 			<nav class="section-nav">
                 <a href="#">전체</a>
                 <a href="#">프로모션</a>
@@ -42,7 +44,8 @@
                 <a href="#">쉐보레</a>
                 <a href="#">쌍용</a>
                 <a href="#">기타</a>
-            </nav>
+			</nav>
+			<!--//상단 네비-->
 
 			<!--상단 필터-->
 			<div class="section-filter">
@@ -52,7 +55,7 @@
 						<option value="">인기순</option>
 						<option value="">차종순</option>
 					</select>
-					<button type="button"><span>상세조건</span><i class="icon filter"></i></button>
+					<button type="button" class="layer-filter-open" data-layer="layer-filter"><span>상세조건</span><i class="icon filter"></i></button>
 				</div>
 
 				<div class="result">
@@ -132,7 +135,76 @@
 	<footer class="footer">
 	</footer>
 
-	<!---->
+	<!--layer-slide 컴포넌트-->
+	<div class="layer-wrap layer-slide layer-filter" data-type="slide">
+
+		<!--상단-->
+		<div class="slide-top">
+			<button type="button" class="layer-slide-close" data-layer="layer-filter">닫기 버튼</button>
+			<h4>상세조건</h4>
+		</div>
+		<!--//상단-->
+
+		<!--컨텐츠-->
+		<div class="slide-inner">
+			<form action="">
+				<div class="slide-cont">
+					
+					<div class="filter-col">
+						<h5>차종</h5>
+						<div class="chk-list">
+							<ul>
+								<li>
+									<input type="checkbox" name="" id="chk1"/>
+									<label for="chk1">소형</label>
+								</li>
+								<li>
+									<input type="checkbox" name="" id="chk2"/>
+									<label for="chk2">중형</label>
+								</li>
+								<li>
+									<input type="checkbox" name="" id="chk3"/>
+									<label for="chk3">대형</label>
+								</li>
+								<li>
+									<input type="checkbox" name="" id="chk4"/>
+									<label for="chk4">SUV / RV</label>
+								</li>
+								<li>
+									<input type="checkbox" name="" id="chk5"/>
+									<label for="chk5">승합</label>
+								</li>
+								<li>
+									<input type="checkbox" name="" id="chk6"/>
+									<label for="chk6">전기차</label>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="filter-col">
+						<h5>월 대여료</h5>
+						<button type="button" class="price-all">전체선택</button>
+						<div class="price_box_case">
+							<div class="price-box">
+								<div id="slider-price"></div>
+							</div>
+							<input type="hidden" name="min_price" id="min_slider_price" value=""/>
+							<input type="hidden" name="max_price" id="max_slider_price" value=""/>
+						</div>
+					</div>
+
+					
+					
+				</div>
+				<div class="slide-btn">
+
+				</div>
+			</form>
+		</div>
+		<!--//컨텐츠-->
+
+	</div>
+	<!--//layer-slide 컴포넌트-->
 
 
 

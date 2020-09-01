@@ -16,6 +16,8 @@ $(function(){
 
         <!--drawer 컴포넌트-->
         <div class="drawer">
+            <button type="button" class="btn-drawer-close"  data-target="drawer" data-on="true" data-sort="none">레이어닫기</button>
+            <br/>
             전체메뉴 부분
         </div>
         <!--//drawer 컴포넌트-->

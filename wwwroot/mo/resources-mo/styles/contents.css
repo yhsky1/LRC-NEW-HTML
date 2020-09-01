@@ -8,6 +8,7 @@
 /*미디어쿼리 믹스인*/
 .estimate-wrap {
 	background-color: #EFF2F7;
+	line-height: 1;
 }
 
 .estimate-wrap .section-nav {
@@ -17,13 +18,19 @@
 	left: 0;
 	scrollbar-width: none;
 	-ms-overflow-style: none;
-	font-family: "NotoM";
-	background-color: #EFF2F7;
-	font-size: 2.4rem;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
 	overflow-x: visible;
 	overflow-y: hidden;
 	white-space: nowrap;
 	-webkit-overflow-scrolling: touch;
+	width: 100%;
+	padding: 0.1rem 0;
+	font-family: "ManropeB", "NotoM", serif;
+	font-weight: normal;
+	background-color: #EFF2F7;
+	font-size: 2.4rem;
 	padding-left: 1.7rem;
 	color: #000;
 	letter-spacing: 0;
@@ -151,6 +158,7 @@
 	white-space: nowrap;
 	-webkit-overflow-scrolling: touch;
 	width: 100%;
+	padding: 0.1rem 0;
 	scrollbar-width: none;
 	-ms-overflow-style: none;
 	padding-left: 1.7rem;
@@ -236,7 +244,8 @@
 	top: 0.5rem;
 	left: 0.5rem;
 	font-size: 1rem;
-	font-family: "NotoM";
+	font-family: "ManropeB", "NotoM", serif;
+	font-weight: normal;
 	color: #fff;
 	height: 1.7rem;
 	-webkit-border-radius: 1rem;

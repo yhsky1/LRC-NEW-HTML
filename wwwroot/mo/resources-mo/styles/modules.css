@@ -2017,6 +2017,7 @@ body.fixed {
 }
 
 .bg-dimmed {
+	font: 0/0 a;
 	display: none;
 	position: fixed;
 	top: 0;
@@ -2029,6 +2030,7 @@ body.fixed {
 }
 
 .layer-wrap {
+	line-height: 1;
 	z-index: 60;
 }
 
@@ -2038,8 +2040,6 @@ body.fixed {
 	bottom: 0;
 	left: 0;
 	width: 100%;
-	background-color: #fff;
-	padding: 0 3rem;
 	-webkit-transform: translateY(120%);
 	   -moz-transform: translateY(120%);
 	    -ms-transform: translateY(120%);
@@ -2056,10 +2056,6 @@ body.fixed {
 	        box-sizing: border-box;
 }
 
-.layer-slide-close {
-	cursor: pointer;
-}
-
 .layer-slide.active {
 	-webkit-transform: translateY(0);
 	   -moz-transform: translateY(0);
@@ -2068,12 +2064,67 @@ body.fixed {
 	        transform: translateY(0);
 }
 
+.layer-slide .slide-top {
+	background-color: #fff;
+	-webkit-border-radius: 2rem 2rem 0 0;
+	   -moz-border-radius: 2rem 2rem 0 0;
+	        border-radius: 2rem 2rem 0 0;
+}
+
+.layer-slide .slide-top .layer-slide-close {
+	cursor: pointer;
+	width: 100%;
+	height: 2.3rem;
+	text-align: center;
+	font: 0/0 a;
+}
+
+.layer-slide .slide-top .layer-slide-close:after {
+	content: '';
+	display: inline-block;
+	vertical-align: middle;
+	width: 4.1rem;
+	height: .3rem;
+	background-color: #EBEBEB;
+	-webkit-border-radius: .5rem;
+	   -moz-border-radius: .5rem;
+	        border-radius: .5rem;
+}
+
+.layer-slide .slide-top h4 {
+	font-size: 1.5rem;
+	margin: 0 1.7rem;
+	padding-bottom: 1.4rem;
+	border-bottom: 1px solid #EBEBEB;
+	font-family: "ManropeB", "NotoM", serif;
+	font-weight: normal;
+}
+
 .layer-slide .slide-inner {
-	overflow-y: auto;
+	background-color: #fff;
+	overflow-y: visible;
 	overflow-x: hidden;
-	max-height: -webkit-calc(100vh - 86px);
-	max-height: -moz-calc(100vh - 86px);
-	max-height: calc(100vh - 86px);
+	max-height: -webkit-calc(100vh - 11rem);
+	max-height: -moz-calc(100vh - 11rem);
+	max-height: calc(100vh - 11rem);
+}
+
+.layer-slide .slide-inner .slide-cont {
+	padding: 0 1.7rem;
+}
+
+.layer-slide.layer-filter .filter-col {
+	padding-top: 2.3rem;
+}
+
+.layer-slide.layer-filter .filter-col h5 {
+	font-size: 1.4rem;
+	font-family: "ManropeB", "NotoM", serif;
+	font-weight: normal;
+}
+
+.layer-slide.layer-filter .filter-col:last-child {
+	padding-bottom: 2.3rem;
 }
 
 .layer-popup {
@@ -2081,14 +2132,6 @@ body.fixed {
 	width: 100%;
 	max-width: 30rem;
 	display: none;
-}
-
-.layer-popup.active {
-	-webkit-transform: translateY(0);
-	   -moz-transform: translateY(0);
-	    -ms-transform: translateY(0);
-	     -o-transform: translateY(0);
-	        transform: translateY(0);
 }
 
 .layer-popup .pop-inner {
