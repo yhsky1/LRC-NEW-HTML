@@ -18,10 +18,8 @@
 	left: 0;
 	scrollbar-width: none;
 	-ms-overflow-style: none;
-	-webkit-box-sizing: border-box;
-	   -moz-box-sizing: border-box;
-	        box-sizing: border-box;
-	overflow: auto;
+	overflow-x: visible;
+	overflow-y: hidden;
 	white-space: nowrap;
 	-webkit-overflow-scrolling: touch;
 	width: 100%;
@@ -148,10 +146,8 @@
 }
 
 .estimate-wrap .section-filter .result .filter-list {
-	-webkit-box-sizing: border-box;
-	   -moz-box-sizing: border-box;
-	        box-sizing: border-box;
-	overflow: auto;
+	overflow-x: visible;
+	overflow-y: hidden;
 	white-space: nowrap;
 	-webkit-overflow-scrolling: touch;
 	width: 100%;
