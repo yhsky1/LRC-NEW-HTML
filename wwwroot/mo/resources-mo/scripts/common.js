@@ -115,12 +115,15 @@ $(function(){
 
     /*----  슬라이더  ----*/
     //견적 상단 슬리이더
-    MUI.slide.init('.detail-view-list','swiper', {
-        loop: true,
-        pagination: {
-            el: '.swiper-pagination',
-        },
-    });
+    if($('.detail-view-list').length) {
+        MUI.slide.init('.detail-view-list','swiper', {
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+            },
+        });
+    }
+    
     
 
     //하단 퀵메뉴 모션

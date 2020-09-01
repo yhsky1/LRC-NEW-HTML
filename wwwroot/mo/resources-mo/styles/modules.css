@@ -1169,18 +1169,25 @@ button.swiper-pagination-bullet {
 }
 
 .btn-group {
-	margin: 40px 0;
-	text-align: center;
-}
-
-.btn-group:after {
-	content: '';
-	display: block;
-	clear: both;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	   -moz-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	   -moz-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 }
 
 .btn-group .btn {
-	margin: 0 8px;
+	margin: 0 .4rem;
 }
 
 .btn-group-justified {
@@ -1196,14 +1203,13 @@ button.swiper-pagination-bullet {
 .btn {
 	display: inline-block;
 	vertical-align: middle;
-	font-family: "ManropeB", "NotoM", serif;
-	font-weight: normal;
 	height: 4.7rem;
 	padding: 0 1rem;
-	font-size: 1.4rem;
 	-webkit-box-sizing: border-box;
 	   -moz-box-sizing: border-box;
 	        box-sizing: border-box;
+	line-height: 1;
+	color: #2B2B2B;
 }
 
 .btn-default {
@@ -1212,9 +1218,12 @@ button.swiper-pagination-bullet {
 	-webkit-border-radius: 1rem;
 	   -moz-border-radius: 1rem;
 	        border-radius: 1rem;
+	font-size: 1.4rem;
 	border: 1px solid #B4B8BF;
 	background-color: #B4B8BF;
 	pointer-events: none;
+	font-family: "ManropeB", "NotoM", serif;
+	font-weight: normal;
 }
 
 .btn-default.noRadius {
@@ -1230,11 +1239,13 @@ button.swiper-pagination-bullet {
 }
 
 .btn-simple {
-	color: #888;
 	border: 1px solid #ccc;
-	-webkit-box-shadow: none;
-	   -moz-box-shadow: none;
-	        box-shadow: none;
+	height: 2.8rem;
+	-webkit-border-radius: 1rem;
+	   -moz-border-radius: 1rem;
+	        border-radius: 1rem;
+	font-size: 1.1rem;
+	padding: 0 .9rem;
 }
 
 .btn-simple.active {
@@ -1432,6 +1443,17 @@ a.btn {
 	        background-size: 100% auto;
 	width: 1.7rem;
 	height: 1.7rem;
+}
+
+.icon.info2 {
+	background-repeat: no-repeat;
+	background-image: url("../../resources-mo/images/icons/ico-info2.png");
+	background-position: center center;
+	-webkit-background-size: 100% auto;
+	   -moz-background-size: 100% auto;
+	        background-size: 100% auto;
+	width: 1.3rem;
+	height: 1.3rem;
 }
 
 .list {
