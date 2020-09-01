@@ -210,16 +210,16 @@ var MUI = MUI || {
             $('body').removeClass('fixed');
             $('body').css({top:0});
 			$(window).scrollTop(that.scrollTop);
-			if($('.layer-slide').css('opacity') === '1') {
+			//if($('.layer-slide').css('opacity') === '1') {
 				$('.layer-slide').removeClass('active');
 				setTimeout(function(){
 					$('.layer-slide').css({opacity:0});
 				}, 400);
-			}
-			if($('.layer-popup').is(':visible')) {
+			//}
+			//if($('.layer-popup').is(':visible')) {
 				$('.layer-popup').hide();
 				$(window).off('resize.layer');
-			}
+			//}
             
         },
 	},

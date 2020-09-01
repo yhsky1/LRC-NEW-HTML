@@ -21,12 +21,10 @@
 	-webkit-box-sizing: border-box;
 	   -moz-box-sizing: border-box;
 	        box-sizing: border-box;
-	overflow-x: visible;
-	overflow-y: hidden;
+	overflow: auto;
 	white-space: nowrap;
 	-webkit-overflow-scrolling: touch;
 	width: 100%;
-	padding: 0.1rem 0;
 	font-family: "ManropeB", "NotoM", serif;
 	font-weight: normal;
 	background-color: #EFF2F7;
@@ -153,12 +151,10 @@
 	-webkit-box-sizing: border-box;
 	   -moz-box-sizing: border-box;
 	        box-sizing: border-box;
-	overflow-x: visible;
-	overflow-y: hidden;
+	overflow: auto;
 	white-space: nowrap;
 	-webkit-overflow-scrolling: touch;
 	width: 100%;
-	padding: 0.1rem 0;
 	scrollbar-width: none;
 	-ms-overflow-style: none;
 	padding-left: 1.7rem;

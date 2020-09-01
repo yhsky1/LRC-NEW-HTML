@@ -94,8 +94,8 @@
 						</a>
 					</li>
 
-					<li>
-						<a href="#">
+					<li >
+						<a href="#" class="layer-promotion-open" data-layer="layer-promotion">
 							<div class="inner">
 								<div class="img">
 									<div class="flag pro"><i class="icon pro"></i> 프로모션</div>
@@ -125,6 +125,7 @@
 				</ul>
 			</div>
 			<!--//리스트-->
+			
 
 		</div>
 		<!--//견적-->
@@ -135,7 +136,7 @@
 	<footer class="footer">
 	</footer>
 
-	<!--layer-slide 컴포넌트-->
+	<!--layer-slide 상세조건 컴포넌트-->
 	<div class="layer-wrap layer-slide layer-filter" data-type="slide">
 
 		<!--상단-->
@@ -188,24 +189,51 @@
 							<div class="price-box">
 								<div id="slider-price"></div>
 							</div>
+							<div class="price-txt">
+								<span>0원</span>
+								<span>20만원</span>
+								<span>40만원</span>
+								<span>60만원</span>
+								<span>80만원~</span>
+							</div>
 							<input type="hidden" name="min_price" id="min_slider_price" value=""/>
 							<input type="hidden" name="max_price" id="max_slider_price" value=""/>
 						</div>
 					</div>
-
-					
 					
 				</div>
 				<div class="slide-btn">
-
+					<button type="button" class="btn btn-default active">확인</button>
 				</div>
 			</form>
 		</div>
 		<!--//컨텐츠-->
 
 	</div>
-	<!--//layer-slide 컴포넌트-->
+	<!--//layer-slide 상세조건 컴포넌트-->
 
+	<!--layer-slide 프로모션 컴포넌트-->
+	<div class="layer-wrap layer-slide layer-promotion" data-type="slide">
+		<!--상단-->
+		<div class="slide-top">
+			<button type="button" class="layer-slide-close" data-layer="layer-filter">닫기 버튼</button>
+			<h4>테슬라</h4>
+		</div>
+		<!--//상단-->
+		<!--컨텐츠-->
+		<div class="slide-inner">
+			<div class="slide-cont">
+				<br/><br/><br/><br/><br/>
+				(기획전 목록 유형 스타일 사용)
+				<br/><br/><br/><br/><br/>
+			</div>
+			<div class="slide-btn">
+				<button type="button" class="btn btn-default noRadius active">확인</button>
+			</div>
+		</div>
+		<!--//컨텐츠-->	
+	</div>
+	<!--//layer-slide 프로모션 컴포넌트-->
 
 
 </body>

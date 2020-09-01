@@ -32,19 +32,15 @@ $(function(){
             //console.log('open');
             show();
         });
-        MUI.layer.closeClick('.layer-slide-close', LAYER_DIM, LAYER_PARENT, function(hide){
-            //console.log('close');
-            hide();
-        });
 
         //필터 슬라이드 내 슬라이드
         $('#slider-price').slider({
             range: true,
             min: 0,							// 최저
-            max: 60,						// 최고
+            max: 80,						// 최고
             orientation: 'horizontal',		// 바타입 수평
-            step: 10,						// 스텝
-            values: [0, 60],				// 디폴트 값
+            step: 20,						// 스텝
+            values: [0, 80],				// 디폴트 값
             start: function(event, ui) {	// start
             },
             slide: function(event, ui) {	// mouse movement
@@ -61,7 +57,28 @@ $(function(){
 
             }
         });
+
+        $('.price-all').on('click', function(e) {
+			$('#slider-price').slider('values', [0, 80]);
+		});
     
+    }
+
+    //프로모션 슬라이드 팝업
+    if($('.layer-promotion').length) {
+        MUI.layer.openClick('.layer-promotion-open', LAYER_DIM, LAYER_PARENT, function(show){
+            //console.log('open');
+            show();
+        });
+        
+    }
+
+    //슬라이드 팝업 공통 닫기
+    if($('.layer-slide').length) {
+        MUI.layer.closeClick('.layer-slide-close', LAYER_DIM, LAYER_PARENT, function(hide){
+            //console.log('close');
+            hide();
+        });
     }
 
     //일반 레이어팝업 테스트

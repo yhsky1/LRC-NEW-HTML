@@ -76,20 +76,118 @@ body.fixed {
 		//필터 슬라이드
 		&.layer-filter {
 			.filter-col {
+				position: relative;
 				padding-top: 2.3rem;
 				h5 {
 					font-size: 1.4rem;
 					@include Bold;
 				}
+				.price-all {
+					border-bottom:1px solid #2B2B2B;
+					@include Position($top: 2rem, $right: 0);
+				}
 				.chk-list {
+					margin-top: .4rem;
+					ul{
+						@include Align-box;
+						margin-left: -.4rem;
+						width: 103%;
+					}
 					li {
-						
+						width:33.333%;
+						input {
+							display: none;
+						}
+						label {
+							position: relative;
+							height: 4.1rem;
+							display: block;
+							@include Align-middle;
+							box-sizing: border-box;
+							font-size: 1.2rem;
+							border-radius: 1rem;
+							border: .15rem solid #EBEBEB;
+							padding: 0 1.2rem;
+							margin: .8rem .4rem 0;
+							transition: all .4s;
+						}
+						input:checked + label {
+							border-color: #2B2B2B;
+							@include Bold;
+							&:after {
+								display: block;
+								content: '';
+								@include Position( $top: .7rem, $right: .7rem);
+								z-index: 1;
+								width: .5rem;
+								height: .5rem;
+								margin-left: -.2rem;
+								border-radius: 100%;
+								background-color: #F04040;
+							}
+						}
+					}
+				}
+				.price_box_case {
+					position: relative;
+					&:before {
+						display: block;
+						content: '';
+						width: 100%;
+						width: calc(100% - 1.3rem);;
+						height: .5rem;
+						background-color: #EBEBEB;
+						border-radius: .5rem;
+						margin: 1.7rem 0;
+					}
+					.price-box {
+						@include Position($top: 0, $right: 0);
+						width: 100%;
+						.ui-widget.ui-widget-content {
+							background-color: #EBEBEB;
+							border:0;
+							height: .5rem;
+							margin: 0 2.5rem 0 .8rem;
+						}
+						.ui-slider .ui-slider-range {
+							background-color: #f04040;
+							height: .5rem;
+						}
+						.ui-slider-horizontal .ui-slider-handle {
+							width: 1.7rem;
+							height: 1.7rem;
+							background-color: #fff;
+							border-radius: 100%;
+							top: -.7rem;
+							border: 0;
+							box-shadow: 0 1px 5px rgba(96,97,112,0.3);
+						}
+					}
+					.price-txt {
+						@include Align-between;
+						span {
+							@include Bold;
+							position: relative;
+							&:first-child {
+								margin-right: 1rem;
+							}
+							&:after {
+								display: block;
+								content: '';
+								@include Position($top:-2.05rem, $left:50%);
+								background-color: #fff;
+								width: .2rem;
+								height: .2rem;
+								border-radius: 100%;
+								margin-left: -.1rem;
+							}
+						}
 					}
 				}
 
-				&:last-child {
-					padding-bottom: 2.3rem;
-				}
+			}
+			.slide-btn {
+				padding: 2.6rem 1.7rem;
 			}
 		}
 
