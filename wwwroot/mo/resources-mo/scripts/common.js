@@ -111,11 +111,20 @@ $(function(){
         logic();
     });
 
+    //견적 텝이동
+    if($('.estimate-wrap .detail-view-list').length) {
+        MUI.event.goTarget('.menu-link');
+
+        $(window).on('scroll', function(){
+            var scrollTop = $(this).scrollTop();
+            MUI.event.scrollTaps(scrollTop, $('.estimate-wrap .layer-item'), $('.estimate-wrap .menu-link'));
+        });
+    }
 
 
     /*----  슬라이더  ----*/
     //견적 상단 슬리이더
-    if($('.detail-view-list').length) {
+    if($('.estimate-wrap .detail-view-list').length) {
         MUI.slide.init('.detail-view-list','swiper', {
             loop: true,
             pagination: {

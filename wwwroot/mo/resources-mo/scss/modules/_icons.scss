@@ -31,10 +31,41 @@
         width: 1.7rem;
         height: 1.7rem;
     }
+    &.info {
+        @include Background($sprite:'ico-info', $type:'png', $size:100% auto, $position:center center);
+        width: 1.3rem;
+        height: 1.3rem;
+    }
     &.info2 {
         @include Background($sprite:'ico-info2', $type:'png', $size:100% auto, $position:center center);
         width: 1.3rem;
         height: 1.3rem;
     }
+    &.fuelG {
+        @include Background($sprite:'ico-fuel-g', $type:'png', $size:100% auto, $position:center center);
+        width: 2.2rem;
+        height: 2.2rem;
+    }
+    &.fuelD {
+        @include Background($sprite:'ico-fuel-d', $type:'png', $size:100% auto, $position:center center);
+        width: 2.2rem;
+        height: 2.2rem;
+    }
+    &.fuelL {
+        @include Background($sprite:'ico-fuel-l', $type:'png', $size:100% auto, $position:center center);
+        width: 2.2rem;
+        height: 2.2rem;
+    }
+    &.fuelH {
+        @include Background($sprite:'ico-fuel-h', $type:'png', $size:100% auto, $position:center center);
+        width: 2.2rem;
+        height: 2.2rem;
+    }
+    &.fuelE {
+        @include Background($sprite:'ico-fuel-e', $type:'png', $size:100% auto, $position:center center);
+        width: 2.2rem;
+        height: 2.2rem;
+    }
+
 }
 

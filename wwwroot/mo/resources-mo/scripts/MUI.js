@@ -479,7 +479,32 @@ var MUI = MUI || {
 				width = $activeTarget.outerWidth(true);
 			$target.scrollLeft(left - ($(document).width() - width) / 2);
 		},
-
+		goTarget: function(target){
+			$(document).on('click', target, function(e){
+				var hrefString = $(this).data('target'),
+					offsetTop = $('.' + hrefString).offset(),
+					navHeight = $('.detail-layer-nav').height();
+				//console.log(hrefString, offsetTop, navHeight);
+				if(offsetTop){
+					offsetTop = offsetTop.top - navHeight;
+					$('html, body').stop().animate({'scrollTop': offsetTop}, 500,function(){
+						//console.log('callback');
+					});
+					$(this).siblings().removeClass('on');
+				}
+			});
+		},
+		scrollTaps: function(scrollTop, $target, $nav){
+			var navHeight = $('.detail-layer-nav').height();
+			$target.each(function(){
+				var top_of_element = $(this).offset().top;
+				var idx = $(this).attr('data-link');
+				if((scrollTop >= top_of_element - navHeight - 5) ){
+					$nav.siblings().removeClass('active');
+					$nav.eq(idx).addClass('active');
+				}
+			});
+		},
 
 	},
 	iscrolls: {
