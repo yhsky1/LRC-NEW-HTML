@@ -156,7 +156,7 @@ $(function(){
         });
     }
 
-    //견적 step6 모델 선택
+    //견적 step6 계약조건 선택
     if($('.estimate-wrap .item-step6').length) {
         MUI.event.toggle('.item-step6 .model-toggle-btn', '.item-step6 .model-toggle-cont', function(logic, layer) {
             //console.log('toggle');
