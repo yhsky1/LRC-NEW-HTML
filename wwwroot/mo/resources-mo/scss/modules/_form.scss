@@ -4,7 +4,7 @@
 	input {display: none;}
 	label {
 		i {
-			@include Background($sprite:'ico-input-off', $type:'png', $size:95% auto, $position:center center);
+			@include Background($sprite:'ico-radio-off', $type:'png', $size:95% auto, $position:center center);
 			width: 1.5rem;
 			height: 1.5rem;
 		}
@@ -35,9 +35,41 @@
 			display: block;
 			content: '';
 			@include Position($top: .7rem, $right: .7rem);
-			@include Background($sprite:'ico-input-off', $type:'png', $size:95% auto, $position:center center);
+			@include Background($sprite:'ico-radio-off', $type:'png', $size:95% auto, $position:center center);
 			width: 1.5rem;
 			height: 1.5rem;
+		}
+	}
+	input:checked + label {
+		border-color: #2B2B2B;
+		@include Bold;
+		:after {
+			@include Background($sprite:'ico-radio-on', $type:'png', $size:95% auto, $position:center center);
+		}
+	}
+	input {
+		display: none;
+	}
+}
+.radioIconBox2 {
+	label {
+		@include Align-between;
+		transition: all .4s;
+		box-sizing: border-box;
+		border: 1px solid #EBEBEB;
+		border-radius: 1rem;
+		position: relative;
+		background-color: #fff;
+		height: 4.1rem;
+		padding: 0 .9rem 0 2.6rem;
+		:after {
+			display: block;
+			content: '';
+			@include Position($top: 50%, $left: .7rem);
+			@include Background($sprite:'ico-radio-off', $type:'png', $size:95% auto, $position:center center);
+			width: 1.5rem;
+			height: 1.5rem;
+			margin-top: -.75rem;
 		}
 	}
 	input:checked + label {

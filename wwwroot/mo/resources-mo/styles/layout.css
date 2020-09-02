@@ -96,7 +96,8 @@
 }
 
 .header-top.sub h1 {
-	font-family: "ManropeB", "NotoM", serif;
+	/*font-family:"ManropeB", "NotoM", serif;*/
+	font-family: "SpoqaB", serif;
 	font-weight: normal;
 	padding: 0 6rem;
 	word-break: break-all;

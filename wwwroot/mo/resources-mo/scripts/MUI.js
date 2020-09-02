@@ -240,17 +240,17 @@ var MUI = MUI || {
 					
 					if(onClass){
 						
-						if(parent === null ? $this.hasClass('on') : layer.is(':visible')){
-							$this.removeClass('on');
-							layer.removeClass('on');
+						if(parent === null ? $this.hasClass('active') : layer.is(':visible')){
+							$this.removeClass('active');
+							layer.removeClass('active');
 						}
 						else{
 							if(siblings){
-								$targetDiv.removeClass('on');
-								$parent.removeClass('on');
+								$targetDiv.removeClass('active');
+								$parent.removeClass('active');
 							}
-							$this.addClass('on');
-							layer.addClass('on');
+							$this.addClass('active');
+							layer.addClass('active');
 						}	
 					}
 	
@@ -490,7 +490,7 @@ var MUI = MUI || {
 					$('html, body').stop().animate({'scrollTop': offsetTop}, 500,function(){
 						//console.log('callback');
 					});
-					$(this).siblings().removeClass('on');
+					$(this).siblings().removeClass('active');
 				}
 			});
 		},

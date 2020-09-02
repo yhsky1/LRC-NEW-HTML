@@ -26,6 +26,8 @@ $(function(){
     if($('.estimate-wrap .section-nav').length) { MUI.event.navCenter($('.estimate-wrap .section-nav'), 'active'); }
 
 
+
+    /* 레이어팝업-------------------------------------------------*/
     //필터 슬라이드 팝업
     if($('.layer-filter').length) {
         MUI.layer.openClick('.layer-filter-open', LAYER_DIM, LAYER_PARENT, function(show){
@@ -111,18 +113,8 @@ $(function(){
         logic();
     });
 
-    //견적 텝이동
-    if($('.estimate-wrap .detail-view-list').length) {
-        MUI.event.goTarget('.menu-link');
 
-        $(window).on('scroll', function(){
-            var scrollTop = $(this).scrollTop();
-            MUI.event.scrollTaps(scrollTop, $('.estimate-wrap .layer-item'), $('.estimate-wrap .menu-link'));
-        });
-    }
-
-
-    /*----  슬라이더  ----*/
+    /* 견적-------------------------------------------------*/
     //견적 상단 슬리이더
     if($('.estimate-wrap .detail-view-list').length) {
         MUI.slide.init('.detail-view-list','swiper', {
@@ -132,8 +124,40 @@ $(function(){
             },
         });
     }
+
+    //견적 텝이동
+    if($('.estimate-wrap .detail-layer-nav').length) {
+        MUI.event.goTarget('.menu-link');
+
+        $(window).on('scroll', function(){
+            var scrollTop = $(this).scrollTop();
+            MUI.event.scrollTaps(scrollTop, $('.estimate-wrap .layer-item'), $('.estimate-wrap .menu-link'));
+        });
+    }
+
+    //견적 step1 라디오버튼 선택
+    if($('.estimate-wrap .item-step1').length) {
+        $('.estimate-wrap .item-step1').on('change', '.radio-box input', function(e){
+            if(e.target.value === 'E'){
+                $('.estimate-wrap .electric').addClass('active');
+            }
+            else{
+                $('.estimate-wrap .electric').removeClass('active');
+            }
+        });
+    }
+
+    //견적 step2 모델 선택
+    if($('.estimate-wrap .item-step2').length) {
+        MUI.event.toggle('.model-toggle-btn', '.model-toggle-cont', function(logic, layer) {
+            //console.log('toggle');
+            $('.estimate-wrap .item-step2 input').prop('checked', false);
+            logic();
+        });
+    }
     
     
+
 
     //하단 퀵메뉴 모션
     if($('.fixedBottom').length) { MUI.event.fixedBottom($('.fixedBottom')); }

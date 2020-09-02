@@ -262,8 +262,11 @@
             .layer-item {
                 margin-top:1.1rem;
                 background-color:#fff;
-                border-radius: 2rem;
+                border-radius: 1.5rem;
+                padding: 1.7rem 0 2.3rem;
                 h3 {
+                    margin: 0 1.7rem;
+                    padding-bottom: 1.7rem;
                     span {
                         font-size: 1rem;
                         color: #ccc;
@@ -280,9 +283,8 @@
                         }
                     }
                 }
+
                 &.item-step1 {
-                    padding: 1.7rem 0;
-                    h3 {margin-bottom: 1.7rem;}
                     .item-cont {
                         .radio-box {padding: 0 1.7rem;}
                         ul {
@@ -297,12 +299,109 @@
                         }
                         .electric {
                             @include Align-middle;
-                            .inputR {
-                                margin: 0 .4rem;
+                            background-color: #F9FAFC;
+                            border-top:1px solid #EBEBEB;
+                            border-bottom:1px solid #EBEBEB;
+                            height: 4.1rem;
+                            margin-top: 1.4rem;
+                            position: relative;
+                            display: none;
+                            &.active {
+                                display: flex;
+                            }
+                            &:after {
+                                display: block;
+                                content: '';
+                                @include Position($top: -1rem, $left: 50%);
+                                @include Background($sprite:'ico-arrow', $type:'png', $size:100% auto, $position:center center);
+                                width: 1.3rem;
+                                height: 1.3rem;
+                                margin-left: -.75rem
+                            }
+                            .inputR + .inputR{
+                                margin-left: 2rem;
                             }
                         }
                     }
                 }
+
+                &.item-step2 {
+                    h3 {border-bottom: 1px solid #EBEBEB;}
+                    .item-cont {
+                        .guide {
+                            font-size: 1.1rem;
+                            line-height: 1.3;
+                            margin-top: 1.2rem;
+                            color: #999;
+                            padding: 0 1.7rem;
+                        }
+                        .model-all {
+                            padding: 2.3rem 1.7rem 1.7rem;
+                            @include Bold;
+                            b {color: #F04040;margin-left: .4rem;}
+                        }
+                        .model-list {
+                            ul {border-top: 1px solid #EBEBEB;}
+                            li {border-bottom: 1px solid #EBEBEB;}
+                        }
+                        .model-toggle-btn {
+                            padding:1.7rem;
+                            cursor: pointer;
+                            position: relative;
+                            &:after {
+                                display: block;
+                                content: '';
+                                @include Position($top: 2rem, $right: 1.7rem);
+                                @include Background($sprite:'ico-arrow-down', $type:'png', $size:100% auto, $position:center center);
+                                width: .9rem;
+                                height: .9rem;
+                                transition: transform .5s;
+                                transform: rotate(0deg);
+                            }
+                            &.active {
+                                background-color: #F9FAFC;
+                                padding-bottom: 0;
+                                @include Bold;
+                            }
+                            &.active:after {
+                                transform: rotate(180deg);
+                            }
+                        }
+                        .model-toggle-cont {
+                            display: none;
+                            background-color: #F9FAFC;
+                            padding: 1.7rem;
+                            .radioIconBox2 + .radioIconBox2 {margin-top: .9rem;}
+                        }
+                    }
+                }
+
+                &.item-step3 {
+                    h3 {border-bottom: 1px solid #EBEBEB;}
+                    .item-cont {
+                        
+                    }
+                }
+
+                &.item-step4 {
+                    .item-cont {
+                        
+                    }
+                }
+
+                &.item-step5 {
+                    .item-cont {
+                        
+                    }
+                }
+
+                &.item-step6 {
+                    h3 {border-bottom: 1px solid #EBEBEB;}
+                    .item-cont {
+                        
+                    }
+                }
+
             }
 
 

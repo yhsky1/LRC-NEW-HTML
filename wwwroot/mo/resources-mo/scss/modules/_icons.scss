@@ -69,3 +69,23 @@
 
 }
 
+
+.flag {
+    height: 1.7rem;
+    border-radius: 1rem;
+    padding: 0 .7rem;
+    font-size: .9rem;
+    box-sizing: border-box;
+    @include Inline-align-middle;
+    @include Nomal;
+    &.best {
+        border: 1px solid #25C1D6;
+        color: #25C1D6;
+        margin-left: .4rem;
+    }
+    &.low {
+        border: 1px solid #9198FF;
+        color: #9198FF;
+        margin-left: .4rem;
+    }
+}

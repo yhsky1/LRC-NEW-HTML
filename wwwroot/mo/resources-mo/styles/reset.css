@@ -45,11 +45,12 @@ html {
 
 body {
 	width: 100%;
-	letter-spacing: -.05em;
+	letter-spacing: -.05rem;
 	word-break: keep-all;
 	color: #111;
 	background-color: #fff;
-	font-family: "ManropeL", "NotoL", serif;
+	/*font-family:"ManropeL", "NotoL", serif;*/
+	font-family: "SpoqaL", serif;
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: -moz-box;
@@ -121,6 +122,34 @@ a, button, input, img, div, span {
 	-webkit-tap-highlight-color: transparent;
 	-webkit-touch-callout: none;
 	outline: none;
+}
+
+@font-face {
+	font-family: "SpoqaL";
+	src: url("../font/Spoqa/Spoqa-Light.woff") format("woff"), url("../font/Spoqa/Spoqa-Light.woff2") format("woff2");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "SpoqaB";
+	src: url("../font/Spoqa/Spoqa-Bold.woff") format("woff"), url("../font/Spoqa/Spoqa-Bold.woff2") format("woff2");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "SpoqaR";
+	src: url("../font/Spoqa/Spoqa-Regular.woff") format("woff"), url("../font/Spoqa/Spoqa-Regular.woff2") format("woff2");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "SpoqaT";
+	src: url("../font/Spoqa/Spoqa-Thin.woff") format("woff"), url("../font/Spoqa/Spoqa-Thin.woff2") format("woff2");
+	font-weight: normal;
+	font-style: normal;
 }
 
 @font-face {
