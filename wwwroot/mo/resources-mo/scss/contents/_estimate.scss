@@ -204,43 +204,62 @@
             }
 
         }
-
+        .detail-layer-top {
+            @include Position( $position:sticky, $top: -9rem, $left: 0);
+            display: flex;
+            flex-flow: column;
+            align-items:left;
+            justify-content: center;
+            background-color: #fff;
+            padding:0 1.7rem;
+            //overflow: hidden;
+            border-radius: 2rem 2rem 0 0;
+            height: 12rem;
+            z-index: 2;
+            .fix {
+                display: none;
+            }
+            .logo {
+                width: 4rem;
+            }
+            h2 {
+                @include Bold;
+                font-size: 1.7rem;
+                margin-top: .7rem;
+            }
+            ul {
+                @include Align-between;
+                max-width: 30rem;
+                margin-top: 1.5rem;
+                width: 100%;
+                li{
+                    font-size: 1.1rem;
+                }
+            }
+            .btn-group {
+                @include Position($top:1.7rem, $right:1.7rem)
+            }
+            &.sticky {
+                //border-radius: 0;
+                justify-content: flex-end;
+                .normal {display: none;}
+                .fix {
+                    @include Align-middle;
+                    h2 {margin:0 0 0 .4rem;}
+                }
+            }
+        }
         .detail-layout {
             position: relative;
             z-index: 1;
             background-color: #EFF2F7;
             border-radius: 2rem 2rem 0 0;
-            .detail-layer-top {
-                position: relative;
-                background-color: #fff;
-                padding:1.7rem 1.7rem 2.6rem;
-                overflow: hidden;
-                border-radius: 2rem 2rem 0 0;
-                .logo {
-                    width: 4rem;
-                }
-                h2 {
-                    @include Bold;
-                    font-size: 1.7rem;
-                    margin-top: .7rem;
-                }
-                ul {
-                    @include Align-between;
-                    max-width: 30rem;
-                    margin-top: 1.5rem;
-                    li{
-                        font-size: 1.1rem;
-                    }
-                }
-                .btn-group {
-                    @include Position($top:1.7rem, $right:1.7rem)
-                }
-            }
+            
             .detail-layer-cont {
                 position: relative;
             }
             .detail-layer-nav {
-                @include Position( $position:sticky, $top: 0, $left: 0);
+                @include Position( $position:sticky, $top: 3rem, $left: 0);
                 @include Align-middle;
                 overflow: hidden;
                 background-color: #2B2B2B;

@@ -125,6 +125,23 @@ $(function(){
         });
     }
 
+    //견적 detail-layer-top 스크롤 체크
+    if($('.estimate-wrap .detail-layer-top').length) {
+        var $target = $('.estimate-wrap .detail-layer-top'),
+            topHeight = $target.height(),
+            targetTop = $target.offset().top;
+        $(window).on('scroll', function(){
+            var winTop = $(window).scrollTop();
+            console.log(winTop,topHeight,targetTop);
+            if(winTop >= (targetTop + topHeight*2)) {
+                $target.addClass('sticky');
+            }
+            else{
+                $target.removeClass('sticky');
+            }
+        });
+    }
+
     //견적 텝이동
     if($('.estimate-wrap .detail-layer-nav').length) {
         MUI.event.goTarget('.menu-link');
