@@ -133,6 +133,7 @@
                     span {
                         margin-top: .4rem;
                         display: block;
+                        @include Bold;
                     }
                 }
 
@@ -371,7 +372,6 @@
                             display: none;
                             background-color: #F9FAFC;
                             padding: 1.7rem;
-                            .radioIconBox2 + .radioIconBox2 {margin-top: .9rem;}
                         }
                     }
                 }
@@ -379,26 +379,121 @@
                 &.item-step3 {
                     h3 {border-bottom: 1px solid #EBEBEB;}
                     .item-cont {
-                        
+                        margin-top: 2.3rem;
+                        .color-list {
+                            margin-top: 1.3rem;
+                            .list-top {
+                                @include Align-between;
+                                padding: 0 1.7rem;
+                                margin-bottom: 1rem;
+                                h4 {@include Bold;}
+                            }
+                        }
+                        ul {
+                            @include Inline-scrolling;
+                            @include NoscrollBar;
+                            padding-bottom:1rem;
+                            padding-left: 1.7rem;
+                            li{
+                                @include Inline-align-middle;
+                                margin-right: .4rem;
+                                input {display: none;}
+                                label {
+                                    @include Hide_txt;
+                                    display: block;
+                                    width: 4.1rem;
+                                    height: 4.1rem;
+                                    border-radius: 1rem;
+                                    border: 1px solid #EBEBEB;
+                                    cursor: pointer;
+                                    box-sizing: border-box;
+                                    transition: border-color .4s;
+                                    position: relative;
+                                    .flag {
+                                        @include Position($bottom: -.8rem, $left: .3rem);
+                                        background-color:#fff;
+                                        margin: 0;
+                                    }
+                                }
+                                input:checked + label {
+                                    border-color: #2B2B2B;
+                                    &:after {
+                                        display:block;
+                                        content: '';
+                                        @include Position($top: 50%, $left: 50%);
+                                        @include Background($sprite:'ico-chk', $type:'png', $size:100% auto, $position:center center);
+                                        width: 1.4rem;
+                                        height: 1.4rem;
+                                        margin: -.7rem 0 0 -.7rem;
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
 
                 &.item-step4 {
                     .item-cont {
-                        
+                        .guide {
+                            font-size:1rem;
+                            color:#999;
+                            padding: 0 1.7rem .4rem;
+                            text-align:right;
+                        }
+                        .chk-box {
+                            padding: 0 1.7rem;
+                        }
                     }
                 }
 
                 &.item-step5 {
                     .item-cont {
-                        
+                        .guide {
+                            font-size:1rem;
+                            color:#999;
+                            padding: 0 1.7rem .4rem;
+                            text-align:right;
+                        }
+                        .chk-box {
+                            padding: 0 1.7rem;
+                        }
                     }
                 }
 
                 &.item-step6 {
                     h3 {border-bottom: 1px solid #EBEBEB;}
                     .item-cont {
-                        
+                        .radio-box {
+                            margin-top: 2.6rem;
+                            padding: 0 1.7rem;
+                            position: relative;
+                            h4 {
+                                @include Bold;
+                                @include Align-middle;
+                                justify-content: left;
+                                margin-bottom: 1rem;
+                                button {
+                                    margin-left: .4rem;
+                                }
+                            }
+                        }
+                        .btn-toggle {
+                            @include Position($top: 0, $right: 1.7rem)
+                        }
+                    }
+                    .model-toggle-cont {
+                        background-color: #F9FAFC;
+                        border: 1px solid #EBEBEB;
+                        border-radius: 1rem;
+                        margin-top: .6rem;
+                        padding-bottom:1.5rem;
+                        display: none;
+                        .radio-box {
+                            margin-top: 1.5rem;
+                            label{
+                                background-color: #fff;
+                            }
+                        }
                     }
                 }
 

@@ -45,7 +45,7 @@ html {
 
 body {
 	width: 100%;
-	letter-spacing: -.05rem;
+	letter-spacing: 0rem;
 	word-break: keep-all;
 	color: #111;
 	background-color: #fff;

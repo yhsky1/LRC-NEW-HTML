@@ -1254,6 +1254,49 @@ button.swiper-pagination-bullet {
 	border-color: #0074b2;
 }
 
+.btn-toggle {
+	width: 1.7rem;
+	height: 1.7rem;
+	position: relative;
+	cursor: pointer;
+}
+
+.btn-toggle:after {
+	display: block;
+	content: '';
+	position: absolute;
+	top: 50%;
+	right: 50%;
+	background-repeat: no-repeat;
+	background-image: url("../../resources-mo/images/icons/ico-arrow-down.png");
+	background-position: center center;
+	-webkit-background-size: 100% auto;
+	   -moz-background-size: 100% auto;
+	        background-size: 100% auto;
+	width: .9rem;
+	height: .9rem;
+	margin: -.45rem -.45rem 0 0;
+	-webkit-transition: -webkit-transform .5s;
+	transition: -webkit-transform .5s;
+	-o-transition: -o-transform .5s;
+	-moz-transition: transform .5s, -moz-transform .5s;
+	transition: transform .5s;
+	transition: transform .5s, -webkit-transform .5s, -moz-transform .5s, -o-transform .5s;
+	-webkit-transform: rotate(0deg);
+	   -moz-transform: rotate(0deg);
+	    -ms-transform: rotate(0deg);
+	     -o-transform: rotate(0deg);
+	        transform: rotate(0deg);
+}
+
+.btn-toggle.active:after {
+	-webkit-transform: rotate(180deg);
+	   -moz-transform: rotate(180deg);
+	    -ms-transform: rotate(180deg);
+	     -o-transform: rotate(180deg);
+	        transform: rotate(180deg);
+}
+
 .btn-link {
 	padding: 0 0 0 15px;
 	color: #0061a0;
@@ -1524,11 +1567,11 @@ a.btn {
 }
 
 .flag {
-	height: 1.7rem;
+	height: 1.5rem;
 	-webkit-border-radius: 1rem;
 	   -moz-border-radius: 1rem;
 	        border-radius: 1rem;
-	padding: 0 .7rem;
+	padding: 0 .5rem;
 	font-size: .9rem;
 	-webkit-box-sizing: border-box;
 	   -moz-box-sizing: border-box;
@@ -2342,6 +2385,27 @@ body.fixed {
 	     box-sizing: border-box;
 }
 
+.selectbox {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+	border: 1px solid #EBEBEB;
+	-webkit-border-radius: 1rem;
+	   -moz-border-radius: 1rem;
+	        border-radius: 1rem;
+	position: relative;
+	background-color: #fff;
+	height: 4.1rem;
+	padding: 0 2.5rem 0 .9rem;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-image: url("../../resources-mo/images/icons/ico-arrow-down.png");
+	background-position: center right 0.9rem;
+	-webkit-background-size: 0.9rem 0.9rem;
+	   -moz-background-size: 0.9rem;
+	        background-size: 0.9rem;
+}
+
 .inputR {
 	display: inline-block;
 	vertical-align: middle;
@@ -2452,7 +2516,7 @@ body.fixed {
 	display: none;
 }
 
-.radioIconBox2 label {
+.iconBox label {
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: -moz-box;
@@ -2485,7 +2549,7 @@ body.fixed {
 	padding: 0 .9rem 0 2.6rem;
 }
 
-.radioIconBox2 label :after {
+.iconBox label:after {
 	display: block;
 	content: '';
 	position: absolute;
@@ -2502,14 +2566,23 @@ body.fixed {
 	margin-top: -.75rem;
 }
 
-.radioIconBox2 input:checked + label {
+.iconBox input[type='checkbox'] + label:after {
+	background-repeat: no-repeat;
+	background-image: url("../../resources-mo/images/icons/ico-chk-off.png");
+	background-position: center center;
+	-webkit-background-size: 95% auto;
+	   -moz-background-size: 95% auto;
+	        background-size: 95% auto;
+}
+
+.iconBox input:checked + label {
 	border-color: #2B2B2B;
 	/*font-family:"ManropeB", "NotoM", serif;*/
 	font-family: "SpoqaB", serif;
 	font-weight: normal;
 }
 
-.radioIconBox2 input:checked + label :after {
+.iconBox input:checked + label:after {
 	background-repeat: no-repeat;
 	background-image: url("../../resources-mo/images/icons/ico-radio-on.png");
 	background-position: center center;
@@ -2518,171 +2591,58 @@ body.fixed {
 	        background-size: 95% auto;
 }
 
-.radioIconBox2 input {
+.iconBox input[type='checkbox']:checked + label:after {
+	background-repeat: no-repeat;
+	background-image: url("../../resources-mo/images/icons/ico-chk-on.png");
+	background-position: center center;
+	-webkit-background-size: 95% auto;
+	   -moz-background-size: 95% auto;
+	        background-size: 95% auto;
+}
+
+.iconBox input {
 	display: none;
 }
 
-.selectbox {
-	position: relative;
-	display: block;
-	height: 40px;
-	line-height: 40px;
-	border: 1px solid #ccc;
+.iconBox + .iconBox {
+	margin-top: .6rem;
+}
+
+.iconList {
 	-webkit-box-sizing: border-box;
 	   -moz-box-sizing: border-box;
 	        box-sizing: border-box;
-	background-color: #fff;
+	border: 1px solid #EBEBEB;
+	-webkit-border-radius: 1rem;
+	   -moz-border-radius: 1rem;
+	        border-radius: 1rem;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	    -ms-flex-wrap: wrap;
+	        flex-wrap: wrap;
 	overflow: hidden;
 }
 
-.selectbox:before, .selectbox:after {
-	content: '';
-	position: absolute;
-	right: 20px;
-	display: block;
-	width: 0;
-	height: 0;
-	border-style: solid;
-}
-
-.selectbox:before {
-	bottom: 50%;
-	margin-bottom: 1px;
-	border-width: 0 6px 8px 6px;
-	border-color: transparent transparent #535353 transparent;
-}
-
-.selectbox:after {
-	top: 50%;
-	margin-top: 1px;
-	border-width: 8px 6px 0 6px;
-	border-color: #535353 transparent transparent transparent;
-}
-
-.selectbox select {
+.iconList li {
 	width: 100%;
-	height: 100%;
-	padding-left: 20px;
-	padding-right: 40px;
-	color: #000;
-	font-size: 13px;
-	border: none;
-	background-color: transparent;
-	-webkit-appearance: none;
-	   -moz-appearance: none;
-	        appearance: none;
 }
 
-.selectbox select::-ms-expand {
+.iconList li input {
 	display: none;
 }
 
-.selectbox-inline {
-	display: inline-block;
-	vertical-align: middle;
-}
-
-.input-inline {
-	display: inline-block;
-	vertical-align: middle;
-}
-
-.input-box {
-	-webkit-box-sizing: border-box;
-	   -moz-box-sizing: border-box;
-	        box-sizing: border-box;
-	display: inline-block;
-	width: 100%;
-	vertical-align: middle;
-}
-
-.input-box textarea,
-.input-box input {
-	width: 100%;
-	height: 40px;
-	padding: 0 15px;
-	border: 1px solid #ccc;
-	-webkit-box-sizing: border-box;
-	   -moz-box-sizing: border-box;
-	        box-sizing: border-box;
-	font-size: 13px;
-	-webkit-border-radius: 2px;
-	   -moz-border-radius: 2px;
-	        border-radius: 2px;
-	color: #717171;
-}
-
-.input-box textarea[readonly],
-.input-box input[readonly] {
-	background-color: #f9f9f9;
-}
-
-.input-box textarea {
-	min-height: 100px;
-	height: auto;
-	padding-top: 10px;
-	padding-bottom: 10px;
-}
-
-.input-group {
-	display: table;
-	width: 100%;
-}
-
-.input-group > * {
-	vertical-align: middle;
-}
-
-.input-group > *.selectbox, .input-group > *.input-box {
-	width: 100%;
-	padding-right: 15px;
-}
-
-.input-group .btn {
-	margin-left: 5px;
-	padding-right: 20px;
-	padding-left: 20px;
-}
-
-.input-upload {
-	position: relative;
-	display: block;
-	padding-right: 110px;
-}
-
-.input-upload input {
+.iconList li label {
 	cursor: pointer;
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: 2;
-	width: 100%;
-	height: 100%;
-	border: 0;
-	opacity: 0;
-}
-
-.input-upload .input-box {
-	font-size: 13px;
+	background-color: #F9FAFC;
+	height: 4.2rem;
 	display: block;
-	height: 40px;
-	padding: 0 15px;
-	border: 1px solid #ccc;
-	-webkit-border-radius: 2px;
-	   -moz-border-radius: 2px;
-	        border-radius: 2px;
 	-webkit-box-sizing: border-box;
 	   -moz-box-sizing: border-box;
 	        box-sizing: border-box;
-}
-
-.input-upload .value {
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: 1;
-	height: 40px;
-	padding: 0 15px;
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: -moz-box;
@@ -2700,132 +2660,32 @@ body.fixed {
 	        justify-content: center;
 }
 
-.input-upload .btn {
-	position: absolute;
-	top: 0;
-	right: 0;
-	width: 96px;
-	padding: 0;
-}
-
-.radio {
-	margin-right: 30px;
-}
-
-.radio input[type="radio"] {
-	position: absolute;
-	width: 0;
-	height: 0;
-	opacity: 0;
-}
-
-.radio input[type="radio"] + label {
-	position: relative;
-	padding-left: 30px;
-	letter-spacing: -.75px;
-	color: #666;
-}
-
-.radio input[type="radio"] + label:before {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	display: inline-block;
-	width: 20px;
-	height: 20px;
-	border: 1px solid #cdcdcd;
-	-webkit-border-radius: 50%;
-	   -moz-border-radius: 50%;
-	        border-radius: 50%;
-	-webkit-box-sizing: border-box;
-	   -moz-box-sizing: border-box;
-	        box-sizing: border-box;
-}
-
-.radio input[type="radio"] + label:after {
-	content: '';
-	position: absolute;
-	top: 6px;
-	left: 6px;
-	display: none;
-	width: 8px;
-	height: 8px;
-	-webkit-border-radius: 50%;
-	   -moz-border-radius: 50%;
-	        border-radius: 50%;
-	background-color: #007abc;
-	opacity: 0;
-}
-
-.radio input[type="radio"]:checked + label:after {
-	content: '';
-	display: inline-block;
-	opacity: 1;
-}
-
-.checkbox {
-	margin-right: 30px;
-	text-align: left;
-}
-
-.checkbox input[type="checkbox"] {
-	position: absolute;
-	width: 0;
-	height: 0;
-	opacity: 0;
-}
-
-.checkbox input[type="checkbox"] + label {
-	position: relative;
-	padding-left: 30px;
-	letter-spacing: -.75px;
-	color: #666;
-}
-
-.checkbox input[type="checkbox"] + label:before {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	display: inline-block;
-	width: 20px;
-	height: 20px;
-	border: 1px solid #cdcdcd;
-	-webkit-border-radius: 1px;
-	   -moz-border-radius: 1px;
-	        border-radius: 1px;
-	-webkit-box-sizing: border-box;
-	   -moz-box-sizing: border-box;
-	        box-sizing: border-box;
+.iconList li input:checked + label {
 	background-color: #fff;
+	color: #F04040;
+	/*font-family:"ManropeB", "NotoM", serif;*/
+	font-family: "SpoqaB", serif;
+	font-weight: normal;
 }
 
-.checkbox input[type="checkbox"] + label:after {
-	content: '';
-	position: absolute;
-	top: 6px;
-	left: 6px;
-	display: none;
-	width: 0;
-	height: 0;
-	-webkit-border-radius: 1px;
-	   -moz-border-radius: 1px;
-	        border-radius: 1px;
-	background-color: #007abc;
-	opacity: 0;
-	-webkit-transition: opacity .5s ease;
-	-o-transition: opacity .5s ease;
-	-moz-transition: opacity .5s ease;
-	transition: opacity .5s ease;
+.iconList li + li label {
+	border-left: 1px solid #EBEBEB;
 }
 
-.checkbox input[type="checkbox"]:checked + label:after {
-	content: '';
-	display: inline-block;
-	width: 8px;
-	height: 8px;
-	opacity: 1;
+.iconList.col2 li {
+	width: 50%;
+}
+
+.iconList.col3 li {
+	width: 33.333%;
+}
+
+.iconList.col4 li {
+	width: 25%;
+}
+
+.iconList.col5 li {
+	width: 20%;
 }
 
 /*! jQuery UI - v1.12.1 - 2017-11-05

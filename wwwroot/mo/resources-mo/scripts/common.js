@@ -149,9 +149,17 @@ $(function(){
 
     //견적 step2 모델 선택
     if($('.estimate-wrap .item-step2').length) {
-        MUI.event.toggle('.model-toggle-btn', '.model-toggle-cont', function(logic, layer) {
+        MUI.event.toggle('.item-step2 .model-toggle-btn', '.item-step2 .model-toggle-cont', function(logic, layer) {
             //console.log('toggle');
             $('.estimate-wrap .item-step2 input').prop('checked', false);
+            logic();
+        });
+    }
+
+    //견적 step6 모델 선택
+    if($('.estimate-wrap .item-step6').length) {
+        MUI.event.toggle('.item-step6 .model-toggle-btn', '.item-step6 .model-toggle-cont', function(logic, layer) {
+            //console.log('toggle');
             logic();
         });
     }

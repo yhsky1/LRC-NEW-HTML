@@ -1,3 +1,16 @@
+.selectbox {
+	box-sizing: border-box;
+	border: 1px solid #EBEBEB;
+	border-radius: 1rem;
+	position: relative;
+	background-color: #fff;
+	height: 4.1rem;
+	padding: 0 2.5rem 0 .9rem;
+	width: 100%;
+	@include Background($sprite:'ico-arrow-down', $type:'png', $size:.9rem, $position: center right .9rem); 
+
+}
+
 .inputR {
 	@include Vertical-inline;
 	font-size: 0;
@@ -20,7 +33,6 @@
 		}
 	}
 }
-
 
 .radioIconBox {
 	label {
@@ -51,7 +63,7 @@
 		display: none;
 	}
 }
-.radioIconBox2 {
+.iconBox {
 	label {
 		@include Align-between;
 		transition: all .4s;
@@ -62,7 +74,7 @@
 		background-color: #fff;
 		height: 4.1rem;
 		padding: 0 .9rem 0 2.6rem;
-		:after {
+		&:after {
 			display: block;
 			content: '';
 			@include Position($top: 50%, $left: .7rem);
@@ -72,273 +84,64 @@
 			margin-top: -.75rem;
 		}
 	}
+	input[type='checkbox'] + label:after{
+		@include Background($sprite:'ico-chk-off', $type:'png', $size:95% auto, $position:center center);
+	}
 	input:checked + label {
 		border-color: #2B2B2B;
 		@include Bold;
-		:after {
+		&:after {
 			@include Background($sprite:'ico-radio-on', $type:'png', $size:95% auto, $position:center center);
 		}
+	}
+	input[type='checkbox']:checked + label:after{
+		@include Background($sprite:'ico-chk-on', $type:'png', $size:95% auto, $position:center center);
 	}
 	input {
 		display: none;
 	}
+	& + .iconBox {margin-top:.6rem;}
 }
 
-
-
-
-
-.selectbox{
-	position: relative;
-	display: block;
-	height: 40px;
-	line-height: 40px;
-	border: 1px solid #ccc;
+.iconList {
 	box-sizing: border-box;
-	background-color: #fff;
+	border: 1px solid #EBEBEB;
+	border-radius: 1rem;
+	@include Align-box;
 	overflow: hidden;
-	&:before,
-	&:after{
-		content: '';
-		position: absolute;
-		right: 20px;
-		display: block;
-		width: 0;
-		height: 0;
-		border-style: solid;
-	}
-	&:before{
-		bottom: 50%;
-		margin-bottom: 1px;
-		border-width: 0 6px 8px 6px;
-		border-color: transparent transparent #535353 transparent;
-	}
-	&:after{
-		top: 50%;
-		margin-top: 1px;
-		border-width: 8px 6px 0 6px;
-		border-color: #535353 transparent transparent transparent;
-	}
-	select{
+	li {
 		width: 100%;
-		height: 100%;
-		padding-left: 20px;
-		padding-right: 40px;
-		color: #000;
-		font-size: 13px;
-		border: none;
-		background-color: transparent;
-		appearance: none;
-		&::-ms-expand {
+		input {
 			display: none;
 		}
-	}
-	&-inline {
-		display: inline-block;
-		vertical-align: middle;
-	}
-}
-
-.input{
-	&-inline {
-		display: inline-block;
-		vertical-align: middle;
-	}
-	&-box {
-		box-sizing: border-box;
-		display: inline-block;
-		width: 100%;
-		vertical-align: middle;
-		textarea,
-		input{
-			width: 100%;
-			height: 40px;
-			padding: 0 15px;
-			//line-height: 40px;
-			border: 1px solid #ccc;
-			box-sizing: border-box;
-			font-size: 13px;
-			border-radius: 2px;
-			color: #717171;
-			&[readonly] {
-				background: {
-					color: #f9f9f9;
-				}
-			}
-		}
-		textarea {
-			min-height: 100px;
-			height: auto;
-			padding: {
-				top: 10px;
-				bottom: 10px;
-			}
-		}
-	}
-	&-group {
-		display: table;
-		width: 100%;
-		> * {
-			//display: table-cell;
-			vertical-align: middle;
-			&.selectbox,
-			&.input-box {
-				width: 100%;
-				padding-right: 15px;
-			}
-		}
-		.btn {
-			margin-left: 5px;
-			padding: {
-				right: 20px;
-				left: 20px;
-			}
-		}
-	}
-	&-upload {
-		position: relative;
-		display: block;
-		padding: {
-			right: 110px;
-		};
-		input {
+		label {
 			cursor: pointer;
-			position: absolute;
-			top: 0;
-			left: 0;
-			z-index: 2;
-			width: 100%;
-			height: 100%;
-			border: 0;
-			opacity: 0;
-		}
-		.input-box {
-			font-size: 13px;
+			background-color: #F9FAFC;
+			height: 4.2rem;
 			display: block;
-			height: 40px;
-			padding: 0 15px;
-			border: 1px solid #ccc;
-			border-radius: 2px;
 			box-sizing: border-box;
-		}
-		.value {
-			position: absolute;
-			top: 0;
-			left: 0;
-			z-index: 1;
-			height: 40px;
-			padding: 0 15px;
 			@include Align-middle;
 		}
-		.btn {
-			position: absolute;
-			top: 0;
-			right: 0;
-			width: 96px;
-			padding: 0;
+		input:checked + label {
+			background-color: #fff;
+			color: #F04040;
+			@include Bold;
 		}
+		& + li label{border-left: 1px solid #EBEBEB;}
 	}
+	&.col2 li {width: 50%;}
+	&.col3 li {width: 33.333%;}
+	&.col4 li {width: 25%;}
+	&.col5 li {width: 20%;}
 }
 
-.radio{
-	margin-right: 30px;
-	input[type="radio"]{
-		position: absolute;
-		width: 0;
-		height: 0;
-		opacity: 0;
-		& + label{
-			position: relative;
-			padding-left: 30px;
-			letter-spacing: -.75px;
-			color: #666;
-			&:before{
-				content: '';
-				position: absolute;
-				top: 0;
-				left: 0;
-				display: inline-block;
-				width: 20px;
-				height: 20px;
-				border: 1px solid #cdcdcd;
-				border-radius: 50%;
-				box-sizing: border-box;
-			}
-			&:after{
-				content: '';
-				position: absolute;
-				top: 6px;
-				left: 6px;
-				display: none;
-				width: 8px;
-				height: 8px;
-				border-radius: 50%;
-				background-color: #007abc;
-				opacity: 0;
-			}
-		}
-		&:checked + label{
 
-			&:after{
-				content: '';
-				display: inline-block;
-				opacity: 1;
-			}
 
-		}
-	}
-}
 
-.checkbox{
-	margin-right: 30px;
-	text-align: left;
-	input[type="checkbox"]{
-		position: absolute;
-		width: 0;
-		height: 0;
-		opacity: 0;
-		& + label{
-			position: relative;
-			padding-left: 30px;
-			letter-spacing: -.75px;
-			color: #666;
-			&:before{
-				content: '';
-				position: absolute;
-				top: 0;
-				left: 0;
-				display: inline-block;
-				width: 20px;
-				height: 20px;
-				border: 1px solid #cdcdcd;
-				border-radius: 1px;
-				box-sizing: border-box;
-				background-color: #fff;
-			}
-			&:after{
-				content: '';
-				position: absolute;
-				top: 6px;
-				left: 6px;
-				display: none;
-				width: 0;
-				height: 0;
-				border-radius: 1px;
-				background-color: #007abc;
-				opacity: 0;
-				transition: opacity .5s ease;
-			}
-		}
-		&:checked + label{
-			&:after{
-				content: '';
-				display: inline-block;
-				width: 8px;
-				height: 8px;
-				opacity: 1;
-			}
 
-		}
-	}
-}
+
+
+
+
+
 
