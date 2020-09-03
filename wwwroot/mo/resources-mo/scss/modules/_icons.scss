@@ -109,6 +109,48 @@
         width: 1.9rem;
         height: 1.9rem;
     }
+    &.pannel01 {
+        @include Background($sprite:'ico-pannel01', $type:'png', $size:45% auto, $position:center center);
+        width: 2.8rem;
+        height: 2.8rem;
+        border-radius: 100%;
+    }
+    &.pannel02 {
+        @include Background($sprite:'ico-pannel02', $type:'png', $size:45% auto, $position:center center);
+        width: 2.8rem;
+        height: 2.8rem;
+        border-radius: 100%;
+    }
+    &.pannel03 {
+        @include Background($sprite:'ico-pannel03', $type:'png', $size:45% auto, $position:center center);
+        width: 2.8rem;
+        height: 2.8rem;
+        border-radius: 100%;
+    }
+    &.pannel04 {
+        @include Background($sprite:'ico-pannel04', $type:'png', $size:45% auto, $position:center center);
+        width: 2.8rem;
+        height: 2.8rem;
+        border-radius: 100%;
+    }
+    &.pannel05 {
+        @include Background($sprite:'ico-pannel05', $type:'png', $size:45% auto, $position:center center);
+        width: 2.8rem;
+        height: 2.8rem;
+        border-radius: 100%;
+    }
+    &.pannel06 {
+        @include Background($sprite:'ico-pannel06', $type:'png', $size:45% auto, $position:center center);
+        width: 2.8rem;
+        height: 2.8rem;
+        border-radius: 100%;
+    }
+    &.pannel07 {
+        @include Background($sprite:'ico-pannel07', $type:'png', $size:45% auto, $position:center center);
+        width: 2.8rem;
+        height: 2.8rem;
+        border-radius: 100%;
+    }
     
 }
 

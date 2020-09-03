@@ -1671,6 +1671,104 @@ a.btn {
 	height: 1.9rem;
 }
 
+.icon.pannel01 {
+	background-repeat: no-repeat;
+	background-image: url("../../resources-mo/images/icons/ico-pannel01.png");
+	background-position: center center;
+	-webkit-background-size: 45% auto;
+	   -moz-background-size: 45% auto;
+	        background-size: 45% auto;
+	width: 2.8rem;
+	height: 2.8rem;
+	-webkit-border-radius: 100%;
+	   -moz-border-radius: 100%;
+	        border-radius: 100%;
+}
+
+.icon.pannel02 {
+	background-repeat: no-repeat;
+	background-image: url("../../resources-mo/images/icons/ico-pannel02.png");
+	background-position: center center;
+	-webkit-background-size: 45% auto;
+	   -moz-background-size: 45% auto;
+	        background-size: 45% auto;
+	width: 2.8rem;
+	height: 2.8rem;
+	-webkit-border-radius: 100%;
+	   -moz-border-radius: 100%;
+	        border-radius: 100%;
+}
+
+.icon.pannel03 {
+	background-repeat: no-repeat;
+	background-image: url("../../resources-mo/images/icons/ico-pannel03.png");
+	background-position: center center;
+	-webkit-background-size: 45% auto;
+	   -moz-background-size: 45% auto;
+	        background-size: 45% auto;
+	width: 2.8rem;
+	height: 2.8rem;
+	-webkit-border-radius: 100%;
+	   -moz-border-radius: 100%;
+	        border-radius: 100%;
+}
+
+.icon.pannel04 {
+	background-repeat: no-repeat;
+	background-image: url("../../resources-mo/images/icons/ico-pannel04.png");
+	background-position: center center;
+	-webkit-background-size: 45% auto;
+	   -moz-background-size: 45% auto;
+	        background-size: 45% auto;
+	width: 2.8rem;
+	height: 2.8rem;
+	-webkit-border-radius: 100%;
+	   -moz-border-radius: 100%;
+	        border-radius: 100%;
+}
+
+.icon.pannel05 {
+	background-repeat: no-repeat;
+	background-image: url("../../resources-mo/images/icons/ico-pannel05.png");
+	background-position: center center;
+	-webkit-background-size: 45% auto;
+	   -moz-background-size: 45% auto;
+	        background-size: 45% auto;
+	width: 2.8rem;
+	height: 2.8rem;
+	-webkit-border-radius: 100%;
+	   -moz-border-radius: 100%;
+	        border-radius: 100%;
+}
+
+.icon.pannel06 {
+	background-repeat: no-repeat;
+	background-image: url("../../resources-mo/images/icons/ico-pannel06.png");
+	background-position: center center;
+	-webkit-background-size: 45% auto;
+	   -moz-background-size: 45% auto;
+	        background-size: 45% auto;
+	width: 2.8rem;
+	height: 2.8rem;
+	-webkit-border-radius: 100%;
+	   -moz-border-radius: 100%;
+	        border-radius: 100%;
+}
+
+.icon.pannel07 {
+	background-repeat: no-repeat;
+	background-image: url("../../resources-mo/images/icons/ico-pannel07.png");
+	background-position: center center;
+	-webkit-background-size: 45% auto;
+	   -moz-background-size: 45% auto;
+	        background-size: 45% auto;
+	width: 2.8rem;
+	height: 2.8rem;
+	-webkit-border-radius: 100%;
+	   -moz-border-radius: 100%;
+	        border-radius: 100%;
+}
+
 .flag {
 	height: 1.5rem;
 	-webkit-border-radius: 1rem;
