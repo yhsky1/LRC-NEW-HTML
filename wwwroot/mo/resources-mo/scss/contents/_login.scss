@@ -1,3 +1,143 @@
-.login-wrap {
-
+.login-wrap{
+	max-width:100%;
+	height:100%;
+	top:0;
+    left:0;
+    .pop-inner{
+        height:100%;
+        margin:0;
+        background:#fff;
+        border-radius: 0;
+        .section-detail{
+            padding-top:10rem;
+            .detail-layer-close{
+                width:1.4rem;
+                height:1.4rem;
+                position: absolute;
+                top:4.5rem;
+                right:3.4rem;
+            }
+            .detail-layer-top{
+                .detail-layer-tit-h{
+                    font-size:2rem;
+                    color:#1e1e1e;
+                }
+                .detail-layer-descri{
+                    font-size:1.1rem;
+                    color:#1e1e1e;
+                    padding-top:1.3rem;
+                    & > p{
+                        line-height:1.3;
+                        & > span{
+                            color:#f04040;
+                        }
+                    }
+                }
+            }
+            .detail-layer-cont{
+                margin-top:3.4rem;
+                .detail-layer-inputT{
+                    margin-top:.9rem;
+                    &:first-child{
+                        margin-top:0;
+                    }
+                }
+                .detail-layer-iconBox{
+                    & > label{
+                        background-color:transparent;
+                        border:0 none;
+                    }
+                }
+                .detail-layer-search{
+                    & > ul{
+                        & > li{
+                            & > div{
+                                & > a{
+                                    position: relative;
+                                    &:after{
+                                        content:"";
+                                        display:block;
+                                        position: absolute;
+                                        top:50%;
+                                        right:-1.2rem;
+                                        border-left:.15rem solid #e1e1e1;
+                                        height:1.2rem;
+                                        transform: translateY(-50%);
+                                    }
+                                }
+                            }
+                        }
+                        & > li:last-child{
+                            & > div{
+                                & > a{
+                                    &:after{
+                                        display:none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .detail-layer-sns-tit-h{
+                    position: relative;
+                    color:#999;
+                    &:after{
+                        content:"";
+                        display:block;
+                        position: absolute;
+                        top:50%;
+                        left:0;
+                        border-top:.15rem solid #e1e1e1;
+                        width:100%;
+                        height:.15rem;
+                    }
+                    & > span{
+                        display:inline-block;
+                        background-color:#fff;
+                        position: relative;
+                        z-index: 1;
+                        padding:0 1rem;
+                    }
+                }
+                .detail-layer-sns{
+                    padding-top:2.2rem;
+                    & > li{
+                        display:inline-block;
+                        padding-right:1.4rem;
+                        & > button{
+                            width:3.4rem;
+                            height:3.4rem;
+                            & > i{
+                                display:inline-block;
+                                width:3.4rem;
+                                height:3.4rem;
+                                background-repeat: no-repeat;
+                            }
+                            & > span{
+                                font:0/0 a;
+                            }
+                        }
+                        .detail-sns-naver{
+                            & > i{
+                                @include Background($sprite:'ico-naver_login', $type:'png', $size:100% auto, $position:center center);
+                            }
+                        }
+                        .detail-sns-kakao{
+                            & > i{
+                                @include Background($sprite:'ico-kakao_login', $type:'png', $size:100% auto, $position:center center);
+                            }
+                        }
+                        .detail-sns-fb{
+                            & > i{
+                                @include Background($sprite:'ico-fb_login', $type:'png', $size:100% auto, $position:center center);
+                            }
+                        }
+                    }
+                    & > li:last-child{
+                        padding-right:0;
+                    }
+                }
+            }
+        }
+    }
 }

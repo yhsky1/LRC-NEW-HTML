@@ -135,13 +135,18 @@
 	&.col5 li {width: 20%;}
 }
 
-
-
-
-
-
-
-
-
-
-
+.inputT{
+	display: inline-block;
+	vertical-align: middle;
+	box-sizing: border-box;
+	position: relative;
+	width: 100%;
+	& > input{
+		border:.15rem solid #EBEBEB;
+		border-radius: 1rem;
+		background-color: #fff;
+		height: 4.1rem;
+		padding:0 1.2rem;
+		width: 100%;
+	}
+}
