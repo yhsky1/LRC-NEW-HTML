@@ -239,11 +239,14 @@
                 @include Position($top:1.7rem, $right:1.7rem)
             }
             &.sticky {
-                //border-radius: 0;
-                //justify-content: flex-end;
                 .normal {display: none;}
                 .fix {
                     @include Align-middle;
+                    @include Position( $position:fixed, $top: 0, $left: 0);
+                    width: 100%;
+                    background-color: #fff;
+                    z-index: 2;
+                    height: 3rem;
                     h2 {margin:0 0 0 .4rem;}
                 }
             }
