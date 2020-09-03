@@ -205,17 +205,16 @@
 
         }
         .detail-layer-top {
-            @include Position( $position:sticky, $top: -9rem, $left: 0);
+            position: relative;
             display: flex;
             flex-flow: column;
             align-items:left;
             justify-content: center;
             background-color: #fff;
             padding:0 1.7rem;
-            //overflow: hidden;
+            overflow: hidden;
             border-radius: 2rem 2rem 0 0;
             height: 12rem;
-            z-index: 2;
             .fix {
                 display: none;
             }
@@ -241,7 +240,7 @@
             }
             &.sticky {
                 //border-radius: 0;
-                justify-content: flex-end;
+                //justify-content: flex-end;
                 .normal {display: none;}
                 .fix {
                     @include Align-middle;

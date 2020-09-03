@@ -101,15 +101,16 @@ $(function(){
 
     //drawer버튼 열기
     MUI.event.toggle('.btn-drawer', null, function(logic, layer) {
+        console.log(11);
         $BODY.addClass("fixed");
-        $('.btn-drawer-close').addClass('on');
+        $('.btn-drawer-close').addClass('active');
         logic();
     });
 
     //drawer버튼 닫기
     MUI.event.toggle('.btn-drawer-close', null, function(logic, layer) {
         $BODY.removeClass("fixed");
-        $('.btn-drawer').removeClass('on');
+        $('.btn-drawer').removeClass('active');
         logic();
     });
 
@@ -132,7 +133,7 @@ $(function(){
             targetTop = $target.offset().top;
         $(window).on('scroll', function(){
             var winTop = $(window).scrollTop();
-            console.log(winTop,topHeight,targetTop);
+            //console.log(winTop,topHeight,targetTop);
             if(winTop >= (targetTop + topHeight*2)) {
                 $target.addClass('sticky');
             }

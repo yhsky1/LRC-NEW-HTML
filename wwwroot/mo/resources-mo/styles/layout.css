@@ -446,7 +446,7 @@
 	        background-size: auto;
 }
 
-.drawer.on {
+.drawer.active {
 	-webkit-transform: translateX(0);
 	   -moz-transform: translateX(0);
 	    -ms-transform: translateX(0);
