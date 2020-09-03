@@ -202,15 +202,35 @@ $(function(){
         });
     }
 
-    //견적 기본정보 토글
-    if($('.summary-table-wrap .summary-toggle-btn').length) {
-        MUI.event.toggle('.summary-table-wrap .summary-toggle-btn', '.summary-table-wrap .summary-toggle-cont', function(logic, layer) {
-            //console.log('toggle');
-            logic();
+    //로그인 견적화면 메뉴 라디오버튼 선택
+    if($('.login-wrap .menu-radio-box').length) {
+        $('.login-wrap .menu-radio-box').on('change', '.radio-box input', function(e){
+            if(e.target.value === 'N'){
+                $('.login-wrap .detail-layer-normal').addClass('active');
+            }
+            else{
+                $('.login-wrap .detail-layer-normal').removeClass('active');
+            }
+        });
+        $('.login-wrap .menu-radio-box').on('change', '.radio-box input', function(e){
+            if(e.target.value === 'I'){
+                $('.login-wrap .detail-layer-integrated').addClass('active');
+            }
+            else{
+                $('.login-wrap .detail-layer-integrated').removeClass('active');
+            }
         });
     }
 
-
+    //로그인 견적화면 메뉴 토글
+    if($('.login-wrap .detail-layer-integrated').length) {
+        MUI.event.toggle('.detail-layer-integrated .model-toggle-btn', '.detail-layer-integrated .model-toggle-cont', function(logic, layer) {
+            //console.log('toggle');
+            $('.login-wrap .detail-layer-integrated input').prop('checked', false);
+            logic();
+        });
+    }
+    
     
 
 

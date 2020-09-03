@@ -138,6 +138,157 @@
                     }
                 }
             }
+            .descri-tit{
+                position: absolute;
+                top:4.5rem;
+                left:50%;
+                transform: translateX(-50%);
+                font-weight: bold;
+                font-size:1.4rem;
+            }
+            .menu-radio-box{
+                .radio-box{
+                    .radioIconBox{
+                        & > input:checked + label{
+                            background-color:#2b2b2b;
+                            color:#fff;
+                        }
+                        & > label{
+                            border-radius: 1rem 1rem 0 0;
+                            background-color:#eff2f7;
+                            height:4.1rem;
+                            border:0 none;
+                            & > span:after{
+                                display:none;
+                            }
+                            
+                        }
+                    }
+                }
+                .detail-layer-normal{
+                    display:none;
+                    padding-top:2.6rem;
+                    &.active{
+                        display:block;
+                    }
+                }
+                .detail-layer-integrated{
+                    display:none;
+                    padding-top:1.7rem;
+                    &.active{
+                        display:block;
+                    }
+                    .detail-layer-descri{
+                        color:#999;
+                        padding-top:0;
+                    }
+                    .detail-layer-cont{
+                        margin-top:1.5rem;
+                    }
+                    .detail-layer-inputT{
+                        .detail-layer-inputT-tit{
+                            padding-bottom:1rem;
+                        }
+                        .detail-layer-inputT-tel{
+                            display:flex;
+                            li{
+                                &:first-child{
+                                    width:70%;
+                                }
+                                &:last-child{
+                                    width:30%;
+                                }
+                                & > input{
+                                    border:.15rem solid #EBEBEB;
+                                    border-right:0 none;
+                                    border-radius: 1rem 0 0 1rem;
+                                    background-color: #fff;
+                                    height: 4.1rem;
+                                    width:100%;
+                                    padding:0 1.2rem;
+                                }
+                                & > button{
+                                    width:100%;
+                                    height: 4.1rem;
+                                    border-radius: 0 1rem 1rem 0;
+                                }
+                            }
+                        }
+                    }
+                    .detail-layer-inputT + .detail-layer-inputT{
+                        margin-top:1.7rem;
+                    }
+                    .detail-layer-assent{
+                        margin-top:2.6rem;
+                    }
+                    .model-toggle-btn {
+                        padding:1.7rem;
+                        cursor: pointer;
+                        position: relative;
+                        border-bottom:.15rem solid #e1e1e1;
+                        &:after {
+                            display: block;
+                            content: '';
+                            @include Position($top: 2rem, $right: 1.7rem);
+                            @include Background($sprite:'ico-arrow-down', $type:'png', $size:100% auto, $position:center center);
+                            width: .9rem;
+                            height: .9rem;
+                            transition: transform .5s;
+                            transform: rotate(0deg);
+                        }
+                        &.active {
+                            background-color: #fff;
+                            padding-bottom: 0;
+                            @include Bold;
+                            border-bottom:0 none; 
+                        }
+                        &.active:after {
+                            transform: rotate(180deg);
+                        }
+                        & > span{
+                            padding-left:0.7rem;
+                            &:after{
+                                display: block;
+                                content: '';
+                                @include Position($top: 50%, $left: .7rem);
+                                @include Background($sprite:'ico-chk-off', $type:'png', $size:95% auto, $position:center center);
+                                width: 1.5rem;
+                                height: 1.5rem;
+                                margin-top: -.75rem;
+                            }
+                        }
+                        &.active {
+                            & > span{
+                                &:after{
+                                    @include Background($sprite:'ico-chk-on', $type:'png', $size:95% auto, $position:center center);
+                                    margin-top:0;
+                                }
+                            }
+                        }
+                    }
+                    .model-toggle-cont {
+                        display: none;
+                        background-color: #fff;
+                        padding: 1.7rem;
+                        border-bottom:.15rem solid #e1e1e1;
+                    }
+                    .detail-layer-list-btn{
+                        margin-top:2.6rem;
+                        & > li{
+                            width:48%;
+                            padding-right:1rem;
+                        }
+                        & > li:last-child{
+                            padding-right:0; 
+                        }
+                        .btn-white{
+                            border:1px solid #EBEBEB;
+                            border-radius: 1rem;
+                            color:#999;
+                        }
+                    }
+                }
+            }
         }
     }
 }
