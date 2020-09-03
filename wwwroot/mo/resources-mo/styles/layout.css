@@ -436,9 +436,9 @@
 	-webkit-box-sizing: border-box;
 	   -moz-box-sizing: border-box;
 	        box-sizing: border-box;
-	-webkit-box-shadow: 0 -1px 5px rgba(96, 97, 112, 0.3);
-	   -moz-box-shadow: 0 -1px 5px rgba(96, 97, 112, 0.3);
-	        box-shadow: 0 -1px 5px rgba(96, 97, 112, 0.3);
+	-webkit-box-shadow: 0 -3px 12px rgba(96, 97, 112, 0.3);
+	   -moz-box-shadow: 0 -3px 12px rgba(96, 97, 112, 0.3);
+	        box-shadow: 0 -3px 12px rgba(96, 97, 112, 0.3);
 }
 
 .estimateBottom .bottom-in {

@@ -505,6 +505,9 @@
 	background-color: #fff;
 	z-index: 2;
 	height: 40px;
+	-webkit-box-shadow: 0 1px 5px rgba(96, 97, 112, 0.3);
+	   -moz-box-shadow: 0 1px 5px rgba(96, 97, 112, 0.3);
+	        box-shadow: 0 1px 5px rgba(96, 97, 112, 0.3);
 }
 
 .estimate-wrap .section-detail .detail-layer-top.sticky .fix h2 {
