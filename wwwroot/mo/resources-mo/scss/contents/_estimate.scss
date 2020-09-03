@@ -189,7 +189,13 @@
                     }
                 }
             }
-
+            .detail-view-rest {
+                height: 4.1rem;
+                @include Align-middle;
+                @include Bold;
+                color:#fff;
+                background-color:#20BBC4;
+            }
         }
         .detail-layer-top {
             position: relative;
@@ -643,6 +649,26 @@
 
 
         }
+
+        .detail-layer-summary {
+            padding: 0 1.7rem 2.3rem;
+            background-color: #fff;
+            .guide {
+                padding: 1.7rem 0;
+                border-top: 1px solid #EBEBEB;
+                display: flex;
+                align-items: center;
+                p {
+                    font-size:1.1rem;
+                    margin-left:.9rem;
+                    b{
+                        font-size:1.1rem;
+                        color: #F04040;
+                    }
+                }
+            }
+        }
+
     }
     
 }

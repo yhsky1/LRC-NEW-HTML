@@ -225,8 +225,8 @@ var MUI = MUI || {
 	},
 	event: {
 		toggle: function(target, parent, callback){
-
-			$(document).on('click', target, function(e) {
+			var TOUCH_CLICK = ('ontouchstart' in window) ? 'touchstart' : 'click';
+			$(document).on(TOUCH_CLICK, target, function(e) {
 				var $this = $(this);
 				var $targetDiv = $(target);
 				var layer = $('.' + $this.data('target'));

@@ -131,6 +131,7 @@ $(function(){
         $BODY.removeClass("fixed");
         $('.btn-drawer').removeClass('active');
         logic();
+        $('.drawer').scrollTop(0);
     });
 
 
@@ -200,7 +201,16 @@ $(function(){
             logic();
         });
     }
-    
+
+    //견적 기본정보 토글
+    if($('.summary-table-wrap .summary-toggle-btn').length) {
+        MUI.event.toggle('.summary-table-wrap .summary-toggle-btn', '.summary-table-wrap .summary-toggle-cont', function(logic, layer) {
+            //console.log('toggle');
+            logic();
+        });
+    }
+
+
     
 
 

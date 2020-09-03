@@ -42,7 +42,15 @@
 				<!--상단 뷰-->
 				<div class="detail-view">
 
+                    <div class="detail-view-rest">
+                        잔여수량이 5대 남았어요!
+                    </div>
+
 					<div class="swiper-container detail-view-list">
+                        <div class="flag-wrap">
+                            <div class="flag fast"><i class="icon fast"></i> 빠른출고</div>
+                            <div class="flag pro"><i class="icon pro"></i> 프로모션</div>
+                        </div>
 						<div class="swiper-wrapper">
 							<div class="swiper-slide">
 								<img src="../../../resources-mo/images/@temp-estimate-list02.png" alt="더미1"/>
@@ -93,310 +101,75 @@
 					</div>
 					
 					<div class="detail-layer-cont">
-						<div class="detail-layer-nav">
-							<button type="button" class="menu-link active" data-target="item-step1">연료</button>
-							<button type="button" class="menu-link" data-target="item-step2">모델</button>
-							<button type="button" class="menu-link" data-target="item-step3">색상</button>
-							<button type="button" class="menu-link" data-target="item-step4">옵션</button>
-							<button type="button" class="menu-link" data-target="item-step5">용품</button>
-							<button type="button" class="menu-link" data-target="item-step6">계약조건</button>
-						</div>
+
+                        <div class="detail-layer-summary">
+                            <div class="guide">
+                                <i class="icon speak"></i>
+                                <p>
+                                    해당 상품은 미리 선구매한 특가차종으로 차량의<br/>
+                                    <b>컬러와 옵션을 추가 또는 변경하실 수 없습니다.</b>
+                                </p>
+                            </div>
+                            <div class="summary-table-wrap">
+                                <div class="summary-toggle-btn active" data-target="summary-cont-01" data-on="true" data-siblings="true">
+                                    <span>기본정보</span>
+                                </div>
+                                <div class="summary-toggle-cont summary-cont-01 active" style="display: block;">
+                                    <div class="table">
+                                        <table>
+                                            <caption></caption>
+                                            <colgroup>
+                                                <col style="width:30%">
+                                                <col style="width:70%">
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <th>연료</th>
+                                                    <td><b>가솔린</b></td>
+                                                </tr>
+                                                <tr>
+                                                    <th>모델</th>
+                                                    <td>
+                                                        <b>
+                                                            QM6 (G) 20.0 2WD SE<br/>
+                                                            차량가 24,450,000원
+                                                        </b>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th rowspan="2">색상</th>
+                                                    <td>
+                                                        <span>외장</span>
+                                                        <b>어반그레이</b> <i class="icon colors" style="background-color:#DADBDC;"></i>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <span>내장</span>
+                                                        <b>베이지</b> <i class="icon colors" style="background-color:#EDE9D0;"></i>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>차량 옵션</th>
+                                                    <td>
+                                                        <b>
+                                                            기본 옵션<br/>
+                                                            트렁크 라이너
+                                                        </b>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
 						<form action="">
 							<div class="detail-layer-items">
 
-								<div class="layer-item item-step1" data-link="0">
-									<h3>
-										<span>Step 1</span>
-										<strong>연료 선택 <button type="button"><i class="icon info2"></i></button></strong>
-									</h3>
-									<div class="item-cont">
-										<div class="radio-box">
-											<ul class="list-type-col3">
-												<li>
-													<div class="radioIconBox inner">
-														<input type="radio" name="radio1" id="radio1-1" value="G"/>
-														<label for="radio1-1">
-															<i class="icon fuelG"></i>
-															<span>가솔린</span>
-														</label>
-													</div>
-												</li>
-												<li>
-													<div class="radioIconBox inner">
-														<input type="radio" name="radio1" id="radio1-2" value="D"/>
-														<label for="radio1-2">
-															<i class="icon fuelD"></i>
-															<span>디젤</span>
-														</label>
-													</div>
-												</li>
-												<li>
-													<div class="radioIconBox inner">
-														<input type="radio" name="radio1" id="radio1-3" value="L"/>
-														<label for="radio1-3">
-															<i class="icon fuelL"></i>
-															<span>LPG</span>
-														</label>
-													</div>
-												</li>
-												<li>
-													<div class="radioIconBox inner">
-														<input type="radio" name="radio1" id="radio1-4" value="H"/>
-														<label for="radio1-4">
-															<i class="icon fuelH"></i>
-															<span>하이브리드</span>
-														</label>
-													</div>
-												</li>
-												<li>
-													<div class="radioIconBox inner">
-														<input type="radio" name="radio1" id="radio1-5" value="E"/>
-														<label for="radio1-5">
-															<i class="icon fuelE"></i>
-															<span>전기차</span>
-														</label>
-													</div>
-												</li>
-											</ul>
-										</div>
-										<div class="electric">
-
-											<div class="inputR">
-												<input type="radio" name="radio2" id="radio2-1"/>
-												<label for="radio2-1">
-													<i class="icon"></i>
-													<span>서울</span>
-												</label>
-											</div>
-											<div class="inputR">
-												<input type="radio" name="radio2" id="radio2-2"/>
-												<label for="radio2-2">
-													<i class="icon"></i>
-													<span>대구</span>
-												</label>
-											</div>
-											<div class="inputR">
-												<input type="radio" name="radio2" id="radio2-3"/>
-												<label for="radio2-3">
-													<i class="icon"></i>
-													<span>기타지역</span>
-												</label>
-											</div>
-
-										</div>
-									</div>
-								</div>
-
-								<div class="layer-item item-step2" data-link="1">
-									<h3>
-										<span>Step 2</span>
-										<strong>모델 선택</strong>
-									</h3>
-									<div class="item-cont">
-										<div class="guide">
-											모델별 사양 및 옵션 세부사항이 변경되거나 <br/>
-											실제와 다를 수 있습니다.<br/>
-											정확한 정보는 각 제조사별 홈페이지를 참고해 주세요.
-										</div>
-
-										<div class="model-all">전체모델 <b>6</b></div>
-
-										<div class="model-list">
-											<ul>
-												<li>
-													<div class="model-toggle-btn" data-target="toggle-cont-01" data-on="true" data-siblings="true">
-														<span>QM6 (g) 2.0 2wd</span>
-													</div>
-													<div class="model-toggle-cont toggle-cont-01">
-														<div class="iconBox">
-															<input type="radio" name="radio3" id="radio3-1" >
-															<label for="radio3-1">
-																<span>RE <i class="flag best">BEST</i></span>
-																<strong>28,380,000원</strong>
-															</label>
-														</div>
-														<div class="iconBox">
-															<input type="radio" name="radio3" id="radio3-2" >
-															<label for="radio3-2">
-																<span>RE <i class="flag low">최저가</i></span>
-																<strong>28,380,000원</strong>
-															</label>
-														</div>
-													</div>
-												</li>
-												<li>
-													<div class="model-toggle-btn" data-target="toggle-cont-02" data-on="true" data-siblings="true">
-														<span>QM6 (g) 3.0 4wd</span>
-													</div>
-													<div class="model-toggle-cont toggle-cont-02">
-														<div class="iconBox">
-															<input type="radio" name="radio33" id="radio33-1" >
-															<label for="radio33-1">
-																<span>RE <i class="flag best">BEST</i></span>
-																<strong>28,380,000원</strong>
-															</label>
-														</div>
-
-													</div>
-												</li>
-												<li>
-													<div class="model-toggle-btn" data-target="toggle-cont-03" data-on="true" data-siblings="true">
-														<span>QM6 (g) 3.0 4wd 3.0 4wd (D) 1.7 노블레스 스페셜</span>
-													</div>
-													<div class="model-toggle-cont toggle-cont-03">
-														<div class="iconBox">
-															<input type="radio" name="radio333" id="radio333-1" >
-															<label for="radio333-1">
-																<span>RE <i class="flag best">BEST</i></span>
-																<strong>28,380,000원</strong>
-															</label>
-														</div>
-													</div>
-												</li>
-											</ul>
-										</div>
-
-									</div>
-								</div>
-
-								<div class="layer-item item-step3" data-link="2">
-									<h3>
-										<span>Step 3</span>
-										<strong>색상 선택</strong>
-									</h3>
-									<div class="item-cont">
-										<div class="color-list">
-											<div class="list-top">
-												<h4>외장색상</h4>
-												<span>어반 그레이</span>
-											</div>
-											<ul>
-												<li>
-													<input type="radio" name="radio4" id="radio4-1"/>
-													<label for="radio4-1" style="background-color:#DADBDC;">
-														외장색상1
-													</label>
-												</li>
-												<li>
-													<input type="radio" name="radio4" id="radio4-2"/>
-													<label for="radio4-2" style="background-color:#000;">
-														외장색상2
-														<i class="flag best">BEST</i>
-													</label>
-												</li>
-												<li>
-													<input type="radio" name="radio4" id="radio4-3"/>
-													<label for="radio4-3" style="background-color:#fff;">
-														외장색상3
-													</label>
-												</li>
-												<li>
-													<input type="radio" name="radio4" id="radio4-4"/>
-													<label for="radio4-4" style="background-color:#52332E;">
-														외장색상4
-													</label>
-												</li>
-												<li>
-													<input type="radio" name="radio4" id="radio4-5"/>
-													<label for="radio4-5" style="background-color:#132E5A;">
-														외장색상5
-													</label>
-												</li>
-												<li>
-													<input type="radio" name="radio4" id="radio4-6"/>
-													<label for="radio4-6" style="background-color:#134F5A;">
-														외장색상6
-													</label>
-												</li>
-												<li>
-													<input type="radio" name="radio4" id="radio4-7"/>
-													<label for="radio4-7" style="background-color:#999999;">
-														외장색상5
-													</label>
-												</li>
-												<li>
-													<input type="radio" name="radio4" id="radio4-8"/>
-													<label for="radio4-8" style="background-color:#F04040;">
-														외장색상6
-													</label>
-												</li>
-											</ul>
-										</div>
-										<div class="color-list">
-											<div class="list-top">
-												<h4>내장색상</h4>
-												<span>베이지</span>
-											</div>
-											<ul>
-												<li>
-													<input type="radio" name="radio44" id="radio44-1"/>
-													<label for="radio44-1" style="background-color:#DADBDC;">
-														외장색상1
-													</label>
-												</li>
-												<li>
-													<input type="radio" name="radio44" id="radio44-2"/>
-													<label for="radio44-2" style="background-color:#000;">
-														외장색상2
-														<i class="flag best">BEST</i>
-													</label>
-												</li>
-												<li>
-													<input type="radio" name="radio44" id="radio44-3"/>
-													<label for="radio44-3" style="background-color:#fff;">
-														외장색상3
-													</label>
-												</li>
-												<li>
-													<input type="radio" name="radio44" id="radio44-4"/>
-													<label for="radio44-4" style="background-color:#52332E;">
-														외장색상4
-													</label>
-												</li>
-												<li>
-													<input type="radio" name="radio44" id="radio44-5"/>
-													<label for="radio44-5" style="background-color:#132E5A;">
-														외장색상5
-													</label>
-												</li>
-											</ul>
-										</div>
-									</div>
-								</div>
-
-								<div class="layer-item item-step4" data-link="3">
-									<h3>
-										<span>Step 4</span>
-										<strong>차량 옵션 선택</strong>
-									</h3>
-									<div class="item-cont">
-										<div class="guide">(중복 선택 가능)</div>
-										<div class="chk-box">
-											<div class="iconBox">
-												<input type="checkbox" name="checkbox1" id="checkbox1-1">
-												<label for="checkbox1-1">
-													<span>기본 옵션</span>
-												</label>
-											</div>
-											<div class="iconBox">
-												<input type="checkbox" name="checkbox1" id="checkbox1-2">
-												<label for="checkbox1-2">
-													<span>스포츠 페달</span>
-												</label>
-											</div>
-											<div class="iconBox">
-												<input type="checkbox" name="checkbox1" id="checkbox1-3">
-												<label for="checkbox1-3">
-													<span>프로젝션 LED 헤드램프</span>
-												</label>
-											</div>
-										</div>
-									</div>
-								</div>
-
 								<div class="layer-item item-step5" data-link="4">
 									<h3>
-										<span>Step 5</span>
 										<strong>차량 용품 선택</strong>
 									</h3>
 									<div class="item-cont">
@@ -422,7 +195,6 @@
 
 								<div class="layer-item item-step6" data-link="5">
 									<h3>
-										<span>Step 6</span>
 										<strong>계약조건 선택</strong>
 									</h3>
 									<div class="item-cont">
@@ -431,19 +203,19 @@
 											<h4>계약기간</h4>
 											<ul class="iconList col3">
 												<li>
-													<input type="radio" name="radio55" id="radio55-1">
+													<input type="radio" name="radio55" id="radio55-1" disabled="disabled">
 													<label for="radio55-1">
 														24개월
 													</label>
 												</li>
 												<li>
-													<input type="radio" name="radio55" id="radio55-2">
+													<input type="radio" name="radio55" id="radio55-2" checked="checked" disabled="disabled">
 													<label for="radio55-2">
 														36개월
 													</label>
 												</li>
 												<li>
-													<input type="radio" name="radio55" id="radio55-3">
+													<input type="radio" name="radio55" id="radio55-3" disabled="disabled">
 													<label for="radio55-3">
 														48개월
 													</label>
@@ -543,7 +315,7 @@
 
 										<div class="radio-box">
 											<h4>보험연령 <button type="button"><i class="icon info"></i></button></h4>
-											<button type="button" class="btn-toggle model-toggle-btn" data-target="toggle-cont-age" data-on="true"></button>
+											<button type="button" class="btn-toggle model-toggle-btn active" data-target="toggle-cont-age" data-on="true"></button>
 											<ul class="iconList col2">
 												<li>
 													<input type="radio" name="radio9" id="radio9-1">
@@ -558,7 +330,7 @@
 													</label>
 												</li>
 											</ul>
-											<div class="model-toggle-cont toggle-cont-age">
+											<div class="model-toggle-cont toggle-cont-age active" style="display: block;">
 												<div class="radio-box">
 													<h4>대물조건 <button type="button"><i class="icon info"></i></button></h4>
 													<select class="selectbox" name="" id="">

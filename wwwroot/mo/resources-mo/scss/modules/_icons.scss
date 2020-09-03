@@ -1,6 +1,7 @@
 .icon {
     @include Vertical-inline;
     @include Hide_txt;
+    flex: none;
     &.filter {
         @include Background($sprite:'ico-select', $type:'png', $size:100% auto, $position:center center);
         width: 1.1rem;
@@ -151,6 +152,18 @@
         height: 2.8rem;
         border-radius: 100%;
     }
+    &.speak {
+        @include Background($sprite:'ico-speak', $type:'png', $size:40% auto, $position:center center);
+        width: 2.8rem;
+        height: 2.8rem;
+        border-radius: 100%;
+        border:1px solid #EBEBEB;
+    }
+    &.colors {
+        width: 1.2rem;
+        height: 1.2rem;
+        border-radius: .4rem;
+    }
     
 }
 
@@ -194,5 +207,15 @@
         padding: 0 .7rem;
         background-color:#02B174;
         i {margin-right: .5rem;}
+    }
+}
+
+.flag-wrap {
+    @include Position($top: .5rem, $left: .5rem);
+    z-index: 2;
+    .flag{
+        @include Position($position:static);
+        @include Align-middle;
+        margin-bottom:.4rem;
     }
 }
