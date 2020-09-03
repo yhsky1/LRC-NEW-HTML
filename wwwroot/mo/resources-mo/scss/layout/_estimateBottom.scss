@@ -5,6 +5,7 @@
     height: 4.7rem;
     font: 0/0 a;
     box-sizing: border-box;
+    box-shadow: 0 -1px 5px rgba(96, 97, 112, 0.3);
     .bottom-in {
         @include Align-middle;
     }

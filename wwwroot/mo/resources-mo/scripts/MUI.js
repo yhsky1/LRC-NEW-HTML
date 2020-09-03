@@ -483,10 +483,11 @@ var MUI = MUI || {
 			$(document).on('click', target, function(e){
 				var hrefString = $(this).data('target'),
 					offsetTop = $('.' + hrefString).offset(),
+					fixHeight = 40, //추후변동
 					navHeight = $('.detail-layer-nav').height();
 				//console.log(hrefString, offsetTop, navHeight);
 				if(offsetTop){
-					offsetTop = offsetTop.top - navHeight;
+					offsetTop = offsetTop.top - navHeight - fixHeight;
 					$('html, body').stop().animate({'scrollTop': offsetTop}, 500,function(){
 						//console.log('callback');
 					});
@@ -495,11 +496,12 @@ var MUI = MUI || {
 			});
 		},
 		scrollTaps: function(scrollTop, $target, $nav){
-			var navHeight = $('.detail-layer-nav').height();
+			var navHeight = $('.detail-layer-nav').height(),
+				fixHeight = 40; //추후변동
 			$target.each(function(){
 				var top_of_element = $(this).offset().top;
 				var idx = $(this).attr('data-link');
-				if((scrollTop >= top_of_element - navHeight - 5) ){
+				if((scrollTop >= top_of_element - navHeight - fixHeight - 5) ){
 					$nav.siblings().removeClass('active');
 					$nav.eq(idx).addClass('active');
 				}

@@ -1306,9 +1306,9 @@ button.swiper-pagination-bullet {
 .btn-simple {
 	border: 1px solid #ccc;
 	height: 2.8rem;
-	-webkit-border-radius: 1rem;
-	   -moz-border-radius: 1rem;
-	        border-radius: 1rem;
+	-webkit-border-radius: 1.5rem;
+	   -moz-border-radius: 1.5rem;
+	        border-radius: 1.5rem;
 	font-size: 1.1rem;
 	padding: 0 .9rem;
 }
@@ -1670,6 +1670,17 @@ a.btn {
 	        background-size: 100% auto;
 	width: 1.3rem;
 	height: 1.3rem;
+}
+
+.icon.reset {
+	background-repeat: no-repeat;
+	background-image: url("../../resources-mo/images/icons/ico-reset.png");
+	background-position: center center;
+	-webkit-background-size: 100% auto;
+	   -moz-background-size: 100% auto;
+	        background-size: 100% auto;
+	width: 1.1rem;
+	height: 1.1rem;
 }
 
 .flag {
@@ -2304,7 +2315,7 @@ body.fixed {
 .layer-slide .slide-top h4 {
 	font-size: 1.5rem;
 	margin: 0 1.7rem;
-	padding-bottom: 1.4rem;
+	padding: .5rem 0 1.7rem;
 	border-bottom: 1px solid #EBEBEB;
 	/*font-family:"ManropeB", "NotoM", serif;*/
 	font-family: "SpoqaB", serif;
@@ -2324,9 +2335,19 @@ body.fixed {
 	padding: 0 1.7rem;
 }
 
+.layer-slide.layer-filter .filter-reset-btn {
+	position: absolute;
+	top: 2rem;
+	right: 1.7rem;
+}
+
+.layer-slide.layer-filter .filter-reset-btn i {
+	margin-right: .4rem;
+}
+
 .layer-slide.layer-filter .filter-col {
 	position: relative;
-	padding-top: 2.3rem;
+	padding-top: 2rem;
 }
 
 .layer-slide.layer-filter .filter-col h5 {
@@ -2479,9 +2500,6 @@ body.fixed {
 }
 
 .layer-slide.layer-filter .filter-col .price_box_case .price-txt span {
-	/*font-family:"ManropeB", "NotoM", serif;*/
-	font-family: "SpoqaB", serif;
-	font-weight: normal;
 	position: relative;
 }
 
@@ -2502,6 +2520,12 @@ body.fixed {
 	   -moz-border-radius: 100%;
 	        border-radius: 100%;
 	margin-left: -.1rem;
+}
+
+.layer-slide.layer-filter .filter-col .price_box_case .price-txt span.active {
+	/*font-family:"ManropeB", "NotoM", serif;*/
+	font-family: "SpoqaB", serif;
+	font-weight: normal;
 }
 
 .layer-slide.layer-filter .slide-btn {

@@ -563,6 +563,10 @@
 	display: block;
 	text-align: center;
 	margin-bottom: .4rem;
+	/*font-family:"ManropeB", "NotoM", serif;*/
+	font-family: "SpoqaB", serif;
+	font-weight: normal;
+	text-transform: uppercase;
 }
 
 .estimate-wrap .section-detail .detail-layout .layer-item h3 strong {

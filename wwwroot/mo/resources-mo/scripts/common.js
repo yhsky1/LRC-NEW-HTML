@@ -50,18 +50,37 @@ $(function(){
             stop: function(event, ui) {		// stop
             },
             change: function(event, ui) {
-                var min = 10 <= ui.values[0] && ui.values[0] <= 60 ? ui.values[0] + 10 : ui.values[0],
-                    max = 10 <= ui.values[1] && ui.values[1] <= 60 ? ui.values[1] + 10 : ui.values[1];
+                var min = ui.values[0],
+                    max = ui.values[1];
 
+                    console.log(ui, min, max);
                 // update form fields
                 $('#min_slider_price').val(min);
                 $('#max_slider_price').val(max);
 
+                $('.layer-filter .price-txt span').each(function(idx, item){
+                    var text = $(item).text(),
+                        minTxt = min === 0 ? min + '원' : min + '만원',
+                        maxTxt = max + '만원',
+                        minRegex = RegExp(minTxt),
+                        maxRegex = RegExp(maxTxt);
+                    if(minRegex.test(text) || maxRegex.test(text)) {
+                        $(item).addClass('active');
+                    }
+                    else{
+                        $(item).removeClass('active');
+                    }
+                });
+
             }
         });
 
-        $('.price-all').on('click', function(e) {
+        $('.layer-filter .price-all').on('click', function(e) {
 			$('#slider-price').slider('values', [0, 80]);
+        });
+        $('.layer-filter .filter-reset-btn').on('click', function(e) {
+            $('#slider-price').slider('values', [0, 80]);
+            $('.layer-filter input').prop('checked', false);
 		});
     
     }
