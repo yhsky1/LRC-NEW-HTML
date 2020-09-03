@@ -93,6 +93,19 @@
                 font-size:1.4rem;
                 margin-left: .7rem;
             }
+            a {
+                display: block;
+                &:after {
+                    @include Vertical-inline;
+                    @include Background($sprite:'ico-arrow-down', $type:'png', $size:100% auto, $position:center center);
+                    content: '';
+                    width: .9rem;
+                    height: .9rem;
+                    transition: transform .5s;
+                    transform: rotate(270deg);
+                    margin-left:.4rem;
+                }
+            }
         }
         > ul {
             position: relative;
