@@ -483,13 +483,15 @@
 	right: 0;
 	width: 100%;
 	height: 100%;
+	overflow-x: hidden;
+	overflow-y: auto;
 	z-index: 70;
 	background-color: #fff;
-	-webkit-transform: translateX(100%);
-	   -moz-transform: translateX(100%);
-	    -ms-transform: translateX(100%);
-	     -o-transform: translateX(100%);
-	        transform: translateX(100%);
+	-webkit-transform: translateX(0);
+	   -moz-transform: translateX(0);
+	    -ms-transform: translateX(0);
+	     -o-transform: translateX(0);
+	        transform: translateX(0);
 	-webkit-transition: -webkit-transform .4s;
 	transition: -webkit-transform .4s;
 	-o-transition: -o-transform .4s;
@@ -510,6 +512,207 @@
 	    -ms-transform: translateX(0);
 	     -o-transform: translateX(0);
 	        transform: translateX(0);
+}
+
+.drawer .drawer-top {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+.drawer .drawer-top .drawer-btns {
+	height: 6.8rem;
+	padding: 0 2.4rem;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	   -moz-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	   -moz-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+}
+
+.drawer .drawer-top .drawer-btns > div {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	   -moz-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	   -moz-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+}
+
+.drawer .drawer-top .drawer-btns .left button {
+	margin-right: 1rem;
+}
+
+.drawer .drawer-top .drawer-btns .right button {
+	margin-left: 1rem;
+}
+
+.drawer .drawer-top.logout-state {
+	background-color: #fff;
+}
+
+.drawer .drawer-top.logout-state .logout-state-box {
+	background-color: #EFF2F7;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	   -moz-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	   -moz-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	height: 4.1rem;
+	padding: 0 1.7rem;
+}
+
+.drawer .drawer-top.logout-state .logout-state-box button {
+	padding: 0 1.3rem;
+}
+
+.drawer .drawer-top.logout-state .login-state-box {
+	display: none;
+}
+
+.drawer .drawer-top.login-state {
+	background-color: #EFF2F7;
+}
+
+.drawer .drawer-top.login-state .login-state-box .login-top {
+	background-color: #EFF2F7;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	   -moz-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	   -moz-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	height: 4.1rem;
+	padding: 0 1.7rem;
+}
+
+.drawer .drawer-top.login-state .login-state-box .login-top strong {
+	/*font-family:"ManropeB", "NotoM", serif;*/
+	font-family: "SpoqaB", serif;
+	font-weight: normal;
+	font-size: 1.8rem;
+}
+
+.drawer .drawer-top.login-state .login-state-box .login-btns {
+	padding: .8rem 1.7rem 1.7rem;
+}
+
+.drawer .drawer-top.login-state .login-state-box .login-btns button {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	   -moz-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	   -moz-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	width: 100%;
+}
+
+.drawer .drawer-top.login-state .login-state-box .login-btns button b {
+	/*font-family:"ManropeB", "NotoM", serif;*/
+	font-family: "SpoqaB", serif;
+	font-weight: normal;
+	font-size: 1.4rem;
+	color: #F04040;
+}
+
+.drawer .drawer-top.login-state .logout-state-box {
+	display: none;
+}
+
+.drawer .drawer-list > ul {
+	position: relative;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	    -ms-flex-wrap: wrap;
+	        flex-wrap: wrap;
+	border-bottom: 1px solid #EBEBEB;
+}
+
+.drawer .drawer-list > ul > li {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+	border-top: 1px solid #EBEBEB;
+	width: 50%;
+}
+
+.drawer .drawer-list > ul > li a {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	   -moz-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	height: 4rem;
+}
+
+.drawer .drawer-list > ul:after {
+	display: block;
+	content: '';
+	background-color: #EBEBEB;
+	width: 1px;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: -.5px;
 }
 
 /*# sourceMappingURL=../maps/layout.css.map */
