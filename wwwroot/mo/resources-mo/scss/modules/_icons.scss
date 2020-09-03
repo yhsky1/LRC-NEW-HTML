@@ -66,7 +66,24 @@
         width: 2.2rem;
         height: 2.2rem;
     }
-
+    &.star {
+        @include Background($sprite:'ico-star_off', $type:'png', $size:100% auto, $position:center center);
+        width: 1.2rem;
+        height: 1.2rem;
+        &.active {
+            @include Background($sprite:'ico-star_on', $type:'png', $size:100% auto, $position:center center);
+        }
+    }
+    &.video {
+        @include Background($sprite:'ico-play', $type:'png', $size:100% auto, $position:center center);
+        width: 3.2rem;
+        height: 3.2rem;
+    }
+    &.heart {
+        @include Background($sprite:'ico-heart', $type:'png', $size:100% auto, $position:center center);
+        width: 1.3rem;
+        height: 1.3rem;
+    }
 }
 
 
@@ -87,5 +104,27 @@
         border: 1px solid #9198FF;
         color: #9198FF;
         margin-left: .4rem;
+    }
+    &.fast {
+        @include Position($top: .5rem, $left: .5rem);
+        @include Bold;
+        font-size: 1rem;
+        color: #fff;
+        height: 1.7rem;
+        border-radius: 1rem;
+        padding: 0 .7rem;
+        background-color:#406FF0;
+        i {margin-right: .5rem;}
+    }
+    &.pro {
+        @include Position($top: .5rem, $left: .5rem);
+        @include Bold;
+        font-size: 1rem;
+        color: #fff;
+        height: 1.7rem;
+        border-radius: 1rem;
+        padding: 0 .7rem;
+        background-color:#02B174;
+        i {margin-right: .5rem;}
     }
 }

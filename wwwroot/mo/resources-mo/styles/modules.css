@@ -1239,6 +1239,70 @@ button.swiper-pagination-bullet {
 	pointer-events: auto;
 }
 
+.btn-red {
+	width: 100%;
+	color: #fff;
+	-webkit-border-radius: 1rem;
+	   -moz-border-radius: 1rem;
+	        border-radius: 1rem;
+	font-size: 1.4rem;
+	border: 1px solid #F04040;
+	background-color: #F04040;
+	/*font-family:"ManropeB", "NotoM", serif;*/
+	font-family: "SpoqaB", serif;
+	font-weight: normal;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	   -moz-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	   -moz-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-border-radius: 0;
+	   -moz-border-radius: 0;
+	        border-radius: 0;
+}
+
+.btn-white {
+	width: 100%;
+	color: #F04040;
+	-webkit-border-radius: 1rem;
+	   -moz-border-radius: 1rem;
+	        border-radius: 1rem;
+	font-size: 1.4rem;
+	border: 1px solid #fff;
+	background-color: #fff;
+	/*font-family:"ManropeB", "NotoM", serif;*/
+	font-family: "SpoqaB", serif;
+	font-weight: normal;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	   -moz-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	   -moz-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-border-radius: 0;
+	   -moz-border-radius: 0;
+	        border-radius: 0;
+}
+
 .btn-simple {
 	border: 1px solid #ccc;
 	height: 2.8rem;
@@ -1566,6 +1630,48 @@ a.btn {
 	height: 2.2rem;
 }
 
+.icon.star {
+	background-repeat: no-repeat;
+	background-image: url("../../resources-mo/images/icons/ico-star_off.png");
+	background-position: center center;
+	-webkit-background-size: 100% auto;
+	   -moz-background-size: 100% auto;
+	        background-size: 100% auto;
+	width: 1.2rem;
+	height: 1.2rem;
+}
+
+.icon.star.active {
+	background-repeat: no-repeat;
+	background-image: url("../../resources-mo/images/icons/ico-star_on.png");
+	background-position: center center;
+	-webkit-background-size: 100% auto;
+	   -moz-background-size: 100% auto;
+	        background-size: 100% auto;
+}
+
+.icon.video {
+	background-repeat: no-repeat;
+	background-image: url("../../resources-mo/images/icons/ico-play.png");
+	background-position: center center;
+	-webkit-background-size: 100% auto;
+	   -moz-background-size: 100% auto;
+	        background-size: 100% auto;
+	width: 3.2rem;
+	height: 3.2rem;
+}
+
+.icon.heart {
+	background-repeat: no-repeat;
+	background-image: url("../../resources-mo/images/icons/ico-heart.png");
+	background-position: center center;
+	-webkit-background-size: 100% auto;
+	   -moz-background-size: 100% auto;
+	        background-size: 100% auto;
+	width: 1.3rem;
+	height: 1.3rem;
+}
+
 .flag {
 	height: 1.5rem;
 	-webkit-border-radius: 1rem;
@@ -1606,6 +1712,48 @@ a.btn {
 	border: 1px solid #9198FF;
 	color: #9198FF;
 	margin-left: .4rem;
+}
+
+.flag.fast {
+	position: absolute;
+	top: 0.5rem;
+	left: 0.5rem;
+	/*font-family:"ManropeB", "NotoM", serif;*/
+	font-family: "SpoqaB", serif;
+	font-weight: normal;
+	font-size: 1rem;
+	color: #fff;
+	height: 1.7rem;
+	-webkit-border-radius: 1rem;
+	   -moz-border-radius: 1rem;
+	        border-radius: 1rem;
+	padding: 0 .7rem;
+	background-color: #406FF0;
+}
+
+.flag.fast i {
+	margin-right: .5rem;
+}
+
+.flag.pro {
+	position: absolute;
+	top: 0.5rem;
+	left: 0.5rem;
+	/*font-family:"ManropeB", "NotoM", serif;*/
+	font-family: "SpoqaB", serif;
+	font-weight: normal;
+	font-size: 1rem;
+	color: #fff;
+	height: 1.7rem;
+	-webkit-border-radius: 1rem;
+	   -moz-border-radius: 1rem;
+	        border-radius: 1rem;
+	padding: 0 .7rem;
+	background-color: #02B174;
+}
+
+.flag.pro i {
+	margin-right: .5rem;
 }
 
 .list-type-col2 {

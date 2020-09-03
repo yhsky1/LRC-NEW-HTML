@@ -35,6 +35,28 @@
 			pointer-events: auto;
 		}
 	}
+	&-red {
+		width: 100%;
+		color: #fff;
+		border-radius: 1rem;
+		font-size: 1.4rem;
+		border: 1px solid #F04040;
+		background-color: #F04040;
+		@include Bold;
+		@include Align-middle;
+		border-radius: 0;
+	}
+	&-white {
+		width: 100%;
+		color: #F04040;
+		border-radius: 1rem;
+		font-size: 1.4rem;
+		border: 1px solid #fff;
+		background-color: #fff;
+		@include Bold;
+		@include Align-middle;
+		border-radius: 0;
+	}
 	&-simple{
 		border: 1px solid #ccc;
 		height: 2.8rem;
