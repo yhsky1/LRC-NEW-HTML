@@ -1717,9 +1717,9 @@ a.btn {
 	background-repeat: no-repeat;
 	background-image: url("../../resources-mo/images/icons/ico-pannel04.png");
 	background-position: center center;
-	-webkit-background-size: 45% auto;
-	   -moz-background-size: 45% auto;
-	        background-size: 45% auto;
+	-webkit-background-size: 35% auto;
+	   -moz-background-size: 35% auto;
+	        background-size: 35% auto;
 	width: 2.8rem;
 	height: 2.8rem;
 	-webkit-border-radius: 100%;

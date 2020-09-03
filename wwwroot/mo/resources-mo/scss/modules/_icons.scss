@@ -128,7 +128,7 @@
         border-radius: 100%;
     }
     &.pannel04 {
-        @include Background($sprite:'ico-pannel04', $type:'png', $size:45% auto, $position:center center);
+        @include Background($sprite:'ico-pannel04', $type:'png', $size:35% auto, $position:center center);
         width: 2.8rem;
         height: 2.8rem;
         border-radius: 100%;

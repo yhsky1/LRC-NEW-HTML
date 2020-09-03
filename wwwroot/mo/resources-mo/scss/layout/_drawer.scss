@@ -97,12 +97,11 @@
                 display: block;
                 &:after {
                     @include Vertical-inline;
-                    @include Background($sprite:'ico-arrow-down', $type:'png', $size:100% auto, $position:center center);
+                    @include Background($sprite:'ico-next', $type:'png', $size:100% auto, $position:center center);
                     content: '';
-                    width: .9rem;
-                    height: .9rem;
+                    width: .6rem;
+                    height: 1.2rem;
                     transition: transform .5s;
-                    transform: rotate(270deg);
                     margin-left:.4rem;
                 }
             }
