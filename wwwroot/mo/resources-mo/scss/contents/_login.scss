@@ -1,15 +1,19 @@
 .login-wrap{
 	max-width:100%;
-	height:100%;
+    width:100%;
+    height:100%;
 	top:0;
     left:0;
+    overflow-x:hidden;
+    overflow-y:auto;
     .pop-inner{
         height:100%;
         margin:0;
         background:#fff;
         mix-blend-mode: multiply;
         border-radius: 0;
-        overflow-y:scroll;
+        overflow-x:hidden;
+        overflow-y:auto;
         .section-detail{
             padding-top:10rem;
             .detail-layer-close{
