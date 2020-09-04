@@ -264,7 +264,7 @@
 
 .estimate-wrap .section-detail .detail-view .swiper-pagination-wrap {
 	position: absolute;
-	bottom: 2rem;
+	bottom: 2.5rem;
 	left: 0;
 	display: -webkit-box;
 	display: -webkit-flex;
@@ -372,6 +372,7 @@
 	-webkit-border-radius: 0 .5rem .5rem 0;
 	   -moz-border-radius: 0 .5rem .5rem 0;
 	        border-radius: 0 .5rem .5rem 0;
+	margin-left: -.1rem;
 }
 
 .estimate-wrap .section-detail .detail-view-rest {
@@ -1303,6 +1304,9 @@
 .estimate-wrap .section-detail .detail-layer-summary {
 	padding: 0 1.7rem 2.3rem;
 	background-color: #fff;
+	-webkit-border-radius: 0 0 1.5rem 1.5rem;
+	   -moz-border-radius: 0 0 1.5rem 1.5rem;
+	        border-radius: 0 0 1.5rem 1.5rem;
 }
 
 .estimate-wrap .section-detail .detail-layer-summary .guide {
@@ -1328,6 +1332,15 @@
 .estimate-wrap .section-detail .detail-layer-summary .guide p b {
 	font-size: 1.1rem;
 	color: #F04040;
+}
+
+.exhibition-wrap .exhibition-view .exhibition-view-list li {
+	display: inline-block;
+	width: 28rem !important;
+	vertical-align: top;
+	text-align: left;
+	margin-left: -2rem;
+	margin-right: 2.7rem;
 }
 
 .login-wrap {

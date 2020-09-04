@@ -135,10 +135,10 @@ $(function(){
     });
 
 
-    /* 견적-------------------------------------------------*/
+/* 견적start-------------------------------------------------*/
     //견적 상단 슬리이더
     if($('.estimate-wrap .detail-view-list').length) {
-        MUI.slide.init('.detail-view-list','swiper', {
+        MUI.slide.init('.estimate-wrap .detail-view-list','swiper', {
             loop: true,
             pagination: {
                 el: '.swiper-pagination',
@@ -201,6 +201,44 @@ $(function(){
             logic();
         });
     }
+    //견적 기본정보 토글
+    if($('.summary-table-wrap .summary-toggle-btn').length) {
+        MUI.event.toggle('.summary-table-wrap .summary-toggle-btn', '.summary-table-wrap .summary-toggle-cont', function(logic, layer) {
+            logic();
+        });
+    }
+
+
+
+/* -------------------------------------------------견적end*/
+
+
+
+/* 기획전start-------------------------------------------------*/
+    //기획전 상단 슬리이더
+    if($('.exhibition-wrap .exhibition-view-list').length) {
+        /*
+        MUI.slide.init('.exhibition-wrap .exhibition-view-list','swiper', {
+            pagination: {
+                el: '.swiper-pagination',
+            },
+        });
+        */
+        MUI.slide.init($('.exhibition-wrap .exhibition-view-list'), 'slick', {
+				slidesToScroll: 1, 
+				infinite: false,
+				autoplay: false,
+                arrows: false,
+                slidesToShow: 1,
+                centerMode: true,
+                variableWidth: true,
+                dots: true,
+
+        });
+    }
+
+/* -------------------------------------------------기획전end*/
+
 
     //로그인 견적화면 메뉴 라디오버튼 선택
     if($('.login-wrap .menu-radio-box').length) {
@@ -240,7 +278,7 @@ $(function(){
 
 
 
-    //메이슨리 테스트--동적테이블
+    //메이슨리 테스트--동적테이블 ---추후삭제
     var content =
         '<div class="grid-item">'
             +'<img src="https://images.unsplash.com/photo-1552584010-ca8bbbd5bd18?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjYxOTE2fQ" alt="">'
