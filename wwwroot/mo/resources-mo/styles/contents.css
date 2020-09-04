@@ -1348,6 +1348,210 @@
 	color: #F04040;
 }
 
+.contract-wrap .detail-view-rest {
+	position: relative;
+	background-color: #2B2B2B;
+	height: 4.1rem;
+}
+
+.contract-wrap .detail-view-rest > span {
+	position: absolute;
+	top: 50%;
+	left: 2.2rem;
+	-webkit-transform: translateY(-50%);
+	   -moz-transform: translateY(-50%);
+	    -ms-transform: translateY(-50%);
+	     -o-transform: translateY(-50%);
+	        transform: translateY(-50%);
+	font-size: 1.2rem;
+	color: #fff;
+}
+
+.contract-wrap .detail-view-rest > ul {
+	position: absolute;
+	top: 50%;
+	right: 2.2rem;
+	-webkit-transform: translateY(-50%);
+	   -moz-transform: translateY(-50%);
+	    -ms-transform: translateY(-50%);
+	     -o-transform: translateY(-50%);
+	        transform: translateY(-50%);
+}
+
+.contract-wrap .detail-view-rest > ul > li {
+	display: inline-block;
+	vertical-align: middle;
+	-webkit-border-radius: 50%;
+	   -moz-border-radius: 50%;
+	        border-radius: 50%;
+	color: #999;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+	border: .15rem solid #999;
+	width: 1.7rem;
+	height: 1.7rem;
+	position: relative;
+	margin-right: .9rem;
+}
+
+.contract-wrap .detail-view-rest > ul > li > span {
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	   -moz-transform: translate(-50%, -50%);
+	    -ms-transform: translate(-50%, -50%);
+	     -o-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
+	font-size: 1.2rem;
+	font-weight: bold;
+}
+
+.contract-wrap .detail-view-rest > ul > li:after {
+	display: block;
+	content: "";
+	position: absolute;
+	top: 50%;
+	right: -1.1rem;
+	-webkit-transform: translateY(-20%);
+	   -moz-transform: translateY(-20%);
+	    -ms-transform: translateY(-20%);
+	     -o-transform: translateY(-20%);
+	        transform: translateY(-20%);
+	border-top: .15rem dashed #999;
+	width: 50%;
+}
+
+.contract-wrap .detail-view-rest > ul > li:last-child {
+	margin-right: 0;
+}
+
+.contract-wrap .detail-view-rest > ul > li:last-child:after {
+	display: none;
+}
+
+.contract-wrap .detail-view-rest > ul > li.active {
+	background-color: #fff;
+	border-color: #fff;
+	color: #2B2B2B;
+}
+
+.contract-wrap .detail-view {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	left: 0;
+	margin-bottom: -1.5rem;
+	background-color: #EFF2F7;
+	padding: 2rem 1.7rem 0;
+}
+
+.contract-wrap .detail-view .detail-view-approval {
+	height: 2.8rem;
+	background-color: #fff;
+	-webkit-border-radius: 2rem;
+	   -moz-border-radius: 2rem;
+	        border-radius: 2rem;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	   -moz-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	   -moz-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+}
+
+.contract-wrap .detail-view .detail-view-approval > strong {
+	/*font-family:"ManropeB", "NotoM", serif;*/
+	font-family: "SpoqaB", serif;
+	font-weight: normal;
+	display: inline-block;
+	padding-left: 1.2rem;
+}
+
+.contract-wrap .detail-view .detail-view-info {
+	padding-top: 1.7rem;
+	line-height: 1.3;
+}
+
+.contract-wrap .detail-view .detail-view-info > strong {
+	/*font-family:"ManropeB", "NotoM", serif;*/
+	font-family: "SpoqaB", serif;
+	font-weight: normal;
+	padding-top: .4rem;
+}
+
+.contract-wrap .detail-view .detail-view-img {
+	padding-top: .4rem;
+	width: 70%;
+	margin: 0 auto;
+}
+
+.contract-wrap .detail-layout {
+	position: relative;
+	z-index: 1;
+	background-color: #EFF2F7;
+	-webkit-border-radius: 2rem 2rem 0 0;
+	   -moz-border-radius: 2rem 2rem 0 0;
+	        border-radius: 2rem 2rem 0 0;
+}
+
+.contract-wrap .detail-layout .detail-layer-cont {
+	position: relative;
+}
+
+.contract-wrap .detail-layout .layer-item {
+	margin-top: 1.1rem;
+	background-color: #fff;
+	-webkit-border-radius: 1.5rem;
+	   -moz-border-radius: 1.5rem;
+	        border-radius: 1.5rem;
+	padding: 1.7rem 0 2.3rem;
+}
+
+.contract-wrap .detail-layer-top {
+	position: relative;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-flow: column;
+	   -moz-box-orient: vertical;
+	   -moz-box-direction: normal;
+	    -ms-flex-flow: column;
+	        flex-flow: column;
+	-webkit-box-align: left;
+	-webkit-align-items: left;
+	   -moz-box-align: left;
+	    -ms-flex-align: left;
+	        align-items: left;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	   -moz-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	background-color: #fff;
+	padding: 0 1.7rem;
+	overflow: hidden;
+	-webkit-border-radius: 2rem 2rem 0 0;
+	   -moz-border-radius: 2rem 2rem 0 0;
+	        border-radius: 2rem 2rem 0 0;
+	height: 12rem;
+}
+
 .exhibition-wrap {
 	background-color: #EFF2F7;
 	padding-bottom: 4rem;
@@ -1513,7 +1717,7 @@
 }
 
 .exhibition-wrap .section-detail .exhibition-view .texts .date span {
-	line-height: .9;
+	line-height: 1;
 	display: block;
 	font-size: 3.4rem;
 	color: #fff;
@@ -1530,7 +1734,7 @@
 .exhibition-wrap .section-detail .exhibition-infos {
 	background-color: #fff;
 	position: relative;
-	padding: 2rem 1.7rem 0;
+	padding: 1.7rem 1.7rem 0;
 }
 
 .exhibition-wrap .section-detail .exhibition-infos > b {
@@ -1547,7 +1751,7 @@
 	font-weight: normal;
 	font-size: 2rem;
 	line-height: 1.3;
-	padding-right: 8rem;
+	padding-right: 4rem;
 }
 
 .exhibition-wrap .section-detail .exhibition-infos > span {
@@ -1568,7 +1772,6 @@
 	top: 0;
 	left: 0;
 	padding: 1.7rem;
-	padding-bottom: 2.6rem;
 	background-color: #fff;
 	z-index: 3;
 	-webkit-border-radius: 0 0 1.5rem 1.5rem;
@@ -1583,7 +1786,6 @@
 	-webkit-border-radius: 0;
 	   -moz-border-radius: 0;
 	        border-radius: 0;
-	padding-bottom: 1.7rem;
 }
 
 .exhibition-wrap .section-detail .exhibition-list-wrap h3 {
@@ -1599,15 +1801,7 @@
 	-webkit-border-radius: 1.5rem;
 	   -moz-border-radius: 1.5rem;
 	        border-radius: 1.5rem;
-	padding: 2.6rem 1.7rem;
-}
-
-.exhibition-wrap .section-detail .exhibition-list-wrap .exhibition-list .unit-normal {
-	margin-top: 0;
-}
-
-.exhibition-wrap .section-detail .exhibition-list-wrap .exhibition-list .unit-normal + .unit-normal {
-	margin-top: .9rem;
+	padding: 1.7rem 1.7rem 2.3rem;
 }
 
 .exhibition-wrap .section-detail .guide-list {
