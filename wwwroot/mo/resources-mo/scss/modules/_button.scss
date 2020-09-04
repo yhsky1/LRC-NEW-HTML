@@ -57,6 +57,17 @@
 		@include Align-middle;
 		border-radius: 0;
 	}
+	&-orange {
+		width: 100%;
+		color: #F04040;
+		border-radius: 1rem;
+		font-size: 1.4rem;
+		border: 1px solid #FDE4E4;
+		background-color: #FDE4E4;
+		@include Bold;
+		@include Align-middle;
+		border-radius: 0;
+	}
 	&-simple{
 		border: 1px solid #ccc;
 		height: 2.8rem;
@@ -112,6 +123,8 @@
 		line-height: 1;
 		color:#2B2B2B;
 		border-bottom: 1px solid #2B2B2B;
+		font-size: 1.1rem;
+		padding-bottom: .1rem;
 	}
 
 

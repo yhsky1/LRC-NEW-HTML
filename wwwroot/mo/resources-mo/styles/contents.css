@@ -374,7 +374,7 @@
 	        border-radius: 0 .5rem .5rem 0;
 }
 
-.estimate-wrap .section-detail .detail-view .detail-view-rest {
+.estimate-wrap .section-detail .detail-view-rest {
 	height: 4.1rem;
 	display: -webkit-box;
 	display: -webkit-flex;
@@ -396,6 +396,16 @@
 	font-weight: normal;
 	color: #fff;
 	background-color: #20BBC4;
+}
+
+.estimate-wrap .section-detail .detail-view-rest.ty2 {
+	background-color: #1374E8;
+	-webkit-box-pack: left;
+	-webkit-justify-content: left;
+	   -moz-box-pack: left;
+	    -ms-flex-pack: left;
+	        justify-content: left;
+	padding-left: 1.7rem;
 }
 
 .estimate-wrap .section-detail .detail-layer-top {
@@ -994,6 +1004,54 @@
 
 .estimate-wrap .section-detail .detail-layout .layer-item.item-step6 .model-toggle-cont .radio-box label {
 	background-color: #fff;
+}
+
+.estimate-wrap .section-detail .detail-layout .layer-item.item-confirm {
+	padding: 2.3rem 1.7rem;
+}
+
+.estimate-wrap .section-detail .detail-layout .layer-item.item-confirm h3 {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	   -moz-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	   -moz-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	margin: 0;
+}
+
+.estimate-wrap .section-detail .detail-layout .layer-item.item-confirm h4 {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	   -moz-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	   -moz-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	padding: 2rem 0 1.3rem;
+}
+
+.estimate-wrap .section-detail .detail-layout .layer-item.item-confirm h4 strong {
+	/*font-family:"ManropeB", "NotoM", serif;*/
+	font-family: "SpoqaB", serif;
+	font-weight: normal;
 }
 
 .estimate-wrap .section-detail .detail-layout .detail-layer-pro {

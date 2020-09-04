@@ -23,4 +23,25 @@
         width: 75%;
     }
 
+    .ty2 {
+        .btn-white {
+            font-size:1.1rem;
+            width: 25%;
+            color: #2B2B2B;
+        }
+        .btn-orange {
+            font-size:1.1rem;
+            width: 25%;
+        }
+        .btn-red {
+            flex-flow: column;
+            width: 50%;
+            span {
+                font-size:1rem;
+                margin-bottom: .4rem;
+                @include Nomal;
+            }
+        }
+    }
+
 }

@@ -74,6 +74,7 @@
 	}
 	.summary-toggle-cont {
 		display: none;
+		&.visible {display: block;}
 	}
 }
 
@@ -98,6 +99,9 @@
 			padding:1.4rem 1.3rem 1.4rem 0;
 			border-top: 1px solid #EBEBEB;
 			text-align: left;
+		}
+		tr.noBorder {
+			td, th {border:none;}
 		}
 	}
 }

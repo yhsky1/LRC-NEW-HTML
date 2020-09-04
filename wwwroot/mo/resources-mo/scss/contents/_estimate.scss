@@ -189,12 +189,18 @@
                     }
                 }
             }
-            .detail-view-rest {
-                height: 4.1rem;
-                @include Align-middle;
-                @include Bold;
-                color:#fff;
-                background-color:#20BBC4;
+            
+        }
+        .detail-view-rest {
+            height: 4.1rem;
+            @include Align-middle;
+            @include Bold;
+            color:#fff;
+            background-color:#20BBC4;
+            &.ty2 {
+                background-color:#1374E8;
+                justify-content: left;
+                padding-left: 1.7rem;
             }
         }
         .detail-layer-top {
@@ -513,6 +519,22 @@
                         }
                     }
                 }
+
+                &.item-confirm {
+                    padding: 2.3rem 1.7rem;
+                    h3 {
+                        @include Align-between;
+                        margin:0;
+                    }
+                    h4 {
+                        @include Align-between;
+                        padding: 2rem 0 1.3rem;
+                        strong {
+                            @include Bold;
+                        }
+                    }
+                }
+
 
             }
 
