@@ -137,6 +137,13 @@
 		font-size: 1.1rem;
 		padding-bottom: .1rem;
 	}
+	&-share{
+		@include Align-middle;
+		width: 3.4rem;
+		height: 3.4rem;
+		background-color: #EFF2F7;
+		border-radius: 100%;
+	}
 
 
 

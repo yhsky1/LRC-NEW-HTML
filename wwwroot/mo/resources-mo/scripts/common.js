@@ -207,9 +207,6 @@ $(function(){
             logic();
         });
     }
-
-
-
 /* -------------------------------------------------견적end*/
 
 
@@ -217,13 +214,6 @@ $(function(){
 /* 기획전start-------------------------------------------------*/
     //기획전 상단 슬리이더
     if($('.exhibition-wrap .exhibition-view-list').length) {
-        /*
-        MUI.slide.init('.exhibition-wrap .exhibition-view-list','swiper', {
-            pagination: {
-                el: '.swiper-pagination',
-            },
-        });
-        */
         MUI.slide.init($('.exhibition-wrap .exhibition-view-list'), 'slick', {
 				slidesToScroll: 1, 
 				infinite: false,
@@ -236,6 +226,22 @@ $(function(){
 
         });
     }
+
+    //기획전 스틱키
+    if($('.exhibition-wrap .exhibition-sticky').length) {
+        var $target = $('.exhibition-wrap .exhibition-sticky'),
+            targetTop = $target.offset().top;
+        $(window).on('scroll', function(){
+            var winTop = $(window).scrollTop();
+            if(winTop >= targetTop) {
+                $target.addClass('sticky');
+            }
+            else{
+                $target.removeClass('sticky');
+            }
+        });
+    }
+
 
 /* -------------------------------------------------기획전end*/
 

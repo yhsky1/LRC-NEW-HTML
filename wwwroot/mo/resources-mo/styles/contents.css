@@ -919,6 +919,20 @@
 	margin: -.7rem 0 0 -.7rem;
 }
 
+.estimate-wrap .section-detail .detail-layout .layer-item.item-step3 .item-cont ul li input:checked + label:before {
+	display: block;
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	-webkit-border-radius: 1rem;
+	   -moz-border-radius: 1rem;
+	        border-radius: 1rem;
+	background-color: rgba(0, 0, 0, 0.05);
+}
+
 .estimate-wrap .section-detail .detail-layout .layer-item.item-step4 .item-cont .guide {
 	font-size: 1rem;
 	color: #999;
@@ -1435,6 +1449,139 @@
 
 .exhibition-wrap .section-list .exhibition-list h3 b {
 	color: #F04040;
+}
+
+.exhibition-wrap .section-detail .exhibition-view {
+	position: relative;
+}
+
+.exhibition-wrap .section-detail .exhibition-view .cover {
+	position: relative;
+}
+
+.exhibition-wrap .section-detail .exhibition-view .cover:before {
+	display: block;
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.05);
+}
+
+.exhibition-wrap .section-detail .exhibition-view .cover:after {
+	display: block;
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 3.7rem;
+	width: .1rem;
+	height: 16rem;
+	background-color: #fff;
+	-webkit-animation: height 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s both;
+	   -moz-animation: height 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s both;
+	     -o-animation: height 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s both;
+	        animation: height 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s both;
+}
+
+.exhibition-wrap .section-detail .exhibition-view .texts > strong {
+	position: absolute;
+	right: 3.5rem;
+	bottom: 5rem;
+	/*font-family:"ManropeB", "NotoM", serif;*/
+	font-family: "SpoqaB", serif;
+	font-weight: normal;
+	-webkit-transform: scale(0) rotate(270deg);
+	   -moz-transform: scale(0) rotate(270deg);
+	    -ms-transform: scale(0) rotate(270deg);
+	     -o-transform: scale(0) rotate(270deg);
+	        transform: scale(0) rotate(270deg);
+	color: #fff;
+	font-size: 1rem;
+	letter-spacing: .2rem;
+	-webkit-animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) 2s both;
+	   -moz-animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) 2s both;
+	     -o-animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) 2s both;
+	        animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) 2s both;
+}
+
+.exhibition-wrap .section-detail .exhibition-view .texts .date {
+	position: absolute;
+	right: 1.7rem;
+	bottom: 1.7rem;
+}
+
+.exhibition-wrap .section-detail .exhibition-view .texts .date span {
+	line-height: 1;
+	display: block;
+	font-size: 3.4rem;
+	color: #fff;
+	/*font-family:"ManropeB", "NotoM", serif;*/
+	font-family: "SpoqaB", serif;
+	font-weight: normal;
+	opacity: 0;
+	-webkit-animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) 3s both;
+	   -moz-animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) 3s both;
+	     -o-animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) 3s both;
+	        animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) 3s both;
+}
+
+.exhibition-wrap .section-detail .exhibition-infos {
+	background-color: #fff;
+	position: relative;
+	padding: 1.7rem 1.7rem 0;
+}
+
+.exhibition-wrap .section-detail .exhibition-infos > b {
+	display: block;
+	padding-right: 4rem;
+	margin-bottom: 1rem;
+	font-size: 1rem;
+}
+
+.exhibition-wrap .section-detail .exhibition-infos > strong {
+	display: block;
+	/*font-family:"ManropeB", "NotoM", serif;*/
+	font-family: "SpoqaB", serif;
+	font-weight: normal;
+	font-size: 2rem;
+	line-height: 1.3;
+	padding-right: 4rem;
+}
+
+.exhibition-wrap .section-detail .exhibition-infos > span {
+	margin-top: .4rem;
+	display: block;
+	color: #999;
+}
+
+.exhibition-wrap .section-detail .exhibition-infos .btn-share {
+	position: absolute;
+	top: 1.7rem;
+	right: 1.7rem;
+}
+
+.exhibition-wrap .section-detail .exhibition-sticky {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	left: 0;
+	padding: 1.7rem;
+	background-color: #fff;
+	z-index: 3;
+	-webkit-border-radius: 0 0 1.5rem 1.5rem;
+	   -moz-border-radius: 0 0 1.5rem 1.5rem;
+	        border-radius: 0 0 1.5rem 1.5rem;
+}
+
+.exhibition-wrap .section-detail .exhibition-sticky.sticky {
+	-webkit-box-shadow: 0 1px 5px rgba(96, 97, 112, 0.3);
+	   -moz-box-shadow: 0 1px 5px rgba(96, 97, 112, 0.3);
+	        box-shadow: 0 1px 5px rgba(96, 97, 112, 0.3);
+	-webkit-border-radius: 0;
+	   -moz-border-radius: 0;
+	        border-radius: 0;
 }
 
 .exhibition-wrap .section-detail .exhibition-list-wrap h3 {

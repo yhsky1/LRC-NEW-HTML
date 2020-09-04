@@ -1571,6 +1571,30 @@ button.swiper-pagination-bullet {
 	padding-bottom: .1rem;
 }
 
+.btn-share {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	   -moz-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	   -moz-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	width: 3.4rem;
+	height: 3.4rem;
+	background-color: #EFF2F7;
+	-webkit-border-radius: 100%;
+	   -moz-border-radius: 100%;
+	        border-radius: 100%;
+}
+
 a.btn {
 	display: -webkit-inline-box;
 	display: -webkit-inline-flex;
@@ -1970,6 +1994,17 @@ a.btn {
 	        background-size: 100% auto;
 	width: 1rem;
 	height: 1rem;
+}
+
+.icon.share {
+	background-repeat: no-repeat;
+	background-image: url("../../resources-mo/images/icons/ico-share.png");
+	background-position: center center;
+	-webkit-background-size: 100% auto;
+	   -moz-background-size: 100% auto;
+	        background-size: 100% auto;
+	width: 1.3rem;
+	height: 1.3rem;
 }
 
 .flag {
@@ -5303,6 +5338,166 @@ a.ui-button:active,
 	-webkit-box-shadow: 0px 0px 5px #666666;
 	-moz-box-shadow: 0px 0px 5px #666666;
 	     box-shadow: 0px 0px 5px #666666;
+}
+
+@-webkit-keyframes height {
+	0% {
+		height: 0rem;
+		opacity: 1;
+	}
+	100% {
+		height: 16rem;
+		opacity: 1;
+	}
+}
+
+@-moz-keyframes height {
+	0% {
+		height: 0rem;
+		opacity: 1;
+	}
+	100% {
+		height: 16rem;
+		opacity: 1;
+	}
+}
+
+@-o-keyframes height {
+	0% {
+		height: 0rem;
+		opacity: 1;
+	}
+	100% {
+		height: 16rem;
+		opacity: 1;
+	}
+}
+
+@keyframes height {
+	0% {
+		height: 0rem;
+		opacity: 1;
+	}
+	100% {
+		height: 16rem;
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes tracking-in-expand-fwd {
+	0% {
+		letter-spacing: -0.5em;
+		-webkit-transform: translateZ(-700px);
+		        transform: translateZ(-700px);
+		opacity: 0;
+	}
+	40% {
+		opacity: 0.6;
+	}
+	100% {
+		-webkit-transform: translateZ(0);
+		        transform: translateZ(0);
+		opacity: 1;
+	}
+}
+
+@-moz-keyframes tracking-in-expand-fwd {
+	0% {
+		letter-spacing: -0.5em;
+		-moz-transform: translateZ(-700px);
+		     transform: translateZ(-700px);
+		opacity: 0;
+	}
+	40% {
+		opacity: 0.6;
+	}
+	100% {
+		-moz-transform: translateZ(0);
+		     transform: translateZ(0);
+		opacity: 1;
+	}
+}
+
+@-o-keyframes tracking-in-expand-fwd {
+	0% {
+		letter-spacing: -0.5em;
+		transform: translateZ(-700px);
+		opacity: 0;
+	}
+	40% {
+		opacity: 0.6;
+	}
+	100% {
+		transform: translateZ(0);
+		opacity: 1;
+	}
+}
+
+@keyframes tracking-in-expand-fwd {
+	0% {
+		letter-spacing: -0.5em;
+		-webkit-transform: translateZ(-700px);
+		   -moz-transform: translateZ(-700px);
+		        transform: translateZ(-700px);
+		opacity: 0;
+	}
+	40% {
+		opacity: 0.6;
+	}
+	100% {
+		-webkit-transform: translateZ(0);
+		   -moz-transform: translateZ(0);
+		        transform: translateZ(0);
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes scale-up-center {
+	0% {
+		-webkit-transform: scale(0) rotate(270deg);
+		        transform: scale(0) rotate(270deg);
+	}
+	100% {
+		-webkit-transform: scale(1) rotate(270deg);
+		        transform: scale(1) rotate(270deg);
+	}
+}
+
+@-moz-keyframes scale-up-center {
+	0% {
+		-moz-transform: scale(0) rotate(270deg);
+		     transform: scale(0) rotate(270deg);
+	}
+	100% {
+		-moz-transform: scale(1) rotate(270deg);
+		     transform: scale(1) rotate(270deg);
+	}
+}
+
+@-o-keyframes scale-up-center {
+	0% {
+		-o-transform: scale(0) rotate(270deg);
+		   transform: scale(0) rotate(270deg);
+	}
+	100% {
+		-o-transform: scale(1) rotate(270deg);
+		   transform: scale(1) rotate(270deg);
+	}
+}
+
+@keyframes scale-up-center {
+	0% {
+		-webkit-transform: scale(0) rotate(270deg);
+		   -moz-transform: scale(0) rotate(270deg);
+		     -o-transform: scale(0) rotate(270deg);
+		        transform: scale(0) rotate(270deg);
+	}
+	100% {
+		-webkit-transform: scale(1) rotate(270deg);
+		   -moz-transform: scale(1) rotate(270deg);
+		     -o-transform: scale(1) rotate(270deg);
+		        transform: scale(1) rotate(270deg);
+	}
 }
 
 /*# sourceMappingURL=../maps/modules.css.map */
