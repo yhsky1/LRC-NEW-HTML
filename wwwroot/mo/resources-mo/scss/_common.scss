@@ -41,6 +41,10 @@ $extra-small-devices: 320px;
 	align-items: center;
 	justify-content: center;
 }
+@mixin Align-middle-left {
+	display: flex;
+	align-items: center;
+}
 @mixin Align-between {
 	display: flex;
 	align-items: center;
@@ -91,9 +95,9 @@ $extra-small-devices: 320px;
 //@include Background($sprite:'error', $type:'png', $position:right center); ---  사용법
 //@include Background($sprite:'error', $type:'jpg', $y:0); ---  사용법
 //@include Background($sprite:'error', $type:'jpg', $position:20% 20%, $size:100%); ---  사용법
-@mixin Background($sprite, $type, $position:0 0, $size:auto) {
+@mixin Background($sprite, $type:'png', $position:0 0, $size:auto, $path:'icons') {
 	background-repeat: no-repeat;
-	background-image: url('../../resources-mo/images/icons/#{$sprite}.#{$type}');
+	background-image: url('../../resources-mo/images/#{$path}/#{$sprite}.#{$type}');
 	background-position: $position;
 	background-size: $size;
 }

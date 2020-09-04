@@ -98,3 +98,61 @@
 .slick-arrow.slick-hidden {
     display: none;
 }
+
+
+.slick-dots {
+    margin-top: 3rem;
+    position: static;
+    background-color: rgba(255, 255, 255, .7);
+    height: 2rem;
+    padding: 0;
+    border-radius: 1rem;
+    @include Align-middle;
+    font-size:0;
+    li {
+        margin: 0 .4rem;
+        @include Vertical-inline;
+    }
+    button {
+        @include Inline-align-middle;
+        @include Hide_txt;
+        width: auto;
+        height: auto;
+        border-radius: none;
+        background-color: transparent;
+        border:0;
+        opacity: 1;
+        //transition: all .4s;
+        &:before {
+            display: inline-block;
+            content: '';
+            width: .5rem;
+            height: .5rem;
+            border-radius: 100%;
+            background-color: #ccc;
+        }
+        &:after {
+            display: inline-block;
+            content: '';
+            width: 0;
+            transition: width .6s;
+        }
+    }
+    .slick-active {
+        button {
+            &:before {
+                background-color: transparent;
+                border: 0.3rem solid #2B2B2B;
+                width: .3rem;
+                height: .3rem;
+            }
+            &:after {
+                width: 1.3rem;
+                height: .3rem;
+                background-color: #2B2B2B;
+                border-radius: 0 .5rem .5rem 0;
+                margin-left: -.1rem;
+            }
+        }
+    }
+}

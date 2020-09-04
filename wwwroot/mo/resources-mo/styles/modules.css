@@ -112,6 +112,104 @@
 	display: none;
 }
 
+.slick-dots {
+	margin-top: 3rem;
+	position: static;
+	background-color: rgba(255, 255, 255, 0.7);
+	height: 2rem;
+	padding: 0;
+	-webkit-border-radius: 1rem;
+	   -moz-border-radius: 1rem;
+	        border-radius: 1rem;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	   -moz-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	   -moz-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	font-size: 0;
+}
+
+.slick-dots li {
+	margin: 0 .4rem;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.slick-dots button {
+	display: -webkit-inline-box;
+	display: -webkit-inline-flex;
+	display: -moz-inline-box;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	   -moz-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	   -moz-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	font: 0/0 a;
+	width: auto;
+	height: auto;
+	-webkit-border-radius: none;
+	   -moz-border-radius: none;
+	        border-radius: none;
+	background-color: transparent;
+	border: 0;
+	opacity: 1;
+}
+
+.slick-dots button:before {
+	display: inline-block;
+	content: '';
+	width: .5rem;
+	height: .5rem;
+	-webkit-border-radius: 100%;
+	   -moz-border-radius: 100%;
+	        border-radius: 100%;
+	background-color: #ccc;
+}
+
+.slick-dots button:after {
+	display: inline-block;
+	content: '';
+	width: 0;
+	-webkit-transition: width .6s;
+	-o-transition: width .6s;
+	-moz-transition: width .6s;
+	transition: width .6s;
+}
+
+.slick-dots .slick-active button:before {
+	background-color: transparent;
+	border: 0.3rem solid #2B2B2B;
+	width: .3rem;
+	height: .3rem;
+}
+
+.slick-dots .slick-active button:after {
+	width: 1.3rem;
+	height: .3rem;
+	background-color: #2B2B2B;
+	-webkit-border-radius: 0 .5rem .5rem 0;
+	   -moz-border-radius: 0 .5rem .5rem 0;
+	        border-radius: 0 .5rem .5rem 0;
+	margin-left: -.1rem;
+}
+
 /**
  * Swiper 4.3.5
  * Most modern mobile touch slider and framework with hardware accelerated transitions
@@ -1368,7 +1466,7 @@ button.swiper-pagination-bullet {
 }
 
 .btn-simple {
-	border: 1px solid #ccc;
+	border: 1px solid #EBEBEB;
 	height: 2.8rem;
 	-webkit-border-radius: 1.5rem;
 	   -moz-border-radius: 1.5rem;
@@ -1863,6 +1961,17 @@ a.btn {
 	        border-radius: .4rem;
 }
 
+.icon.time {
+	background-repeat: no-repeat;
+	background-image: url("../../resources-mo/images/icons/ico-time.png");
+	background-position: center center;
+	-webkit-background-size: 100% auto;
+	   -moz-background-size: 100% auto;
+	        background-size: 100% auto;
+	width: 1rem;
+	height: 1rem;
+}
+
 .flag {
 	height: 1.5rem;
 	-webkit-border-radius: 1rem;
@@ -1947,6 +2056,34 @@ a.btn {
 	margin-right: .5rem;
 }
 
+.flag.time {
+	position: absolute;
+	top: 0;
+	left: 1.3rem;
+	font-size: 0;
+	background-color: #F04040;
+	height: 2.6rem;
+	-webkit-border-radius: 0 0 1rem 1rem;
+	   -moz-border-radius: 0 0 1rem 1rem;
+	        border-radius: 0 0 1rem 1rem;
+	padding: 0 1rem;
+}
+
+.flag.time i {
+	margin-right: .5rem;
+}
+
+.flag.time p {
+	display: inline-block;
+	vertical-align: middle;
+	/*font-family:"ManropeB", "NotoM", serif;*/
+	font-family: "SpoqaB", serif;
+	font-weight: normal;
+	font-size: 1rem;
+	color: #fff;
+	letter-spacing: .1rem;
+}
+
 .flag-wrap {
 	position: absolute;
 	top: 0.5rem;
@@ -1972,6 +2109,19 @@ a.btn {
 	    -ms-flex-pack: center;
 	        justify-content: center;
 	margin-bottom: .4rem;
+}
+
+.flag-bottom-wrap {
+	position: absolute;
+	bottom: -0.7rem;
+	left: 1.3rem;
+	font-size: 0;
+	z-index: 2;
+}
+
+.flag-bottom-wrap .flag {
+	position: static;
+	margin-right: .6rem;
 }
 
 .list-type-col2 {
@@ -2171,6 +2321,53 @@ a.btn {
 
 .table table tr.noBorder td, .table table tr.noBorder th {
 	border: none;
+}
+
+/*유닛*/
+.unit-normal {
+	margin-top: 2rem;
+	background-color: #fff;
+	overflow: hidden;
+	-webkit-border-radius: 1.5rem;
+	   -moz-border-radius: 1.5rem;
+	        border-radius: 1.5rem;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+.unit-normal a {
+	display: block;
+}
+
+.unit-normal .img {
+	position: relative;
+	background-color: #fff;
+}
+
+.unit-normal .img .cover {
+	position: relative;
+}
+
+.unit-normal .conts {
+	padding: 1.7rem;
+}
+
+.unit-normal .text > strong {
+	/*font-family:"ManropeB", "NotoM", serif;*/
+	font-family: "SpoqaB", serif;
+	font-weight: normal;
+	display: block;
+	font-size: 1.2rem;
+	line-height: 1.3;
+}
+
+.unit-normal .text > span {
+	font-size: 1rem;
+	display: block;
+	color: #999;
+	margin-top: .2rem;
+	line-height: 1.3;
 }
 
 /* pagination */

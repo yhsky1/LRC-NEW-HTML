@@ -107,6 +107,43 @@
 }
 
 
+/*유닛*/
+.unit-list {
+
+}
+.unit-normal {
+	margin-top:2rem;
+	background-color: #fff;
+	overflow: hidden;
+	border-radius: 1.5rem;
+	box-sizing: border-box;
+	a {display: block;}
+	.img {
+		position: relative;
+		background-color: #fff;
+		.cover{
+			position: relative;
+		}
+	}
+	.conts {padding: 1.7rem;}
+	.text {
+		> strong {
+			@include Bold;
+			display: block;
+			font-size: 1.2rem;	
+			line-height: 1.3;
+		}
+		> span {
+			font-size: 1rem;	
+			display: block;
+			color: #999;
+			margin-top:.2rem;
+			line-height: 1.3;
+		}
+	}
+}
+
+
 
 /* pagination */
 .pagination {

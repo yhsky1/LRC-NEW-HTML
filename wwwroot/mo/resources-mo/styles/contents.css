@@ -1334,13 +1334,106 @@
 	color: #F04040;
 }
 
-.exhibition-wrap .exhibition-view .exhibition-view-list li {
+.exhibition-wrap {
+	background-color: #EFF2F7;
+}
+
+.exhibition-wrap .exhibition-view {
+	background-color: #fff;
+	-webkit-border-radius: 1.5rem;
+	   -moz-border-radius: 1.5rem;
+	        border-radius: 1.5rem;
+	padding: 0 0 2.3rem;
+}
+
+.exhibition-wrap .exhibition-view h2 {
+	/*font-family:"ManropeB", "NotoM", serif;*/
+	font-family: "SpoqaB", serif;
+	font-weight: normal;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	   -moz-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	padding: 0 1.7rem 0 3.4rem;
+	height: 6rem;
+	font-size: 1.4rem;
+	background-repeat: no-repeat;
+	background-image: url("../../resources-mo/images/bgs/bg-pick.png");
+	background-position: top left 11rem;
+	-webkit-background-size: 7.5rem auto;
+	   -moz-background-size: 7.5rem auto;
+	        background-size: 7.5rem auto;
+}
+
+.exhibition-wrap .exhibition-view .exhibition-view-list .slick-slide {
 	display: inline-block;
 	width: 28rem !important;
 	vertical-align: top;
 	text-align: left;
 	margin-left: -2rem;
-	margin-right: 2.7rem;
+	margin-right: 3rem;
+}
+
+.exhibition-wrap .exhibition-view .exhibition-view-list .slick-slide a .img {
+	position: relative;
+}
+
+.exhibition-wrap .exhibition-view .exhibition-view-list .slick-slide a .img .cover {
+	-webkit-border-radius: 1rem;
+	   -moz-border-radius: 1rem;
+	        border-radius: 1rem;
+	overflow: hidden;
+	background-color: #fff;
+}
+
+.exhibition-wrap .exhibition-view .exhibition-view-list .slick-slide a .text {
+	margin-top: 2.4rem;
+	padding: 0 1rem;
+}
+
+.exhibition-wrap .exhibition-view .exhibition-view-list .slick-slide a .text strong {
+	display: block;
+	width: 100%;
+	display: -webkit-box;
+	overflow: hidden;
+	-o-text-overflow: ellipsis;
+	   text-overflow: ellipsis;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	word-break: break-all;
+	/*font-family:"ManropeB", "NotoM", serif;*/
+	font-family: "SpoqaB", serif;
+	font-weight: normal;
+	line-height: 1.3;
+	word-break: keep-all;
+	font-size: 1.7rem;
+}
+
+.exhibition-wrap .exhibition-view .exhibition-view-list .slick-slide a .text span {
+	display: block;
+	color: #999;
+	margin-top: 1rem;
+}
+
+.exhibition-wrap .exhibition-list {
+	padding: 2rem 1.7rem 4rem;
+}
+
+.exhibition-wrap .exhibition-list h3 {
+	/*font-family:"ManropeB", "NotoM", serif;*/
+	font-family: "SpoqaB", serif;
+	font-weight: normal;
+	font-size: 1.2rem;
+}
+
+.exhibition-wrap .exhibition-list h3 b {
+	color: #F04040;
 }
 
 .login-wrap {

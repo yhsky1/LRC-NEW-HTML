@@ -3,157 +3,157 @@
     @include Hide_txt;
     flex: none;
     &.filter {
-        @include Background($sprite:'ico-select', $type:'png', $size:100% auto, $position:center center);
+        @include Background($sprite:'ico-select', $size:100% auto, $position:center center);
         width: 1.1rem;
         height: 1.1rem; 
     }
     &.filterClose {
-        @include Background($sprite:'ico-close', $type:'png', $size:100% auto, $position:center center);
+        @include Background($sprite:'ico-close', $size:100% auto, $position:center center);
         width: 0.7rem;
         height: 0.7rem;
     }
     &.fast {
-        @include Background($sprite:'ico-estimate-btn1', $type:'png', $size:100% auto, $position:center center);
+        @include Background($sprite:'ico-estimate-btn1', $size:100% auto, $position:center center);
         width: 0.9rem;
         height: 0.9rem;
     }
     &.pro {
-        @include Background($sprite:'ico-estimate-btn2', $type:'png', $size:100% auto, $position:center center);
+        @include Background($sprite:'ico-estimate-btn2', $size:100% auto, $position:center center);
         width: 0.9rem;
         height: 0.9rem;
     }
     &.prev {
-        @include Background($sprite:'ico-prev', $type:'png', $size:100% auto, $position:center center);
+        @include Background($sprite:'ico-prev', $size:100% auto, $position:center center);
         width: 0.5rem;
         height: 1rem;
     }
     &.draw {
-        @include Background($sprite:'ico-draw', $type:'png', $size:100% auto, $position:center center);
+        @include Background($sprite:'ico-draw', $size:100% auto, $position:center center);
         width: 1.7rem;
         height: 1.7rem;
     }
     &.info {
-        @include Background($sprite:'ico-info', $type:'png', $size:100% auto, $position:center center);
+        @include Background($sprite:'ico-info', $size:100% auto, $position:center center);
         width: 1.3rem;
         height: 1.3rem;
     }
     &.info2 {
-        @include Background($sprite:'ico-info2', $type:'png', $size:100% auto, $position:center center);
+        @include Background($sprite:'ico-info2', $size:100% auto, $position:center center);
         width: 1.3rem;
         height: 1.3rem;
     }
     &.fuelG {
-        @include Background($sprite:'ico-fuel-g', $type:'png', $size:100% auto, $position:center center);
+        @include Background($sprite:'ico-fuel-g', $size:100% auto, $position:center center);
         width: 2.2rem;
         height: 2.2rem;
     }
     &.fuelD {
-        @include Background($sprite:'ico-fuel-d', $type:'png', $size:100% auto, $position:center center);
+        @include Background($sprite:'ico-fuel-d', $size:100% auto, $position:center center);
         width: 2.2rem;
         height: 2.2rem;
     }
     &.fuelL {
-        @include Background($sprite:'ico-fuel-l', $type:'png', $size:100% auto, $position:center center);
+        @include Background($sprite:'ico-fuel-l', $size:100% auto, $position:center center);
         width: 2.2rem;
         height: 2.2rem;
     }
     &.fuelH {
-        @include Background($sprite:'ico-fuel-h', $type:'png', $size:100% auto, $position:center center);
+        @include Background($sprite:'ico-fuel-h', $size:100% auto, $position:center center);
         width: 2.2rem;
         height: 2.2rem;
     }
     &.fuelE {
-        @include Background($sprite:'ico-fuel-e', $type:'png', $size:100% auto, $position:center center);
+        @include Background($sprite:'ico-fuel-e', $size:100% auto, $position:center center);
         width: 2.2rem;
         height: 2.2rem;
     }
     &.star {
-        @include Background($sprite:'ico-star_off', $type:'png', $size:100% auto, $position:center center);
+        @include Background($sprite:'ico-star_off', $size:100% auto, $position:center center);
         width: 1.2rem;
         height: 1.2rem;
         &.active {
-            @include Background($sprite:'ico-star_on', $type:'png', $size:100% auto, $position:center center);
+            @include Background($sprite:'ico-star_on', $size:100% auto, $position:center center);
         }
     }
     &.video {
-        @include Background($sprite:'ico-play', $type:'png', $size:100% auto, $position:center center);
+        @include Background($sprite:'ico-play', $size:100% auto, $position:center center);
         width: 3.2rem;
         height: 3.2rem;
     }
     &.heart {
-        @include Background($sprite:'ico-heart', $type:'png', $size:100% auto, $position:center center);
+        @include Background($sprite:'ico-heart', $size:100% auto, $position:center center);
         width: 1.3rem;
         height: 1.3rem;
     }
     &.reset {
-        @include Background($sprite:'ico-reset', $type:'png', $size:100% auto, $position:center center);
+        @include Background($sprite:'ico-reset', $size:100% auto, $position:center center);
         width: 1.1rem;
         height: 1.1rem;
     }
     &.home {
-        @include Background($sprite:'ico-home', $type:'png', $size:90% auto, $position:center center);
+        @include Background($sprite:'ico-home', $size:90% auto, $position:center center);
         width: 1.9rem;
         height: 1.9rem;
     }
     &.alarm {
-        @include Background($sprite:'ico-alarm', $type:'png', $size:85% auto, $position:center center);
+        @include Background($sprite:'ico-alarm', $size:85% auto, $position:center center);
         width: 1.9rem;
         height: 1.9rem;
     }
     &.setting {
-        @include Background($sprite:'ico-setting', $type:'png', $size:95% auto, $position:center center);
+        @include Background($sprite:'ico-setting', $size:95% auto, $position:center center);
         width: 1.9rem;
         height: 1.9rem;
     }
     &.pannelclose {
-        @include Background($sprite:'ico-pannelclose', $type:'png', $size:85% auto, $position:center center);
+        @include Background($sprite:'ico-pannelclose', $size:85% auto, $position:center center);
         width: 1.9rem;
         height: 1.9rem;
     }
     &.pannel01 {
-        @include Background($sprite:'ico-pannel01', $type:'png', $size:45% auto, $position:center center);
+        @include Background($sprite:'ico-pannel01', $size:45% auto, $position:center center);
         width: 2.8rem;
         height: 2.8rem;
         border-radius: 100%;
     }
     &.pannel02 {
-        @include Background($sprite:'ico-pannel02', $type:'png', $size:45% auto, $position:center center);
+        @include Background($sprite:'ico-pannel02', $size:45% auto, $position:center center);
         width: 2.8rem;
         height: 2.8rem;
         border-radius: 100%;
     }
     &.pannel03 {
-        @include Background($sprite:'ico-pannel03', $type:'png', $size:45% auto, $position:center center);
+        @include Background($sprite:'ico-pannel03', $size:45% auto, $position:center center);
         width: 2.8rem;
         height: 2.8rem;
         border-radius: 100%;
     }
     &.pannel04 {
-        @include Background($sprite:'ico-pannel04', $type:'png', $size:35% auto, $position:center center);
+        @include Background($sprite:'ico-pannel04', $size:35% auto, $position:center center);
         width: 2.8rem;
         height: 2.8rem;
         border-radius: 100%;
     }
     &.pannel05 {
-        @include Background($sprite:'ico-pannel05', $type:'png', $size:45% auto, $position:center center);
+        @include Background($sprite:'ico-pannel05', $size:45% auto, $position:center center);
         width: 2.8rem;
         height: 2.8rem;
         border-radius: 100%;
     }
     &.pannel06 {
-        @include Background($sprite:'ico-pannel06', $type:'png', $size:45% auto, $position:center center);
+        @include Background($sprite:'ico-pannel06', $size:45% auto, $position:center center);
         width: 2.8rem;
         height: 2.8rem;
         border-radius: 100%;
     }
     &.pannel07 {
-        @include Background($sprite:'ico-pannel07', $type:'png', $size:45% auto, $position:center center);
+        @include Background($sprite:'ico-pannel07', $size:45% auto, $position:center center);
         width: 2.8rem;
         height: 2.8rem;
         border-radius: 100%;
     }
     &.speak {
-        @include Background($sprite:'ico-speak', $type:'png', $size:40% auto, $position:center center);
+        @include Background($sprite:'ico-speak', $size:40% auto, $position:center center);
         width: 2.8rem;
         height: 2.8rem;
         border-radius: 100%;
@@ -163,6 +163,11 @@
         width: 1.2rem;
         height: 1.2rem;
         border-radius: .4rem;
+    }
+    &.time {
+        @include Background($sprite:'ico-time', $size:100% auto, $position:center center);
+        width: 1rem;
+        height: 1rem;
     }
     
 }
@@ -208,6 +213,22 @@
         background-color:#02B174;
         i {margin-right: .5rem;}
     }
+    &.time {
+        @include Position($top:0, $left: 1.3rem);
+        font-size:0;
+        background-color: #F04040;
+        height: 2.6rem;
+        border-radius: 0 0 1rem 1rem;
+        padding: 0 1rem;
+        i {margin-right: .5rem;}
+        p{
+            @include Vertical-inline;
+            @include Bold;
+            font-size:1rem;
+            color:#fff;
+            letter-spacing: .1rem;
+        }
+    }
 }
 
 .flag-wrap {
@@ -217,5 +238,14 @@
         @include Position($position:static);
         @include Align-middle;
         margin-bottom:.4rem;
+    }
+}
+.flag-bottom-wrap {
+    @include Position($bottom: -.7rem, $left: 1.3rem);
+    font-size: 0;
+    z-index: 2;
+    .flag{
+        @include Position($position:static);
+        margin-right:.6rem;
     }
 }
