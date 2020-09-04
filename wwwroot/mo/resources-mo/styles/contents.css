@@ -1513,7 +1513,7 @@
 }
 
 .exhibition-wrap .section-detail .exhibition-view .texts .date span {
-	line-height: 1;
+	line-height: .9;
 	display: block;
 	font-size: 3.4rem;
 	color: #fff;
@@ -1530,7 +1530,7 @@
 .exhibition-wrap .section-detail .exhibition-infos {
 	background-color: #fff;
 	position: relative;
-	padding: 1.7rem 1.7rem 0;
+	padding: 2rem 1.7rem 0;
 }
 
 .exhibition-wrap .section-detail .exhibition-infos > b {
@@ -1547,7 +1547,7 @@
 	font-weight: normal;
 	font-size: 2rem;
 	line-height: 1.3;
-	padding-right: 4rem;
+	padding-right: 8rem;
 }
 
 .exhibition-wrap .section-detail .exhibition-infos > span {
@@ -1568,6 +1568,7 @@
 	top: 0;
 	left: 0;
 	padding: 1.7rem;
+	padding-bottom: 2.6rem;
 	background-color: #fff;
 	z-index: 3;
 	-webkit-border-radius: 0 0 1.5rem 1.5rem;
@@ -1582,6 +1583,7 @@
 	-webkit-border-radius: 0;
 	   -moz-border-radius: 0;
 	        border-radius: 0;
+	padding-bottom: 1.7rem;
 }
 
 .exhibition-wrap .section-detail .exhibition-list-wrap h3 {
@@ -1597,7 +1599,15 @@
 	-webkit-border-radius: 1.5rem;
 	   -moz-border-radius: 1.5rem;
 	        border-radius: 1.5rem;
-	padding: 1.7rem 1.7rem 2.3rem;
+	padding: 2.6rem 1.7rem;
+}
+
+.exhibition-wrap .section-detail .exhibition-list-wrap .exhibition-list .unit-normal {
+	margin-top: 0;
+}
+
+.exhibition-wrap .section-detail .exhibition-list-wrap .exhibition-list .unit-normal + .unit-normal {
+	margin-top: .9rem;
 }
 
 .exhibition-wrap .section-detail .guide-list {

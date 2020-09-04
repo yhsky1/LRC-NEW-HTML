@@ -230,7 +230,7 @@ $(function(){
     //기획전 스틱키
     if($('.exhibition-wrap .exhibition-sticky').length) {
         var $target = $('.exhibition-wrap .exhibition-sticky'),
-            targetTop = $target.offset().top;
+            targetTop = $('.exhibition-wrap .exhibition-list-wrap').offset().top;
         $(window).on('scroll', function(){
             var winTop = $(window).scrollTop();
             if(winTop >= targetTop) {
