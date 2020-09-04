@@ -68,6 +68,17 @@
 		@include Align-middle;
 		border-radius: 0;
 	}
+	&-blue {
+		width: 100%;
+		color: #fff;
+		border-radius: 1rem;
+		font-size: 1.4rem;
+		border: 1px solid #20BBC4;
+		background-color: #20BBC4;
+		@include Bold;
+		@include Align-middle;
+		border-radius: 0;
+	}
 	&-simple{
 		border: 1px solid #ccc;
 		height: 2.8rem;

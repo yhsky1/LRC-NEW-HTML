@@ -83,7 +83,7 @@
 	<!--//fixedBottom 컴포넌트-->
 
 	<!-- 로그인 레이어 -->
-	<div class="login-wrap layer-wrap layer-popup layer-common">
+	<div class="login-wrap layer-wrap layer-popup layer-common" style="display:block;">
 		<div class="pop-inner">
 			<div class="pop-cont section-detail">
 				<button type="button" class="layer-close-bt icon filterClose detail-layer-close" id="layer-close2" data-layer="layer-common">닫기</button>
@@ -158,6 +158,26 @@
 									<li><input type="tel" id="" name="" title="tel" placeholder="“-“ 없이 입력하세요"></li>
 									<li><button type="button" class="btn-default">인증요청</button></li>
 								</ul>
+								<ul class="detail-layer-inputT-tel">
+									<li><input type="tel" id="" name="" title="tel" placeholder=""></li>
+									<li><button type="button" class="btn-blue">인증요청</button></li>
+								</ul>
+								<ul class="detail-layer-inputT-tel">
+									<li><input type="tel" id="" name="" title="tel" placeholder="인증번호를 입력하세요"><p class="detail-layer-tel-info">02:51</p></li>
+									<li><button type="button" class="btn-default">확인</button></li>
+								</ul>
+								<ul class="detail-layer-inputT-tel">
+									<li><input type="tel" id="" name="" title="tel" placeholder=""><p class="detail-layer-tel-info">02:51</p></li>
+									<li><button type="button" class="btn-red">확인</button></li>
+								</ul>
+								<ul class="detail-layer-inputT-tel">
+									<li><input type="tel" id="" name="" title="tel" placeholder="" disabled><p class="detail-layer-tel-info-stop">입력시간이 초과되었어요.</p></li>
+									<li><button type="button" class="btn-default">확인</button></li>
+								</ul>
+								<div class="detail-layer-inputT-tel">
+									<input type="tel" id="" name="" title="tel" placeholder="" value="01012345678" disabled>
+									<p class="detail-layer-tel-info-confirm">인증이 완료되었어요</p>
+								</div>
 							</div>
 							<div class="detail-layer-assent iconBox">
 								<input type="checkbox" name="checkbox1" id="checkbox1-1">
@@ -169,23 +189,21 @@
 								<span>개인정보 수집 및 이용동의(필수)</span>
 							</div>
 							<div class="model-toggle-cont toggle-cont-01">
-								<div>
-									<p>개인정보의 수집 및 이용 목적</p>
-									<div>롯데렌터카 롯데렌터카 장기대여 견적신청, 견적회신 및 상담, 장기대여 계약의 체결∙이행∙관리, 신청서비스 제공,  본인여부 확인, 분쟁 및 민원 처리</div>
-									<p>개인정보 수집 항목</p>
-									<div>성명, 연락처(휴대전화)</div>
-								</div>
+								<p class="model-toggle-cont-tit">개인정보의 수집 및 이용 목적</p>
+								<div class="model-toggle-cont-descri">롯데렌터카 롯데렌터카 장기대여 견적신청, 견적회신 및 상담, 장기대여 계약의 체결∙이행∙관리, 신청서비스 제공,  본인여부 확인, 분쟁 및 민원 처리</div>
+								<p class="model-toggle-cont-tit">개인정보 수집 항목</p>
+								<div class="model-toggle-cont-descri">성명, 연락처(휴대전화)</div>
+								<p class="model-toggle-cont-tit">개인정보 수집 항목</p>
+								<div class="model-toggle-cont-descri">성명, 연락처(휴대전화)</div>
 							</div>
 							<div class="model-toggle-btn" data-target="toggle-cont-02" data-on="true" data-siblings="true">
 								<span>마케팅 활용동의(선택)</span>
 							</div>
 							<div class="model-toggle-cont toggle-cont-02">
-								<div>
-									<p>개인정보의 수집 및 이용 목적</p>
-									<div>롯데렌터카 롯데렌터카 장기대여 견적신청, 견적회신 및 상담, 장기대여 계약의 체결∙이행∙관리, 신청서비스 제공,  본인여부 확인, 분쟁 및 민원 처리</div>
-									<p>개인정보 수집 항목</p>
-									<div>성명, 연락처(휴대전화)</div>
-								</div>
+								<p class="model-toggle-cont-tit">마케팅 활용동의</p>
+								<div class="model-toggle-cont-descri">롯데렌터카 롯데렌터카 장기대여 견적신청, 견적회신 및 상담, 장기대여 계약의 체결∙이행∙관리, 신청서비스 제공,  본인여부 확인, 분쟁 및 민원 처리</div>
+								<p class="model-toggle-cont-tit">마케팅 수집 항목</p>
+								<div class="model-toggle-cont-descri">성명, 연락처(휴대전화)</div>
 							</div>
 							<ul class="list-type-col2 detail-layer-list-btn">
 								<li>
