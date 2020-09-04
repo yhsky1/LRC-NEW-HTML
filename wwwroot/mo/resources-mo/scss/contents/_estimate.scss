@@ -1,5 +1,6 @@
 .estimate-wrap {
     background-color: #EFF2F7;
+    padding-bottom: 4rem;
     .section-nav {
         @include Position( $position:sticky, $top: 0, $left: 0);
         @include NoscrollBar;
@@ -257,7 +258,6 @@
             z-index: 1;
             background-color: #EFF2F7;
             border-radius: 2rem 2rem 0 0;
-            padding-bottom: 4rem;
             .detail-layer-cont {
                 position: relative;
             }

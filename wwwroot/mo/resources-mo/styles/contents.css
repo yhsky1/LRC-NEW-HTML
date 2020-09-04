@@ -8,6 +8,7 @@
 /*미디어쿼리 믹스인*/
 .estimate-wrap {
 	background-color: #EFF2F7;
+	padding-bottom: 4rem;
 }
 
 .estimate-wrap .section-nav {
@@ -532,7 +533,6 @@
 	-webkit-border-radius: 2rem 2rem 0 0;
 	   -moz-border-radius: 2rem 2rem 0 0;
 	        border-radius: 2rem 2rem 0 0;
-	padding-bottom: 4rem;
 }
 
 .estimate-wrap .section-detail .detail-layout .detail-layer-cont {
@@ -1336,9 +1336,10 @@
 
 .exhibition-wrap {
 	background-color: #EFF2F7;
+	padding-bottom: 4rem;
 }
 
-.exhibition-wrap .exhibition-view {
+.exhibition-wrap .section-list .exhibition-view {
 	background-color: #fff;
 	-webkit-border-radius: 1.5rem;
 	   -moz-border-radius: 1.5rem;
@@ -1346,7 +1347,7 @@
 	padding: 0 0 2.3rem;
 }
 
-.exhibition-wrap .exhibition-view h2 {
+.exhibition-wrap .section-list .exhibition-view h2 {
 	/*font-family:"ManropeB", "NotoM", serif;*/
 	font-family: "SpoqaB", serif;
 	font-weight: normal;
@@ -1371,7 +1372,7 @@
 	        background-size: 7.5rem auto;
 }
 
-.exhibition-wrap .exhibition-view .exhibition-view-list .slick-slide {
+.exhibition-wrap .section-list .exhibition-view .exhibition-view-list .slick-slide {
 	display: inline-block;
 	width: 28rem !important;
 	vertical-align: top;
@@ -1380,11 +1381,11 @@
 	margin-right: 3rem;
 }
 
-.exhibition-wrap .exhibition-view .exhibition-view-list .slick-slide a .img {
+.exhibition-wrap .section-list .exhibition-view .exhibition-view-list .slick-slide a .img {
 	position: relative;
 }
 
-.exhibition-wrap .exhibition-view .exhibition-view-list .slick-slide a .img .cover {
+.exhibition-wrap .section-list .exhibition-view .exhibition-view-list .slick-slide a .img .cover {
 	-webkit-border-radius: 1rem;
 	   -moz-border-radius: 1rem;
 	        border-radius: 1rem;
@@ -1392,12 +1393,12 @@
 	background-color: #fff;
 }
 
-.exhibition-wrap .exhibition-view .exhibition-view-list .slick-slide a .text {
+.exhibition-wrap .section-list .exhibition-view .exhibition-view-list .slick-slide a .text {
 	margin-top: 2.4rem;
 	padding: 0 1rem;
 }
 
-.exhibition-wrap .exhibition-view .exhibition-view-list .slick-slide a .text strong {
+.exhibition-wrap .section-list .exhibition-view .exhibition-view-list .slick-slide a .text strong {
 	display: block;
 	width: 100%;
 	display: -webkit-box;
@@ -1415,25 +1416,49 @@
 	font-size: 1.7rem;
 }
 
-.exhibition-wrap .exhibition-view .exhibition-view-list .slick-slide a .text span {
+.exhibition-wrap .section-list .exhibition-view .exhibition-view-list .slick-slide a .text span {
 	display: block;
 	color: #999;
 	margin-top: 1rem;
 }
 
-.exhibition-wrap .exhibition-list {
-	padding: 2rem 1.7rem 4rem;
+.exhibition-wrap .section-list .exhibition-list {
+	padding: 2rem 1.7rem 0;
 }
 
-.exhibition-wrap .exhibition-list h3 {
+.exhibition-wrap .section-list .exhibition-list h3 {
 	/*font-family:"ManropeB", "NotoM", serif;*/
 	font-family: "SpoqaB", serif;
 	font-weight: normal;
 	font-size: 1.2rem;
 }
 
-.exhibition-wrap .exhibition-list h3 b {
+.exhibition-wrap .section-list .exhibition-list h3 b {
 	color: #F04040;
+}
+
+.exhibition-wrap .section-detail .exhibition-list-wrap h3 {
+	/*font-family:"ManropeB", "NotoM", serif;*/
+	font-family: "SpoqaB", serif;
+	font-weight: normal;
+	font-size: 1.5rem;
+	padding: 3rem 1.7rem 2.1rem;
+}
+
+.exhibition-wrap .section-detail .exhibition-list-wrap .exhibition-list {
+	background-color: #fff;
+	-webkit-border-radius: 1.5rem;
+	   -moz-border-radius: 1.5rem;
+	        border-radius: 1.5rem;
+	padding: 1.7rem 1.7rem 2.3rem;
+}
+
+.exhibition-wrap .section-detail .guide-list {
+	padding: 3rem 1.7rem 0;
+}
+
+.exhibition-wrap .section-detail .exhibition-bn {
+	padding: 3rem 1.7rem 0;
 }
 
 .login-wrap {

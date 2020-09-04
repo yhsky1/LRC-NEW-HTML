@@ -1,3 +1,11 @@
+@charset "UTF-8";
+/*인라인 가로스크롤*/
+/*폰트만 삭제시킴*/
+/*투명도 믹스인*/
+/*포지션 믹스인*/
+/*백그라운드 믹스인*/
+/* 말줄임표 */
+/*미디어쿼리 믹스인*/
 html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, strong, em, img, sub, sup, address, cite, pre, code, del, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed, figure, figcaption, footer, header, menu, nav, output, section, summary, time, mark, audio, video {
 	line-height: 1;
@@ -242,6 +250,16 @@ html {
 .margin-a {
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.txtBold {
+	/*font-family:"ManropeB", "NotoM", serif;*/
+	font-family: "SpoqaB", serif;
+	font-weight: normal;
+}
+
+.texRed {
+	color: #F04040;
 }
 
 /*# sourceMappingURL=../maps/reset.css.map */

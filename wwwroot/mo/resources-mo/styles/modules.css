@@ -2067,6 +2067,7 @@ a.btn {
 	   -moz-border-radius: 0 0 1rem 1rem;
 	        border-radius: 0 0 1rem 1rem;
 	padding: 0 1rem;
+	z-index: 2;
 }
 
 .flag.time i {
@@ -2082,6 +2083,43 @@ a.btn {
 	font-size: 1rem;
 	color: #fff;
 	letter-spacing: .1rem;
+}
+
+.flag.circle {
+	position: absolute;
+	right: 1.3rem;
+	bottom: -1.9rem;
+	/*font-family:"ManropeB", "NotoM", serif;*/
+	font-family: "SpoqaB", serif;
+	font-weight: normal;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	   -moz-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	   -moz-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-border-radius: 100%;
+	   -moz-border-radius: 100%;
+	        border-radius: 100%;
+	line-height: 1.3;
+	height: 4.1rem;
+	width: 4.1rem;
+	color: #fff;
+	background-color: #F04040;
+	z-index: 2;
+}
+
+.flag.circle.off {
+	background-color: #B4B8BF;
 }
 
 .flag-wrap {
@@ -2113,7 +2151,7 @@ a.btn {
 
 .flag-bottom-wrap {
 	position: absolute;
-	bottom: -0.7rem;
+	bottom: -0.85rem;
 	left: 1.3rem;
 	font-size: 0;
 	z-index: 2;
@@ -2343,6 +2381,7 @@ a.btn {
 .unit-normal .img {
 	position: relative;
 	background-color: #fff;
+	border-bottom: 1px solid #EBEBEB;
 }
 
 .unit-normal .img .cover {
@@ -2362,12 +2401,155 @@ a.btn {
 	line-height: 1.3;
 }
 
+.unit-normal .text > strong > b {
+	display: block;
+	margin-top: .4rem;
+	/*font-family:"ManropeL", "NotoL", serif;*/
+	font-family: "SpoqaL", serif;
+	font-weight: normal;
+}
+
 .unit-normal .text > span {
 	font-size: 1rem;
 	display: block;
 	color: #999;
 	margin-top: .2rem;
 	line-height: 1.3;
+}
+
+.unit-normal .option-wrap {
+	margin-top: 1.5rem;
+}
+
+.unit-normal .option-wrap > ul + ul {
+	margin-top: 1.3rem;
+	padding-top: 1.3rem;
+	border-top: 1px solid #EBEBEB;
+}
+
+.unit-normal .option-wrap > ul > li + li {
+	margin-top: .7rem;
+}
+
+.unit-normal .option-wrap > ul > li {
+	-webkit-box-align: start;
+	-webkit-align-items: flex-start;
+	   -moz-box-align: start;
+	    -ms-flex-align: start;
+	        align-items: flex-start;
+	line-height: 1.3;
+}
+
+.unit-normal .option-wrap .cont i {
+	margin-top: -.3rem;
+}
+
+.unit-normal .option li {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	   -moz-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+
+.unit-normal .option li > span {
+	color: #999;
+	-webkit-box-flex: 0;
+	-webkit-flex: none;
+	   -moz-box-flex: 0;
+	    -ms-flex: none;
+	        flex: none;
+	width: 5.5rem;
+}
+
+.unit-normal .price li {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	   -moz-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	   -moz-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+}
+
+.unit-normal.border {
+	border: 1px solid #EBEBEB;
+}
+
+.unit-normal.end {
+	pointer-events: none;
+}
+
+.unit-normal.end .cover:after {
+	display: block;
+	content: '판매완료 되었습니다.';
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	   -moz-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	   -moz-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	/*font-family:"ManropeB", "NotoM", serif;*/
+	font-family: "SpoqaB", serif;
+	font-weight: normal;
+	color: #fff;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+/*공지리스트*/
+.guide-list > strong {
+	/*font-family:"ManropeB", "NotoM", serif;*/
+	font-family: "SpoqaB", serif;
+	font-weight: normal;
+	font-size: 1.1rem;
+}
+
+.guide-list > ul > li {
+	margin-top: .4rem;
+	padding-left: 1rem;
+	text-indent: -0.7rem;
+	line-height: 1.3;
+	font-size: 1.1rem;
+}
+
+.guide-list > ul > li:before {
+	display: inline-block;
+	content: "";
+	width: .2rem;
+	height: .2rem;
+	margin-right: 0.4rem;
+	vertical-align: middle;
+	background-color: #2B2B2B;
+	-webkit-border-radius: 100%;
+	   -moz-border-radius: 100%;
+	        border-radius: 100%;
 }
 
 /* pagination */
