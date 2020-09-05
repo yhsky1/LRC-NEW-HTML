@@ -6,70 +6,14 @@
 /*백그라운드 믹스인*/
 /* 말줄임표 */
 /*미디어쿼리 믹스인*/
-.estimate-wrap {
+.catharsis-wrap {
 	background-color: #EFF2F7;
 	padding-bottom: 4rem;
 }
 
-.estimate-wrap .section-nav {
-	position: -webkit-sticky;
-	position: sticky;
-	top: 0;
-	left: 0;
-	scrollbar-width: none;
-	-ms-overflow-style: none;
-	-webkit-box-sizing: border-box;
-	   -moz-box-sizing: border-box;
-	        box-sizing: border-box;
-	font-size: 0;
-	overflow-x: visible;
-	overflow-y: hidden;
-	white-space: nowrap;
-	-webkit-overflow-scrolling: touch;
-	width: 100%;
-	padding-bottom: .2rem;
-	/*font-family:"ManropeB", "NotoM", serif;*/
-	font-family: "SpoqaB", serif;
-	font-weight: normal;
+.estimate-wrap {
 	background-color: #EFF2F7;
-	padding-left: 1.7rem;
-	color: #000;
-	letter-spacing: 0;
-	z-index: 1;
-}
-
-.estimate-wrap .section-nav::-webkit-scrollbar {
-	display: none;
-}
-
-.estimate-wrap .section-nav a {
-	font-size: 2.4rem;
-	position: relative;
-	display: inline-block;
-	padding: 1rem 0 0.8rem;
-	margin-right: 1.5rem;
-	color: #CBCED2;
-	line-height: 1;
-}
-
-.estimate-wrap .section-nav a.active {
-	color: #2B2B2B;
-}
-
-.estimate-wrap .section-nav a.active:after {
-	display: block;
-	content: '';
-	position: absolute;
-	bottom: 0;
-	left: 50%;
-	z-index: 1;
-	width: .5rem;
-	height: .5rem;
-	margin-left: -.2rem;
-	-webkit-border-radius: 100%;
-	   -moz-border-radius: 100%;
-	        border-radius: 100%;
-	background-color: #F04040;
+	padding-bottom: 4rem;
 }
 
 .estimate-wrap .section-filter {
@@ -1717,7 +1661,7 @@
 }
 
 .exhibition-wrap .section-detail .exhibition-view .texts .date span {
-	line-height: 1;
+	line-height: .9;
 	display: block;
 	font-size: 3.4rem;
 	color: #fff;
@@ -1734,7 +1678,7 @@
 .exhibition-wrap .section-detail .exhibition-infos {
 	background-color: #fff;
 	position: relative;
-	padding: 1.7rem 1.7rem 0;
+	padding: 2rem 1.7rem 0;
 }
 
 .exhibition-wrap .section-detail .exhibition-infos > b {
@@ -1751,7 +1695,7 @@
 	font-weight: normal;
 	font-size: 2rem;
 	line-height: 1.3;
-	padding-right: 4rem;
+	padding-right: 8rem;
 }
 
 .exhibition-wrap .section-detail .exhibition-infos > span {
@@ -1772,6 +1716,7 @@
 	top: 0;
 	left: 0;
 	padding: 1.7rem;
+	padding-bottom: 2.6rem;
 	background-color: #fff;
 	z-index: 3;
 	-webkit-border-radius: 0 0 1.5rem 1.5rem;
@@ -1786,6 +1731,7 @@
 	-webkit-border-radius: 0;
 	   -moz-border-radius: 0;
 	        border-radius: 0;
+	padding-bottom: 1.7rem;
 }
 
 .exhibition-wrap .section-detail .exhibition-list-wrap h3 {
@@ -1801,7 +1747,15 @@
 	-webkit-border-radius: 1.5rem;
 	   -moz-border-radius: 1.5rem;
 	        border-radius: 1.5rem;
-	padding: 1.7rem 1.7rem 2.3rem;
+	padding: 2.6rem 1.7rem;
+}
+
+.exhibition-wrap .section-detail .exhibition-list-wrap .exhibition-list .unit-normal {
+	margin-top: 0;
+}
+
+.exhibition-wrap .section-detail .exhibition-list-wrap .exhibition-list .unit-normal + .unit-normal {
+	margin-top: .9rem;
 }
 
 .exhibition-wrap .section-detail .guide-list {

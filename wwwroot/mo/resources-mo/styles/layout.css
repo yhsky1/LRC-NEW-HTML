@@ -786,4 +786,65 @@
 	margin-left: -.5px;
 }
 
+.section-nav {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	left: 0;
+	scrollbar-width: none;
+	-ms-overflow-style: none;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+	font-size: 0;
+	overflow-x: visible;
+	overflow-y: hidden;
+	white-space: nowrap;
+	-webkit-overflow-scrolling: touch;
+	width: 100%;
+	padding-bottom: .2rem;
+	/*font-family:"ManropeB", "NotoM", serif;*/
+	font-family: "SpoqaB", serif;
+	font-weight: normal;
+	background-color: #EFF2F7;
+	padding-left: 1.7rem;
+	color: #000;
+	letter-spacing: 0;
+	z-index: 1;
+}
+
+.section-nav::-webkit-scrollbar {
+	display: none;
+}
+
+.section-nav a {
+	font-size: 2.4rem;
+	position: relative;
+	display: inline-block;
+	padding: 1rem 0 0.8rem;
+	margin-right: 1.5rem;
+	color: #CBCED2;
+	line-height: 1;
+}
+
+.section-nav a.active {
+	color: #2B2B2B;
+}
+
+.section-nav a.active:after {
+	display: block;
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	z-index: 1;
+	width: .5rem;
+	height: .5rem;
+	margin-left: -.2rem;
+	-webkit-border-radius: 100%;
+	   -moz-border-radius: 100%;
+	        border-radius: 100%;
+	background-color: #F04040;
+}
+
 /*# sourceMappingURL=../maps/layout.css.map */

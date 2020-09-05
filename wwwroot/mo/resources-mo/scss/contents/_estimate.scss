@@ -1,41 +1,7 @@
 .estimate-wrap {
     background-color: #EFF2F7;
     padding-bottom: 4rem;
-    .section-nav {
-        @include Position( $position:sticky, $top: 0, $left: 0);
-        @include NoscrollBar;
-        @include Inline-scrolling;
-        @include Bold;
-        background-color: #EFF2F7;
-		padding-left: 1.7rem;
-		color: #000;
-        letter-spacing: 0;
-        z-index: 1;
-		a {
-            font-size:2.4rem;
-			position: relative;
-			display: inline-block;
-            padding: 1rem 0 0.8rem;
-            margin-right: 1.5rem;
-			color:#CBCED2;
-			line-height: 1;
-			&.active {
-				color:#2B2B2B;
-				&:after {
-					display: block;
-					content: '';
-					@include Position( $bottom: 0, $left: 50%);
-					z-index: 1;
-					width: .5rem;
-					height: .5rem;
-					margin-left: -.2rem;
-					border-radius: 100%;
-					background-color: #F04040;
-				}
-			}
-		}
-    }
-
+    
     .section-filter {
         padding:2rem 0 2.6rem;
         .selection {
