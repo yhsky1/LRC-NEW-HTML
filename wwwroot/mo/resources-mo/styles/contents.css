@@ -11,6 +11,65 @@
 	padding-bottom: 4rem;
 }
 
+.catharsis-wrap .section-list .catharsis-list-top {
+	background-color: #DBE1EA;
+	-webkit-border-radius: 1.5rem;
+	   -moz-border-radius: 1.5rem;
+	        border-radius: 1.5rem;
+	padding: 2.3rem 1.7rem 2.6rem;
+	margin-top: 1.5rem;
+}
+
+.catharsis-wrap .section-list .catharsis-list-top .catharsis-top-txt {
+	position: relative;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	   -moz-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	margin-bottom: -0.2rem;
+}
+
+.catharsis-wrap .section-list .catharsis-list-top .catharsis-top-txt strong {
+	margin-top: .8rem;
+	font-size: 1.7rem;
+	/*font-family:"ManropeB", "NotoM", serif;*/
+	font-family: "SpoqaB", serif;
+	font-weight: normal;
+}
+
+.catharsis-wrap .section-list .catharsis-list-top .catharsis-top-txt strong span {
+	font-size: 1.2rem;
+	display: block;
+	/*font-family:"ManropeL", "NotoL", serif;*/
+	font-family: "SpoqaL", serif;
+	font-weight: normal;
+	margin-bottom: .4rem;
+}
+
+.catharsis-wrap .section-list .catharsis-list-top .catharsis-top-txt:after {
+	display: block;
+	content: '';
+	width: 7rem;
+	height: 6rem;
+	background-repeat: no-repeat;
+	background-image: url("../../resources-mo/images/bgs/bg-shin.png");
+	background-position: center center;
+	-webkit-background-size: 100% auto;
+	   -moz-background-size: 100% auto;
+	        background-size: 100% auto;
+}
+
+.catharsis-wrap .section-list .catharsis-list-top .catharsis-top-btn {
+	position: relative;
+	z-index: 1;
+}
+
 .estimate-wrap {
 	background-color: #EFF2F7;
 	padding-bottom: 4rem;

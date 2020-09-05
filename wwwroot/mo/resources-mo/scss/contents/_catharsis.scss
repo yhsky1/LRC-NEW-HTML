@@ -3,7 +3,43 @@
     padding-bottom: 4rem;
 
     .section-list {
-        
+
+        .catharsis-list-top{
+            background-color: #DBE1EA;
+            border-radius: 1.5rem;
+            padding: 2.3rem 1.7rem 2.6rem;
+            margin-top: 1.5rem;
+            .catharsis-top-txt {
+                position: relative;
+                display: flex;
+                justify-content: center;
+                margin-bottom: -0.2rem;
+                strong {
+                    margin-top: .8rem;
+                    font-size: 1.7rem;
+                    @include Bold;
+                    span{
+                        font-size: 1.2rem;
+                        display: block;
+                        @include Nomal;
+                        margin-bottom: .4rem;
+                    }
+                }
+                &:after {
+                    display: block;
+                    content: '';
+                    width: 7rem;
+                    height: 6rem;
+                    @include Background($sprite:'bg-shin', $size:100% auto, $position:center center, $path:'bgs');
+                }
+            }
+            
+            .catharsis-top-btn {
+                position: relative;
+                z-index: 1;
+            }
+        }
+
     }
 
 }
