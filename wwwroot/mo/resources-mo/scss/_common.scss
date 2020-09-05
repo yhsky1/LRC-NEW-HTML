@@ -41,13 +41,29 @@ $extra-small-devices: 320px;
 	align-items: center;
 	justify-content: center;
 }
+@mixin Align-middle-column {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-flow: column;
+}
 @mixin Align-middle-left {
 	display: flex;
 	align-items: center;
 }
+@mixin Align-top-left {
+	display: flex;
+	align-items: flex-start;
+	justify-content: left;
+}
 @mixin Align-between {
 	display: flex;
 	align-items: center;
+	justify-content: space-between;
+}
+@mixin Align-between-top {
+	display: flex;
+	align-items: flex-start;
 	justify-content: space-between;
 }
 

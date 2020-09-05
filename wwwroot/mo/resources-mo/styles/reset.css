@@ -132,6 +132,60 @@ a, button, input, img, div, span {
 	outline: none;
 }
 
+input::-webkit-input-placeholder {
+	color: #C1C1C1;
+	line-height: normal;
+}
+
+input:-moz-placeholder {
+	color: #C1C1C1;
+	line-height: normal;
+}
+
+input::-moz-placeholder {
+	color: #C1C1C1;
+	line-height: normal;
+}
+
+input:-ms-input-placeholder {
+	color: #C1C1C1;
+	line-height: normal;
+}
+
+input::-ms-input-placeholder {
+	color: #C1C1C1;
+	line-height: normal;
+}
+
+input::placeholder {
+	color: #C1C1C1;
+	line-height: normal;
+}
+
+textarea::-webkit-input-placeholder {
+	color: #C1C1C1;
+}
+
+textarea:-moz-placeholder {
+	color: #C1C1C1;
+}
+
+textarea::-moz-placeholder {
+	color: #C1C1C1;
+}
+
+textarea:-ms-input-placeholder {
+	color: #C1C1C1;
+}
+
+textarea::-ms-input-placeholder {
+	color: #C1C1C1;
+}
+
+textarea::placeholder {
+	color: #C1C1C1;
+}
+
 @font-face {
 	font-family: "SpoqaL";
 	src: url("../fonts/Spoqa/Spoqa-Light.woff") format("woff"), url("../fonts/Spoqa/Spoqa-Light.woff2") format("woff2");

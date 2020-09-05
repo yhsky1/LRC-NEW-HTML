@@ -7,7 +7,12 @@
 	height: 4.1rem;
 	padding: 0 2.5rem 0 .9rem;
 	width: 100%;
-	@include Background($sprite:'ico-arrow-down', $type:'png', $size:.9rem, $position: center right .9rem); 
+	@include Background($sprite:'ico-arrow-down', $size:.9rem, $position: center right .9rem); 
+}
+.select-normal {
+	font-size: 1rem;
+	padding-right: .8rem;
+	@include Background($sprite:'ico-select2', $size:.5rem, $position: center right); 
 
 }
 

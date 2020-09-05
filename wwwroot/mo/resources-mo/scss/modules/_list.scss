@@ -204,7 +204,6 @@
 	overflow: hidden;
 	border-radius: 1.5rem;
 	box-sizing: border-box;
-	border: 1px solid #EBEBEB;
 	padding:2rem 0;
 	a {display: block;}
 	.text-top {	
@@ -229,12 +228,177 @@
 		}
 	}
 	.text-bottom {
-		@include Align-between;
+		@include Align-between-top;
 		padding: 1.7rem 0 0;
 		margin: 0 1.7rem;
 		border-top: 1px solid #EBEBEB;
 		font-size:1rem;
 		button{font-size:1rem;}
+	}
+}
+
+.unit-text-detail {
+	overflow: hidden;
+	border-radius: 1.5rem;
+	box-sizing: border-box;
+	padding:2rem 0;
+	background-color: #fff;
+	.text-detail-top {
+		@include Align-between;
+		padding: 0 1.7rem;
+		margin-bottom: 1.5rem;
+	}
+	.text-detail-cont {
+		padding: 0 1.7rem;
+		> strong {
+			display:block;
+			line-height: 1.3;
+			font-size:1.4rem;
+			@include Bold;
+			margin-bottom: 1.5rem;
+		}
+		.detail-cont-info {
+			margin-bottom: 1.5rem;
+			@include Align-between;
+			> b {
+				font-size: 1rem;
+				color: #999;
+			}
+		}
+		.detail-cont-txt {
+			border-top: 1px solid #2B2B2B;
+			padding: 1.5rem 0;
+			line-height: 1.4;
+		}
+	}
+	.text-detail-bottom {
+		@include Align-between-top;
+		padding: 1.7rem 0 0;
+		margin: 0 1.7rem;
+		border-top: 1px solid #EBEBEB;
+		font-size:1rem;
+		> div {@include Align-between-top;}
+		button{font-size:1rem;}
+	}
+	.text-buttons {
+		@include Align-top-left;
+		button{font-size:1rem;}
+		button + button {
+			margin-left:1rem;
+		}
+	}
+	.text-detail-reply {
+		padding: 0 1.7rem;
+		margin-top: 2rem;
+		.detail-reply-in{
+			border: 1px solid #EBEBEB;
+			border-radius: 1.5rem;
+		}
+		.detail-reply-top {
+			@include Align-between;
+			height:4.1rem;
+			padding: 0 1.7rem;
+			border-bottom: 1px solid #EBEBEB;
+			> strong {
+				font-size: 1.5rem;
+				@include Bold;
+				b {color:#F04040}
+			}
+		}
+		.detail-reply-list {
+			padding: 1.7rem;
+			li + li {
+				margin-top: 1.7rem;
+				padding-top: 1.7rem;
+				border-top: 1px solid #EBEBEB;
+			}
+			.reply-list-top {
+				@include Align-middle-left;
+				font-size:1rem;
+				> span {	
+					color:#999;
+					margin-left: .5rem;
+				}
+			}
+			.reply-list-cont {
+				@include Bold;
+				font-size:1.1rem;
+				line-height: 1.4;
+				margin-top:1rem;
+			}
+			.reply-list-bottom {
+				margin-top:1rem;
+			}
+		}
+
+		.reply-list-commend {
+			.commend-item {
+				background-color: #F8F8F8;
+				margin-top: 1.7rem;
+				padding: 1.2rem 1.7rem 1.7rem 3rem;
+				border-radius: 1rem;
+				position: relative;
+				&.write {
+					border:1px solid #2B2B2B;
+					background-color: #fff;
+				}
+				&:before {
+					display: block;
+					content: '';
+					width: 1.1rem;
+					height: 1.1rem;
+					@include Background($sprite:'ico-reply-arr', $size:95% auto, $position:center center); 
+					@include Position($top: 1.2rem, $left: 1.2rem);
+				}
+				.commend-item-top {
+					@include Align-middle-left;
+					> b {
+						font-size: 1rem;
+						margin-left: .5rem;
+					}
+					> span {
+						font-size: 1rem;
+						margin-left: .5rem;
+						color:#999;
+					}
+				}
+				.commend-item-cont {
+					font-size:1.1rem;
+					line-height: 1.4;
+					margin-top:.9rem;
+				}
+				.commend-item-bottom {
+					@include Align-between;
+					margin-top:.9rem;
+				}
+			}
+		}
+
+		.reply-list-none {
+			height: 10rem;
+			@include Align-middle-column;
+			> strong {
+				display: block;
+				font-size: 1.2rem;
+				margin-top: 1.3rem;
+			}
+			> span {
+				display: block;
+				font-size: 1rem;
+				color:#999;
+				margin-top: .4rem;
+			}
+		}
+
+
+	}
+	.text-detail-write {
+		padding: 0 1.7rem;
+		margin-top:.9rem;
+		input {
+			@include Background($sprite:'ico-comment', $size:1.4rem, $position: center right 1.2rem);
+			padding-right: 3.5rem; 
+		}
 	}
 }
 
