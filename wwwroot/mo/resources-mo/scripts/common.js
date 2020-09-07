@@ -26,7 +26,7 @@ $(function(){
     if($('.estimate-wrap .section-nav').length) { MUI.event.navCenter($('.estimate-wrap .section-nav'), 'active'); }
     
     //textarea 자동높이 조절
-    if($('.textarea.auto-height')){
+    if($('.textarea.auto-height').length){
         autosize($('.textarea.auto-height textarea'));
     }
     
