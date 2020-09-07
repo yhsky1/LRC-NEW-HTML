@@ -177,7 +177,6 @@
                     font-size: 1.1rem;
                     line-height: 1.3;
                     margin-top: 1.2rem;
-                    color: #999;
                     text-indent: -1.4rem;
                     padding-left:1.7rem;
                     & > li{
@@ -191,6 +190,38 @@
             &.item-step2 {
                 h3 {border-bottom: 1px solid #EBEBEB;}
                 .item-cont {
+                    padding: 0 1.7rem;
+                    & > ul{
+                        & > li{
+                            @include Align-middle;
+                            & > .detail-layer-inputT-tit{
+                                width:20%;
+                                @include Bold;
+                            }
+                            & > div.detail-layer-inputT-tit{
+                                width:100%;
+                            }
+                            .inputT{
+                                width:80%;
+                                &  > input:disabled{
+                                    background-color:#FAFAFA; 
+                                }
+                            }
+                            .list-type-col3 > .inputT{
+                                width:33%;
+                                margin-left:1.7rem;
+                            }
+                            .list-type-col3 > .inputT:first-child{
+                                margin-left:0;
+                            }
+                        }
+                    }
+                }
+                .guide{
+                    font-size: 1.1rem;
+                    line-height: 1.3;
+                    margin-top: 1.2rem;
+                    color: #999;
                     padding: 0 1.7rem;
                 }
             }
