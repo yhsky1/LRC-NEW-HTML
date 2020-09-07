@@ -1595,6 +1595,13 @@ button.swiper-pagination-bullet {
 	        border-radius: 100%;
 }
 
+.btn-share.ty2 {
+	background-color: #fff;
+	-webkit-box-shadow: 0 0px 10px rgba(0, 0, 0, 0.05);
+	   -moz-box-shadow: 0 0px 10px rgba(0, 0, 0, 0.05);
+	        box-shadow: 0 0px 10px rgba(0, 0, 0, 0.05);
+}
+
 a.btn {
 	display: -webkit-inline-box;
 	display: -webkit-inline-flex;
@@ -1671,6 +1678,17 @@ a.btn {
 .icon.prev {
 	background-repeat: no-repeat;
 	background-image: url("../../resources-mo/images/icons/ico-prev.png");
+	background-position: center center;
+	-webkit-background-size: 100% auto;
+	   -moz-background-size: 100% auto;
+	        background-size: 100% auto;
+	width: 0.5rem;
+	height: 1rem;
+}
+
+.icon.next {
+	background-repeat: no-repeat;
+	background-image: url("../../resources-mo/images/icons/ico-next.png");
 	background-position: center center;
 	-webkit-background-size: 100% auto;
 	   -moz-background-size: 100% auto;
@@ -2085,11 +2103,55 @@ a.btn {
 	background-repeat: no-repeat;
 	background-image: url("../../resources-mo/images/icons/ico-comment.png");
 	background-position: center center;
+	-webkit-background-size: 95% auto;
+	   -moz-background-size: 95% auto;
+	        background-size: 95% auto;
+	width: 1.5rem;
+	height: 1.5rem;
+}
+
+.icon.benefit01 {
+	background-repeat: no-repeat;
+	background-image: url("../../resources-mo/images/icons/ico-benefit01.png");
+	background-position: center center;
 	-webkit-background-size: 100% auto;
 	   -moz-background-size: 100% auto;
 	        background-size: 100% auto;
-	width: 1.4rem;
-	height: 1.4rem;
+	width: 5.5rem;
+	height: 5.5rem;
+}
+
+.icon.benefit02 {
+	background-repeat: no-repeat;
+	background-image: url("../../resources-mo/images/icons/ico-benefit02.png");
+	background-position: center center;
+	-webkit-background-size: 100% auto;
+	   -moz-background-size: 100% auto;
+	        background-size: 100% auto;
+	width: 5.5rem;
+	height: 5.5rem;
+}
+
+.icon.benefit03 {
+	background-repeat: no-repeat;
+	background-image: url("../../resources-mo/images/icons/ico-benefit03.png");
+	background-position: center center;
+	-webkit-background-size: 100% auto;
+	   -moz-background-size: 100% auto;
+	        background-size: 100% auto;
+	width: 5.5rem;
+	height: 5.5rem;
+}
+
+.icon.bannerClose {
+	background-repeat: no-repeat;
+	background-image: url("../../resources-mo/images/icons/ico-close02.png");
+	background-position: center center;
+	-webkit-background-size: 100% auto;
+	   -moz-background-size: 100% auto;
+	        background-size: 100% auto;
+	width: 1.2rem;
+	height: 1.2rem;
 }
 
 .flag {

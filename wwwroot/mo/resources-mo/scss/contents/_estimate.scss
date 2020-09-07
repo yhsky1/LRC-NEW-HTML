@@ -667,7 +667,102 @@
                     }
                 }
             }
+
+            .detail-layer-closeBn {
+                margin-top: 3.4rem;
+                padding: 0 1.7rem;
+                position: relative;
+                button {
+                    @include Position($top: 1.2rem, $right: 3rem);
+                }
+            }
+
+
         }
+
+        .detail-infos {
+            .detail-infos-top {
+                position: relative;
+                padding: 2.3rem 1.7rem 0;
+                > span {
+                    display: block;
+                    font-size: 1.2rem;
+                    padding-right: 5rem;
+                    margin-bottom: .5rem;
+                }
+                > strong {
+                    display: block;
+                    font-size: 1.2rem;
+                    padding-right: 5rem;
+                    margin-bottom: .5rem;
+                    @include Bold;
+                }
+                .cover {
+                    padding: 0 1.7rem;
+                    margin-bottom: -4rem;
+                    img {
+                        mix-blend-mode: multiply;
+                    }
+                }
+                .btn-share {
+                    @include Position($top: 2.3rem, $right: 1.7rem);
+                }
+            }
+            .detail-infos-cont {
+                background-color: #fff;
+                border-radius: 1.5rem;
+                padding: 4rem 1.7rem 2.3rem;
+                .infos-cont {
+                    text-align: center;
+                    > b {
+                        display: block;
+                        font-size: 1.2rem;
+                    }
+                    > strong {
+                        display: block;
+                        @include Bold;
+                        font-size: 2.8rem;
+                    }
+                    > span {
+                        display: block;
+                        color: #999;
+                        font-size: 1.2rem;
+                    }
+                }
+                .price {
+                    padding-top: 1.7rem;
+                    margin-top: 1.7rem;
+                    border-top: 1px solid #EBEBEB;
+                    li {
+                        @include Align-between-top;
+                        line-height: 1;
+                        & + li {margin-top: .7rem;}
+                    }
+                }
+                .sale-list {
+                    margin-top: 1.7rem;
+                    li {
+                        a {
+                            @include Align-between;
+                            padding: 1.2rem;
+                            background-color: #F9FAFC;
+                            border: 1px solid #EBEBEB;
+                            border-radius: 1rem;
+                            b {
+                                font-size: .9rem;
+                                margin-right: .8rem;
+                            }
+                            span {
+                                font-size: 1.1rem;
+                            }
+                        }
+                        line-height: 1;
+                        & + li {margin-top: .7rem;}
+                    }
+                }
+            }
+        }
+
 
     }
     
