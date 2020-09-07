@@ -38,6 +38,7 @@ body.fixed {
 		.slide-top {
 			background-color: #fff;
 			border-radius: 2rem 2rem 0 0;
+			margin-top: 11rem;
 			.layer-slide-close {
 				cursor: pointer;
 				width: 100%;
@@ -75,7 +76,7 @@ body.fixed {
 			background-color: #fff;
 			overflow-y: visible;
 			overflow-x: hidden;
-			max-height:calc(100vh - 150px);
+			max-height:calc(100vh - 11rem);
 			.slide-cont {
 				padding: 0 1.7rem;
 			}
