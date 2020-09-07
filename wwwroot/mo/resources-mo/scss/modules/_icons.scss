@@ -242,6 +242,12 @@
         width: 5.2rem;
         height: 5.2rem;
     }
+    &.calendar {
+        @include Background($sprite:'ico-calendar', $size:100% auto, $position:center center);
+        width: 1.7rem;
+        height: 2.2rem;
+        @include Position($top: .9rem, $right: 1.3rem);
+    }
     
 }
 

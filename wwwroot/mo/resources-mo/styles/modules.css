@@ -2165,6 +2165,20 @@ a.btn {
 	height: 5.2rem;
 }
 
+.icon.calendar {
+	background-repeat: no-repeat;
+	background-image: url("../../resources-mo/images/icons/ico-calendar.png");
+	background-position: center center;
+	-webkit-background-size: 100% auto;
+	   -moz-background-size: 100% auto;
+	        background-size: 100% auto;
+	width: 1.7rem;
+	height: 2.2rem;
+	position: absolute;
+	top: 0.9rem;
+	right: 1.3rem;
+}
+
 .flag {
 	height: 1.5rem;
 	-webkit-border-radius: 1rem;
