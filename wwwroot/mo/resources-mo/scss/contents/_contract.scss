@@ -98,6 +98,36 @@
         border-radius: 2rem 2rem 0 0;
         .detail-layer-cont {
             position: relative;
+            .detail-layer-cont-limited{
+                background-color: #fff;
+                padding: 0 1.7rem 2.3rem;
+                border-radius: 0 0 1.5rem 1.5rem;
+                .detail-layer-cont-pchase{
+                    width:100%;
+                    padding:1.7rem 0 2.2rem 0;
+                    border-top:.15rem solid #EBEBEB;
+                    & > span{
+                        display:inline-block;
+                        width:49%;
+                    }
+                    & > em{
+                        display:inline-block;
+                        color:#F04040;
+                        @include Bold;
+                        width:49%;
+                    }
+                }
+                & > .table{
+                    border-radius: 1.5rem;
+                    border:.15rem solid #EBEBEB;
+                    & > table tr:first-child th{
+                        border-top:0 none;
+                    }
+                    & > table tr:first-child td{
+                        border-top:0 none;
+                    }
+                }
+            }
         }
         .layer-item {
             margin-top:1.1rem;
@@ -116,6 +146,21 @@
         padding:0 1.7rem;
         overflow: hidden;
         border-radius: 2rem 2rem 0 0;
-        height: 12rem;
+        // height: 12rem;
+        .normal{
+            margin:0 auto;
+            color:#2B2B2B;
+            padding: 4.2rem 0 2.2rem 0;
+            & > strong{
+                font-size:2.8rem;
+                @include Bold;
+            }
+            & > em{
+                display:block;
+                font-size:1rem;
+                color:#999;
+                padding-top:.4rem;
+            }
+        }
     }
 }

@@ -26,7 +26,7 @@ $(function(){
     if($('.estimate-wrap .section-nav').length) { MUI.event.navCenter($('.estimate-wrap .section-nav'), 'active'); }
     
     //textarea 자동높이 조절
-    if($('.textarea.auto-height').length){
+    if($('.textarea.auto-height')){
         autosize($('.textarea.auto-height textarea'));
     }
     
@@ -124,7 +124,7 @@ $(function(){
     });
 
     //drawer버튼 열기
-    MUI.event.toggle('.btn-drawer', null, true, function(logic, layer) {
+    MUI.event.toggle('.btn-drawer', null, function(logic, layer) {
         console.log(11);
         $BODY.addClass("fixed");
         $('.btn-drawer-close').addClass('active');
@@ -132,7 +132,7 @@ $(function(){
     });
 
     //drawer버튼 닫기
-    MUI.event.toggle('.btn-drawer-close', null, true, function(logic, layer) {
+    MUI.event.toggle('.btn-drawer-close', null, function(logic, layer) {
         $BODY.removeClass("fixed");
         $('.btn-drawer').removeClass('active');
         logic();
@@ -192,7 +192,7 @@ $(function(){
 
     //견적 step2 모델 선택
     if($('.estimate-wrap .item-step2').length) {
-        MUI.event.toggle('.item-step2 .model-toggle-btn', '.item-step2 .model-toggle-cont', false, function(logic, layer) {
+        MUI.event.toggle('.item-step2 .model-toggle-btn', '.item-step2 .model-toggle-cont', function(logic, layer) {
             //console.log('toggle');
             $('.estimate-wrap .item-step2 input').prop('checked', false);
             logic();
@@ -201,14 +201,14 @@ $(function(){
 
     //견적 step6 계약조건 선택
     if($('.estimate-wrap .item-step6').length) {
-        MUI.event.toggle('.item-step6 .model-toggle-btn', '.item-step6 .model-toggle-cont', true, function(logic, layer) {
+        MUI.event.toggle('.item-step6 .model-toggle-btn', '.item-step6 .model-toggle-cont', function(logic, layer) {
             //console.log('toggle');
             logic();
         });
     }
     //견적 기본정보 토글
     if($('.summary-table-wrap .summary-toggle-btn').length) {
-        MUI.event.toggle('.summary-table-wrap .summary-toggle-btn', '.summary-table-wrap .summary-toggle-cont', true, function(logic, layer) {
+        MUI.event.toggle('.summary-table-wrap .summary-toggle-btn', '.summary-table-wrap .summary-toggle-cont', function(logic, layer) {
             logic();
         });
     }
@@ -273,7 +273,7 @@ $(function(){
 
     //로그인 견적화면 메뉴 토글
     if($('.login-wrap .detail-layer-integrated').length) {
-        MUI.event.toggle('.detail-layer-integrated .model-toggle-btn', '.detail-layer-integrated .model-toggle-cont', false, function(logic, layer) {
+        MUI.event.toggle('.detail-layer-integrated .model-toggle-btn', '.detail-layer-integrated .model-toggle-cont', function(logic, layer) {
             //console.log('toggle');
             $('.login-wrap .detail-layer-integrated input').prop('checked', false);
             logic();

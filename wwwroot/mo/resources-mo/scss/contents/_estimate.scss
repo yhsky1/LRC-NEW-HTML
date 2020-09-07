@@ -646,83 +646,28 @@
                 }
             }
 
-            .detail-layer-summary {
-                padding: 0 1.7rem 2.3rem;
-                background-color: #fff;
-                border-radius: 0 0 1.5rem 1.5rem;
-                .guide {
-                    padding: 1.7rem 0;
-                    border-top: 1px solid #EBEBEB;
-                    display: flex;
-                    align-items: center;
-                    p {
-                        font-size:1.1rem;
-                        margin-left:.9rem;
-                        b{
-                            font-size:1.1rem;
-                            color: #F04040;
-                        }
-                    }
-                }
-            }
-
-            .detail-layer-benefit {
-                width:23.5rem;
-                margin: 3.4rem auto 0;
-                .layer-benefit-top {
-                    > span {
-                        display: block;
-                        text-align: center;
-                        font-size: 1rem;
-                        margin-bottom: .4rem;
-                    }
-                    > strong {
-                        display: block;
-                        text-align: center;
-                        font-size:2.6rem;
-                        color:#F04040;
-                        @include Bold;
-                    }
-                }
-                .layer-benefit-cont {
-                    margin-top: 1.7rem;
-                    ul {
-                        @include Align-between-top;
-                    }
-                    li {
-
-                    }
-                    .inner {
-                        @include Align-middle-column;
-                        > span {
-                            display: block;
-                            text-align: center;
-                            line-height: 1.3;
-                            font-size: 1rem;
-                            margin-top: .4rem;
-                        }
-                        > strong {
-                            display: block;
-                            text-align: center;
-                            @include Bold;
-                            margin-top: 1.1rem;
-                        }
-                    }
-                }
-            }
-
-            .detail-layer-closeBn {
-                margin-top: 1.7rem;
-                padding: 0 1.7rem;
-                position: relative;
-                button {
-                    @include Position($top: 0, $left: 0);
-                }
-            }
-
 
         }
 
+        .detail-layer-summary {
+            padding: 0 1.7rem 2.3rem;
+            background-color: #fff;
+            border-radius: 0 0 1.5rem 1.5rem;
+            .guide {
+                padding: 1.7rem 0;
+                border-top: 1px solid #EBEBEB;
+                display: flex;
+                align-items: center;
+                p {
+                    font-size:1.1rem;
+                    margin-left:.9rem;
+                    b{
+                        font-size:1.1rem;
+                        color: #F04040;
+                    }
+                }
+            }
+        }
 
     }
     

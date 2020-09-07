@@ -73,13 +73,6 @@ $extra-small-devices: 320px;
 	justify-content: center;
 }
 
-@mixin Inline-align-top {
-	display: inline-flex;
-	align-items: flex-start;
-	justify-content: center;
-}
-
-
 /*인라인 가로스크롤*/
 @mixin Inline-scrolling {
 	box-sizing: border-box;

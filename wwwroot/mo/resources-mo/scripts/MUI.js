@@ -105,7 +105,6 @@ var MUI = MUI || {
 		},
 	},
 	layer: {
-		TOUCH_CLICK: ('ontouchstart' in window) ? 'touchstart' : 'click',
 		scrollTop: 0,
 		calculate: function(layer){
 			var layer = $(layer),
@@ -139,8 +138,9 @@ var MUI = MUI || {
 
 		},
 		openClick: function(target, dimmed, parent, callback){
-			var that = this;
-            $(document).on(this.TOUCH_CLICK, target, function(e){
+			var that = this,
+				TOUCH_CLICK = ('ontouchstart' in window) ? 'touchstart' : 'click';
+            $(document).on(TOUCH_CLICK, target, function(e){
                 var layer = '.'+$(this).data('layer');
                 var targetDom = $(this);
                 //that.scrollTop = $(window).scrollTop();
@@ -176,8 +176,9 @@ var MUI = MUI || {
             });
         },
         closeClick: function(target, dimmed, parent, callback){
-			var that = this
-            $(document).on(this.TOUCH_CLICK, target, function(e){
+			var that = this,
+				TOUCH_CLICK = ('ontouchstart' in window) ? 'touchstart' : 'click';
+            $(document).on(TOUCH_CLICK, target, function(e){
                 var layer;
 				var targetDom = $(this);
 				//console.log(targetDom.data('layer'));
@@ -223,10 +224,9 @@ var MUI = MUI || {
         },
 	},
 	event: {
-		TOUCH_CLICK: ('ontouchstart' in window) ? 'touchstart' : 'click',
-		toggle: function(target, parent, touch, callback){
-			var EventType = touch ? this.TOUCH_CLICK : 'click';
-			$(document).on(EventType, target, function(e) {
+		toggle: function(target, parent, callback){
+			var TOUCH_CLICK = ('ontouchstart' in window) ? 'touchstart' : 'click';
+			$(document).on(TOUCH_CLICK, target, function(e) {
 				var $this = $(this);
 				var $targetDiv = $(target);
 				var layer = $('.' + $this.data('target'));
@@ -295,7 +295,7 @@ var MUI = MUI || {
 				}
 
 				if(callback) {
-					callback(logic, layer, target);
+					callback(logic, layer);
 				}
 				else{
 					logic();
