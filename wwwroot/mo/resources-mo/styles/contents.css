@@ -1828,10 +1828,6 @@
 }
 
 .contract-wrap .detail-view {
-	position: -webkit-sticky;
-	position: sticky;
-	top: 0;
-	left: 0;
 	margin-bottom: -1.5rem;
 	background-color: #EFF2F7;
 	padding: 2rem 1.7rem 10.2rem;
