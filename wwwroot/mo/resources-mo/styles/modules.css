@@ -3445,7 +3445,9 @@ body.fixed {
 	-webkit-box-sizing: border-box;
 	   -moz-box-sizing: border-box;
 	        box-sizing: border-box;
-	margin-top: 11rem;
+	max-height: -webkit-calc(100vh - 1rem);
+	max-height: -moz-calc(100vh - 1rem);
+	max-height: calc(100vh - 1rem);
 }
 
 .layer-slide.active {
