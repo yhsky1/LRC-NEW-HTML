@@ -3460,7 +3460,10 @@ body.fixed {
 	-webkit-border-radius: 2rem 2rem 0 0;
 	   -moz-border-radius: 2rem 2rem 0 0;
 	        border-radius: 2rem 2rem 0 0;
-	margin-top: 11rem;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 6rem;
+	left: 0;
 }
 
 .layer-slide .slide-top .layer-slide-close {
