@@ -1880,7 +1880,7 @@
 }
 
 .contract-wrap .detail-layout .layer-item.item-step1 h3 {
-	border-bottom: 1px solid #EBEBEB;
+	border-bottom: .15rem solid #EBEBEB;
 }
 
 .contract-wrap .detail-layout .layer-item.item-step1 .item-cont {
@@ -1916,7 +1916,7 @@
 }
 
 .contract-wrap .detail-layout .layer-item.item-step2 h3 {
-	border-bottom: 1px solid #EBEBEB;
+	border-bottom: .15rem solid #EBEBEB;
 }
 
 .contract-wrap .detail-layout .layer-item.item-step2 .item-cont {
@@ -1952,6 +1952,10 @@
 	width: 100%;
 }
 
+.contract-wrap .detail-layout .layer-item.item-step2 .item-cont > ul > li > div.detail-layer-inputT-tit ~ .inputT {
+	width: 100%;
+}
+
 .contract-wrap .detail-layout .layer-item.item-step2 .item-cont > ul > li .inputT {
 	width: 80%;
 }
@@ -1960,13 +1964,37 @@
 	background-color: #FAFAFA;
 }
 
+.contract-wrap .detail-layout .layer-item.item-step2 .item-cont > ul > li .list-type-col3 {
+	width: 100%;
+	margin-left: 0;
+}
+
 .contract-wrap .detail-layout .layer-item.item-step2 .item-cont > ul > li .list-type-col3 > .inputT {
-	width: 33%;
+	width: 28%;
 	margin-left: 1.7rem;
 }
 
 .contract-wrap .detail-layout .layer-item.item-step2 .item-cont > ul > li .list-type-col3 > .inputT:first-child {
 	margin-left: 0;
+}
+
+.contract-wrap .detail-layout .layer-item.item-step2 .item-cont > ul > li .list-type-col3 > .inputT:first-child:after {
+	display: none;
+}
+
+.contract-wrap .detail-layout .layer-item.item-step2 .item-cont > ul > li .list-type-col3 > .inputT:after {
+	display: block;
+	content: "";
+	border-left: 1rem solid #2B2B2B;
+	position: absolute;
+	top: 50%;
+	left: -1.4rem;
+	height: 0.15rem;
+}
+
+.contract-wrap .detail-layout .layer-item.item-step2 .item-cont > ul > li .detail-layer-iconBox > label {
+	background-color: transparent;
+	border: 0 none;
 }
 
 .contract-wrap .detail-layout .layer-item.item-step2 .guide {
@@ -1978,7 +2006,7 @@
 }
 
 .contract-wrap .detail-layout .layer-item.item-step3 h3 {
-	border-bottom: 1px solid #EBEBEB;
+	border-bottom: .15rem solid #EBEBEB;
 }
 
 .contract-wrap .detail-layout .layer-item.item-step3 .item-cont {
@@ -1986,7 +2014,7 @@
 }
 
 .contract-wrap .detail-layout .layer-item.item-step4 h3 {
-	border-bottom: 1px solid #EBEBEB;
+	border-bottom: .15rem solid #EBEBEB;
 }
 
 .contract-wrap .detail-layout .layer-item.item-step4 .item-cont {
@@ -1994,7 +2022,7 @@
 }
 
 .contract-wrap .detail-layout .layer-item.item-step5 h3 {
-	border-bottom: 1px solid #EBEBEB;
+	border-bottom: .15rem solid #EBEBEB;
 }
 
 .contract-wrap .detail-layout .layer-item.item-step5 .item-cont {
@@ -2002,7 +2030,7 @@
 }
 
 .contract-wrap .detail-layout .layer-item.item-step6 h3 {
-	border-bottom: 1px solid #EBEBEB;
+	border-bottom: .15rem solid #EBEBEB;
 }
 
 .contract-wrap .detail-layout .layer-item.item-step6 .item-cont {
