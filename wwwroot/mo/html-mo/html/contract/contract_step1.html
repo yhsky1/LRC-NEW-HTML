@@ -56,9 +56,10 @@
 						<span>르노삼성 QM6<em>가솔린 2.0 2WD SEDAN</em></span>
 						<strong>차량가<em>24,532,000원</em></strong>
 					</div>
-					<div class="detail-view-img"><img src="../../../resources-mo/images/@temp-cntract-view.png" alt="더미1"/></div>
 				</div>
 				<!--//상단 뷰-->
+
+				<div class="detail-view-img"><img src="../../../resources-mo/images/@temp-estimate-list06.png" alt="더미1"/></div>
 				
 				<div class="detail-layout">
 
@@ -268,11 +269,11 @@
 										</li>
 										<li class="detail-list-opt-info">
 											<h4>발급일</h4>
-											<div class="detail-layer-inputT inputT"><input type="text" id="" name="" title="name" placeholder="" value=""><i class="icon calendar"></i></div>
+											<div class="detail-layer-inputT inputT"><input type="date" id="" name="" title="name" placeholder="" value=""></div>
 										</li>
 										<li class="detail-list-opt-info">
 											<h4>갱신일</h4>
-											<div class="detail-layer-inputT inputT"><input type="text" id="" name="" title="name" placeholder="" value=""><i class="icon calendar"></i></div>
+											<div class="detail-layer-inputT inputT"><input type="date" id="" name="" title="name" placeholder="" value=""></div>
 										</li>
 									</ul>
 								</div>
@@ -302,7 +303,7 @@
 												</div>
 											</li>
 										</ul>
-										<div class="detail-layer-normal">
+										<div class="detail-layer-normal active">
 											<ul>
 												<li>
 													<h4>결제일 (매월)</h4>
@@ -354,19 +355,43 @@
 											</ul>
 											<p class="guide">※ 카드 자동이체 납부를 원하실 경우, 반드시 신용카드를 등록해 주세요. 체크카드는 자동이체 처리가 되지 않습니다.</p>
 											<p class="guide">※ 체크카드 등록으로 인한 대여료 미납 시 연체이자 등 불이익이 발생 할 수 있습니다.</p>
-											<div class="model-toggle-btn" data-target="toggle-cont-01" data-on="true" data-siblings="true">
-												<span>신용카드 자동이체 동의</span>
-											</div>
-											<div class="model-toggle-cont toggle-cont-01">
-												<p class="model-toggle-cont-tit">신용카드 자동이체</p>
-												<div class="model-toggle-cont-descri">롯데렌터카 롯데렌터카 장기대여 견적신청, 견적회신 및 상담, 장기대여 계약의 체결∙이행∙관리, 신청서비스 제공,  본인여부 확인, 분쟁 및 민원 처리</div>
-												<p class="model-toggle-cont-tit">신용카드 자동이체2</p>
-												<div class="model-toggle-cont-descri">성명, 연락처(휴대전화)</div>
-												<p class="model-toggle-cont-tit">신용카드 자동이체3</p>
-												<div class="model-toggle-cont-descri">성명, 연락처(휴대전화)</div>
+											<div class="chk-agree-list">
+												<div class="chk-agree-cols">
+													<div class="chk-agree-top">
+														<div class="inputC">
+															<input type="checkbox" name="checkbox2" id="checkbox2-2">
+															<label for="checkbox2-2">
+																<i class="icon"></i>
+																<span>신용카드 자동이체 동의</span>
+															</label>
+														</div> 
+														<button type="button" class="btn-toggle gray agree-toggle-btn" data-target="toggle-cont-001" data-on="true" data-siblings="true"></button>
+													</div>
+													<div class="agree-toggle-cont toggle-cont-001">
+														<div class="toggle-cont-in">
+															<div class="tit">신용카드 자동이체</div>
+															<div class="txt">
+																롯데렌터카 롯데렌터카 장기대여 견적신청, 견적회신 및 상담, 장기대여 계약의 체결∙이행∙관리, 신청서비스 제공,  본인여부 확인, 분쟁 및 민원 처리
+															</div>
+															<div class="tit">신용카드 자동이체2</div>
+															<div class="txt">
+																성명, 연락처(휴대전화)
+																롯데렌터카 롯데렌터카 장기대여 견적신청, 견적회신 및 
+																상담, 장기대여 계약의 체결∙이행∙관리, 신청서비스 제공, 
+																본인여부 확인, 분쟁 및 민원 처리
+															</div>
+															<div class="tit">신용카드 자동이체3</div>
+															<div class="txt">
+																롯데렌터카 롯데렌터카 장기대여 견적신청, 견적회신 및 
+																상담, 장기대여 계약의 체결∙이행∙관리, 신청서비스 제공, 
+																본인여부 확인, 분쟁 및 민원 처리
+															</div>
+														</div>
+													</div>
+												</div>
 											</div>
 										</div>
-										<div class="detail-layer-integrated active">
+										<div class="detail-layer-integrated">
 											<ul>
 												<li>
 													<h4>결제일 (매월)</h4>
@@ -411,16 +436,40 @@
 											</ul>
 											<p class="guide">※ 자동이체의 경우 계약자의 이름(개인사업자는 대표자명)과 CMS계좌 예금주가 일치해야 합니다. 예금주명이 상이하거나 사업자명이 포함된 경우 정상적인 인증이 되지 않습니다.</p>
 											<p class="guide">※ 계좌번호는 계좌 개설 당시의 계좌번호로만 입력해주세요. 임의로 생성된 평생계좌 번호(휴대폰 번호 등)는 자동이체 불가합니다. 이로 인한 대여료 미납 시 연등 불이익이 발생할 수 있습니다.</p>
-											<div class="model-toggle-btn" data-target="toggle-cont-01" data-on="true" data-siblings="true">
-												<span>출금 자동이체 동의</span>
-											</div>
-											<div class="model-toggle-cont toggle-cont-01">
-												<p class="model-toggle-cont-tit">출금 자동이체</p>
-												<div class="model-toggle-cont-descri">롯데렌터카 롯데렌터카 장기대여 견적신청, 견적회신 및 상담, 장기대여 계약의 체결∙이행∙관리, 신청서비스 제공,  본인여부 확인, 분쟁 및 민원 처리</div>
-												<p class="model-toggle-cont-tit">출금 자동이체2</p>
-												<div class="model-toggle-cont-descri">성명, 연락처(휴대전화)</div>
-												<p class="model-toggle-cont-tit">출금 자동이체3</p>
-												<div class="model-toggle-cont-descri">성명, 연락처(휴대전화)</div>
+											<div class="chk-agree-list">
+												<div class="chk-agree-cols">
+													<div class="chk-agree-top">
+														<div class="inputC">
+															<input type="checkbox" name="checkbox2" id="checkbox2-3">
+															<label for="checkbox2-3">
+																<i class="icon"></i>
+																<span>출금 자동이체 동의</span>
+															</label>
+														</div> 
+														<button type="button" class="btn-toggle gray agree-toggle-btn" data-target="toggle-cont-002" data-on="true" data-siblings="true"></button>
+													</div>
+													<div class="agree-toggle-cont toggle-cont-002">
+														<div class="toggle-cont-in">
+															<div class="tit">출금 자동이체</div>
+															<div class="txt">
+																롯데렌터카 롯데렌터카 장기대여 견적신청, 견적회신 및 상담, 장기대여 계약의 체결∙이행∙관리, 신청서비스 제공,  본인여부 확인, 분쟁 및 민원 처리
+															</div>
+															<div class="tit">출금 자동이체2</div>
+															<div class="txt">
+																성명, 연락처(휴대전화)
+																롯데렌터카 롯데렌터카 장기대여 견적신청, 견적회신 및 
+																상담, 장기대여 계약의 체결∙이행∙관리, 신청서비스 제공, 
+																본인여부 확인, 분쟁 및 민원 처리
+															</div>
+															<div class="tit">출금 자동이체3</div>
+															<div class="txt">
+																롯데렌터카 롯데렌터카 장기대여 견적신청, 견적회신 및 
+																상담, 장기대여 계약의 체결∙이행∙관리, 신청서비스 제공, 
+																본인여부 확인, 분쟁 및 민원 처리
+															</div>
+														</div>
+													</div>
+												</div>
 											</div>
 										</div>
 									</div>
