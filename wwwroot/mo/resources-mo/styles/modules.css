@@ -3519,9 +3519,9 @@ body.fixed {
 	background-color: #fff;
 	overflow-y: visible;
 	overflow-x: hidden;
-	max-height: -webkit-calc(100vh - 100px);
-	max-height: -moz-calc(100vh - 100px);
-	max-height: calc(100vh - 100px);
+	max-height: -webkit-calc(100vh - 150px);
+	max-height: -moz-calc(100vh - 150px);
+	max-height: calc(100vh - 150px);
 }
 
 .layer-slide .slide-inner .slide-cont {
