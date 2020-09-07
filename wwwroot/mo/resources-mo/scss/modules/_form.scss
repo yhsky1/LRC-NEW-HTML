@@ -15,6 +15,21 @@
 	@include Background($sprite:'ico-select2', $size:.5rem, $position: center right); 
 
 }
+.textarea {
+	border:1px solid #EBEBEB;
+	border-radius: 1rem;
+	background-color: #fff;
+	padding:0 1.2rem;
+	position: relative;
+	textarea {
+		padding:1.5rem 0;
+		overflow: auto;
+		width: 100%;
+		resize: none;
+		line-height: 12px;
+		line-height: 1.3;
+	}
+}
 
 .inputR {
 	@include Vertical-inline;

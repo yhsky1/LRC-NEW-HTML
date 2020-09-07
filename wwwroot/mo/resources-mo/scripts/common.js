@@ -24,7 +24,12 @@ $(function(){
 
     //견적 상단네비 엑티브시 센터
     if($('.estimate-wrap .section-nav').length) { MUI.event.navCenter($('.estimate-wrap .section-nav'), 'active'); }
-
+    
+    //textarea 자동높이 조절
+    if($('.textarea.auto-height')){
+        autosize($('.textarea.auto-height textarea'));
+    }
+    
 
 
     /* 레이어팝업-------------------------------------------------*/

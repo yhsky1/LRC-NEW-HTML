@@ -202,3 +202,44 @@ Undefined: 정책 적용 안함.<br />
 
 5. 기타
 a. 특수기호는 엔티티(Entity) 코드로 변환하여 사용
+
+
+### `■ rem 단위변환 가이드`
+.2rem = 2.5px<br/>
+.4rem = 5px<br/>
+.6rem = 7px<br/>
+.7rem = 8px<br/>
+.9rem =10.5px<br/>
+1rem = 11.5px<br/>
+1.1rem = 13px<br/>
+1.2rem = 14px<br/>
+1.3rem = 15px<br/>
+1.4rem = 16.5px<br/>
+1.5rem = 17.5px<br/>
+1.7rem = 20px<br/>
+1.8rem = 21px<br/>
+2rem = 23px<br/>
+2.2rem = 25.5px<br/>
+2.3rem = 27px<br/>
+2.4rem = 28px<br/>
+2.6rem = 30px<br/>
+2.8rem = 32px<br/>
+3rem = 35px<br/>
+3.2rem = 37.5px<br/>
+3.4rem = 40px<br/>
+3.6rem = 42px<br/>
+3.8rem = 44.5px<br/>
+4rem = 46.5px<br/>
+4.1rem = 48px<br/>
+4.2rem = 49px<br/>
+4.5rem = 52.5px<br/>
+4.7rem = 55px<br/>
+5.5rem =64.5px<br/>
+6rem = 70px<br/>
+6.5rem =76px<br/>
+6.8rem =79.5px<br/>
+7rem = 82px<br/>
+7.5rem = 87.5px<br/>
+9rem = 105.5px<br/>
+10.2rem = 120px<br/>
+19.3rem = 226px
