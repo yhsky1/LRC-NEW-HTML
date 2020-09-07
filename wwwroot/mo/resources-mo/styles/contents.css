@@ -1501,6 +1501,7 @@
 .estimate-wrap .section-detail .detail-infos .detail-infos-cont .infos-cont > b {
 	display: block;
 	font-size: 1.2rem;
+	margin-bottom: .5rem;
 }
 
 .estimate-wrap .section-detail .detail-infos .detail-infos-cont .infos-cont > strong {
@@ -1515,6 +1516,7 @@
 	display: block;
 	color: #999;
 	font-size: 1.2rem;
+	margin-top: .5rem;
 }
 
 .estimate-wrap .section-detail .detail-infos .detail-infos-cont .price {
@@ -1589,6 +1591,150 @@
 
 .estimate-wrap .section-detail .detail-infos .detail-infos-cont .sale-list li + li {
 	margin-top: .7rem;
+}
+
+.estimate-wrap .section-detail .detail-infos .detail-infos-cont .infos-confirm {
+	text-align: center;
+	line-height: 1.4;
+	padding: 1.2rem;
+	border: 1px solid #EBEBEB;
+	-webkit-border-radius: 1rem;
+	   -moz-border-radius: 1rem;
+	        border-radius: 1rem;
+	margin-top: 1.5rem;
+	font-size: 1.1rem;
+}
+
+.estimate-wrap .section-detail .detail-infos .detail-infos-cont .infos-confirm b {
+	font-size: 1.1rem;
+}
+
+.estimate-wrap .section-detail .detail-infos .detail-infos-num {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	   -moz-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: end;
+	-webkit-justify-content: flex-end;
+	   -moz-box-pack: end;
+	    -ms-flex-pack: end;
+	        justify-content: flex-end;
+	height: 3.4rem;
+	background-color: #EFF2F7;
+	padding: 0 1.7rem;
+}
+
+.estimate-wrap .section-detail .detail-infos .detail-infos-num span {
+	font-size: 1rem;
+	margin-left: .9rem;
+}
+
+.estimate-wrap .section-detail .detail-wraps {
+	background-color: #fff;
+	-webkit-border-radius: 1.5rem;
+	   -moz-border-radius: 1.5rem;
+	        border-radius: 1.5rem;
+	overflow: hidden;
+	position: relative;
+	z-index: 1;
+}
+
+.estimate-wrap .section-detail .detail-wraps .detail-layer-items {
+	background-color: #fff;
+}
+
+.estimate-wrap .section-detail .detail-wraps .detail-layer-items .layer-item {
+	margin: 0;
+	padding-right: 0;
+	padding-left: 0;
+	margin: 0 1.7rem;
+	-webkit-border-radius: 0;
+	   -moz-border-radius: 0;
+	        border-radius: 0;
+	border-top: 1px solid #EBEBEB;
+}
+
+.estimate-wrap .section-detail .detail-wraps .detail-layer-items .layer-item + .layer-item {
+	padding-top: 0;
+	border: 0;
+}
+
+.estimate-wrap .section-detail .detail-complete {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	   -moz-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	   -moz-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-flow: column;
+	   -moz-box-orient: vertical;
+	   -moz-box-direction: normal;
+	    -ms-flex-flow: column;
+	        flex-flow: column;
+	background-color: #1374E8;
+	padding: 4.7rem 0;
+	position: relative;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	left: 0;
+	margin-bottom: -1.5rem;
+}
+
+.estimate-wrap .section-detail .detail-complete > strong {
+	display: block;
+	font-size: 1.9rem;
+	line-height: 1.3;
+	/*font-family:"ManropeB", "NotoM", serif;*/
+	font-family: "SpoqaB", serif;
+	font-weight: normal;
+	text-align: center;
+	color: #fff;
+	margin-top: 2rem;
+	position: relative;
+	z-index: 1;
+}
+
+.estimate-wrap .section-detail .detail-complete > span {
+	display: block;
+	text-align: center;
+	font-size: 1.1rem;
+	line-height: 1.3;
+	color: #fff;
+	margin-top: 1.8rem;
+	position: relative;
+	z-index: 1;
+}
+
+.estimate-wrap .section-detail .detail-complete .bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-repeat: no-repeat;
+	background-image: url("../../resources-mo/images/bgs/bg-complete.png");
+	background-position: center top;
+	-webkit-background-size: 100% auto;
+	   -moz-background-size: 100% auto;
+	        background-size: 100% auto;
+	width: 100%;
+	height: 100%;
 }
 
 .contract-wrap .detail-view-rest {

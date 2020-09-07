@@ -237,6 +237,11 @@
         width: 1.2rem;
         height: 1.2rem;
     }
+    &.complete {
+        @include Background($sprite:'ico-complete', $size:100% auto, $position:center center);
+        width: 5.2rem;
+        height: 5.2rem;
+    }
     
 }
 

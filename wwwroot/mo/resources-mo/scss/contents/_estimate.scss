@@ -98,9 +98,7 @@
     .section-detail {
 
         .detail-view{
-            position: sticky;
-            top: 0;
-            left: 0;
+            @include Position($position:sticky, $top: 0, $left: 0);
             margin-bottom: -1.5rem;
             .swiper-pagination-wrap{
                 @include Position($bottom:2.5rem, $left:0);
@@ -722,7 +720,6 @@
 
 
         }
-
         .detail-infos {
             .detail-infos-top {
                 position: relative;
@@ -760,6 +757,7 @@
                     > b {
                         display: block;
                         font-size: 1.2rem;
+                        margin-bottom:.5rem;
                     }
                     > strong {
                         display: block;
@@ -770,6 +768,7 @@
                         display: block;
                         color: #999;
                         font-size: 1.2rem;
+                        margin-top:.5rem;
                     }
                 }
                 .price {
@@ -803,9 +802,83 @@
                         & + li {margin-top: .7rem;}
                     }
                 }
+                .infos-confirm {
+                    text-align: center;
+                    line-height: 1.4;
+                    padding: 1.2rem;
+                    border: 1px solid #EBEBEB;
+                    border-radius: 1rem;
+                    margin-top:1.5rem;
+                    font-size: 1.1rem;
+                    b {font-size: 1.1rem;}
+                }
+            }
+            .detail-infos-num {
+                @include Align-middle-right;
+                height: 3.4rem;
+                background-color: #EFF2F7;
+                padding: 0 1.7rem;
+                span {font-size: 1rem;margin-left:.9rem;}
+            }
+        }
+        .detail-wraps {
+            background-color: #fff;
+            border-radius: 1.5rem;
+            overflow: hidden;
+            position: relative;
+            z-index: 1;
+            .detail-layer-items {
+                background-color: #fff;
+                .layer-item {
+                    margin:0;
+                    padding-right:0;
+                    padding-left:0;
+                    margin: 0 1.7rem;
+                    border-radius: 0;
+                    border-top: 1px solid #EBEBEB;
+                    & + .layer-item {
+                        padding-top:0;
+                        border:0;
+                    }
+                }
             }
         }
 
+        .detail-complete {
+            @include Align-middle-column;
+            background-color: #1374E8;
+            padding:4.7rem 0;
+            position: relative;
+            @include Position($position:sticky, $top: 0, $left: 0);
+            margin-bottom: -1.5rem;
+            > strong {
+                display: block;
+                font-size:1.9rem;
+                line-height: 1.3;
+                @include Bold;
+                text-align: center;
+                color:#fff;
+                margin-top:2rem;
+                position: relative;
+                z-index: 1;
+            }
+            > span {
+                display: block;
+                text-align: center;
+                font-size: 1.1rem;
+                line-height: 1.3;
+                color:#fff;
+                margin-top:1.8rem;
+                position: relative;
+                z-index: 1;
+            }
+            .bg {
+                @include Position($top: 0, $left: 0);
+                @include Background($sprite:'bg-complete', $size:100% auto, $position:center top, $path:'bgs');
+                width: 100%;
+                height: 100%;
+            }
+        }
 
     }
     

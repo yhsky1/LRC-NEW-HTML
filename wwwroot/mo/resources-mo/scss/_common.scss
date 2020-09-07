@@ -51,6 +51,11 @@ $extra-small-devices: 320px;
 	display: flex;
 	align-items: center;
 }
+@mixin Align-middle-right {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
 @mixin Align-top-left {
 	display: flex;
 	align-items: flex-start;
