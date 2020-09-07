@@ -399,7 +399,7 @@
 			padding-right: 3.5rem; 
 		}
 		button {
-			@include Position($top: .5rem, $right: .5rem);
+			@include Position($top: .7rem, $right: .5rem);
 			width: 3rem;
 			height: 3rem;
 		}

@@ -2085,11 +2085,11 @@ a.btn {
 	background-repeat: no-repeat;
 	background-image: url("../../resources-mo/images/icons/ico-comment.png");
 	background-position: center center;
-	-webkit-background-size: 100% auto;
-	   -moz-background-size: 100% auto;
-	        background-size: 100% auto;
-	width: 1.4rem;
-	height: 1.4rem;
+	-webkit-background-size: 95% auto;
+	   -moz-background-size: 95% auto;
+	        background-size: 95% auto;
+	width: 1.5rem;
+	height: 1.5rem;
 }
 
 .flag {
@@ -3126,7 +3126,7 @@ a.btn {
 
 .unit-text-detail .text-detail-write button {
 	position: absolute;
-	top: 0.5rem;
+	top: 0.7rem;
 	right: 0.5rem;
 	width: 3rem;
 	height: 3rem;
