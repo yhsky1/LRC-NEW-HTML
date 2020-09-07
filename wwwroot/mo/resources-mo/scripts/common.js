@@ -279,6 +279,40 @@ $(function(){
             logic();
         });
     }
+
+    //계약화면 메뉴 라디오버튼 선택
+    if($('.contract-wrap .menu-radio-box').length) {
+        $('.contract-wrap .menu-radio-box').on('change', '.radio-box input', function(e){
+            if(e.target.value === 'N'){
+                $('.contract-wrap .detail-layer-normal').addClass('active');
+            }
+            else{
+                $('.contract-wrap .detail-layer-normal').removeClass('active');
+            }
+        });
+        $('.contract-wrap .menu-radio-box').on('change', '.radio-box input', function(e){
+            if(e.target.value === 'I'){
+                $('.contract-wrap .detail-layer-integrated').addClass('active');
+            }
+            else{
+                $('.contract-wrap .detail-layer-integrated').removeClass('active');
+            }
+        });
+    }
+
+    //계약화면 메뉴 토글
+    if($('.contract-wrap').length) {
+        MUI.event.toggle('.detail-layer-normal .model-toggle-btn', '.detail-layer-normal .model-toggle-cont', false, function(logic, layer) {
+            //console.log('toggle');
+            $('.contract-wrap .detail-layer-normal input').prop('checked', false);
+            logic();
+        });
+        MUI.event.toggle('.detail-layer-integrated .model-toggle-btn', '.detail-layer-integrated .model-toggle-cont', false, function(logic, layer) {
+            //console.log('toggle');
+            $('.contract-wrap .detail-layer-integrated input').prop('checked', false);
+            logic();
+        });
+    }
     
     
 
