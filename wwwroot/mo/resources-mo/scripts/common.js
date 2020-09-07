@@ -29,10 +29,25 @@ $(function(){
     if($('.textarea.auto-height').length){
         autosize($('.textarea.auto-height textarea'));
     }
-    
+
+    //전체동의 열고 닫기
+    if($('.chk-agree-list').length){
+        MUI.event.toggle('.chk-agree-list .agree-toggle-btn', '.chk-agree-list .agree-toggle-cont', false, function(logic, layer) {
+            //console.log('toggle');
+            logic();
+        });
+    }
 
 
     /* 레이어팝업-------------------------------------------------*/
+    //본인인증 슬라이드 팝업
+    if($('.layer-certification').length) {
+        MUI.layer.openClick('.layer-certification-open', LAYER_DIM, LAYER_PARENT, function(show){
+            //console.log('open');
+            show();
+        });
+    }
+
     //필터 슬라이드 팝업
     if($('.layer-filter').length) {
         MUI.layer.openClick('.layer-filter-open', LAYER_DIM, LAYER_PARENT, function(show){

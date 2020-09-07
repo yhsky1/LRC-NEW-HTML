@@ -253,6 +253,16 @@
         width: 5.2rem;
         height: 5.2rem;
     }
+    &.phone {
+        @include Background($sprite:'ico-phone', $size:100% auto, $position:center center);
+        width: 3rem;
+        height: 4rem;
+    }
+    &.mail {
+        @include Background($sprite:'ico-mail', $size:100% auto, $position:center center);
+        width: 3.5rem;
+        height: 3.5rem;
+    }
     
 }
 

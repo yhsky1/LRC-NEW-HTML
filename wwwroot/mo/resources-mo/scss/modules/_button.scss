@@ -116,6 +116,9 @@
 			transition: transform .5s;
 			transform: rotate(0deg);
 		}
+		&.gray:after {
+			@include Background($sprite:'ico-arrow-down2', $type:'png', $size:100% auto, $position:center center);
+		}
 		&.active:after {
 			transform: rotate(180deg);
 		}
