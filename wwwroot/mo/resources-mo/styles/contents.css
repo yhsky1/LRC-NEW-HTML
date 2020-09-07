@@ -1351,14 +1351,99 @@
 	color: #F04040;
 }
 
-<<<<<<< HEAD
-.estimate-wrap .section-detail .detail-layer-summary .detail-layer-closeBn {
+.estimate-wrap .section-detail .detail-layout .detail-layer-benefit {
+	width: 23.5rem;
+	margin: 3.4rem auto 0;
+}
+
+.estimate-wrap .section-detail .detail-layout .detail-layer-benefit .layer-benefit-top > span {
+	display: block;
+	text-align: center;
+	font-size: 1rem;
+	margin-bottom: .4rem;
+}
+
+.estimate-wrap .section-detail .detail-layout .detail-layer-benefit .layer-benefit-top > strong {
+	display: block;
+	text-align: center;
+	font-size: 2.6rem;
+	color: #F04040;
+	/*font-family:"ManropeB", "NotoM", serif;*/
+	font-family: "SpoqaB", serif;
+	font-weight: normal;
+}
+
+.estimate-wrap .section-detail .detail-layout .detail-layer-benefit .layer-benefit-cont {
+	margin-top: 1.7rem;
+}
+
+.estimate-wrap .section-detail .detail-layout .detail-layer-benefit .layer-benefit-cont ul {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: start;
+	-webkit-align-items: flex-start;
+	   -moz-box-align: start;
+	    -ms-flex-align: start;
+	        align-items: flex-start;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	   -moz-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+}
+
+.estimate-wrap .section-detail .detail-layout .detail-layer-benefit .layer-benefit-cont .inner {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	   -moz-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	   -moz-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-flow: column;
+	   -moz-box-orient: vertical;
+	   -moz-box-direction: normal;
+	    -ms-flex-flow: column;
+	        flex-flow: column;
+}
+
+.estimate-wrap .section-detail .detail-layout .detail-layer-benefit .layer-benefit-cont .inner > span {
+	display: block;
+	text-align: center;
+	line-height: 1.3;
+	font-size: 1rem;
+	margin-top: .4rem;
+}
+
+.estimate-wrap .section-detail .detail-layout .detail-layer-benefit .layer-benefit-cont .inner > strong {
+	display: block;
+	text-align: center;
+	/*font-family:"ManropeB", "NotoM", serif;*/
+	font-family: "SpoqaB", serif;
+	font-weight: normal;
+	margin-top: 1.1rem;
+}
+
+.estimate-wrap .section-detail .detail-layout .detail-layer-closeBn {
 	margin-top: 3.4rem;
 	padding: 0 1.7rem;
 	position: relative;
 }
 
-.estimate-wrap .section-detail .detail-layer-summary .detail-layer-closeBn button {
+.estimate-wrap .section-detail .detail-layout .detail-layer-closeBn button {
 	position: absolute;
 	top: 1.2rem;
 	right: 3rem;
@@ -1439,35 +1524,6 @@
 }
 
 .estimate-wrap .section-detail .detail-infos .detail-infos-cont .price li {
-=======
-.estimate-wrap .section-detail .detail-layout .detail-layer-benefit {
-	width: 23.5rem;
-	margin: 3.4rem auto 0;
-}
-
-.estimate-wrap .section-detail .detail-layout .detail-layer-benefit .layer-benefit-top > span {
-	display: block;
-	text-align: center;
-	font-size: 1rem;
-	margin-bottom: .4rem;
-}
-
-.estimate-wrap .section-detail .detail-layout .detail-layer-benefit .layer-benefit-top > strong {
-	display: block;
-	text-align: center;
-	font-size: 2.6rem;
-	color: #F04040;
-	/*font-family:"ManropeB", "NotoM", serif;*/
-	font-family: "SpoqaB", serif;
-	font-weight: normal;
-}
-
-.estimate-wrap .section-detail .detail-layout .detail-layer-benefit .layer-benefit-cont {
-	margin-top: 1.7rem;
-}
-
-.estimate-wrap .section-detail .detail-layout .detail-layer-benefit .layer-benefit-cont ul {
->>>>>>> ef148bb... 견적 내용추가
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: -moz-box;
@@ -1483,7 +1539,6 @@
 	   -moz-box-pack: justify;
 	    -ms-flex-pack: justify;
 	        justify-content: space-between;
-<<<<<<< HEAD
 	line-height: 1;
 }
 
@@ -1500,11 +1555,6 @@
 }
 
 .estimate-wrap .section-detail .detail-infos .detail-infos-cont .sale-list li a {
-=======
-}
-
-.estimate-wrap .section-detail .detail-layout .detail-layer-benefit .layer-benefit-cont .inner {
->>>>>>> ef148bb... 견적 내용추가
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: -moz-box;
@@ -1515,7 +1565,6 @@
 	   -moz-box-align: center;
 	    -ms-flex-align: center;
 	        align-items: center;
-<<<<<<< HEAD
 	-webkit-box-pack: justify;
 	-webkit-justify-content: space-between;
 	   -moz-box-pack: justify;
@@ -1540,49 +1589,6 @@
 
 .estimate-wrap .section-detail .detail-infos .detail-infos-cont .sale-list li + li {
 	margin-top: .7rem;
-=======
-	-webkit-box-pack: center;
-	-webkit-justify-content: center;
-	   -moz-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-webkit-flex-flow: column;
-	   -moz-box-orient: vertical;
-	   -moz-box-direction: normal;
-	    -ms-flex-flow: column;
-	        flex-flow: column;
-}
-
-.estimate-wrap .section-detail .detail-layout .detail-layer-benefit .layer-benefit-cont .inner > span {
-	display: block;
-	text-align: center;
-	line-height: 1.3;
-	font-size: 1rem;
-	margin-top: .4rem;
-}
-
-.estimate-wrap .section-detail .detail-layout .detail-layer-benefit .layer-benefit-cont .inner > strong {
-	display: block;
-	text-align: center;
-	/*font-family:"ManropeB", "NotoM", serif;*/
-	font-family: "SpoqaB", serif;
-	font-weight: normal;
-	margin-top: 1.1rem;
-}
-
-.estimate-wrap .section-detail .detail-layout .detail-layer-closeBn {
-	margin-top: 1.7rem;
-	padding: 0 1.7rem;
-	position: relative;
-}
-
-.estimate-wrap .section-detail .detail-layout .detail-layer-closeBn button {
-	position: absolute;
-	top: 0;
-	left: 0;
->>>>>>> ef148bb... 견적 내용추가
 }
 
 .contract-wrap .detail-view-rest {

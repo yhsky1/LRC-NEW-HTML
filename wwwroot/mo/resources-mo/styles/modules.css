@@ -2150,13 +2150,8 @@ a.btn {
 	-webkit-background-size: 100% auto;
 	   -moz-background-size: 100% auto;
 	        background-size: 100% auto;
-<<<<<<< HEAD
 	width: 1.2rem;
 	height: 1.2rem;
-=======
-	width: 1rem;
-	height: 1rem;
->>>>>>> ef148bb... 견적 내용추가
 }
 
 .flag {
