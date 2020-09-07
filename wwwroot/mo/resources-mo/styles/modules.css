@@ -2092,6 +2092,50 @@ a.btn {
 	height: 1.5rem;
 }
 
+.icon.benefit01 {
+	background-repeat: no-repeat;
+	background-image: url("../../resources-mo/images/icons/ico-benefit01.png");
+	background-position: center center;
+	-webkit-background-size: 100% auto;
+	   -moz-background-size: 100% auto;
+	        background-size: 100% auto;
+	width: 5.5rem;
+	height: 5.5rem;
+}
+
+.icon.benefit02 {
+	background-repeat: no-repeat;
+	background-image: url("../../resources-mo/images/icons/ico-benefit02.png");
+	background-position: center center;
+	-webkit-background-size: 100% auto;
+	   -moz-background-size: 100% auto;
+	        background-size: 100% auto;
+	width: 5.5rem;
+	height: 5.5rem;
+}
+
+.icon.benefit03 {
+	background-repeat: no-repeat;
+	background-image: url("../../resources-mo/images/icons/ico-benefit03.png");
+	background-position: center center;
+	-webkit-background-size: 100% auto;
+	   -moz-background-size: 100% auto;
+	        background-size: 100% auto;
+	width: 5.5rem;
+	height: 5.5rem;
+}
+
+.icon.bannerClose {
+	background-repeat: no-repeat;
+	background-image: url("../../resources-mo/images/icons/ico-close02.png");
+	background-position: center center;
+	-webkit-background-size: 100% auto;
+	   -moz-background-size: 100% auto;
+	        background-size: 100% auto;
+	width: 1rem;
+	height: 1rem;
+}
+
 .flag {
 	height: 1.5rem;
 	-webkit-border-radius: 1rem;
