@@ -32,13 +32,13 @@ body.fixed {
 		transform: translateY(120%);
 		transition: transform .4s;
 		box-sizing: border-box;
+		margin-top: 11rem;
 		&.active {
 			transform: translateY(0);
 		}
 		.slide-top {
 			background-color: #fff;
 			border-radius: 2rem 2rem 0 0;
-			@include Position( $position:sticky, $top: 6rem, $left: 0);
 			.layer-slide-close {
 				cursor: pointer;
 				width: 100%;

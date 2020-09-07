@@ -3445,6 +3445,7 @@ body.fixed {
 	-webkit-box-sizing: border-box;
 	   -moz-box-sizing: border-box;
 	        box-sizing: border-box;
+	margin-top: 11rem;
 }
 
 .layer-slide.active {
@@ -3460,10 +3461,6 @@ body.fixed {
 	-webkit-border-radius: 2rem 2rem 0 0;
 	   -moz-border-radius: 2rem 2rem 0 0;
 	        border-radius: 2rem 2rem 0 0;
-	position: -webkit-sticky;
-	position: sticky;
-	top: 6rem;
-	left: 0;
 }
 
 .layer-slide .slide-top .layer-slide-close {
