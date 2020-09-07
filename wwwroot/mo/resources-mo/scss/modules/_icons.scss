@@ -248,6 +248,11 @@
         height: 2.2rem;
         @include Position($top: .9rem, $right: 1.3rem);
     }
+    &.exclamation {
+        @include Background($sprite:'ico-exclamation_mark', $size:100% auto, $position:center center);
+        width: 5.2rem;
+        height: 5.2rem;
+    }
     
 }
 

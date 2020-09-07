@@ -2798,6 +2798,58 @@
 	padding-top: .4rem;
 }
 
+.contract-layer-wrap .pop-inner {
+	background-color: #fff;
+}
+
+.contract-layer-wrap .pop-inner .section-detail .detail-layer-top .detail-layer-tit-h {
+	margin-top: 2.6rem;
+	font-size: 2rem;
+	color: #1e1e1e;
+	line-height: 1.3;
+	/*font-family:"ManropeB", "NotoM", serif;*/
+	font-family: "SpoqaB", serif;
+	font-weight: normal;
+}
+
+.contract-layer-wrap .pop-inner .section-detail .detail-layer-top .detail-layer-descri {
+	font-size: 1.1rem;
+	color: #1e1e1e;
+	padding-top: 1.3rem;
+}
+
+.contract-layer-wrap .pop-inner .section-detail .detail-layer-top .detail-layer-descri > p {
+	line-height: 1.3;
+}
+
+.contract-layer-wrap .pop-inner .section-detail .detail-layer-top .detail-layer-descri > p > span {
+	color: #f04040;
+}
+
+.contract-layer-wrap .pop-inner .section-detail .detail-layer-cont {
+	margin-top: 3.4rem;
+}
+
+.contract-layer-wrap .pop-inner .section-detail .detail-layer-cont .detail-layer-list-btn > li {
+	width: 48%;
+	margin-left: 1rem;
+}
+
+.contract-layer-wrap .pop-inner .section-detail .detail-layer-cont .detail-layer-list-btn > li:first-child {
+	margin-left: 0;
+}
+
+.contract-layer-wrap .pop-inner .section-detail .detail-layer-cont .detail-layer-list-btn .btn-white {
+	border-color: #EBEBEB;
+	color: #2B2B2B;
+}
+
+.contract-layer-wrap .pop-inner .section-detail .detail-layer-cont .detail-layer-list-btn .btn {
+	-webkit-border-radius: 1rem;
+	   -moz-border-radius: 1rem;
+	        border-radius: 1rem;
+}
+
 .exhibition-wrap {
 	background-color: #EFF2F7;
 	padding-bottom: 4rem;

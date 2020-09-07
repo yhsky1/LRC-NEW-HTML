@@ -2179,6 +2179,17 @@ a.btn {
 	right: 1.3rem;
 }
 
+.icon.exclamation {
+	background-repeat: no-repeat;
+	background-image: url("../../resources-mo/images/icons/ico-exclamation_mark.png");
+	background-position: center center;
+	-webkit-background-size: 100% auto;
+	   -moz-background-size: 100% auto;
+	        background-size: 100% auto;
+	width: 5.2rem;
+	height: 5.2rem;
+}
+
 .flag {
 	height: 1.5rem;
 	-webkit-border-radius: 1rem;
