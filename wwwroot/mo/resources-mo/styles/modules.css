@@ -2944,7 +2944,7 @@ a.btn {
 }
 
 .unit-text-detail .text-detail-reply .detail-reply-top > strong {
-	font-size: 1.5rem;
+	font-size: 1.2rem;
 	/*font-family:"ManropeB", "NotoM", serif;*/
 	font-family: "SpoqaB", serif;
 	font-weight: normal;
@@ -3158,7 +3158,7 @@ a.btn {
 	content: '';
 	width: .2rem;
 	height: .2rem;
-	border: 1px solid #EBEBEB;
+	border: 1px solid #D0D0D0;
 	-webkit-border-radius: 100%;
 	   -moz-border-radius: 100%;
 	        border-radius: 100%;
