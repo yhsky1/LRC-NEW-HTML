@@ -4048,6 +4048,7 @@ body.fixed #wrap {
 	   -moz-box-sizing: border-box;
 	        box-sizing: border-box;
 	background-color: #fff;
+	-webkit-overflow-scrolling: touch;
 }
 
 .layer-full.fixed {

@@ -172,7 +172,8 @@ var MUI = MUI || {
 			}
 			if($(layer).data('type') === 'slide') {
 				$('.layer-full').addClass('fixed');
-				$(layer).css({opacity:1, 'max-height': $(window).height()-$('header').height()});
+				//$(layer).css({opacity:1, 'max-height': $(window).height()-$('header').height()});
+				$(layer).css({opacity:1});
 				$(layer).addClass('active');
 				return;
 			}

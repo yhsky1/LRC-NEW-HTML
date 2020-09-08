@@ -299,6 +299,7 @@ body.fixed {
 		transition: transform .4s;
 		box-sizing: border-box;
 		background-color: #fff;
+		-webkit-overflow-scrolling:touch;
 		&.fixed {
 			overflow: hidden;
 			pointer-events: none;

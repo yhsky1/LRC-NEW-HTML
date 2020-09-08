@@ -528,6 +528,7 @@
 	-moz-transition: transform .4s, -moz-transform .4s;
 	transition: transform .4s;
 	transition: transform .4s, -webkit-transform .4s, -moz-transform .4s, -o-transform .4s;
+	-webkit-overflow-scrolling: touch;
 }
 
 .drawer.active {
