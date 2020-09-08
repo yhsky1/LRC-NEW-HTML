@@ -13,6 +13,7 @@
         margin-top:1.9rem;
         box-sizing: border-box;
         border-top:1px solid #EBEBEB;
+        background-color: #fff;
         box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
         &:after {
             display: block;
@@ -62,13 +63,13 @@
         }
     }
     &.close {
-        transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 105%, 0);
     }
 }
 
 .fixedRight {
     position: fixed;
-    bottom: 50px;
+    bottom: 5rem;
     right: 0;
     z-index: 41;
     transition: transform .2s; 
@@ -78,7 +79,7 @@
         margin-top: .9rem;
     }
     &.close-topBt {
-        transform:translate3d(0, 4rem, 0) scale(1);
+        transform:translate3d(0, 5.5rem, 0) scale(1);
         .btn-goTop {
             transform:scale(0);
             opacity: 0;
@@ -87,5 +88,5 @@
     }
 }
 .fixedBottom.close ~ .fixedRight {
-    transform: translate3d(0, 4rem, 0);
+    transform: translate3d(0, 5.5rem, 0);
 }
