@@ -7,7 +7,10 @@
 */
 body.fixed {
 	overflow: hidden;
-    position: fixed;
+	position: fixed;
+	#wrap {
+		pointer-events: none;
+	}
 }
 .bg-dimmed {
 	@include Hide_txt;
@@ -82,7 +85,7 @@ body.fixed {
 			background-color: #fff;
 			overflow-y: visible;
 			overflow-x: hidden;
-			max-height:calc(100vh - 15rem);
+			max-height:calc(100vh - 11rem);
 			.slide-cont {
 				padding: 0 1.7rem;
 			}
@@ -297,6 +300,7 @@ body.fixed {
 		background-color: #fff;
 		&.fixed {
 			overflow: hidden;
+			pointer-events: none;
 		}
 		&.active {
 			transform: translateY(0);

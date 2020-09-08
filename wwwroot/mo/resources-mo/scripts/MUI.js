@@ -158,7 +158,7 @@ var MUI = MUI || {
         },
         open: function(layer, dimmed, parent, callback){
 			var that = this;
-			
+			console.log($(window).height(), $('header').height())
             that.scrollTop = $(window).scrollTop();
             $('body').addClass('fixed');
             $('body').css({top:-that.scrollTop});
@@ -172,7 +172,7 @@ var MUI = MUI || {
 			}
 			if($(layer).data('type') === 'slide') {
 				$('.layer-full').addClass('fixed');
-				$(layer).css({opacity:1});
+				$(layer).css({opacity:1, 'max-height': $(window).height()-$('header').height()});
 				$(layer).addClass('active');
 				return;
 			}
@@ -226,7 +226,7 @@ var MUI = MUI || {
 				}, 400);
 			}
 			else{
-				console.log(layer);
+				//console.log(layer);
 				$(layer).removeClass('active');
 				setTimeout(function(){
 					$(layer).css({opacity:0});
