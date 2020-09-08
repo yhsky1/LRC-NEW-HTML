@@ -2367,7 +2367,7 @@
 	border-bottom: .15rem solid #2b2b2b;
 }
 
-.contract-wrap .detail-layout .layer-item.item-step4 .item-cont .menu-radio-box .radio-box .radioIconBox > label > span:after {
+.contract-wrap .detail-layout .layer-item.item-step4 .item-cont .menu-radio-box .radio-box .radioIconBox > label:after {
 	display: none;
 }
 
@@ -2692,6 +2692,164 @@
 
 .contract-wrap .detail-layout .detail-layer-submit {
 	padding: 2.6rem 1.7rem;
+}
+
+.contract-wrap .detail-infos {
+	-webkit-border-radius: 0;
+	   -moz-border-radius: 0;
+	        border-radius: 0;
+	padding-top: 1.1rem;
+}
+
+.contract-wrap .detail-infos .layer-item h3 {
+	padding-top: .9rem;
+	padding-left: 1.4rem;
+	text-indent: -1.4rem;
+	-webkit-box-pack: start;
+	-webkit-justify-content: flex-start;
+	   -moz-box-pack: start;
+	    -ms-flex-pack: start;
+	        justify-content: flex-start;
+}
+
+.contract-wrap .detail-infos .layer-item h4 {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	   -moz-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	   -moz-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-pack: left;
+	-webkit-justify-content: left;
+	   -moz-box-pack: left;
+	    -ms-flex-pack: left;
+	        justify-content: left;
+	margin-bottom: 1rem;
+	font-size: 1.4rem;
+}
+
+.contract-wrap .detail-infos .layer-item h4 > strong {
+	font-size: 1.4rem;
+	/*font-family:"ManropeB", "NotoM", serif;*/
+	font-family: "SpoqaB", serif;
+	font-weight: normal;
+}
+
+.contract-wrap .detail-infos .layer-item .guide {
+	font-size: 1.1rem;
+	line-height: 1.3;
+	margin-bottom: 1.2rem;
+	text-indent: -1.4rem;
+	padding-left: 1.7rem;
+	color: #F04040;
+}
+
+.contract-wrap .detail-infos .layer-item .guide-info {
+	color: #2B2B2B;
+	text-indent: 0;
+	padding-left: 0;
+	margin-bottom: 0;
+	margin-top: 1.2rem;
+	line-height: 1.4;
+}
+
+.contract-wrap .detail-infos .layer-item .chk-agree-all {
+	padding: 0 1.2rem;
+	-webkit-border-radius: 1rem;
+	   -moz-border-radius: 1rem;
+	        border-radius: 1rem;
+	border: 1px solid #EBEBEB;
+}
+
+.contract-wrap .detail-infos .layer-item .chk-agree-cols .chk-agree-top {
+	padding: 0 1.2rem;
+}
+
+.contract-wrap .detail-infos .layer-item .chk-agree-foot {
+	background-color: #FAFAFA;
+	border-bottom: .15rem solid #EBEBEB;
+	padding: 0 1.7rem 0 1.2rem;
+}
+
+.contract-wrap .detail-infos .layer-item .radioIconBox > label {
+	height: 4.1rem;
+}
+
+.contract-wrap .detail-infos .layer-item .radioIconBox > label:after {
+	top: 50%;
+	right: auto;
+	left: 1.2rem;
+	-webkit-transform: translateY(-50%);
+	   -moz-transform: translateY(-50%);
+	    -ms-transform: translateY(-50%);
+	     -o-transform: translateY(-50%);
+	        transform: translateY(-50%);
+}
+
+.contract-wrap .detail-infos .layer-item.item-step1 {
+	margin-top: 0;
+}
+
+.contract-wrap .detail-infos .layer-item.item-step1 h3 {
+	border-bottom: 0 none;
+}
+
+.contract-wrap .detail-infos .layer-item.item-step2 h3 {
+	border-bottom: 0 none;
+}
+
+.contract-wrap .detail-infos .layer-item.item-step3 h3 {
+	border-bottom: 0 none;
+}
+
+.contract-wrap .detail-infos .layer-item.item-step4 h3 {
+	border-bottom: 0 none;
+}
+
+.contract-wrap .detail-infos .layer-item.item-step5 h3 {
+	border-bottom: 0 none;
+}
+
+.contract-wrap .detail-infos .layer-item.item-step5 .guide-info {
+	color: #2B2B2B;
+	text-indent: 0;
+	padding-left: 0;
+	margin-bottom: 0;
+	margin-top: 1.2rem;
+	line-height: 1.4;
+}
+
+.contract-wrap .detail-infos .layer-item.item-step6 h3 {
+	border-bottom: 0 none;
+}
+
+.contract-wrap .detail-infos .detail-layer-list-btn > li {
+	width: 48%;
+	margin-left: 1rem;
+}
+
+.contract-wrap .detail-infos .detail-layer-list-btn > li:first-child {
+	margin-left: 0;
+}
+
+.contract-wrap .detail-infos .detail-layer-list-btn .btn-white {
+	border-color: #EBEBEB;
+	color: #2B2B2B;
+}
+
+.contract-wrap .detail-infos .detail-layer-list-btn .btn {
+	-webkit-border-radius: 1rem;
+	   -moz-border-radius: 1rem;
+	        border-radius: 1rem;
 }
 
 .contract-wrap .detail-layer-top {

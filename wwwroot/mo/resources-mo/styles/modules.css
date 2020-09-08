@@ -1712,6 +1712,17 @@ a.btn {
 	height: 1rem;
 }
 
+.icon.next2 {
+	background-repeat: no-repeat;
+	background-image: url("../../resources-mo/images/icons/ico-next02.png");
+	background-position: center center;
+	-webkit-background-size: 100% auto;
+	   -moz-background-size: 100% auto;
+	        background-size: 100% auto;
+	width: 0.5rem;
+	height: 1rem;
+}
+
 .icon.draw {
 	background-repeat: no-repeat;
 	background-image: url("../../resources-mo/images/icons/ico-draw.png");
