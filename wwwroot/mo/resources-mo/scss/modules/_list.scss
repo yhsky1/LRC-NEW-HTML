@@ -1,3 +1,11 @@
+.list-type-col1 {
+	> li {
+		width: 100%;
+		.inner {
+			margin: .8rem 0 0;
+		}
+	}
+}
 .list-type-col2 {
 	@include Align-box;
 	margin-left: -.4rem;

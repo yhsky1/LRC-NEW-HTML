@@ -263,6 +263,21 @@
         width: 3.5rem;
         height: 3.5rem;
     }
+    &.people01 {
+        @include Background($sprite:'ico-people01', $size:100% auto, $position:center center);
+        width: 6rem;
+        height: 6rem;
+    }
+    &.people02 {
+        @include Background($sprite:'ico-people02', $size:100% auto, $position:center center);
+        width: 6rem;
+        height: 6rem;
+    }
+    &.people03 {
+        @include Background($sprite:'ico-people03', $size:100% auto, $position:center center);
+        width: 6rem;
+        height: 6rem;
+    }
     
 }
 

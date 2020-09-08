@@ -202,7 +202,11 @@ body.fixed {
 
 		//본인인증 슬라이드
 		&.layer-certification {
+			.slide-cont {
+				padding: 0;
+			}
 			.certification-col-top {
+				padding: 0 1.7rem;
 				padding-top: 1.7rem;
 				.guide {
 					line-height: 1.3;
@@ -226,13 +230,42 @@ body.fixed {
 			}
 			.certification-col-form {
 				margin: 1rem 0 3rem;
+				.chk-agree-list {
+					padding: 0 1.7rem;
+				}
 				.radio-box {
+					padding: 0 1.7rem;
 					label {
 						height: 10.2rem;
 						span {
 							display: block;
 							font-size: 1.1rem;
 							margin-top: 1.2rem;
+						}
+					}
+				}
+				.radio-box2 {
+					.radioIconBox {
+						> label {
+							@include Align-box;
+							flex-flow: row;
+							padding: 1.5rem;
+							margin: 0 1.7rem;
+							i {flex: none;margin-right: 1.5rem;}
+							strong {
+								@include Bold;
+								display: block;
+								line-height: 1.3;
+							}
+							span {
+								@include Nomal;
+								display: block;
+								line-height: 1.3;
+								margin-top: .7rem;
+							}
+						}
+						> input:checked ~ .radio-depth {
+							display: block;
 						}
 					}
 				}
