@@ -278,6 +278,11 @@
         width: 6rem;
         height: 6rem;
     }
+    &.layerclose {
+        @include Background($sprite:'ico-pannelclose', $size:95% auto, $position:center center);
+        width: 1.4rem;
+        height: 1.4rem;
+    }
     
 }
 

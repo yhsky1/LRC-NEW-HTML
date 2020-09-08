@@ -528,12 +528,6 @@
 	-moz-transition: transform .4s, -moz-transform .4s;
 	transition: transform .4s;
 	transition: transform .4s, -webkit-transform .4s, -moz-transform .4s, -o-transform .4s;
-	background-repeat: no-repeat;
-	background-image: url("../../resources-mo/images/icons/error.png");
-	background-position: 0 0;
-	-webkit-background-size: auto auto;
-	   -moz-background-size: auto;
-	        background-size: auto;
 }
 
 .drawer.active {

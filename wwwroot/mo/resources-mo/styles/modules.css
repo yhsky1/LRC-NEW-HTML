@@ -2260,6 +2260,17 @@ a.btn {
 	height: 6rem;
 }
 
+.icon.layerclose {
+	background-repeat: no-repeat;
+	background-image: url("../../resources-mo/images/icons/ico-pannelclose.png");
+	background-position: center center;
+	-webkit-background-size: 95% auto;
+	   -moz-background-size: 95% auto;
+	        background-size: 95% auto;
+	width: 1.4rem;
+	height: 1.4rem;
+}
+
 .flag {
 	height: 1.5rem;
 	-webkit-border-radius: 1rem;
@@ -3539,6 +3550,13 @@ a.btn {
 	right: 55%;
 }
 
+/*
+	fixedBottom : z-index: 41, 
+	풀팝업: z-index: 45, 
+	딤: z-index: 50, 
+	일반팝업, 슬라이드 팝업: z-index: 60, 
+	패널(drawer): z-index: 70, 
+*/
 body.fixed {
 	overflow: hidden;
 	position: fixed;
@@ -3987,6 +4005,84 @@ body.fixed {
 
 .layer-slide.layer-certification .certification-col-form .radio-box2 .radioIconBox > input:checked ~ .radio-depth {
 	display: block;
+}
+
+.layer-full {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 45;
+	opacity: 0;
+	width: 100%;
+	height: 100%;
+	overflow-x: hidden;
+	overflow-y: auto;
+	-webkit-transform: translateY(120%);
+	   -moz-transform: translateY(120%);
+	    -ms-transform: translateY(120%);
+	     -o-transform: translateY(120%);
+	        transform: translateY(120%);
+	-webkit-transition: -webkit-transform .4s;
+	transition: -webkit-transform .4s;
+	-o-transition: -o-transform .4s;
+	-moz-transition: transform .4s, -moz-transform .4s;
+	transition: transform .4s;
+	transition: transform .4s, -webkit-transform .4s, -moz-transform .4s, -o-transform .4s;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+	background-color: #fff;
+}
+
+.layer-full.fixed {
+	overflow: hidden;
+}
+
+.layer-full.active {
+	-webkit-transform: translateY(0);
+	   -moz-transform: translateY(0);
+	    -ms-transform: translateY(0);
+	     -o-transform: translateY(0);
+	        transform: translateY(0);
+}
+
+.layer-full .full-top {
+	background-color: #fff;
+	height: 6.8rem;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	   -moz-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	   -moz-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+.layer-full .full-top .layer-full-close {
+	position: absolute;
+	top: 50%;
+	right: 1.7rem;
+	margin-top: -1.3rem;
+}
+
+.layer-full .full-top h4 {
+	font-size: 1.4rem;
+	/*font-family:"ManropeB", "NotoM", serif;*/
+	font-family: "SpoqaB", serif;
+	font-weight: normal;
 }
 
 .layer-popup {

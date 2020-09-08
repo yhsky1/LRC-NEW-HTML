@@ -1,7 +1,5 @@
 .drawer {
-    position: fixed;
-    top: 0;
-    right: 0;
+    @include Position( $position:fixed, $top: 0, $right: 0);
     width: 100%;
     height: 100%;
     overflow-x: hidden;
@@ -10,7 +8,6 @@
     background-color: #fff;
     transform: translateX(100%);
     transition: transform .4s;
-    @include Background($sprite:'error', $type:'png');
     &.active {
         transform: translateX(0);
     }

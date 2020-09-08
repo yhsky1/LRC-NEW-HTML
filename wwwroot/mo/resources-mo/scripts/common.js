@@ -40,6 +40,15 @@ $(function(){
 
 
     /* 레이어팝업-------------------------------------------------*/
+
+    //게시글작성 풀팝업
+    if($('.layer-write').length) {
+        MUI.layer.openClick('.layer-write-open', LAYER_DIM, LAYER_PARENT, function(show){
+            //console.log('open');
+            show();
+        });
+    }
+
     //본인인증 슬라이드 팝업
     if($('.layer-certification').length) {
         MUI.layer.openClick('.layer-certification-open', LAYER_DIM, LAYER_PARENT, function(show){
@@ -117,6 +126,12 @@ $(function(){
     //슬라이드 팝업 공통 닫기
     if($('.layer-slide').length) {
         MUI.layer.closeClick('.layer-slide-close', LAYER_DIM, LAYER_PARENT, function(hide){
+            //console.log('close');
+            hide();
+        });
+    }
+    if($('.layer-full').length) {
+        MUI.layer.closeClick('.layer-full-close', LAYER_DIM, LAYER_PARENT, function(hide){
             //console.log('close');
             hide();
         });
