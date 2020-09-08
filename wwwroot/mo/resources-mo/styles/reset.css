@@ -132,6 +132,10 @@ a, button, input, img, div, span {
 	outline: none;
 }
 
+label {
+	cursor: pointer;
+}
+
 input::-webkit-input-placeholder {
 	color: #C1C1C1;
 	line-height: normal;

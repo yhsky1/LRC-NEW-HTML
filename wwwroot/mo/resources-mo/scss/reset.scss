@@ -23,6 +23,7 @@ img {width:100%; vertical-align:middle; -webkit-user-select:none;}
 a {color:inherit; text-decoration:none;color: #2B2B2B;font-size: 1.2rem;line-height: 1;}
 strong, b {font-weight:normal;color: #2B2B2B;font-size: 1.2rem;line-height: 1;}
 a, button, input, img, div, span {-webkit-tap-highlight-color:transparent; -webkit-touch-callout:none; outline:none;}
+label {cursor: pointer;}
 
 input::placeholder {
 	color: #C1C1C1;
