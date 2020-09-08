@@ -85,8 +85,8 @@ body.fixed {
 			background-color: #fff;
 			overflow-y: visible;
 			overflow-x: hidden;
-			max-height:calc(100vh - 17rem);
-			-webkit-overflow-scrolling
+			max-height:calc(100vh - 16rem);
+			-webkit-overflow-scrolling:touch;
 			.slide-cont {
 				padding: 0 1.7rem;
 			}
