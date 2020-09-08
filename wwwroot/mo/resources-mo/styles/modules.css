@@ -3854,6 +3854,11 @@ body.fixed {
 	   -moz-box-direction: normal;
 	    -ms-flex-flow: row;
 	        flex-flow: row;
+	-webkit-box-pack: left;
+	-webkit-justify-content: left;
+	   -moz-box-pack: left;
+	    -ms-flex-pack: left;
+	        justify-content: left;
 	padding: 1.5rem;
 	margin: 0 1.7rem;
 }
