@@ -1617,6 +1617,62 @@ button.swiper-pagination-bullet {
 	        box-shadow: 0 0px 10px rgba(0, 0, 0, 0.05);
 }
 
+.btn-goTop {
+	background-repeat: no-repeat;
+	background-image: url("../../resources-mo/images/icons/ico-goTop.png");
+	background-position: center center;
+	-webkit-background-size: 100% auto;
+	   -moz-background-size: 100% auto;
+	        background-size: 100% auto;
+	width: 4.7rem;
+	height: 4.7rem;
+	font: 0/0 a;
+}
+
+.btn-goWrite {
+	background-repeat: no-repeat;
+	background-image: url("../../resources-mo/images/icons/ico-goWrite.png");
+	background-position: center center;
+	-webkit-background-size: 100% auto;
+	   -moz-background-size: 100% auto;
+	        background-size: 100% auto;
+	width: 4.7rem;
+	height: 4.7rem;
+	font: 0/0 a;
+}
+
+.btn-fixedRight03 {
+	background-color: #1E1E1E;
+	-webkit-border-radius: 100%;
+	   -moz-border-radius: 100%;
+	        border-radius: 100%;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	   -moz-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	   -moz-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	width: 5.5rem;
+	height: 5.5rem;
+	padding: 0;
+	position: relative;
+	color: #fff;
+}
+
+.btn-fixedRight03 span {
+	margin-top: .4rem;
+	display: block;
+}
+
 a.btn {
 	display: -webkit-inline-box;
 	display: -webkit-inline-flex;
@@ -2291,6 +2347,61 @@ a.btn {
 	        background-size: 100% auto;
 	width: 1.7rem;
 	height: 1.4rem;
+}
+
+.icon.fixedRight01 {
+	background-repeat: no-repeat;
+	background-image: url("../../resources-mo/images/icons/ico-fixedRight01.png");
+	background-position: center center;
+	-webkit-background-size: 100% auto;
+	   -moz-background-size: 100% auto;
+	        background-size: 100% auto;
+	width: 1.1rem;
+	height: 1.5rem;
+}
+
+.icon.fixedRight02 {
+	background-repeat: no-repeat;
+	background-image: url("../../resources-mo/images/icons/ico-fixedRight02.png");
+	background-position: center center;
+	-webkit-background-size: 100% auto;
+	   -moz-background-size: 100% auto;
+	        background-size: 100% auto;
+	width: 1.3rem;
+	height: 1.5rem;
+}
+
+.icon.fixedRight03 {
+	background-repeat: no-repeat;
+	background-image: url("../../resources-mo/images/icons/ico-fixedRight03.png");
+	background-position: center center;
+	-webkit-background-size: 100% auto;
+	   -moz-background-size: 100% auto;
+	        background-size: 100% auto;
+	width: 1.3rem;
+	height: 1.5rem;
+}
+
+.icon.fixedRight04 {
+	background-repeat: no-repeat;
+	background-image: url("../../resources-mo/images/icons/ico-fixedRight04.png");
+	background-position: center center;
+	-webkit-background-size: 100% auto;
+	   -moz-background-size: 100% auto;
+	        background-size: 100% auto;
+	width: 1.3rem;
+	height: 1.5rem;
+}
+
+.icon.fixedRight05 {
+	background-repeat: no-repeat;
+	background-image: url("../../resources-mo/images/icons/ico-fixedRight05.png");
+	background-position: center center;
+	-webkit-background-size: 100% auto;
+	   -moz-background-size: 100% auto;
+	        background-size: 100% auto;
+	width: 1.3rem;
+	height: 1.5rem;
 }
 
 .flag {

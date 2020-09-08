@@ -366,21 +366,15 @@ var MUI = MUI || {
             	e.preventDefault();
 			});
 		}, 
-		topScrollCh: function(target, parent){
-			if(parent.hasClass('pc')){
-				var winScroll = $(window).scrollTop();
-				if(winScroll == 0){
-					target.fadeOut();
-					$('#header .inner').removeClass('on');
-				}
-				else{
-					target.fadeIn();
-					$('#header .inner').addClass('on');
-				}
+		topScrollCh: function(target){
+			var winScroll = $(window).scrollTop();
+			if(winScroll == 0){
+				target.addClass('close-topBt');
 			}
 			else{
-				return;
+				target.removeClass('close-topBt');
 			}
+
 		},
 		taps: function(tab_nav, callback){
 			var target = tab_nav + '.tab_nav li';

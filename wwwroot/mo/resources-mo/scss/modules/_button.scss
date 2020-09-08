@@ -112,7 +112,7 @@
 			display: block;
 			content: '';
 			@include Position($top: 50%, $right: 50%);
-			@include Background($sprite:'ico-arrow-down', $type:'png', $size:100% auto, $position:center center);
+			@include Background($sprite:'ico-arrow-down', $size:100% auto, $position:center center);
 			width: .9rem;
 			height: .9rem;
 			margin: -.45rem -.45rem 0 0;
@@ -120,7 +120,7 @@
 			transform: rotate(0deg);
 		}
 		&.gray:after {
-			@include Background($sprite:'ico-arrow-down2', $type:'png', $size:100% auto, $position:center center);
+			@include Background($sprite:'ico-arrow-down2', $size:100% auto, $position:center center);
 		}
 		&.active:after {
 			transform: rotate(180deg);
@@ -154,8 +154,32 @@
 			box-shadow: 0 0px 10px rgba(0, 0, 0, 0.05);
 		}
 	}
-
-
+	&-goTop {
+		@include Background($sprite:'ico-goTop', $size:100% auto, $position:center center);
+		width: 4.7rem;
+		height: 4.7rem;
+		@include Hide_txt;
+	}
+	&-goWrite {
+		@include Background($sprite:'ico-goWrite', $size:100% auto, $position:center center);
+		width: 4.7rem;
+		height: 4.7rem;
+		@include Hide_txt;
+	}
+	&-fixedRight03 {
+		background-color: #1E1E1E;
+		border-radius: 100%;
+		@include Align-middle;
+		width: 5.5rem;
+		height: 5.5rem;
+		padding:0;
+		position: relative;
+		color:#fff;
+		span {
+			margin-top:.4rem;
+			display: block;
+		}
+	}
 
 
 

@@ -38,6 +38,14 @@ $(function(){
         });
     }
 
+    //gotop
+    if($('.fixedRight .btn-goTop').length){
+        MUI.event.goTop($('.fixedRight .btn-goTop'));
+        MUI.event.topScrollCh($('.fixedRight'));
+        $(window).on('scroll', function(){
+            MUI.event.topScrollCh($('.fixedRight'));
+        });
+    }
 
     /* 레이어팝업-------------------------------------------------*/
 
