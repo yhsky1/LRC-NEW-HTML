@@ -2061,6 +2061,22 @@
 	margin-left: .4rem;
 }
 
+.contract-wrap .detail-layout .layer-item .table {
+	-webkit-border-radius: 1.5rem;
+	   -moz-border-radius: 1.5rem;
+	        border-radius: 1.5rem;
+	border: .15rem solid #EBEBEB;
+	margin-bottom: .9rem;
+}
+
+.contract-wrap .detail-layout .layer-item .table > table tr:first-child th {
+	border-top: 0 none;
+}
+
+.contract-wrap .detail-layout .layer-item .table > table tr:first-child td {
+	border-top: 0 none;
+}
+
 .contract-wrap .detail-layout .layer-item.item-step1 h3 {
 	border-bottom: .15rem solid #EBEBEB;
 }
@@ -2828,10 +2844,6 @@
 	line-height: 1.4;
 }
 
-.contract-wrap .detail-infos .layer-item.item-step6 h3 {
-	border-bottom: 0 none;
-}
-
 .contract-wrap .detail-infos .detail-layer-list-btn > li {
 	width: 48%;
 	margin-left: 1rem;
@@ -2850,6 +2862,104 @@
 	-webkit-border-radius: 1rem;
 	   -moz-border-radius: 1rem;
 	        border-radius: 1rem;
+}
+
+.contract-wrap .detail-descri .layer-item.item-step1 h3 {
+	border-bottom: 0 none;
+}
+
+.contract-wrap .detail-descri .layer-item.item-step2 h3 {
+	border-bottom: 0 none;
+}
+
+.contract-wrap .detail-descri .layer-item.item-step2 .guide {
+	padding: 0;
+	color: #2B2B2B;
+	text-indent: -1.4rem;
+	padding-left: 1.7rem;
+}
+
+.contract-wrap .detail-descri .layer-item.item-step3 h3 {
+	border-bottom: 0 none;
+}
+
+.contract-wrap .detail-descri .layer-item.item-step4 h3 {
+	border-bottom: 0 none;
+}
+
+.contract-wrap .detail-descri .layer-item.item-step5 h3 {
+	border-bottom: 0 none;
+}
+
+.contract-wrap .detail-descri .layer-item.item-step5 .guide {
+	padding: 0;
+	color: #2B2B2B;
+	text-indent: -1.4rem;
+	padding-left: 1.7rem;
+}
+
+.contract-wrap .detail-descri .layer-item .guide {
+	padding: 0;
+	color: #2B2B2B;
+}
+
+.contract-wrap .detail-descri .layer-item .guide .red {
+	color: #F04040;
+}
+
+.contract-wrap .detail-descri .detail-layer-list-btn {
+	padding-bottom: 0;
+}
+
+.contract-wrap .detail-descri .detail-layer-list-btn > li {
+	width: 48%;
+	margin-left: 1rem;
+}
+
+.contract-wrap .detail-descri .detail-layer-list-btn > li:first-child {
+	margin-left: 0;
+}
+
+.contract-wrap .detail-descri .detail-layer-list-btn .btn-white {
+	border-color: #EBEBEB;
+	color: #2B2B2B;
+}
+
+.contract-wrap .detail-descri .detail-layer-list-btn .btn {
+	-webkit-border-radius: 1rem;
+	   -moz-border-radius: 1rem;
+	        border-radius: 1rem;
+}
+
+.contract-wrap .detail-descri .detail-layer-list-btn .btn-magnifier {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	   -moz-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	   -moz-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	border-color: #2B2B2B;
+}
+
+.contract-wrap .detail-descri .detail-layer-list-btn .btn-magnifier > i {
+	margin-top: .2rem;
+}
+
+.contract-wrap .detail-descri .detail-layer-list-btn .btn-magnifier > span {
+	margin-left: .4rem;
+}
+
+.contract-wrap .detail-descri .detail-layer-chk-confirm {
+	padding: 0 1.7rem;
 }
 
 .contract-wrap .detail-layer-top {

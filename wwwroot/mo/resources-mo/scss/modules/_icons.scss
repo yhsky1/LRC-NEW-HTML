@@ -288,6 +288,11 @@
         width: 1.4rem;
         height: 1.4rem;
     }
+    &.magnifier {
+        @include Background($sprite:'ico-magnifier', $size:100% auto, $position:center center);
+        width: 1.7rem;
+        height: 1.4rem;
+    }
     
 }
 
