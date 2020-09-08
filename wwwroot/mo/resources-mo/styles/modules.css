@@ -3689,12 +3689,13 @@ body.fixed #wrap {
 	background-color: #fff;
 	overflow-y: visible;
 	overflow-x: hidden;
-	max-height: -webkit-calc(100vh - 6.5rem);
-	max-height: -moz-calc(100vh - 6.5rem);
-	max-height: calc(100vh - 6.5rem);
+	max-height: -webkit-calc(100vh - 17rem);
+	max-height: -moz-calc(100vh - 17rem);
+	max-height: calc(100vh - 17rem);
 }
 
-.layer-slide .slide-inner .slide-cont {
+.layer-slide .slide-inner -webkit-overflow-scrolling
+.slide-cont {
 	padding: 0 1.7rem;
 }
 
