@@ -17,6 +17,9 @@
 	box-sizing: border-box;
 	line-height: 1;
 	color:#2B2B2B;
+	&.radius {
+		border-radius: 1rem;
+	}
 	&-default{
 		width: 100%;
 		color: #fff;

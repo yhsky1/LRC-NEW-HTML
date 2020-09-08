@@ -90,7 +90,7 @@
 		flex-flow: column;
 		border-radius: 1rem;
 		position: relative;
-		:after {
+		&::after {
 			display: block;
 			content: '';
 			@include Position($top: .7rem, $right: .7rem);
@@ -102,7 +102,7 @@
 	> input:checked + label {
 		border-color: #2B2B2B;
 		@include Bold;
-		:after {
+		&:after {
 			@include Background($sprite:'ico-radio-on', $type:'png', $size:95% auto, $position:center center);
 		}
 	}
