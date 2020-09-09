@@ -190,7 +190,7 @@ var MUI = MUI || {
                 }
                 function show(){
 					that.open(layer, dimmed, parent);
-					this.bubblingLock();
+					MUI.preventBubbling.bubblingLock();
 				}
             });
         },
@@ -243,7 +243,7 @@ var MUI = MUI || {
 
                 function hide() {
 					that.close(layer, dimmed, parent);
-					this.bubblingUnlock();
+					MUI.preventBubbling.bubblingUnlock();
                 }
 
             });
