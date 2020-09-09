@@ -38,10 +38,13 @@
 	label {
 		@include Align-top-left;
 		line-height: 1.3;
-		i {
+		&:before{
+			@include Vertical-inline;
 			@include Background($sprite:'ico-radio-off', $type:'png', $size:95% auto, $position:center center);
+			content: '';
 			width: 1.5rem;
 			height: 1.5rem;
+			flex: none;
 		}
 		span {
 			@include Vertical-inline;
@@ -50,7 +53,7 @@
 		}
 	}
 	input:checked + label {
-		i {
+		&:before{
 			@include Background($sprite:'ico-radio-on', $type:'png', $size:95% auto, $position:center center);
 		}
 	}
