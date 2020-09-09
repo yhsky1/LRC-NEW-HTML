@@ -27,7 +27,7 @@
                 width:1.7rem;
                 height:1.7rem;
                 position: relative;
-                margin-right:.9rem;
+                margin-right: 1.5rem;
                 & > span{
                     display:inline-block;
                     position: absolute;
@@ -42,10 +42,11 @@
                     content: "";
                     position: absolute;
                     top:50%;
-                    right:-1.1rem;
-                    transform: translateY(-20%);
-                    border-top:1px dashed #999;
-                    width:50%;
+                    right:-1.3rem;
+                    transform: translateY(-50%);
+                    width: .7rem;
+                    height: .2rem;
+                    @include Background($sprite:'ico-progress', $type:'png', $size:100% auto, $position:center center);
                 }
                 &:last-child{
                     margin-right:0;

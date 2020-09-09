@@ -1786,7 +1786,7 @@
 	width: 1.7rem;
 	height: 1.7rem;
 	position: relative;
-	margin-right: .9rem;
+	margin-right: 1.5rem;
 }
 
 .contract-wrap .detail-view-rest > ul > li > span {
@@ -1808,14 +1808,20 @@
 	content: "";
 	position: absolute;
 	top: 50%;
-	right: -1.1rem;
-	-webkit-transform: translateY(-20%);
-	   -moz-transform: translateY(-20%);
-	    -ms-transform: translateY(-20%);
-	     -o-transform: translateY(-20%);
-	        transform: translateY(-20%);
-	border-top: 1px dashed #999;
-	width: 50%;
+	right: -1.3rem;
+	-webkit-transform: translateY(-50%);
+	   -moz-transform: translateY(-50%);
+	    -ms-transform: translateY(-50%);
+	     -o-transform: translateY(-50%);
+	        transform: translateY(-50%);
+	width: .7rem;
+	height: .2rem;
+	background-repeat: no-repeat;
+	background-image: url("../../resources-mo/images/icons/ico-progress.png");
+	background-position: center center;
+	-webkit-background-size: 100% auto;
+	   -moz-background-size: 100% auto;
+	        background-size: 100% auto;
 }
 
 .contract-wrap .detail-view-rest > ul > li:last-child {
@@ -3538,14 +3544,14 @@
 }
 
 .login-wrap .pop-inner .section-detail {
-	padding-top: 8rem;
+	padding-top: 6.5rem;
 }
 
 .login-wrap .pop-inner .section-detail .detail-layer-close {
 	width: 1.4rem;
 	height: 1.4rem;
 	position: absolute;
-	top: 3.5rem;
+	top: 2.8rem;
 	right: 3.4rem;
 }
 
@@ -3690,7 +3696,7 @@
 
 .login-wrap .pop-inner .section-detail .descri-tit {
 	position: absolute;
-	top: 3.5rem;
+	top: 2.8rem;
 	left: 50%;
 	-webkit-transform: translateX(-50%);
 	   -moz-transform: translateX(-50%);
