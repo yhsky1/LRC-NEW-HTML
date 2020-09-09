@@ -162,7 +162,6 @@ var MUI = MUI || {
             that.scrollTop = $(window).scrollTop();
             $('body').addClass('fixed');
             $('body').css({top:-that.scrollTop});
-            if(dimmed) $(dimmed).fadeIn();
 			if(callback) callback(layer);
 			if($(layer).data('type') === 'full') {
 				$(dimmed).hide();
@@ -170,6 +169,7 @@ var MUI = MUI || {
 				$(layer).addClass('active');
 				return;
 			}
+			if(dimmed) $(dimmed).delay(200).fadeIn();
 			if($(layer).data('type') === 'slide') {
 				$('.layer-full').addClass('fixed');
 				//$(layer).css({opacity:1, 'max-height': $(window).height()-$('header').height()});

@@ -324,14 +324,96 @@ body.fixed {
 		}
 		.full-inner {
 			.full-cont {
-
+				padding: 0 1.7rem 1.7rem;
 			}
 			.full-btn {
 
 			}
 		}
 
-
+		//주소 풀팝업
+		&.layer-address {
+			.layer-address-top {
+				@include Align-middle-left;
+				> .inputT {
+					
+				}
+				> button {
+					margin-left: .7rem;
+					width: 7.5rem;
+					height: 4.1rem;
+					flex:none;
+					font-size: 1.2rem;
+				}
+			}
+			.layer-address-guide {
+				position: relative;
+				padding-left: 3.8rem;
+				margin-top: 1rem;
+				&:before {
+					display: block;
+					content: 'TIP.';
+					font-size: 1rem;
+					line-height: 1.3;
+					@include Bold;
+					@include Position($top:0, $left: 1.3rem)
+				}
+				> p {
+					font-size: 1rem;
+					line-height: 1.4;
+				}
+				> span {
+					font-size: 1rem;
+					color: #999;
+					line-height: 1.4;
+					display: block;
+					a {
+						font-size: 1rem;
+						color: #999;
+						line-height: 1.4;
+					}
+				}
+				
+			}
+			.layer-address-result {
+				margin-top: 2.2rem;
+				.address-result-top {
+					strong {
+						font-size: 1.1rem;
+						@include Bold;
+						b {
+							font-size: 1.1rem;
+							color: #F04040;
+						}
+					}
+				}
+				.address-result-list {
+					border: 1px solid #EBEBEB;
+					border-radius: 1rem;
+					margin-top: 1rem;
+					> ul {
+						> li {
+							a {
+								display: block;
+								font-size: 1.1rem;
+								line-height: 1.4;
+								padding: 1.2rem;
+							}
+							& + li {
+								border-top: 1px solid #EBEBEB;
+							}
+							.none {
+								@include Align-middle;
+								height: 11.5rem;
+							}
+						}
+					}
+				}
+			}
+			.pagination-wrap {
+				margin-top:1.3rem;
+			}
+		}
 
 	}
 

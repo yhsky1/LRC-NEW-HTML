@@ -527,7 +527,7 @@
     <div class="layer-wrap layer-full layer-address" data-type="full">
         <!--상단-->
         <div class="full-top">
-            <button type="button" class="btn btn-pannel layer-full-close" data-layer="layer-write"><i class="icon layerclose">닫기 버튼</i></button>
+            <button type="button" class="btn btn-pannel layer-full-close" data-layer="layer-address"><i class="icon layerclose">닫기 버튼</i></button>
             <h4>
                 주소찾기
             </h4>
@@ -536,6 +536,89 @@
         <!--컨텐츠-->
         <div class="full-inner">
             <div class="full-cont">
+
+                <div class="layer-address-top">
+                    <div class="inputT">
+                        <input type="text" id="" name="" title="name" placeholder="예) 테헤란로 422" value=""/>
+                    </div>
+                    <button type="button" class="btn btn-default">검색</button>
+                </div>
+
+                <div class="layer-address-guide">
+                    <p>
+                        도로명이나 지역명을 이용해서 검색해보세요.
+                        건물번호, 번지를 함께 입력하시면 더욱 정확한 결과가
+                        검색됩니다.
+                    </p>
+                    <span>
+                        도로명주소가 검색되지 않는 경우는 행정안전부 새주소
+                        안내 시스템(<a href="http://www.juso.go.kr">http://www.juso.go.kr</a>)에서 확인하시기
+                        바랍니다.
+                    </span>
+                </div>
+
+                <div class="layer-address-result">
+                    <div class="address-result-top">
+                        <strong>검색결과 <b>24</b></strong>
+                    </div>
+                    <div class="address-result-list">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    03172(110-821)<br/>
+                                    [도로명] 서울특별시 종로구 세종대로 175(세종로)<br/>
+                                    [지번] 서울특별시 종로구 세종로 81-3
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    03172(110-821)<br/>
+                                    [도로명] 서울특별시 종로구 세종대로 175(세종로)<br/>
+                                    [지번] 서울특별시 종로구 세종로 81-3
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    03172(110-821)<br/>
+                                    [도로명] 서울특별시 종로구 세종대로 175(세종로)<br/>
+                                    [지번] 서울특별시 종로구 세종로 81-3
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!--검색결과 없을시-->
+                    <div class="address-result-list">
+                        <ul>
+                            <li>
+                                <div class="none">검색결과가 없습니다.</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--//검색결과 없을시-->
+                </div>
+
+                <div class="pagination-wrap">
+                    <button type="button" class="btn btn-paging-prev">이전 페이지로 이동</button>
+                    <ul class="pagination-list">
+                        <li>
+                            <a href="#none">1</a>
+                        </li>
+                        <li>
+                            <strong title="현재 페이지">2</strong>
+                        </li>
+                        <li>
+                            <a href="#none">3</a>
+                        </li>
+                        <li>
+                            <a href="#none">4</a>
+                        </li>
+                        <li>
+                            <a href="#none">5</a>
+                        </li>
+                    </ul>
+                    <button type="button" class="btn btn-paging-next">다음 페이지로 이동</button>
+                </div>
 
             </div>
         </div>
@@ -554,6 +637,16 @@
         
         $('.layer-address-open').trigger('click');
         $('.layer-address-open').trigger('touchstart');
+
+        $('.layer-address-top .inputT input').on('keyup', function(e){
+            if(e.target.value) {
+                $('.layer-address-top > button').addClass('active');
+            }
+            else{
+                $('.layer-address-top > button').removeClass('active');
+            }
+        });
+
 	})
 	</script>
 	<!--//상단 타이틀(추후삭제)-->

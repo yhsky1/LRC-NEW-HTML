@@ -183,7 +183,28 @@
 			display: block;
 		}
 	}
-
+	&-paging-prev {
+		@include Hide_txt;
+		@include Align-middle;
+		@include Background($sprite:'ico-paging-prev', $size:.5rem, $position:center center);
+		width: 3.4rem;
+		height: 2.8rem;
+		box-sizing: border-box;
+		border: 1px solid #EBEBEB;
+		background-color: #fff;
+		border-radius: .5rem;
+	}
+	&-paging-next {
+		@include Hide_txt;
+		@include Align-middle;
+		@include Background($sprite:'ico-paging-next', $size:.5rem, $position:center center);
+		width: 3.4rem;
+		height: 2.8rem;
+		box-sizing: border-box;
+		border: 1px solid #EBEBEB;
+		background-color: #fff;
+		border-radius: .5rem;
+	}
 
 
 }

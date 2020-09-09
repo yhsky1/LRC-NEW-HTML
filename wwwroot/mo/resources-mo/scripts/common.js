@@ -49,6 +49,14 @@ $(function(){
 
     /* 레이어팝업-------------------------------------------------*/
 
+    //주소찾기 풀팝업
+    if($('.layer-address').length) {
+        MUI.layer.openClick('.layer-address-open', LAYER_DIM, LAYER_PARENT, function(show){
+            //console.log('open');
+            show();
+        });
+    }
+
     //게시글작성 풀팝업
     if($('.layer-write').length) {
         MUI.layer.openClick('.layer-write-open', LAYER_DIM, LAYER_PARENT, function(show){
