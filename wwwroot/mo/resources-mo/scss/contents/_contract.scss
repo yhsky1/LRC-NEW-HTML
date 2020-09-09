@@ -1,6 +1,8 @@
 .contract-wrap {
     .detail-view-rest{
         position: relative;
+        @include Position($position:sticky, $top: 0, $left: 0);
+        z-index: 3;
         background-color:#2B2B2B;
         height:4.1rem;
         & > span{
@@ -56,6 +58,11 @@
                     border-color:#fff;
                     color:#2B2B2B;
                 }
+                &.complete{
+                    background-color:#999;
+                    border-color:#999;
+                    color:#2B2B2B;
+                }
             }
         }
     }
@@ -89,9 +96,10 @@
     }
     .detail-view-img{
         @include Align-between;
-        @include Position($position:absolute, $top: 19.3rem, $left: 50%);
+        @include Position($position:absolute, $top: 20.8rem, $left: 50%);
         padding-top:.4rem;
-        width:70%;
+        width: 19.2rem;
+        height: 10.5rem;
         margin:0 auto;
         transform: translateX(-50%);
         z-index: 2;
@@ -649,6 +657,10 @@
             .radioIconBox{
                 & > label{
                     height:4.1rem;
+                    align-items:flex-start;
+                    & > span{
+                        margin-left:3.4rem;
+                    }
                 }
                 & > label:after{
                     top: 50%;
@@ -711,6 +723,9 @@
     }
     .detail-descri{
         .layer-item {
+            h3{
+                justify-content:flex-start;
+            }
             &.item-step1{
                 h3{
                     border-bottom:0 none;
@@ -725,6 +740,7 @@
                     color: #2B2B2B;
                     text-indent: -1.4rem;
                     padding-left: 1.7rem;
+                    margin-bottom:2.4rem;
                 }
             }
             &.item-step3{
@@ -735,6 +751,14 @@
             &.item-step4{
                 h3{
                     border-bottom:0 none;
+                }
+                .guide{
+                    padding:0;
+                    color: #2B2B2B;
+                    text-indent: -1.4rem;
+                    padding-left: 1.7rem;
+                    font-size: 1.1rem;
+                    line-height: 1.3;
                 }
             }
             &.item-step5{

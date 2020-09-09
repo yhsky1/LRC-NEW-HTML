@@ -1739,6 +1739,11 @@
 
 .contract-wrap .detail-view-rest {
 	position: relative;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	left: 0;
+	z-index: 3;
 	background-color: #2B2B2B;
 	height: 4.1rem;
 }
@@ -1827,6 +1832,12 @@
 	color: #2B2B2B;
 }
 
+.contract-wrap .detail-view-rest > ul > li.complete {
+	background-color: #999;
+	border-color: #999;
+	color: #2B2B2B;
+}
+
 .contract-wrap .detail-view {
 	margin-bottom: -1.5rem;
 	background-color: #EFF2F7;
@@ -1898,10 +1909,11 @@
 	    -ms-flex-pack: justify;
 	        justify-content: space-between;
 	position: absolute;
-	top: 19.3rem;
+	top: 20.8rem;
 	left: 50%;
 	padding-top: .4rem;
-	width: 70%;
+	width: 19.2rem;
+	height: 10.5rem;
 	margin: 0 auto;
 	-webkit-transform: translateX(-50%);
 	   -moz-transform: translateX(-50%);
@@ -2818,6 +2830,15 @@
 
 .contract-wrap .detail-infos .layer-item .radioIconBox > label {
 	height: 4.1rem;
+	-webkit-box-align: start;
+	-webkit-align-items: flex-start;
+	   -moz-box-align: start;
+	    -ms-flex-align: start;
+	        align-items: flex-start;
+}
+
+.contract-wrap .detail-infos .layer-item .radioIconBox > label > span {
+	margin-left: 3.4rem;
 }
 
 .contract-wrap .detail-infos .layer-item .radioIconBox > label:after {
@@ -2884,6 +2905,14 @@
 	        border-radius: 1rem;
 }
 
+.contract-wrap .detail-descri .layer-item h3 {
+	-webkit-box-pack: start;
+	-webkit-justify-content: flex-start;
+	   -moz-box-pack: start;
+	    -ms-flex-pack: start;
+	        justify-content: flex-start;
+}
+
 .contract-wrap .detail-descri .layer-item.item-step1 h3 {
 	border-bottom: 0 none;
 }
@@ -2897,6 +2926,7 @@
 	color: #2B2B2B;
 	text-indent: -1.4rem;
 	padding-left: 1.7rem;
+	margin-bottom: 2.4rem;
 }
 
 .contract-wrap .detail-descri .layer-item.item-step3 h3 {
@@ -2905,6 +2935,15 @@
 
 .contract-wrap .detail-descri .layer-item.item-step4 h3 {
 	border-bottom: 0 none;
+}
+
+.contract-wrap .detail-descri .layer-item.item-step4 .guide {
+	padding: 0;
+	color: #2B2B2B;
+	text-indent: -1.4rem;
+	padding-left: 1.7rem;
+	font-size: 1.1rem;
+	line-height: 1.3;
 }
 
 .contract-wrap .detail-descri .layer-item.item-step5 h3 {
@@ -3499,14 +3538,14 @@
 }
 
 .login-wrap .pop-inner .section-detail {
-	padding-top: 10rem;
+	padding-top: 8rem;
 }
 
 .login-wrap .pop-inner .section-detail .detail-layer-close {
 	width: 1.4rem;
 	height: 1.4rem;
 	position: absolute;
-	top: 4.5rem;
+	top: 3.5rem;
 	right: 3.4rem;
 }
 
@@ -3651,7 +3690,7 @@
 
 .login-wrap .pop-inner .section-detail .descri-tit {
 	position: absolute;
-	top: 4.5rem;
+	top: 3.5rem;
 	left: 50%;
 	-webkit-transform: translateX(-50%);
 	   -moz-transform: translateX(-50%);
@@ -3676,7 +3715,7 @@
 	border: 0 none;
 }
 
-.login-wrap .pop-inner .section-detail .menu-radio-box .radio-box .radioIconBox > label > span:after {
+.login-wrap .pop-inner .section-detail .menu-radio-box .radio-box .radioIconBox > label:after {
 	display: none;
 }
 
