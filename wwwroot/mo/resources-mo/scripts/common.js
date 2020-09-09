@@ -49,6 +49,14 @@ $(function(){
 
     /* 레이어팝업-------------------------------------------------*/
 
+    //운전면허 정보안내 풀팝업
+    if($('.layer-license').length) {
+        MUI.layer.openClick('.layer-license-open', LAYER_DIM, LAYER_PARENT, function(show){
+            //console.log('open');
+            show();
+        });
+    }
+
     //주소찾기 풀팝업
     if($('.layer-address').length) {
         MUI.layer.openClick('.layer-address-open', LAYER_DIM, LAYER_PARENT, function(show){

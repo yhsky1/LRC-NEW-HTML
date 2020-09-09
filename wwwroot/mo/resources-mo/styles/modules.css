@@ -2478,6 +2478,50 @@ a.btn {
 	height: 1.5rem;
 }
 
+.icon.small {
+	width: 1.5rem;
+	height: 1.5rem;
+	-webkit-border-radius: 100%;
+	   -moz-border-radius: 100%;
+	        border-radius: 100%;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	   -moz-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	   -moz-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	/*font-family:"ManropeB", "NotoM", serif;*/
+	font-family: "SpoqaB", serif;
+	font-weight: normal;
+	font-size: 1rem;
+	color: #fff;
+}
+
+.icon.small.red {
+	background-color: #F04040;
+}
+
+.icon.small.blue {
+	background-color: #188CFF;
+}
+
+.icon.small.green {
+	background-color: #61C468;
+}
+
+.icon.small.mint {
+	background-color: #2CB7C3;
+}
+
 .flag {
 	height: 1.5rem;
 	-webkit-border-radius: 1rem;
@@ -4442,6 +4486,74 @@ body.fixed {
 
 .layer-full.layer-address .pagination-wrap {
 	margin-top: 1.3rem;
+}
+
+.layer-full.layer-license .layer-license-top {
+	position: relative;
+	max-width: 30rem;
+	margin: 0 auto;
+}
+
+.layer-full.layer-license .layer-license-top i.red {
+	position: absolute;
+	top: 1rem;
+	left: 1rem;
+}
+
+.layer-full.layer-license .layer-license-top i.blue {
+	position: absolute;
+	top: 2.5rem;
+	left: 9rem;
+}
+
+.layer-full.layer-license .layer-license-top i.green {
+	position: absolute;
+	top: 10rem;
+	left: 9rem;
+}
+
+.layer-full.layer-license .layer-license-top i.mint {
+	position: absolute;
+	top: 13.5rem;
+	left: 9rem;
+}
+
+.layer-full.layer-license .layer-license-guide {
+	max-width: 30rem;
+	margin: 1.7rem auto 0;
+}
+
+.layer-full.layer-license .layer-license-guide > ul {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	    -ms-flex-wrap: wrap;
+	        flex-wrap: wrap;
+	margin: 0 1.3rem;
+}
+
+.layer-full.layer-license .layer-license-guide > ul > li {
+	-webkit-flex-basis: 33.333%;
+	    -ms-flex-preferred-size: 33.333%;
+	        flex-basis: 33.333%;
+	margin-bottom: 1.1rem;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	   -moz-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+
+.layer-full.layer-license .layer-license-guide > ul > li > span {
+	margin-left: .4rem;
 }
 
 .layer-popup {

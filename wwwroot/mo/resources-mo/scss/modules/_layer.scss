@@ -335,9 +335,6 @@ body.fixed {
 		&.layer-address {
 			.layer-address-top {
 				@include Align-middle-left;
-				> .inputT {
-					
-				}
 				> button {
 					margin-left: .7rem;
 					width: 7.5rem;
@@ -414,6 +411,46 @@ body.fixed {
 				margin-top:1.3rem;
 			}
 		}
+
+		//운전면허 정보안내 풀팝업
+		&.layer-license {
+			.layer-license-top {
+				position: relative;
+				max-width: 30rem;
+				margin: 0 auto;
+				i {
+					&.red {
+						@include Position($top: 1rem, $left: 1rem)
+					}
+					&.blue {
+						@include Position($top: 2.5rem, $left: 9rem)
+					}
+					&.green {
+						@include Position($top: 10rem, $left: 9rem)
+					}
+					&.mint {
+						@include Position($top: 13.5rem, $left: 9rem)
+					}
+				}
+			}
+			.layer-license-guide {
+				max-width: 30rem;
+				margin: 1.7rem auto 0;
+				> ul {
+					@include Align-box;
+					margin: 0 1.3rem;
+					> li {
+						flex-basis: 33.333%;
+						margin-bottom: 1.1rem;
+						@include Align-middle-left;
+						> span {
+							margin-left: .4rem;
+						}
+					}
+				}
+			}
+		}
+
 
 	}
 

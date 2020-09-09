@@ -318,6 +318,27 @@
         width: 1.3rem;
         height: 1.5rem;
     }
+    &.small {
+        width: 1.5rem;
+        height: 1.5rem;
+        border-radius: 100%;
+        @include Align-middle;
+        @include Bold;
+        font-size: 1rem;
+        color:#fff;
+        &.red {
+            background-color: #F04040;
+        }
+        &.blue {
+            background-color: #188CFF;
+        }
+        &.green {
+            background-color: #61C468;
+        }
+        &.mint {
+            background-color: #2CB7C3;
+        }
+    }
     
 }
 
