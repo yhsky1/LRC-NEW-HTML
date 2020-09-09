@@ -158,12 +158,12 @@ var MUI = MUI || {
         },
         open: function(layer, dimmed, parent, callback){
 			var that = this;
-			console.log($(window).height(), $('header').height())
             that.scrollTop = $(window).scrollTop();
             $('body').addClass('fixed');
             $('body').css({top:-that.scrollTop});
 			if(callback) callback(layer);
 			if($(layer).data('type') === 'full') {
+				$(dimmed).addClass('type-full');
 				$(dimmed).hide();
 				$(layer).css({opacity:1});
 				$(layer).addClass('active');
@@ -171,12 +171,14 @@ var MUI = MUI || {
 			}
 			if(dimmed) $(dimmed).delay(200).fadeIn();
 			if($(layer).data('type') === 'slide') {
+				$(dimmed).addClass('type-slide');
 				$('.layer-full').addClass('fixed');
 				//$(layer).css({opacity:1, 'max-height': $(window).height()-$('header').height()});
 				$(layer).css({opacity:1});
 				$(layer).addClass('active');
 				return;
 			}
+			$(dimmed).addClass('type-popup');
 			$(parent + layer).show();
             that.calculate(layer);
             $(window).on('resize.layer', function(){
@@ -211,16 +213,18 @@ var MUI = MUI || {
         },
         close :function(layer, dimmed, parent, callback){
 			console.log(layer);
-            var that = this;
+			var that = this;
 			if(dimmed) $(dimmed).fadeOut();
 			if(callback) callback(layer);
             $('body').removeClass('fixed');
             $('body').css({top:0});
 			$(window).scrollTop(that.scrollTop);
-			console.log(layer === '.layer-wrap');
+			//console.log(layer === '.layer-wrap');
 			if((layer === '.layer-wrap')) {
-				$('.layer-full').addClass('active');
-				$('.layer-full').css({opacity:1});
+				if(!$(dimmed).hasClass ('type-popup')) {
+					$('.layer-full').addClass('active');
+					$('.layer-full').css({opacity:1});
+				}
 				$('.layer-slide').removeClass('active');
 				setTimeout(function(){
 					$('.layer-slide').css({opacity:0});
@@ -234,8 +238,10 @@ var MUI = MUI || {
 				}, 400);
 			}
 			$('.layer-full').removeClass('fixed');
-
 			$('.layer-popup').hide();
+			$(dimmed).removeClass('type-full');
+			$(dimmed).removeClass('type-slide');
+			$(dimmed).removeClass('type-popup');
 			$(window).off('resize.layer');
             
         },

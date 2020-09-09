@@ -61,6 +61,11 @@ $extra-small-devices: 320px;
 	align-items: flex-start;
 	justify-content: left;
 }
+@mixin Align-bottom-middle {
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+}
 @mixin Align-between {
 	display: flex;
 	align-items: center;

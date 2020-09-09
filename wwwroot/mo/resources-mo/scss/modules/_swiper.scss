@@ -616,3 +616,18 @@ button.swiper-pagination-bullet {
   /* Windows 8 IE 10 fix */
   -ms-perspective: 1200px;
 }
+
+
+/*커스텀*/
+.swiper-button-prev {
+  @include Hide_txt;
+  @include Background($sprite:'ico-slide-prev', $size:.9rem, $position:center center);
+  width: 3rem;
+  height: 3rem;
+}
+.swiper-button-next {
+  @include Hide_txt;
+  @include Background($sprite:'ico-slide-next', $size:.9rem, $position:center center);
+  width: 3rem;
+  height: 3rem;
+}

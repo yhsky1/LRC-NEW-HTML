@@ -49,6 +49,33 @@ $(function(){
 
     /* 레이어팝업-------------------------------------------------*/
 
+    //제휴카드 혜택안내 풀팝업
+    if($('.layer-cards').length) {
+        MUI.layer.openClick('.layer-cards-open', LAYER_DIM, LAYER_PARENT, function(show){
+            //console.log('open');
+            show();
+
+            if($('.layer-cards .swiper-slide').length === 1) {
+                $('.layer-cards .swiper-button-prev').hide();
+                $('.layer-cards .swiper-button-next').hide();
+                return;
+            }
+
+            MUI.slide.init('.layer-cards .cards-lists','swiper', {
+                loop: true,
+                //autoHeight: true,
+                pagination: {
+                    el: '.layer-cards .swiper-pagination',
+                    type: 'fraction',
+                },
+                navigation: {
+                nextEl: '.layer-cards .swiper-button-next',
+                prevEl: '.layer-cards .swiper-button-prev',
+                },
+            });
+        });
+    }
+
     //운전면허 정보안내 풀팝업
     if($('.layer-license').length) {
         MUI.layer.openClick('.layer-license-open', LAYER_DIM, LAYER_PARENT, function(show){

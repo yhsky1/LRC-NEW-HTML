@@ -1029,6 +1029,31 @@ button.swiper-pagination-bullet {
 	-ms-perspective: 1200px;
 }
 
+/*커스텀*/
+.swiper-button-prev {
+	font: 0/0 a;
+	background-repeat: no-repeat;
+	background-image: url("../../resources-mo/images/icons/ico-slide-prev.png");
+	background-position: center center;
+	-webkit-background-size: 0.9rem 0.9rem;
+	   -moz-background-size: 0.9rem;
+	        background-size: 0.9rem;
+	width: 3rem;
+	height: 3rem;
+}
+
+.swiper-button-next {
+	font: 0/0 a;
+	background-repeat: no-repeat;
+	background-image: url("../../resources-mo/images/icons/ico-slide-next.png");
+	background-position: center center;
+	-webkit-background-size: 0.9rem 0.9rem;
+	   -moz-background-size: 0.9rem;
+	        background-size: 0.9rem;
+	width: 3rem;
+	height: 3rem;
+}
+
 .slide-list,
 .slick-slider .slick-track,
 .slick-slider .slick-list {
@@ -4347,7 +4372,7 @@ body.fixed {
 	position: sticky;
 	top: 0;
 	left: 0;
-	z-index: 1;
+	z-index: 2;
 }
 
 .layer-full .full-top .layer-full-close {
@@ -4554,6 +4579,136 @@ body.fixed {
 
 .layer-full.layer-license .layer-license-guide > ul > li > span {
 	margin-left: .4rem;
+}
+
+.layer-full.layer-cards .layer-cards-lists {
+	padding-bottom: 4.6rem;
+	position: relative;
+}
+
+.layer-full.layer-cards .layer-cards-lists .cards-lists {
+	padding-bottom: 2.6rem;
+	border-bottom: 1px solid #EBEBEB;
+}
+
+.layer-full.layer-cards .layer-cards-lists .swiper-slide {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	   -moz-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	   -moz-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-flow: column;
+	   -moz-box-orient: vertical;
+	   -moz-box-direction: normal;
+	    -ms-flex-flow: column;
+	        flex-flow: column;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	   -moz-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	height: 41rem;
+}
+
+.layer-full.layer-cards .layer-cards-lists .swiper-slide .img {
+	width: 18rem;
+	height: 18rem;
+	margin: 0 auto 4rem;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: end;
+	-webkit-align-items: flex-end;
+	   -moz-box-align: end;
+	    -ms-flex-align: end;
+	        align-items: flex-end;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	   -moz-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+}
+
+.layer-full.layer-cards .layer-cards-lists .swiper-slide .img img {
+	width: auto;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.layer-full.layer-cards .layer-cards-lists .swiper-slide .text {
+	padding: 0 2rem;
+	text-align: center;
+}
+
+.layer-full.layer-cards .layer-cards-lists .swiper-slide .text > strong {
+	display: block;
+	font-size: 2rem;
+	/*font-family:"ManropeB", "NotoM", serif;*/
+	font-family: "SpoqaB", serif;
+	font-weight: normal;
+	line-height: 1.3;
+}
+
+.layer-full.layer-cards .layer-cards-lists .swiper-slide .text > span {
+	display: block;
+	line-height: 1.3;
+	font-size: 1.1rem;
+	margin-top: 1.3rem;
+}
+
+.layer-full.layer-cards .layer-cards-lists .swiper-slide .guide {
+	padding: 0 2rem;
+	margin-top: auto;
+	font-size: 1rem;
+	line-height: 1.3;
+	color: #999;
+	text-align: center;
+}
+
+.layer-full.layer-cards .layer-cards-lists .swiper-slide .guide a {
+	font-size: 1rem;
+	line-height: 1.3;
+	color: #999;
+	text-decoration: underline;
+}
+
+.layer-full.layer-cards .layer-cards-lists .swiper-pagination-wrap {
+	position: absolute;
+	bottom: 1rem;
+	left: 0;
+	width: 100%;
+}
+
+.layer-full.layer-cards .layer-cards-lists .swiper-pagination-wrap .swiper-pagination {
+	position: static;
+	/*font-family:"ManropeB", "NotoM", serif;*/
+	font-family: "SpoqaB", serif;
+	font-weight: normal;
+	font-size: 1rem;
+}
+
+.layer-full.layer-cards .layer-cards-lists .swiper-button-prev {
+	left: -1rem;
+	top: 13rem;
+}
+
+.layer-full.layer-cards .layer-cards-lists .swiper-button-next {
+	right: -1rem;
+	top: 13rem;
 }
 
 .layer-popup {
