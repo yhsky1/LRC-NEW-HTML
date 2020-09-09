@@ -92,6 +92,7 @@
 }
 
 .fixedBottom ~ .fixedRight,
-.estimateBottom ~ .fixedRight{
+.estimateBottom ~ .fixedRight,
+.unit-text-write-wrap ~ .fixedRight{
     bottom: 5rem;
 }

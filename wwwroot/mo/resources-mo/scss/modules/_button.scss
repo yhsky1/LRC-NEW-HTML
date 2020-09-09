@@ -205,6 +205,20 @@
 		background-color: #fff;
 		border-radius: .5rem;
 	}
+	&-comment {
+		border: 1px solid #EBEBEB;
+		@include Hide_txt;
+		@include Background($sprite:'ico-comment-off', $size:1.6rem, $position:center center);
+		background-color: #fff;
+		border-radius: 1rem;
+		width: 4.5rem;
+		height: 4.1rem;
+		flex:none;
+		&.active {
+			@include Background($sprite:'ico-comment-on', $size:1.6rem, $position:center center);
+			background-color: #F04040;
+		}
+	}
 
 
 }

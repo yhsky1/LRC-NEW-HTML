@@ -400,18 +400,6 @@
 
 
 	}
-	.text-detail-write {
-		padding: 0 1.7rem;
-		margin-top:.9rem;
-		.textarea {
-			padding-right: 3.5rem; 
-		}
-		button {
-			@include Position($top: .5rem, $right: .5rem);
-			width: 3rem;
-			height: 3rem;
-		}
-	}
 	.text-detail-vs {
 		padding: 1.7rem 0;
 		margin: 0 1.7rem;
@@ -496,6 +484,63 @@
 		}
 	}
 }
+.unit-text-write-wrap {
+	.unit-text-write {
+		@include Position($position:fixed, $bottom: 0, $left: 0);
+		z-index: 45;
+		background-color: #EFF2F7;
+		padding: 1rem;
+		width: 100%;
+		box-sizing: border-box;
+		@include Align-middle-left;
+		align-items: flex-end;
+		.textarea {
+			width: 100%;
+			box-sizing: border-box;
+			textarea {
+				padding: 1.2rem 0;
+			}
+		}
+		> button {
+			margin-left: .4rem;
+		}
+		&.active {
+			background-color: #fff;
+			&:after {
+				display: block;
+				content: '';
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background-color: #000;
+				opacity: 0.5;
+				z-index: 44;
+			}
+		}
+	}
+	&.active {
+		.unit-text-write {
+			background-color: #fff;
+		}
+		&:after {
+			display: block;
+			content: '';
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: #000;
+			opacity: 0.5;
+			z-index: 44;
+		}
+	}
+	
+
+}
+
 
 /**/
 .text-info-lst {

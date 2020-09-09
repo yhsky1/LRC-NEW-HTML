@@ -169,7 +169,7 @@ var MUI = MUI || {
 				$(layer).addClass('active');
 				return;
 			}
-			if(dimmed) $(dimmed).delay(200).fadeIn();
+			if(dimmed) $(dimmed).delay(300).fadeIn();
 			if($(layer).data('type') === 'slide') {
 				$(dimmed).addClass('type-slide');
 				$('.layer-full').addClass('fixed');
