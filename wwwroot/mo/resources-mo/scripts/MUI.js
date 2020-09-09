@@ -104,43 +104,6 @@ var MUI = MUI || {
 			}
 		},
 	},
-	preventBubbling: {
-		bubblingPrevent: function(event) {
-			event.preventDefault();
-		},
-		
-		
-		bubblingLock: function() {
-			// prevent to event bubbling 구현
-			document.body.addEventListener('touchmove', this.bubblingPrevent, this.isPassive() ? {
-				capture: false,
-				passive: false
-			} : false);
-		},
-		
-		
-		bubblingUnlock: function() {
-			// prevent to event bubbling 해제
-			document.body.removeEventListener('touchmove', this.bubblingPrevent, this.isPassive() ? {
-				capture: false,
-				passive: false
-			} : false);
-		},
-		
-		// :::::::::::::::::::::: 중첩 버블링 현상 에서 passive error 작업 :::
-		isPassive: function() {
-			var supportsPassiveOption = false;
-			try {
-				addEventListener("test", null, Object.defineProperty({}, 'passive', {
-					get: function () {
-						supportsPassiveOption = true;
-					}
-				}));
-			} catch (e) {
-			}
-			return supportsPassiveOption;
-		},
-	},
 	layer: {
 		TOUCH_CLICK: ('ontouchstart' in window) ? 'touchstart' : 'click',
 		scrollTop: 0,
@@ -190,7 +153,6 @@ var MUI = MUI || {
                 }
                 function show(){
 					that.open(layer, dimmed, parent);
-					MUI.preventBubbling.bubblingLock();
 				}
             });
         },
@@ -243,7 +205,6 @@ var MUI = MUI || {
 
                 function hide() {
 					that.close(layer, dimmed, parent);
-					MUI.preventBubbling.bubblingUnlock();
                 }
 
             });

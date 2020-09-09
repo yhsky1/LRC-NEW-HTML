@@ -559,9 +559,9 @@
 }
 
 .fixedBottom.close {
-	-webkit-transform: translate3d(0, 105%, 0);
-	   -moz-transform: translate3d(0, 105%, 0);
-	        transform: translate3d(0, 105%, 0);
+	-webkit-transform: translate3d(0, 115%, 0);
+	   -moz-transform: translate3d(0, 115%, 0);
+	        transform: translate3d(0, 115%, 0);
 }
 
 .fixedRight {
