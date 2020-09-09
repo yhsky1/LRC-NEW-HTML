@@ -22,8 +22,8 @@ $(function(){
     //해더 상단네비 엑티브시 센터
     if($('.header-nav').length) { MUI.event.navCenter($('.header-nav'), 'active'); }
 
-    //견적 상단네비 엑티브시 센터
-    if($('.estimate-wrap .section-nav').length) { MUI.event.navCenter($('.estimate-wrap .section-nav'), 'active'); }
+    //서브네비 엑티브시 센터
+    if($('.section-nav').length) { MUI.event.navCenter($('.section-nav'), 'active'); }
     
     //textarea 자동높이 조절
     if($('.textarea.auto-height').length){
