@@ -37,6 +37,9 @@
 			background-color: #F04040;
 			pointer-events: auto;
 		}
+		&.eventsAuto {
+			pointer-events: auto;
+		}
 	}
 	&-red {
 		width: 100%;

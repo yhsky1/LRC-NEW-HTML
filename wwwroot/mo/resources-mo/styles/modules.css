@@ -1343,6 +1343,10 @@ button.swiper-pagination-bullet {
 	pointer-events: auto;
 }
 
+.btn-default.eventsAuto {
+	pointer-events: auto;
+}
+
 .btn-red {
 	width: 100%;
 	color: #fff;
@@ -3695,10 +3699,6 @@ body.fixed {
 	position: fixed;
 }
 
-body.fixed #wrap {
-	pointer-events: none;
-}
-
 .bg-dimmed {
 	font: 0/0 a;
 	display: none;
@@ -4336,9 +4336,9 @@ body.fixed #wrap {
 	background-repeat: no-repeat;
 	background-image: url("../../resources-mo/images/icons/ico-radio-off.png");
 	background-position: center center;
-	-webkit-background-size: 95% auto;
-	   -moz-background-size: 95% auto;
-	        background-size: 95% auto;
+	-webkit-background-size: 92% auto;
+	   -moz-background-size: 92% auto;
+	        background-size: 92% auto;
 	content: '';
 	width: 1.5rem;
 	height: 1.5rem;
@@ -4360,9 +4360,9 @@ body.fixed #wrap {
 	background-repeat: no-repeat;
 	background-image: url("../../resources-mo/images/icons/ico-radio-on.png");
 	background-position: center center;
-	-webkit-background-size: 95% auto;
-	   -moz-background-size: 95% auto;
-	        background-size: 95% auto;
+	-webkit-background-size: 92% auto;
+	   -moz-background-size: 92% auto;
+	        background-size: 92% auto;
 }
 
 .inputC {
@@ -4400,9 +4400,9 @@ body.fixed #wrap {
 	background-repeat: no-repeat;
 	background-image: url("../../resources-mo/images/icons/ico-chk-off.png");
 	background-position: center center;
-	-webkit-background-size: 95% auto;
-	   -moz-background-size: 95% auto;
-	        background-size: 95% auto;
+	-webkit-background-size: 92% auto;
+	   -moz-background-size: 92% auto;
+	        background-size: 92% auto;
 	content: '';
 	width: 1.5rem;
 	height: 1.5rem;
@@ -4424,9 +4424,9 @@ body.fixed #wrap {
 	background-repeat: no-repeat;
 	background-image: url("../../resources-mo/images/icons/ico-chk-on.png");
 	background-position: center center;
-	-webkit-background-size: 95% auto;
-	   -moz-background-size: 95% auto;
-	        background-size: 95% auto;
+	-webkit-background-size: 92% auto;
+	   -moz-background-size: 92% auto;
+	        background-size: 92% auto;
 }
 
 .radioIconBox > label {
@@ -4475,9 +4475,9 @@ body.fixed #wrap {
 	background-repeat: no-repeat;
 	background-image: url("../../resources-mo/images/icons/ico-radio-off.png");
 	background-position: center center;
-	-webkit-background-size: 95% auto;
-	   -moz-background-size: 95% auto;
-	        background-size: 95% auto;
+	-webkit-background-size: 92% auto;
+	   -moz-background-size: 92% auto;
+	        background-size: 92% auto;
 	width: 1.5rem;
 	height: 1.5rem;
 }
@@ -4493,9 +4493,9 @@ body.fixed #wrap {
 	background-repeat: no-repeat;
 	background-image: url("../../resources-mo/images/icons/ico-radio-on.png");
 	background-position: center center;
-	-webkit-background-size: 95% auto;
-	   -moz-background-size: 95% auto;
-	        background-size: 95% auto;
+	-webkit-background-size: 92% auto;
+	   -moz-background-size: 92% auto;
+	        background-size: 92% auto;
 }
 
 .radioIconBox > input {
@@ -4544,9 +4544,9 @@ body.fixed #wrap {
 	background-repeat: no-repeat;
 	background-image: url("../../resources-mo/images/icons/ico-radio-off.png");
 	background-position: center center;
-	-webkit-background-size: 95% auto;
-	   -moz-background-size: 95% auto;
-	        background-size: 95% auto;
+	-webkit-background-size: 92% auto;
+	   -moz-background-size: 92% auto;
+	        background-size: 92% auto;
 	width: 1.5rem;
 	height: 1.5rem;
 	margin-top: -.75rem;
@@ -4556,9 +4556,9 @@ body.fixed #wrap {
 	background-repeat: no-repeat;
 	background-image: url("../../resources-mo/images/icons/ico-chk-off.png");
 	background-position: center center;
-	-webkit-background-size: 95% auto;
-	   -moz-background-size: 95% auto;
-	        background-size: 95% auto;
+	-webkit-background-size: 92% auto;
+	   -moz-background-size: 92% auto;
+	        background-size: 92% auto;
 }
 
 .iconBox input:checked + label {
@@ -4572,9 +4572,9 @@ body.fixed #wrap {
 	background-repeat: no-repeat;
 	background-image: url("../../resources-mo/images/icons/ico-radio-on.png");
 	background-position: center center;
-	-webkit-background-size: 95% auto;
-	   -moz-background-size: 95% auto;
-	        background-size: 95% auto;
+	-webkit-background-size: 92% auto;
+	   -moz-background-size: 92% auto;
+	        background-size: 92% auto;
 }
 
 .iconBox input[type='checkbox']:checked + label:after {
