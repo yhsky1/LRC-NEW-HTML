@@ -2503,6 +2503,17 @@ a.btn {
 	height: 1.5rem;
 }
 
+.icon.lpoint {
+	background-repeat: no-repeat;
+	background-image: url("../../resources-mo/images/icons/ico-lpoint.png");
+	background-position: center center;
+	-webkit-background-size: 100% auto;
+	   -moz-background-size: 100% auto;
+	        background-size: 100% auto;
+	width: 3.4rem;
+	height: 3.6rem;
+}
+
 .icon.small {
 	width: 1.5rem;
 	height: 1.5rem;

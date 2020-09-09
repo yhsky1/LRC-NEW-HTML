@@ -70,6 +70,93 @@
 	z-index: 1;
 }
 
+.catharsis-wrap .section-list .catharsis-list-top-review .catharsis-top-txt {
+	padding-bottom: 1.5rem;
+}
+
+.catharsis-wrap .section-list .catharsis-list-top-review .catharsis-top-txt .lpoint {
+	margin-top: .4rem;
+	margin-right: 1.7rem;
+}
+
+.catharsis-wrap .section-list .catharsis-list-top-review .catharsis-top-txt strong em {
+	position: relative;
+	color: #178FBA;
+}
+
+.catharsis-wrap .section-list .catharsis-list-top-review .catharsis-top-txt strong em button {
+	position: absolute;
+	top: 50%;
+	right: -1.7rem;
+	-webkit-transform: translateY(-50%);
+	   -moz-transform: translateY(-50%);
+	    -ms-transform: translateY(-50%);
+	     -o-transform: translateY(-50%);
+	        transform: translateY(-50%);
+}
+
+.catharsis-wrap .section-list .catharsis-list-top-review .catharsis-top-txt strong span {
+	color: #2B2B2B;
+}
+
+.catharsis-wrap .section-list .catharsis-list-top-review .catharsis-top-txt:after {
+	display: none;
+}
+
+.catharsis-wrap .section-list .catharsis-list-top-review .catharsis-top-info {
+	position: relative;
+	padding: 1.5rem 2rem 1.8rem;
+}
+
+.catharsis-wrap .section-list .catharsis-list-top-review .catharsis-top-info:after {
+	display: block;
+	content: "";
+	border-top: 1px solid #000;
+	opacity: 0.1;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+.catharsis-wrap .section-list .catharsis-list-top-review .catharsis-top-info > ul > li {
+	position: relative;
+}
+
+.catharsis-wrap .section-list .catharsis-list-top-review .catharsis-top-info > ul > li > span {
+	padding-left: .6rem;
+}
+
+.catharsis-wrap .section-list .catharsis-list-top-review .catharsis-top-info > ul > li > strong {
+	/*font-family:"ManropeB", "NotoM", serif;*/
+	font-family: "SpoqaB", serif;
+	font-weight: normal;
+}
+
+.catharsis-wrap .section-list .catharsis-list-top-review .catharsis-top-info > ul > li:after {
+	display: block;
+	content: "";
+	background-repeat: no-repeat;
+	background-image: url("../../resources-mo/images/icons/ico-circle.png");
+	background-position: center center;
+	-webkit-background-size: 100% auto;
+	   -moz-background-size: 100% auto;
+	        background-size: 100% auto;
+	width: 2px;
+	height: 2px;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	-webkit-transform: translateY(-50%);
+	   -moz-transform: translateY(-50%);
+	    -ms-transform: translateY(-50%);
+	     -o-transform: translateY(-50%);
+	        transform: translateY(-50%);
+	-webkit-border-radius: 50%;
+	   -moz-border-radius: 50%;
+	        border-radius: 50%;
+}
+
 .estimate-wrap {
 	background-color: #EFF2F7;
 	padding-bottom: 4rem;
@@ -2019,6 +2106,63 @@
 .contract-wrap .detail-layout .detail-layer-cont .detail-layer-cont-limited .summary-toggle-btn:after {
 	top: 50%;
 	right: 35%;
+}
+
+.contract-wrap .detail-layout .detail-error {
+	margin-top: 1.1rem;
+	padding: 1.7rem 1.7rem 2.3rem;
+	background-color: #fff;
+	-webkit-border-radius: 1.5rem;
+	   -moz-border-radius: 1.5rem;
+	        border-radius: 1.5rem;
+}
+
+.contract-wrap .detail-layout .detail-error .detail-error-top .detail-error-tit-h {
+	margin-top: 2.6rem;
+	font-size: 2rem;
+	color: #1e1e1e;
+	line-height: 1.3;
+	/*font-family:"ManropeB", "NotoM", serif;*/
+	font-family: "SpoqaB", serif;
+	font-weight: normal;
+}
+
+.contract-wrap .detail-layout .detail-error .detail-error-top .detail-error-descri {
+	font-size: 1.1rem;
+	color: #1e1e1e;
+	padding-top: 1.3rem;
+}
+
+.contract-wrap .detail-layout .detail-error .detail-error-top .detail-error-descri > p {
+	line-height: 1.3;
+}
+
+.contract-wrap .detail-layout .detail-error .detail-error-top .detail-error-descri > p > span {
+	color: #f04040;
+}
+
+.contract-wrap .detail-layout .detail-error .detail-error-cont {
+	margin-top: 3.4rem;
+}
+
+.contract-wrap .detail-layout .detail-error .detail-error-cont .detail-error-list-btn > li {
+	width: 48%;
+	margin-left: 1rem;
+}
+
+.contract-wrap .detail-layout .detail-error .detail-error-cont .detail-error-list-btn > li:first-child {
+	margin-left: 0;
+}
+
+.contract-wrap .detail-layout .detail-error .detail-error-cont .detail-error-list-btn .btn-white {
+	border-color: #EBEBEB;
+	color: #2B2B2B;
+}
+
+.contract-wrap .detail-layout .detail-error .detail-error-cont .detail-error-list-btn .btn {
+	-webkit-border-radius: 1rem;
+	   -moz-border-radius: 1rem;
+	        border-radius: 1rem;
 }
 
 .contract-wrap .detail-layout .layer-item {

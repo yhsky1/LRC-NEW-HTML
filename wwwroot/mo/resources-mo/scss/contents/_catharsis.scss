@@ -38,6 +38,64 @@
                 position: relative;
                 z-index: 1;
             }
+            &-review{
+                .catharsis-top-txt{
+                    padding-bottom:1.5rem;
+                    .lpoint{
+                        margin-top:.4rem;
+                        margin-right:1.7rem;
+                    }
+                    strong{
+                        em{
+                            position: relative;
+                            color:#178FBA;
+                            button{
+                                @include Position($position:absolute, $top: 50%, $right: -1.7rem);
+                                transform: translateY(-50%);
+                            }
+                        }
+                        span{
+                            color:#2B2B2B;
+                        }
+                    }
+                    &:after{
+                        display:none;
+                    }
+                }
+                .catharsis-top-info{
+                    position: relative;
+                    padding:1.5rem 2rem 1.8rem;
+                    &:after{
+                        display: block;
+                        content:"";
+                        border-top:1px solid #000;
+                        opacity:0.1;
+                        @include Position($position:absolute, $top: 0, $left: 0);
+                        width:100%;
+                    }
+                    & > ul{
+                        & > li{
+                            position: relative;
+                            & > span{
+                                padding-left:.6rem;
+                            }
+                            & > strong{
+                                @include Bold;
+                            }
+                            &:after{
+                                display:block;
+                                content:"";
+                                @include Background($sprite:'ico-circle', $size:100% auto, $position:center center);
+                                width: 2px;
+                                height: 2px;
+                                @include Position($position:absolute, $top: 50%, $left: 0);
+                                transform: translateY(-50%);
+                                border-radius: 50%;
+                            }
+                        }
+                    }
+                }
+            }
         }
 
     }
