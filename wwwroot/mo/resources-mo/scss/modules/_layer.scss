@@ -588,6 +588,231 @@ body.fixed {
 				
 			}
 		}
+		&.layer-write{
+			&-info{
+				.full-top{
+					background-color:#2B2B2B;
+					color:#fff;
+					.layer-full-close{
+						color:#fff;
+					}
+				}
+				.full-cont{
+					.layer-write-info{
+						padding: 1.7rem 0;
+						.write-info-top{
+							strong{
+								display:block;
+								line-height: 1.3;
+								font-size:1.4rem;
+								@include Bold;
+								margin-bottom: 1.5rem;
+							}
+						}
+						.layer-write-guide{
+							margin-bottom: 1.5rem;
+							& > ul{
+								& > li{
+									text-indent: -.8rem;
+									padding-left: .8rem;
+									margin-top:.6rem;
+									line-height: 1.3;
+									i{
+										margin-right:.6rem;
+									}
+								}
+								& > li:first-child{
+									margin-top:0;		
+								}
+							}
+						}
+					}
+				}
+			}
+			&-detail{
+				.layer-write-detail{
+					.detail-view-list{
+						padding-bottom:2rem;
+					}
+					.swiper-pagination-wrap{
+						@include Position($bottom:0, $left:0);
+						@include Align-middle;
+						width: 100%;
+						z-index: 1;
+						.swiper-pagination {
+							position: static;
+							background-color: rgba(255, 255, 255, .7);
+							height: 2rem;
+							padding: 0 1.4rem;
+							border-radius: 1rem;
+							@include Align-middle;
+							.swiper-pagination-bullet {
+								@include Inline-align-middle;
+								margin: 0 .4rem;
+								width: auto;
+								height: auto;
+								border-radius: none;
+								background-color: transparent;
+								border:0;
+								opacity: 1;
+								//transition: all .4s;
+								&:before {
+									display: inline-block;
+									content: '';
+									width: .5rem;
+									height: .5rem;
+									border-radius: 100%;
+									background-color: #ccc;
+								}
+								&:after {
+									display: inline-block;
+									content: '';
+									width: 0;
+									transition: width .6s;
+								}
+								&.swiper-pagination-bullet-active {
+									&:before {
+										background-color: transparent;
+										border: 0.3rem solid #2B2B2B;
+										width: .3rem;
+										height: .3rem;
+									}
+									
+									&:after {
+										width: 1.3rem;
+										height: .3rem;
+										background-color: #2B2B2B;
+										border-radius: 0 .5rem .5rem 0;
+										margin-left: -.1rem;
+									}
+								}
+							}
+						}
+					}
+					.unit-text{
+						margin-top:0;
+						padding-top:0;
+						.text-cont{
+							padding:0;
+							.text-cont-in{
+								.img {
+									position: relative; 
+									border-radius: 1rem;
+									overflow: hidden;
+									background-color: #fff;  
+								}
+								.text {
+									white-space: normal;
+									margin-top:1.3rem;
+									strong {
+										display:block;
+										line-height: 1.3;
+										word-break: keep-all;
+										padding-bottom: 1.6rem;
+									}
+									span {
+										display: block;
+										@include Bold;
+										padding-top: 1.7rem;
+										border-top: 1px solid #EBEBEB;
+									}
+								}
+								.thumb { 
+									margin-top: .9rem;
+									@include Align-between;
+									.info{
+										color: #999;
+										margin-left:1rem;
+									}
+									.days {color: #999;}
+								}
+								.star {
+									margin-top: .4rem;
+									font-size: 0;
+									i {
+										margin-top: 0;
+										margin-left: .4rem;
+									}
+									i:first-child{
+										margin-left:0;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			&-default{
+				.text-cont{
+					padding:1.7rem 0;
+					.list-cont{
+						margin-bottom:1rem;
+						strong{
+							display: block;
+							@include Bold;
+							margin-bottom:1rem;
+						}
+						.unit-normal{
+							padding:1.8rem 0;
+							@include Align-middle;
+							margin-top:0;
+						}
+						.guide{
+							font-size: 1rem;
+							color: #999;
+							line-height: 1.3;
+						}
+						.unit-text-write-wrap{
+							margin-top:1rem;
+							.unit-text-write{
+								position: relative;
+								bottom:auto;
+								left:auto;
+								padding:0;
+								background-color:#fff;
+							}
+						}
+						.img-info{
+							position: relative;
+							padding:1.5rem 0 0;
+							& > ul{
+								margin-left:0;
+								& > li{
+									position: relative;
+									margin-bottom:1rem;
+									& > span{
+										padding-left:.6rem;
+										font-size: 1rem;
+										color: #999;
+										line-height: 1.3;
+									}
+									& > b{
+										@include Bold;
+										font-size: 1rem;
+										line-height: 1.3;
+									}
+									&:after{
+										display:block;
+										content:"";
+										@include Background($sprite:'ico-circle', $size:100% auto, $position:center center);
+										width: 2px;
+										height: 2px;
+										@include Position($position:absolute, $top: 50%, $left: 0);
+										transform: translateY(-50%);
+										border-radius: 50%;
+									}
+								}
+							}
+						}
+						.chk-agree-cols{
+							.chk-agree-top{
+								border-top: 1px solid #EBEBEB;
+							}
+						}
+					}
+				}
+			}
+		}
 
 		//게시글작성 풀팝업
 		&.layer-write {

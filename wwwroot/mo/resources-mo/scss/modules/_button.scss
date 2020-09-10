@@ -40,6 +40,11 @@
 		&.eventsAuto {
 			pointer-events: auto;
 		}
+		&.black {
+			border: 1px solid #2B2B2B;
+			background-color: #2B2B2B;
+			pointer-events: auto;
+		}
 	}
 	&-red {
 		width: 100%;

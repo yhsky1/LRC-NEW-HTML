@@ -405,6 +405,16 @@ $(function(){
             }
         });
     }
+
+    //고객후기 레이어팝업 상단 슬리이더
+    if($('.layer-write-detail .detail-view-list').length) {
+        MUI.slide.init('.layer-write-detail .detail-view-list','swiper', {
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+            },
+        });
+    }
     
     
     //하단 퀵메뉴 모션
