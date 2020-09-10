@@ -2067,6 +2067,17 @@ a.btn {
 	height: 3.2rem;
 }
 
+.icon.video02 {
+	background-repeat: no-repeat;
+	background-image: url("../../resources-mo/images/icons/ico-play02.png");
+	background-position: center center;
+	-webkit-background-size: 100% auto;
+	   -moz-background-size: 100% auto;
+	        background-size: 100% auto;
+	width: 4.5rem;
+	height: 4.8rem;
+}
+
 .icon.heart {
 	background-repeat: no-repeat;
 	background-image: url("../../resources-mo/images/icons/ico-heart.png");
