@@ -586,6 +586,7 @@
 			}
 			> a {
 				margin-top: 1.2rem;
+				width: 100%;
 			}
 		}
 	}
@@ -668,6 +669,39 @@
 	}
 	
 
+}
+
+
+.filter-list {
+	@include Inline-scrolling;
+	@include NoscrollBar;
+	padding-left: 1.7rem;
+	margin:2.4rem 0 0;
+	button {
+		@include Inline-align-middle;
+		background-color: #fff;
+		margin-right:.8rem;
+		height: 2.8rem;
+		font-size: 1.2rem;
+		border-radius: 2rem;
+		border: 2px solid #2B2B2B;
+		box-sizing: border-box;
+		padding: 0 1.2rem;
+		i {
+			margin-left: .7rem;
+		}
+	}
+	&.ty2 {
+		button{
+			background-color: #fff;
+			border: 1px solid #2B2B2B;
+			box-sizing: border-box;
+			&.active {
+				background-color: #2B2B2B;
+				color:#fff;
+			}
+		}
+	}
 }
 
 

@@ -284,6 +284,66 @@ body.fixed {
 			}
 		}
 
+		//차량선택 슬라이드
+		&.layer-carSelect {
+			h4{
+				border:0;
+				@include Align-middle-left;
+				> span {
+					margin-left:auto;
+				}
+			}
+			.filter-list{
+				margin:0 0 1.7rem;
+			}
+			.slide-cont {
+				padding:0;
+			}
+			.layer-carSelect-list {
+				padding:0 1.7rem;
+				> ul {
+					border-bottom:1px solid #EBEBEB;
+					> li {
+						border-top:1px solid #EBEBEB;
+						a{
+							height: 8rem;
+							@include Align-middle-left;
+							.img {
+								width:11rem;
+								flex:none;
+							}	
+							> strong {
+								word-break:break-all;
+								line-height: 1.3;
+								@include Bold;
+								margin:0 1rem;
+							}
+							> i {
+								margin-left: auto;
+								flex:none;
+								margin-right: 1rem;
+							}
+							.options {
+								> strong {
+									line-height: 1.3;
+									font-size: 1.2rem;
+									display: block;
+									@include Bold;
+								}
+								> span{
+									line-height: 1.3;
+									font-size: 1.2rem;
+									display: block;
+									color:#999;
+									margin-top: .5rem;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
 	}
 
 	//풀팝업 형태
@@ -539,11 +599,19 @@ body.fixed {
 					margin-top: 1rem;
 				}
 				.vs-cont-box {
+					margin-top:1rem;
 					.inner {
 						margin-top:0;
 					}
 					&:after {
 						display:none;
+					}
+				}
+				.vs-item-enrollment{
+					h5 {
+						font-size:1.2rem;
+						@include Bold;
+						margin-top:1rem;
 					}
 				}
 			}
