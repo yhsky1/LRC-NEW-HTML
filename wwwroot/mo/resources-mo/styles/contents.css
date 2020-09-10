@@ -157,6 +157,83 @@
 	        border-radius: 50%;
 }
 
+.catharsis-wrap .section-list .catharsis-list-text-review .text-cont-in .img {
+	position: relative;
+	-webkit-border-radius: 1rem;
+	   -moz-border-radius: 1rem;
+	        border-radius: 1rem;
+	overflow: hidden;
+	background-color: #fff;
+}
+
+.catharsis-wrap .section-list .catharsis-list-text-review .text-cont-in .text {
+	white-space: normal;
+	margin-top: 1.3rem;
+}
+
+.catharsis-wrap .section-list .catharsis-list-text-review .text-cont-in .text strong {
+	width: 100%;
+	display: -webkit-box;
+	overflow: hidden;
+	-o-text-overflow: ellipsis;
+	   text-overflow: ellipsis;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	word-break: break-all;
+	line-height: 1.3;
+	word-break: keep-all;
+}
+
+.catharsis-wrap .section-list .catharsis-list-text-review .text-cont-in .text span {
+	display: block;
+	/*font-family:"ManropeB", "NotoM", serif;*/
+	font-family: "SpoqaB", serif;
+	font-weight: normal;
+	margin-top: 1.1rem;
+}
+
+.catharsis-wrap .section-list .catharsis-list-text-review .text-cont-in .thumb {
+	margin-top: .9rem;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	   -moz-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	   -moz-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+}
+
+.catharsis-wrap .section-list .catharsis-list-text-review .text-cont-in .thumb .info {
+	color: #999;
+	margin-left: 1rem;
+}
+
+.catharsis-wrap .section-list .catharsis-list-text-review .text-cont-in .thumb .days {
+	color: #999;
+}
+
+.catharsis-wrap .section-list .catharsis-list-text-review .text-cont-in .star {
+	margin-top: .4rem;
+	font-size: 0;
+}
+
+.catharsis-wrap .section-list .catharsis-list-text-review .text-cont-in .star i {
+	margin-top: 0;
+	margin-left: .4rem;
+}
+
+.catharsis-wrap .section-list .catharsis-list-text-review .text-cont-in .star i:first-child {
+	margin-left: 0;
+}
+
 .estimate-wrap {
 	background-color: #EFF2F7;
 	padding-bottom: 4rem;

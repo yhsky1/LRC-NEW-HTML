@@ -97,6 +97,52 @@
                 }
             }
         }
+        .catharsis-list{
+            &-text-review{
+                .text-cont-in{
+                    .img {
+                        position: relative; 
+                        border-radius: 1rem;
+                        overflow: hidden;
+                        background-color: #fff;  
+                    }
+                    .text {
+                        white-space: normal;
+                        margin-top:1.3rem;
+                        strong {
+                            @include Ellipsis($lines:2);
+                            line-height: 1.3;
+                            word-break: keep-all;
+                        }
+                        span {
+                            display: block;
+                            @include Bold;
+                            margin-top: 1.1rem;
+                        }
+                    }
+                    .thumb { 
+                        margin-top: .9rem;
+                        @include Align-between;
+                        .info{
+                            color: #999;
+                            margin-left:1rem;
+                        }
+                        .days {color: #999;}
+                    }
+                    .star {
+                        margin-top: .4rem;
+                        font-size: 0;
+                        i {
+                            margin-top: 0;
+                            margin-left: .4rem;
+                        }
+                        i:first-child{
+                            margin-left:0;
+                        }
+                    }
+                }
+            }
+        }
 
     }
 
