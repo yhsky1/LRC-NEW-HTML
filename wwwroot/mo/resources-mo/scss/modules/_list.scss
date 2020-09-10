@@ -301,6 +301,9 @@
 		button + button {
 			margin-left:1rem;
 		}
+		button + button.btn-small {
+			margin-left:.5rem;
+		}
 	}
 	.text-detail-reply {
 		padding: 0 1.7rem;
@@ -315,9 +318,9 @@
 			padding: 0 1.7rem;
 			border-bottom: 1px solid #EBEBEB;
 			> strong {
-				font-size: 1.5rem;
+				font-size: 1.1rem;
 				@include Bold;
-				b {color:#F04040}
+				b {color:#F04040;font-size: 1.1rem;}
 			}
 		}
 		.detail-reply-list {
@@ -330,6 +333,9 @@
 			.reply-list-top {
 				@include Align-middle-left;
 				font-size:1rem;
+				> b {
+					font-size:1rem;
+				}
 				> span {	
 					color:#999;
 					margin-left: .5rem;
@@ -354,8 +360,7 @@
 				border-radius: 1rem;
 				position: relative;
 				&.write {
-					border:1px solid #2B2B2B;
-					background-color: #fff;
+					background-color: #EAF5F7;
 				}
 				&:before {
 					display: block;

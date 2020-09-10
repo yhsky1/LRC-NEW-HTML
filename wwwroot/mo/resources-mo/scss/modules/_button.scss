@@ -219,6 +219,19 @@
 			background-color: #F04040;
 		}
 	}
+	&-small{
+		border: 1px solid #EBEBEB;
+		background-color: #fff;
+		border-radius: 1rem;
+		padding: 0 .8rem;
+		height: 2.1rem;
+		box-sizing: border-box;
+		&.active {
+			background-color: #4054F0;
+			border-color: #4054F0;
+			color: #fff;
+		}
+	}
 
 
 }

@@ -1804,6 +1804,25 @@ button.swiper-pagination-bullet {
 	background-color: #F04040;
 }
 
+.btn-small {
+	border: 1px solid #EBEBEB;
+	background-color: #fff;
+	-webkit-border-radius: 1rem;
+	   -moz-border-radius: 1rem;
+	        border-radius: 1rem;
+	padding: 0 .8rem;
+	height: 2.1rem;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+.btn-small.active {
+	background-color: #4054F0;
+	border-color: #4054F0;
+	color: #fff;
+}
+
 a.btn {
 	display: -webkit-inline-box;
 	display: -webkit-inline-flex;
@@ -2600,6 +2619,24 @@ a.btn {
 
 .icon.small.mint {
 	background-color: #2CB7C3;
+}
+
+button.active .like {
+	background-repeat: no-repeat;
+	background-image: url("../../resources-mo/images/icons/ico-like-on.png");
+	background-position: center center;
+	-webkit-background-size: 100% auto;
+	   -moz-background-size: 100% auto;
+	        background-size: 100% auto;
+}
+
+button.active .unlike {
+	background-repeat: no-repeat;
+	background-image: url("../../resources-mo/images/icons/ico-unlike-on.png");
+	background-position: center center;
+	-webkit-background-size: 100% auto;
+	   -moz-background-size: 100% auto;
+	        background-size: 100% auto;
 }
 
 .flag {
@@ -3454,6 +3491,10 @@ a.btn {
 	margin-left: 1rem;
 }
 
+.unit-text-detail .text-buttons button + button.btn-small {
+	margin-left: .5rem;
+}
+
 .unit-text-detail .text-detail-reply {
 	padding: 0 1.7rem;
 	margin-top: 2rem;
@@ -3488,7 +3529,7 @@ a.btn {
 }
 
 .unit-text-detail .text-detail-reply .detail-reply-top > strong {
-	font-size: 1.5rem;
+	font-size: 1.1rem;
 	/*font-family:"ManropeB", "NotoM", serif;*/
 	font-family: "SpoqaB", serif;
 	font-weight: normal;
@@ -3496,6 +3537,7 @@ a.btn {
 
 .unit-text-detail .text-detail-reply .detail-reply-top > strong b {
 	color: #F04040;
+	font-size: 1.1rem;
 }
 
 .unit-text-detail .text-detail-reply .detail-reply-list {
@@ -3519,6 +3561,10 @@ a.btn {
 	   -moz-box-align: center;
 	    -ms-flex-align: center;
 	        align-items: center;
+	font-size: 1rem;
+}
+
+.unit-text-detail .text-detail-reply .detail-reply-list .reply-list-top > b {
 	font-size: 1rem;
 }
 
@@ -3551,8 +3597,7 @@ a.btn {
 }
 
 .unit-text-detail .text-detail-reply .reply-list-commend .commend-item.write {
-	border: 1px solid #2B2B2B;
-	background-color: #fff;
+	background-color: #EAF5F7;
 }
 
 .unit-text-detail .text-detail-reply .reply-list-commend .commend-item:before {

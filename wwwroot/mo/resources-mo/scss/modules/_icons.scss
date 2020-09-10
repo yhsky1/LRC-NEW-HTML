@@ -353,6 +353,15 @@
     
 }
 
+//캐스케이드
+button.active .like{
+    @include Background($sprite:'ico-like-on', $size:100% auto, $position:center center);
+}
+
+button.active .unlike{
+    @include Background($sprite:'ico-unlike-on', $size:100% auto, $position:center center);
+}
+
 
 .flag {
     height: 1.5rem;
