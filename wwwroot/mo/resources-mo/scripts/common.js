@@ -50,9 +50,13 @@ $(function(){
     //차트그리기
     if($('.pie-chart').length){
         $('.pie-chart').easyPieChart({
-			easing: 'easeOutBounce',
+            size:80,
+            lineWidth: 7,
+            barColor:'#F04040',
+            trackColor:'#EBEBEB',
+            scaleColor:false,
 			onStep: function(from, to, percent) {
-				$(this.el).find('.percent').text(Math.round(percent));
+                $(this.el).find('.percent span').text(Math.round(percent));
 			}
 		});
     }
@@ -210,16 +214,6 @@ $(function(){
             hide();
         });
     }
-
-    //일반 레이어팝업 테스트
-    MUI.layer.openClick('#layer-open2', LAYER_DIM, LAYER_PARENT, function(show){
-        console.log('open');
-        show();
-    });
-    MUI.layer.closeClick('#layer-close2', LAYER_DIM, LAYER_PARENT, function(hide){
-        console.log('close');
-        hide();
-    });
 
     //bg-dimmed 클릭시 열린 레이어 들 닫기
     MUI.layer.closeClick(LAYER_DIM, LAYER_DIM, LAYER_PARENT, function(hide){
@@ -405,13 +399,21 @@ $(function(){
     }
     
     
-
-
     //하단 퀵메뉴 모션
     if($('.fixedBottom').length) { MUI.event.fixedBottom($('.fixedBottom')); }
 
 
 
+
+    //일반 레이어팝업 테스트 ---추후삭제
+    MUI.layer.openClick('#layer-open2', LAYER_DIM, LAYER_PARENT, function(show){
+        console.log('open');
+        show();
+    });
+    MUI.layer.closeClick('#layer-close2', LAYER_DIM, LAYER_PARENT, function(hide){
+        console.log('close');
+        hide();
+    });
 
     //메이슨리 테스트--동적테이블 ---추후삭제
     var content =

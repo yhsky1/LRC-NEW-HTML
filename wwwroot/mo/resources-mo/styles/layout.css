@@ -566,8 +566,8 @@
 
 .fixedRight {
 	position: fixed;
-	bottom: 0rem;
 	right: 0;
+	bottom: 0;
 	z-index: 41;
 	-webkit-transition: -webkit-transform .2s;
 	transition: -webkit-transform .2s;
@@ -602,6 +602,19 @@
 	-moz-transition: opacity .2s, transform .2s, -moz-transform .2s;
 	transition: opacity .2s, transform .2s;
 	transition: opacity .2s, transform .2s, -webkit-transform .2s, -moz-transform .2s, -o-transform .2s;
+}
+
+.bottomAlert {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	/*font-family:"ManropeB", "NotoM", serif;*/
+	font-family: "SpoqaB", serif;
+	font-weight: normal;
+	width: 100%;
+	height: 4.1rem;
+	background-color: rgba(0, 0, 0, 0.8);
+	color: #fff;
 }
 
 .fixedBottom.close ~ .fixedRight {

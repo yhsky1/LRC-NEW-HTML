@@ -82,51 +82,90 @@
                         </div>
                         <div class="detail-vs-cont">
                             <form action="">
-                                <div class="radio-box">
+                                <div class="vs-cont-box">
                                     <ul class="list-type-col2">
                                         <li>
                                             <div class="inner">
-
                                                 <div class="detail-vs-infos">
-                                                    <div class="pie-chart" data-percent="86">
-                                                        <div class="percent"></div>
-                                                    </div>
-                                                </div>
-
-                                                <input type="radio" name="radio1" id="radio1-1">
-                                                <label for="radio1-1">
-                                                    <div class="infos">
-                                                        <img src="../../../resources-mo/images/@temp-estimate-list11.png" alt="자동차 이미지"/>
+                                                    <div class="infos-top">
+                                                        <div class="pie-chart" data-percent="77">
+                                                            <div class="texts">
+                                                                <div class="percent"><span></span>%</div>
+                                                                <b>8명</b>
+                                                            </div>
+                                                        </div>
+                                                        <div class="cover">
+                                                            <img src="../../../resources-mo/images/@temp-estimate-list11.png" alt="자동차 이미지"/>
+                                                        </div>
                                                         <strong>트래버스</strong>
                                                         <span>
                                                             Travers 2.4 Disel
                                                         </span>
                                                     </div>
+                                                    <div class="infos-bottom">
+                                                        <strong>24,540,000원</strong>
+                                                        <a href="#" class="btn btn-link">견적내러가기</a>
+                                                    </div>
                                                     
-                                                    <b>24,540,000원</b>
-                                                </label>
-                                
+
+                                                </div>
                                             </div>
                                         </li>
                                         <li>
                                             <div class="inner">
-                                                <input type="radio" name="radio1" id="radio1-2">
-                                                <label for="radio1-2">
-                                                    <div class="infos">
-                                                        <img src="../../../resources-mo/images/@temp-estimate-list12.png" alt="자동차 이미지"/>
+                                                <div class="detail-vs-infos">
+                                                    <div class="infos-top">
+                                                        <div class="pie-chart" data-percent="23">
+                                                            <div class="texts">
+                                                                <div class="percent"><span></span>%</div>
+                                                                <b>2명</b>
+                                                            </div>
+                                                        </div>
+                                                        <div class="cover">
+                                                            <img src="../../../resources-mo/images/@temp-estimate-list12.png" alt="자동차 이미지"/>
+                                                        </div>
                                                         <strong>트레블레이저</strong>
                                                         <span>
                                                             Trailblazer (G) 1.2
                                                             Turbo Premier
                                                         </span>
                                                     </div>
-                                                    <b>23,125,000원</b>
+                                                    <div class="infos-bottom">
+                                                        <strong>24,540,000원</strong>
+                                                        <a href="#" class="btn btn-link">견적내러가기</a>
+                                                    </div>
+                                                    
+
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="radio-box">
+                                    <ul class="list-type-col2">
+                                        <li>
+                                            <div class="inner">
+
+                                                <input type="radio" name="radio1" id="radio1-1">
+                                                <label for="radio1-1">
+                                                    투표하기
+                                                </label>
+                                
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="inner">
+
+                                                <input type="radio" name="radio1" id="radio1-2">
+                                                <label for="radio1-2">
+                                                    투표하기
                                                 </label>
                                             
                                             </div>
                                         </li>
                                     </ul>
                                 </div>
+
                             </form>
                         </div>
 
@@ -173,7 +212,11 @@
 		</div>
 		<!--//카타르시스-->
 
-	</main>
+    </main>
+    
+    <div class="bottomAlert">
+        <span>투표완료 되었습니다.</span>
+    </div>
 
 
 	<footer class="footer">
@@ -185,7 +228,14 @@
 	<!--상단 타이틀(추후삭제)-->
     <script>
 	$(function(){
-		$('.header-top.sub h1').text('CAR타르시스');
+        $('.header-top.sub h1').text('CAR타르시스');
+        
+
+        $('.detail-vs-cont .radio-box input').on('change',function(e){
+            if(e.target.value){
+                $('.bottomAlert').addClass('active');
+            }
+        });
 	})
 	</script>
 	<!--//상단 타이틀(추후삭제)-->

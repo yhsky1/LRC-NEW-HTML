@@ -1842,6 +1842,35 @@ button.swiper-pagination-bullet {
 	margin-right: .3rem;
 }
 
+.btn-link {
+	border: 1px solid #EBEBEB;
+	background-color: #FAFAFA;
+	-webkit-border-radius: 1rem;
+	   -moz-border-radius: 1rem;
+	        border-radius: 1rem;
+	padding: 0 .8rem;
+	height: 2.8rem;
+	font-size: 1.1rem;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	   -moz-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	   -moz-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+}
+
 a.btn {
 	display: -webkit-inline-box;
 	display: -webkit-inline-flex;
@@ -3778,30 +3807,144 @@ button.active .unlike {
 	line-height: 1;
 }
 
-.unit-text-detail .text-detail-vs .detail-vs-cont .radio-box li .inner {
-	margin-top: 0;
-	height: 100%;
+.unit-text-detail .text-detail-vs .detail-vs-cont .vs-cont-box {
+	position: relative;
+	margin-top: 1.5rem;
 }
 
-.unit-text-detail .text-detail-vs .detail-vs-cont .radio-box li .inner > label {
+.unit-text-detail .text-detail-vs .detail-vs-cont .vs-cont-box:after {
+	display: block;
+	content: 'VS';
+	width: 3.4rem;
+	height: 3.4rem;
+	-webkit-border-radius: 100%;
+	   -moz-border-radius: 100%;
+	        border-radius: 100%;
+	background-color: #2B2B2B;
+	color: #fff;
+	/*font-family:"ManropeB", "NotoM", serif;*/
+	font-family: "SpoqaB", serif;
+	font-weight: normal;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	   -moz-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	   -moz-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	position: absolute;
+	top: 3.6rem;
+	left: 50%;
+	margin-left: -1.7rem;
+}
+
+.unit-text-detail .text-detail-vs .detail-vs-cont .vs-cont-box .inner {
 	height: 100%;
-	padding: 1.5rem;
+	margin-top: 0;
+}
+
+.unit-text-detail .text-detail-vs .detail-vs-cont .vs-cont-box .detail-vs-infos {
+	border: 1px solid #EBEBEB;
+	-webkit-border-radius: 1rem;
+	   -moz-border-radius: 1rem;
+	        border-radius: 1rem;
+	height: 100%;
 	-webkit-box-sizing: border-box;
 	   -moz-box-sizing: border-box;
 	        box-sizing: border-box;
-	-webkit-box-pack: start;
-	-webkit-justify-content: flex-start;
-	   -moz-box-pack: start;
-	    -ms-flex-pack: start;
-	        justify-content: flex-start;
+	padding: 1.7rem;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-flow: column;
+	   -moz-box-orient: vertical;
+	   -moz-box-direction: normal;
+	    -ms-flex-flow: column;
+	        flex-flow: column;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: start;
+	-webkit-align-items: flex-start;
+	   -moz-box-align: start;
+	    -ms-flex-align: start;
+	        align-items: flex-start;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	   -moz-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+}
+
+.unit-text-detail .text-detail-vs .detail-vs-cont .vs-cont-box .detail-vs-infos .infos-top {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	   -moz-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	   -moz-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-flow: column;
+	   -moz-box-orient: vertical;
+	   -moz-box-direction: normal;
+	    -ms-flex-flow: column;
+	        flex-flow: column;
+	width: 100%;
+}
+
+.unit-text-detail .text-detail-vs .detail-vs-cont .vs-cont-box .detail-vs-infos .infos-top .pie-chart {
 	position: relative;
+	width: 6.5rem;
+	height: 6.5rem;
 }
 
-.unit-text-detail .text-detail-vs .detail-vs-cont .radio-box li .inner > label .infos {
-	padding-bottom: .5rem;
+.unit-text-detail .text-detail-vs .detail-vs-cont .vs-cont-box .detail-vs-infos .infos-top .pie-chart .texts {
+	position: absolute;
+	top: 2rem;
+	left: 0;
+	width: 100%;
+	text-align: center;
 }
 
-.unit-text-detail .text-detail-vs .detail-vs-cont .radio-box li .inner > label strong {
+.unit-text-detail .text-detail-vs .detail-vs-cont .vs-cont-box .detail-vs-infos .infos-top .pie-chart .texts .percent {
+	font-size: 1.5rem;
+	/*font-family:"ManropeB", "NotoM", serif;*/
+	font-family: "SpoqaB", serif;
+	font-weight: normal;
+	line-height: 1;
+}
+
+.unit-text-detail .text-detail-vs .detail-vs-cont .vs-cont-box .detail-vs-infos .infos-top .pie-chart .texts > b {
+	margin-top: .5rem;
+	display: block;
+	font-size: 1rem;
+}
+
+.unit-text-detail .text-detail-vs .detail-vs-cont .vs-cont-box .detail-vs-infos .infos-top .pie-chart canvas {
+	width: 100% !important;
+	height: 100% !important;
+}
+
+.unit-text-detail .text-detail-vs .detail-vs-cont .vs-cont-box .detail-vs-infos .infos-top > strong {
 	display: block;
 	/*font-family:"ManropeB", "NotoM", serif;*/
 	font-family: "SpoqaB", serif;
@@ -3810,9 +3953,10 @@ button.active .unlike {
 	text-align: center;
 	line-height: 1.3;
 	width: 100%;
+	word-break: break-word;
 }
 
-.unit-text-detail .text-detail-vs .detail-vs-cont .radio-box li .inner > label span {
+.unit-text-detail .text-detail-vs .detail-vs-cont .vs-cont-box .detail-vs-infos .infos-top > span {
 	display: block;
 	/*font-family:"ManropeL", "NotoL", serif;*/
 	font-family: "SpoqaL", serif;
@@ -3824,24 +3968,125 @@ button.active .unlike {
 	line-height: 1.3;
 	margin-bottom: 1rem;
 	width: 100%;
+	word-break: break-word;
 }
 
-.unit-text-detail .text-detail-vs .detail-vs-cont .radio-box li .inner > label > b {
-	position: absolute;
-	bottom: 1.5rem;
-	left: 0;
+.unit-text-detail .text-detail-vs .detail-vs-cont .vs-cont-box .detail-vs-infos .infos-bottom {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	   -moz-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	   -moz-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-flow: column;
+	   -moz-box-orient: vertical;
+	   -moz-box-direction: normal;
+	    -ms-flex-flow: column;
+	        flex-flow: column;
+	border-top: 1px solid #EBEBEB;
+	width: 100%;
+}
+
+.unit-text-detail .text-detail-vs .detail-vs-cont .vs-cont-box .detail-vs-infos .infos-bottom > strong {
+	font-size: 1.2rem;
 	/*font-family:"ManropeB", "NotoM", serif;*/
 	font-family: "SpoqaB", serif;
 	font-weight: normal;
 	display: block;
-	border-top: 1px solid #EBEBEB;
-	padding-top: 1.2rem;
-	width: 78%;
-	width: -webkit-calc(100% - 3rem);
-	width: -moz-calc(100% - 3rem);
-	width: calc(100% - 3rem);
+	margin-top: 1.2rem;
 	text-align: center;
-	margin: 0 1.5rem;
+}
+
+.unit-text-detail .text-detail-vs .detail-vs-cont .vs-cont-box .detail-vs-infos .infos-bottom > a {
+	margin-top: 1.2rem;
+}
+
+.unit-text-detail .text-detail-vs .detail-vs-cont .radio-box li .inner {
+	margin-top: 0;
+}
+
+.unit-text-detail .text-detail-vs .detail-vs-cont .radio-box li .inner > label {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	   -moz-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	   -moz-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	/*font-family:"ManropeB", "NotoM", serif;*/
+	font-family: "SpoqaB", serif;
+	font-weight: normal;
+	height: 4.1rem;
+	position: relative;
+	background-color: #B4B8BF;
+	-webkit-border-radius: 1rem;
+	   -moz-border-radius: 1rem;
+	        border-radius: 1rem;
+	color: #fff;
+	font-size: 1.2rem;
+}
+
+.unit-text-detail .text-detail-vs .detail-vs-cont .radio-box li .inner > label:before {
+	display: block;
+	content: '';
+	background-repeat: no-repeat;
+	background-image: url("../../resources-mo/images/icons/ico-arrow03-off.png");
+	background-position: center center;
+	-webkit-background-size: 100% auto;
+	   -moz-background-size: 100% auto;
+	        background-size: 100% auto;
+	position: absolute;
+	top: -0.8rem;
+	left: 50%;
+	width: 1.4rem;
+	height: 1.3rem;
+	margin-left: -.7rem;
+}
+
+.unit-text-detail .text-detail-vs .detail-vs-cont .radio-box li .inner > input:checked + label {
+	background-color: #20BBC4;
+}
+
+.unit-text-detail .text-detail-vs .detail-vs-cont .radio-box li .inner > input:checked + label:before {
+	background-repeat: no-repeat;
+	background-image: url("../../resources-mo/images/icons/ico-arrow03-on.png");
+	background-position: center center;
+	-webkit-background-size: 100% auto;
+	   -moz-background-size: 100% auto;
+	        background-size: 100% auto;
+}
+
+.unit-text-detail .text-detail-vs .detail-vs-cont .radio-box li .inner > input:checked + label:after {
+	display: block;
+	content: '';
+	background-repeat: no-repeat;
+	background-image: url("../../resources-mo/images/icons/ico-chk-on2.png");
+	background-position: center center;
+	-webkit-background-size: 100% auto;
+	   -moz-background-size: 100% auto;
+	        background-size: 100% auto;
+	width: 1.3rem;
+	height: 1.3rem;
+	margin-left: .4rem;
 }
 
 .unit-text-write-wrap .unit-text-write {

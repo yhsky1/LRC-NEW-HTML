@@ -236,11 +236,20 @@
 			margin-right:.3rem;
 		}
 	}
+	&-link{
+		border: 1px solid #EBEBEB;
+		background-color: #FAFAFA;
+		border-radius: 1rem;
+		padding: 0 .8rem;
+		height: 2.8rem;
+		font-size:1.1rem;
+		box-sizing: border-box;
+		@include Align-middle;
+	}
 
 
 }
 
 a.btn {
 	@include Inline-align-middle;
-	//line-height: 40px;
 }
