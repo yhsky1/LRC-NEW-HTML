@@ -13,12 +13,13 @@
 <link rel="stylesheet" href="../../../resources-mo/styles/contents.css">
 
 <script src="../../../resources-mo/scripts/jquery/jquery-1.9.1.min.js"></script>
-<!--<script src="../../../resources-mo/scripts/jquery/jquery-ui.min.js"></script>-->
-<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="../../../resources-mo/scripts/jquery/jquery-ui.min.js"></script>
 <script src="../../../resources-mo/scripts/jquery/jquery.ui.touch-punch.min.js"></script>
 <script src="../../../resources-mo/scripts/jquery/plugins/slick.min.js"></script>
 <script src="../../../resources-mo/scripts/jquery/plugins/iscroll.min.js"></script>
 <script src="../../../resources-mo/scripts/jquery/plugins/masonry.min.js"></script>
+<script src="../include_sub_header_type1.js"></script><!--인크루드용..-->
+<script src="../include_footer_logout.js"></script><!--인크루드용..-->
 <script src="../../../resources-mo/scripts/MUI.js"></script>
 <script src="../../../resources-mo/scripts/common.js"></script>
 
@@ -27,33 +28,11 @@
 <body>
 	<!--header 컴포넌트-->
 	<header class="header">
-		<div class="header-top">
-			<h1><a href="#none">해더부분</a></h1>
-			<button type="button" class="btn-drawer" data-target="drawer" data-on="true" data-sort="none">
-				<i class="icon">
-					<i class="line line-1"></i>
-					<i class="line line-2"></i>
-					<i class="line line-3"></i>
-				</i>
-			</button>
-		</div>
-		<nav class="header-nav">
-			<a href="#">홈</a>
-			<a href="#">빠른출고</a>
-			<a href="#">프로모션</a>
-			<a href="#" class="active">특가모아보기</a>
-			<a href="#">이벤트</a>
-			<a href="#">고객후기</a>
-			<a href="#">신차장TV</a>
-		</nav>
 	</header>
 	<!--//header 컴포넌트-->
 
 	<!--container 컴포넌트-->
 	<main id="wrap">
-
-		<button type="button" id="layer-open2" data-layer="layer-common" style="border:1px solid #000;padding:10px;z-index: 1;">일반 레이어 열기</button>
-
 	</main>
 	<!--//container 컴포넌트-->
 
@@ -65,28 +44,12 @@
 	</footer>
 	<!--//footer 컴포넌트-->
 
-	<!--drawer 컴포넌트-->
-	<div class="drawer">
-		<button type="button" class="btn-drawer-close"  data-target="drawer" data-on="true" data-sort="none">레이어닫기</button>
-		전체메뉴 부분
-	</div>
-	<!--//drawer 컴포넌트-->
-
-	<!--fixedBottom 컴포넌트-->
-	<div class="fixedBottom">
-		<button type="button" >CAR타르시스</button>
-		<button type="button">기획전</button>
-		<button type="button">견적</button>
-		<button type="button">상담</button>
-		<button type="button">마이페이지</button>
-	</div>
-	<!--//fixedBottom 컴포넌트-->
 
 	<!-- 로그인 레이어 -->
-	<div class="login-wrap layer-wrap layer-popup layer-common" style="display:block;">
+	<div class="layer-wrap layer-popup login-wrap active">
 		<div class="pop-inner">
 			<div class="pop-cont section-detail">
-				<button type="button" class="layer-close-bt icon filterClose detail-layer-close" id="layer-close2" data-layer="layer-common">닫기</button>
+				<button type="button" class="layer-close-bt icon filterClose detail-layer-close layer-login-close" data-layer="login-wrap">닫기</button>
 				<div class="descri-tit">로그인</div>
 				<div class="menu-radio-box">
 					<ul class="list-type-col2 radio-box">

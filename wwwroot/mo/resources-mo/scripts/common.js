@@ -47,6 +47,16 @@ $(function(){
         });
     }
 
+    //차트그리기
+    if($('.pie-chart').length){
+        $('.pie-chart').easyPieChart({
+			easing: 'easeOutBounce',
+			onStep: function(from, to, percent) {
+				$(this.el).find('.percent').text(Math.round(percent));
+			}
+		});
+    }
+
     /* 레이어팝업-------------------------------------------------*/
 
     //제휴카드 혜택안내 풀팝업
@@ -184,6 +194,19 @@ $(function(){
     if($('.layer-full').length) {
         MUI.layer.closeClick('.layer-full-close', LAYER_DIM, LAYER_PARENT, function(hide){
             //console.log('close');
+            hide();
+        });
+    }
+
+    //로그인 레이어팝업
+    if($('.login-wrap').length) {
+        MUI.layer.openClick('.layer-login-open', LAYER_DIM, LAYER_PARENT, function(show){
+            $('.drawer').removeClass('active');
+            $('.btn-drawer').removeClass('active');
+            show();
+        });
+        MUI.layer.closeClick('.layer-login-close', LAYER_DIM, LAYER_PARENT, function(hide){
+            console.log('close');
             hide();
         });
     }

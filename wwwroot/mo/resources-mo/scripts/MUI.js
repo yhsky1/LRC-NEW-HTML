@@ -178,8 +178,9 @@ var MUI = MUI || {
 				$(layer).addClass('active');
 				return;
 			}
+			console.log(parent + layer);
 			$(dimmed).addClass('type-popup');
-			$(parent + layer).show();
+			$(parent + layer).addClass('active');
             that.calculate(layer);
             $(window).on('resize.layer', function(){
                 that.calculate(layer);
@@ -212,9 +213,8 @@ var MUI = MUI || {
             });
         },
         close :function(layer, dimmed, parent, callback){
-			console.log(layer);
+			//console.log(layer);
 			var that = this;
-			if(dimmed) $(dimmed).fadeOut();
 			if(callback) callback(layer);
             $('body').removeClass('fixed');
             $('body').css({top:0});
@@ -231,14 +231,14 @@ var MUI = MUI || {
 				}, 400);
 			}
 			else{
-				//console.log(layer);
 				$(layer).removeClass('active');
 				setTimeout(function(){
 					$(layer).css({opacity:0});
 				}, 400);
 			}
 			$('.layer-full').removeClass('fixed');
-			$('.layer-popup').hide();
+			$('.layer-popup').removeClass('active');
+			if(dimmed) $(dimmed).fadeOut();
 			$(dimmed).removeClass('type-full');
 			$(dimmed).removeClass('type-slide');
 			$(dimmed).removeClass('type-popup');

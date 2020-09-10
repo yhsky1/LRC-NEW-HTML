@@ -424,6 +424,10 @@
 		padding: 1.7rem 0;
 		margin: 0 1.7rem;
 		border-top: 1px solid #EBEBEB;
+		& + .text-detail-bottom {
+			border:0;
+			padding-top:0;
+		}
 		.detail-vs-top {
 			> strong {
 				display: block;
@@ -488,20 +492,11 @@
 						}
 					}
 					
-					.percent {
-						> strong {
-							
-						}
-						> span {
-							
-						}
-					}
+					
 				}
 			}
 		}
-		.detail-vs-btns {
-			
-		}
+		
 	}
 }
 .unit-text-write-wrap {

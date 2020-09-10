@@ -538,6 +538,10 @@ body.fixed {
 		width:100%;
 		max-width:30rem;
 		display: none;
+		&.active {
+			display: block !important;
+			opacity: 1 !important;
+		}
 		.pop-inner {
 			overflow: hidden;
 			border-radius:0.625rem;
