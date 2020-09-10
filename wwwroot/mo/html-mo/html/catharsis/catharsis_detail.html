@@ -255,6 +255,9 @@
                 $('.unit-text-write-wrap button').removeClass('active');
             }
         });
+        $('.unit-text-write-wrap textarea').on('blur',function(e){
+            $('.unit-text-write-wrap').removeClass('active');
+        });
 
 	})
 	</script>
