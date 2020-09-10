@@ -188,25 +188,21 @@
         @include Background($sprite:'ico-like-off', $size:100% auto, $position:center center);
         width: 1.1rem;
         height: 1.1rem;
-        margin-bottom: 0.2rem;
     }
     &.unlike {
         @include Background($sprite:'ico-unlike-off', $size:100% auto, $position:center center);
         width: 1.1rem;
         height: 1.1rem;
-        margin-bottom: 0.2rem;
     }
     &.reply {
         @include Background($sprite:'ico-reply', $size:100% auto, $position:center center);
         width: 1.1rem;
         height: 1.1rem;
-        margin-bottom: 0.2rem;
     }
     &.share2 {
         @include Background($sprite:'ico-share2', $size:85% auto, $position:center center);
         width: 1.1rem;
         height: 1.1rem;
-        margin-bottom: 0.2rem;
     }
     &.writer {
         @include Background($sprite:'ico-writer', $size:98% auto, $position:center center);

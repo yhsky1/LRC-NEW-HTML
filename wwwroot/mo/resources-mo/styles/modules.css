@@ -1815,12 +1815,31 @@ button.swiper-pagination-bullet {
 	-webkit-box-sizing: border-box;
 	   -moz-box-sizing: border-box;
 	        box-sizing: border-box;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	   -moz-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	   -moz-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 }
 
 .btn-small.active {
 	background-color: #4054F0;
 	border-color: #4054F0;
 	color: #fff;
+}
+
+.btn-small > .icon {
+	margin-right: .3rem;
 }
 
 a.btn {
@@ -2266,7 +2285,6 @@ a.btn {
 	        background-size: 100% auto;
 	width: 1.1rem;
 	height: 1.1rem;
-	margin-bottom: 0.2rem;
 }
 
 .icon.unlike {
@@ -2278,7 +2296,6 @@ a.btn {
 	        background-size: 100% auto;
 	width: 1.1rem;
 	height: 1.1rem;
-	margin-bottom: 0.2rem;
 }
 
 .icon.reply {
@@ -2290,7 +2307,6 @@ a.btn {
 	        background-size: 100% auto;
 	width: 1.1rem;
 	height: 1.1rem;
-	margin-bottom: 0.2rem;
 }
 
 .icon.share2 {
@@ -2302,7 +2318,6 @@ a.btn {
 	        background-size: 85% auto;
 	width: 1.1rem;
 	height: 1.1rem;
-	margin-bottom: 0.2rem;
 }
 
 .icon.writer {
@@ -3316,7 +3331,26 @@ button.active .unlike {
 }
 
 .unit-text .text-bottom button {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	   -moz-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	   -moz-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	font-size: 1rem;
+}
+
+.unit-text .text-bottom button > .icon {
+	margin-right: .3rem;
 }
 
 .unit-text .text-buttons {

@@ -241,7 +241,13 @@
 		margin: 0 1.7rem;
 		border-top: 1px solid #EBEBEB;
 		font-size:1rem;
-		button{font-size:1rem;}
+		button{
+			@include Align-middle;
+			font-size:1rem;
+			> .icon {
+				margin-right: .3rem;
+			}
+		}
 	}
 	.text-buttons {
 		@include Align-top-left;
@@ -297,7 +303,9 @@
 	}
 	.text-buttons {
 		@include Align-top-left;
-		button{font-size:1rem;}
+		button{
+			font-size:1rem;
+		}
 		button + button {
 			margin-left:1rem;
 		}
