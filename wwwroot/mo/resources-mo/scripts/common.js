@@ -111,7 +111,7 @@ $(function(){
     //필터 슬라이드 팝업
     if($('.layer-filter').length) {
         MUI.layer.openClick('.layer-filter-open', LAYER_DIM, LAYER_PARENT, function(show){
-            alert('open');
+            //alert('open');
             show();
         });
 

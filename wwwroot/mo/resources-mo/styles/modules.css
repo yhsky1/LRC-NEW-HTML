@@ -2240,7 +2240,19 @@ a.btn {
 
 .icon.like {
 	background-repeat: no-repeat;
-	background-image: url("../../resources-mo/images/icons/ico-like.png");
+	background-image: url("../../resources-mo/images/icons/ico-like-off.png");
+	background-position: center center;
+	-webkit-background-size: 100% auto;
+	   -moz-background-size: 100% auto;
+	        background-size: 100% auto;
+	width: 1.1rem;
+	height: 1.1rem;
+	margin-bottom: 0.2rem;
+}
+
+.icon.unlike {
+	background-repeat: no-repeat;
+	background-image: url("../../resources-mo/images/icons/ico-unlike-off.png");
 	background-position: center center;
 	-webkit-background-size: 100% auto;
 	   -moz-background-size: 100% auto;
@@ -3268,6 +3280,32 @@ a.btn {
 
 .unit-text .text-bottom button {
 	font-size: 1rem;
+}
+
+.unit-text .text-buttons {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: start;
+	-webkit-align-items: flex-start;
+	   -moz-box-align: start;
+	    -ms-flex-align: start;
+	        align-items: flex-start;
+	-webkit-box-pack: left;
+	-webkit-justify-content: left;
+	   -moz-box-pack: left;
+	    -ms-flex-pack: left;
+	        justify-content: left;
+}
+
+.unit-text .text-buttons button {
+	font-size: 1rem;
+}
+
+.unit-text .text-buttons button + button {
+	margin-left: 1rem;
 }
 
 .unit-text-detail {

@@ -185,7 +185,13 @@
         height: 1.3rem;
     }
     &.like {
-        @include Background($sprite:'ico-like', $size:100% auto, $position:center center);
+        @include Background($sprite:'ico-like-off', $size:100% auto, $position:center center);
+        width: 1.1rem;
+        height: 1.1rem;
+        margin-bottom: 0.2rem;
+    }
+    &.unlike {
+        @include Background($sprite:'ico-unlike-off', $size:100% auto, $position:center center);
         width: 1.1rem;
         height: 1.1rem;
         margin-bottom: 0.2rem;

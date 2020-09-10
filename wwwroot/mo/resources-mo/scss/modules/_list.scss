@@ -243,6 +243,13 @@
 		font-size:1rem;
 		button{font-size:1rem;}
 	}
+	.text-buttons {
+		@include Align-top-left;
+		button{font-size:1rem;}
+		button + button {
+			margin-left:1rem;
+		}
+	}
 }
 
 .unit-text-detail {
