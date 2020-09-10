@@ -122,6 +122,14 @@ $(function(){
         });
     }
 
+    //차량선택 슬라이드 팝업
+    if($('.layer-carSelect').length) {
+        MUI.layer.openClick('.layer-carSelect-open', LAYER_DIM, LAYER_PARENT, function(show){
+            //console.log('open');
+            show();
+        });
+    }
+
     //필터 슬라이드 팝업
     if($('.layer-filter').length) {
         MUI.layer.openClick('.layer-filter-open', LAYER_DIM, LAYER_PARENT, function(show){

@@ -1871,6 +1871,111 @@ button.swiper-pagination-bullet {
 	        justify-content: center;
 }
 
+.btn-middle {
+	border: 1px solid #EBEBEB;
+	background-color: #fff;
+	-webkit-border-radius: 1.5rem;
+	   -moz-border-radius: 1.5rem;
+	        border-radius: 1.5rem;
+	padding: 0 1.7rem;
+	height: 3.4rem;
+	font-size: 1.1rem;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	   -moz-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	   -moz-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+}
+
+.btn-middle > i {
+	margin-left: .4rem;
+}
+
+.item-add-btns {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	   -moz-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	   -moz-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	position: relative;
+}
+
+.item-add-btns > button {
+	position: relative;
+	z-index: 1;
+}
+
+.item-add-btns:after {
+	display: block;
+	content: '';
+	width: 100%;
+	height: 1px;
+	background-color: #EBEBEB;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	margin-top: -.5px;
+}
+
+.item-remove-btns {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	   -moz-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	   -moz-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	position: relative;
+}
+
+.item-remove-btns > button {
+	position: relative;
+	z-index: 1;
+}
+
+.item-remove-btns:after {
+	display: block;
+	content: '';
+	width: 100%;
+	height: 1px;
+	background-color: #EBEBEB;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	margin-top: -.5px;
+}
+
 a.btn {
 	display: -webkit-inline-box;
 	display: -webkit-inline-flex;
@@ -2674,6 +2779,39 @@ a.btn {
 
 .icon.small.mint {
 	background-color: #2CB7C3;
+}
+
+.icon.plus {
+	background-repeat: no-repeat;
+	background-image: url("../../resources-mo/images/icons/ico-plus.png");
+	background-position: center center;
+	-webkit-background-size: 100% auto;
+	   -moz-background-size: 100% auto;
+	        background-size: 100% auto;
+	width: .9rem;
+	height: .9rem;
+}
+
+.icon.enrollment {
+	background-repeat: no-repeat;
+	background-image: url("../../resources-mo/images/icons/ico-plus.png");
+	background-position: center center;
+	-webkit-background-size: 100% auto;
+	   -moz-background-size: 100% auto;
+	        background-size: 100% auto;
+	width: 1.4rem;
+	height: 1.4rem;
+}
+
+.icon.remove {
+	background-repeat: no-repeat;
+	background-image: url("../../resources-mo/images/icons/ico-pannelclose.png");
+	background-position: center center;
+	-webkit-background-size: 100% auto;
+	   -moz-background-size: 100% auto;
+	        background-size: 100% auto;
+	width: .9rem;
+	height: .9rem;
 }
 
 button.active .like {
@@ -3807,213 +3945,8 @@ button.active .unlike {
 	line-height: 1;
 }
 
-.unit-text-detail .text-detail-vs .detail-vs-cont .vs-cont-box {
-	position: relative;
-	margin-top: 1.5rem;
-}
-
-.unit-text-detail .text-detail-vs .detail-vs-cont .vs-cont-box:after {
-	display: block;
-	content: 'VS';
-	width: 3.4rem;
-	height: 3.4rem;
-	-webkit-border-radius: 100%;
-	   -moz-border-radius: 100%;
-	        border-radius: 100%;
-	background-color: #2B2B2B;
-	color: #fff;
-	/*font-family:"ManropeB", "NotoM", serif;*/
-	font-family: "SpoqaB", serif;
-	font-weight: normal;
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -moz-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-align: center;
-	-webkit-align-items: center;
-	   -moz-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
-	-webkit-box-pack: center;
-	-webkit-justify-content: center;
-	   -moz-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
-	position: absolute;
-	top: 3.6rem;
-	left: 50%;
-	margin-left: -1.7rem;
-}
-
-.unit-text-detail .text-detail-vs .detail-vs-cont .vs-cont-box .inner {
-	height: 100%;
-	margin-top: 0;
-}
-
-.unit-text-detail .text-detail-vs .detail-vs-cont .vs-cont-box .detail-vs-infos {
-	border: 1px solid #EBEBEB;
-	-webkit-border-radius: 1rem;
-	   -moz-border-radius: 1rem;
-	        border-radius: 1rem;
-	height: 100%;
-	-webkit-box-sizing: border-box;
-	   -moz-box-sizing: border-box;
-	        box-sizing: border-box;
-	padding: 1.7rem;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-webkit-flex-flow: column;
-	   -moz-box-orient: vertical;
-	   -moz-box-direction: normal;
-	    -ms-flex-flow: column;
-	        flex-flow: column;
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -moz-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-align: start;
-	-webkit-align-items: flex-start;
-	   -moz-box-align: start;
-	    -ms-flex-align: start;
-	        align-items: flex-start;
-	-webkit-box-pack: justify;
-	-webkit-justify-content: space-between;
-	   -moz-box-pack: justify;
-	    -ms-flex-pack: justify;
-	        justify-content: space-between;
-}
-
-.unit-text-detail .text-detail-vs .detail-vs-cont .vs-cont-box .detail-vs-infos .infos-top {
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -moz-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-align: center;
-	-webkit-align-items: center;
-	   -moz-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
-	-webkit-box-pack: center;
-	-webkit-justify-content: center;
-	   -moz-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-webkit-flex-flow: column;
-	   -moz-box-orient: vertical;
-	   -moz-box-direction: normal;
-	    -ms-flex-flow: column;
-	        flex-flow: column;
-	width: 100%;
-}
-
-.unit-text-detail .text-detail-vs .detail-vs-cont .vs-cont-box .detail-vs-infos .infos-top .pie-chart {
-	position: relative;
-	width: 6.5rem;
-	height: 6.5rem;
-}
-
-.unit-text-detail .text-detail-vs .detail-vs-cont .vs-cont-box .detail-vs-infos .infos-top .pie-chart .texts {
-	position: absolute;
-	top: 2rem;
-	left: 0;
-	width: 100%;
-	text-align: center;
-}
-
-.unit-text-detail .text-detail-vs .detail-vs-cont .vs-cont-box .detail-vs-infos .infos-top .pie-chart .texts .percent {
-	font-size: 1.5rem;
-	/*font-family:"ManropeB", "NotoM", serif;*/
-	font-family: "SpoqaB", serif;
-	font-weight: normal;
-	line-height: 1;
-}
-
-.unit-text-detail .text-detail-vs .detail-vs-cont .vs-cont-box .detail-vs-infos .infos-top .pie-chart .texts > b {
-	margin-top: .5rem;
-	display: block;
-	font-size: 1rem;
-}
-
-.unit-text-detail .text-detail-vs .detail-vs-cont .vs-cont-box .detail-vs-infos .infos-top .pie-chart canvas {
-	width: 100% !important;
-	height: 100% !important;
-}
-
-.unit-text-detail .text-detail-vs .detail-vs-cont .vs-cont-box .detail-vs-infos .infos-top > strong {
-	display: block;
-	/*font-family:"ManropeB", "NotoM", serif;*/
-	font-family: "SpoqaB", serif;
-	font-weight: normal;
-	font-size: 1.2rem;
-	text-align: center;
-	line-height: 1.3;
-	width: 100%;
-	word-break: break-word;
-}
-
-.unit-text-detail .text-detail-vs .detail-vs-cont .vs-cont-box .detail-vs-infos .infos-top > span {
-	display: block;
-	/*font-family:"ManropeL", "NotoL", serif;*/
-	font-family: "SpoqaL", serif;
-	font-weight: normal;
-	font-size: 1rem;
-	color: #999;
-	text-align: center;
-	margin-top: .9rem;
-	line-height: 1.3;
-	margin-bottom: 1rem;
-	width: 100%;
-	word-break: break-word;
-}
-
-.unit-text-detail .text-detail-vs .detail-vs-cont .vs-cont-box .detail-vs-infos .infos-bottom {
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -moz-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-align: center;
-	-webkit-align-items: center;
-	   -moz-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
-	-webkit-box-pack: center;
-	-webkit-justify-content: center;
-	   -moz-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-webkit-flex-flow: column;
-	   -moz-box-orient: vertical;
-	   -moz-box-direction: normal;
-	    -ms-flex-flow: column;
-	        flex-flow: column;
-	border-top: 1px solid #EBEBEB;
-	width: 100%;
-}
-
-.unit-text-detail .text-detail-vs .detail-vs-cont .vs-cont-box .detail-vs-infos .infos-bottom > strong {
-	font-size: 1.2rem;
-	/*font-family:"ManropeB", "NotoM", serif;*/
-	font-family: "SpoqaB", serif;
-	font-weight: normal;
-	display: block;
-	margin-top: 1.2rem;
-	text-align: center;
-}
-
-.unit-text-detail .text-detail-vs .detail-vs-cont .vs-cont-box .detail-vs-infos .infos-bottom > a {
-	margin-top: 1.2rem;
-}
-
 .unit-text-detail .text-detail-vs .detail-vs-cont .radio-box li .inner {
-	margin-top: 0;
+	margin-top: .4rem;
 }
 
 .unit-text-detail .text-detail-vs .detail-vs-cont .radio-box li .inner > label {
@@ -4087,6 +4020,264 @@ button.active .unlike {
 	width: 1.3rem;
 	height: 1.3rem;
 	margin-left: .4rem;
+}
+
+/*차량배틀 프레임*/
+.vs-cont-box {
+	position: relative;
+	margin-top: 1.5rem;
+}
+
+.vs-cont-box:after {
+	display: block;
+	content: 'VS';
+	width: 3.4rem;
+	height: 3.4rem;
+	-webkit-border-radius: 100%;
+	   -moz-border-radius: 100%;
+	        border-radius: 100%;
+	background-color: #2B2B2B;
+	color: #fff;
+	/*font-family:"ManropeB", "NotoM", serif;*/
+	font-family: "SpoqaB", serif;
+	font-weight: normal;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	   -moz-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	   -moz-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	position: absolute;
+	top: 3.6rem;
+	left: 50%;
+	margin-left: -1.7rem;
+}
+
+.vs-cont-box .inner {
+	height: 100%;
+	margin-top: 0;
+}
+
+.vs-cont-box .detail-vs-infos {
+	border: 1px solid #EBEBEB;
+	background-color: #fff;
+	-webkit-border-radius: 1rem;
+	   -moz-border-radius: 1rem;
+	        border-radius: 1rem;
+	height: 100%;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+	padding: 1.7rem;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-flow: column;
+	   -moz-box-orient: vertical;
+	   -moz-box-direction: normal;
+	    -ms-flex-flow: column;
+	        flex-flow: column;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: start;
+	-webkit-align-items: flex-start;
+	   -moz-box-align: start;
+	    -ms-flex-align: start;
+	        align-items: flex-start;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	   -moz-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+}
+
+.vs-cont-box .detail-vs-infos .infos-top {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	   -moz-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	   -moz-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-flow: column;
+	   -moz-box-orient: vertical;
+	   -moz-box-direction: normal;
+	    -ms-flex-flow: column;
+	        flex-flow: column;
+	width: 100%;
+}
+
+.vs-cont-box .detail-vs-infos .infos-top .pie-chart {
+	position: relative;
+	width: 6.5rem;
+	height: 6.5rem;
+}
+
+.vs-cont-box .detail-vs-infos .infos-top .pie-chart .texts {
+	position: absolute;
+	top: 2rem;
+	left: 0;
+	width: 100%;
+	text-align: center;
+}
+
+.vs-cont-box .detail-vs-infos .infos-top .pie-chart .texts .percent {
+	font-size: 1.5rem;
+	/*font-family:"ManropeB", "NotoM", serif;*/
+	font-family: "SpoqaB", serif;
+	font-weight: normal;
+	line-height: 1;
+}
+
+.vs-cont-box .detail-vs-infos .infos-top .pie-chart .texts > b {
+	margin-top: .5rem;
+	display: block;
+	font-size: 1rem;
+}
+
+.vs-cont-box .detail-vs-infos .infos-top .pie-chart canvas {
+	width: 100% !important;
+	height: 100% !important;
+}
+
+.vs-cont-box .detail-vs-infos .infos-top > strong {
+	display: block;
+	/*font-family:"ManropeB", "NotoM", serif;*/
+	font-family: "SpoqaB", serif;
+	font-weight: normal;
+	font-size: 1.2rem;
+	text-align: center;
+	line-height: 1.3;
+	width: 100%;
+	word-break: break-word;
+}
+
+.vs-cont-box .detail-vs-infos .infos-top > span {
+	display: block;
+	/*font-family:"ManropeL", "NotoL", serif;*/
+	font-family: "SpoqaL", serif;
+	font-weight: normal;
+	font-size: 1rem;
+	color: #999;
+	text-align: center;
+	margin-top: .9rem;
+	line-height: 1.3;
+	margin-bottom: 1rem;
+	width: 100%;
+	word-break: break-word;
+}
+
+.vs-cont-box .detail-vs-infos .infos-bottom {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	   -moz-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	   -moz-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-flow: column;
+	   -moz-box-orient: vertical;
+	   -moz-box-direction: normal;
+	    -ms-flex-flow: column;
+	        flex-flow: column;
+	border-top: 1px solid #EBEBEB;
+	width: 100%;
+}
+
+.vs-cont-box .detail-vs-infos .infos-bottom > strong {
+	font-size: 1.2rem;
+	/*font-family:"ManropeB", "NotoM", serif;*/
+	font-family: "SpoqaB", serif;
+	font-weight: normal;
+	display: block;
+	margin-top: 1.2rem;
+	text-align: center;
+}
+
+.vs-cont-box .detail-vs-infos .infos-bottom > a {
+	margin-top: 1.2rem;
+}
+
+.vs-cont-box .detail-vs-enrollment {
+	border: 1px solid #EBEBEB;
+	background-color: #FAFAFA;
+	-webkit-border-radius: 1rem;
+	   -moz-border-radius: 1rem;
+	        border-radius: 1rem;
+	height: 100%;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+.vs-cont-box .detail-vs-enrollment > button {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+	width: 100%;
+	height: 100%;
+	padding: 3.6rem 1.7rem;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-flow: column;
+	   -moz-box-orient: vertical;
+	   -moz-box-direction: normal;
+	    -ms-flex-flow: column;
+	        flex-flow: column;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	   -moz-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	   -moz-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+}
+
+.vs-cont-box .detail-vs-enrollment > button span {
+	display: block;
+	font-size: 1.1rem;
+	color: #999;
+	line-height: 1.4;
+	margin-top: 1.7rem;
 }
 
 .unit-text-write-wrap .unit-text-write {
@@ -4874,6 +5065,10 @@ body.fixed {
 	padding: 0 1.7rem 1.7rem;
 }
 
+.layer-full .full-inner .full-btn {
+	padding: 1rem 1.7rem 2.6rem;
+}
+
 .layer-full.layer-address .layer-address-top {
 	display: -webkit-box;
 	display: -webkit-flex;
@@ -5192,6 +5387,22 @@ body.fixed {
 	top: 13rem;
 }
 
+.layer-full.layer-write .layer-write-cont textarea {
+	height: 23.5rem;
+}
+
+.layer-full.layer-write .layer-write-cont .vs-item-btns {
+	margin-top: 1rem;
+}
+
+.layer-full.layer-write .layer-write-cont .vs-cont-box .inner {
+	margin-top: 0;
+}
+
+.layer-full.layer-write .layer-write-cont .vs-cont-box:after {
+	display: none;
+}
+
 .layer-popup {
 	position: fixed;
 	width: 100%;
@@ -5271,6 +5482,13 @@ body.fixed {
 	resize: none;
 	line-height: 12px;
 	line-height: 1.3;
+}
+
+.textarea-length {
+	text-align: right;
+	color: #999;
+	font-size: 1rem;
+	margin-top: 1rem;
 }
 
 .inputR {
@@ -5782,6 +6000,31 @@ body.fixed {
 
 .radio-depth .radio-depth-cont {
 	margin-top: 1.2rem;
+}
+
+.form-list > ul > li + li {
+	margin-top: 1.8rem;
+}
+
+.form-list > ul > li .form-tit > strong {
+	display: block;
+	font-size: 1.2rem;
+	line-height: 1.3;
+	/*font-family:"ManropeB", "NotoM", serif;*/
+	font-family: "SpoqaB", serif;
+	font-weight: normal;
+}
+
+.form-list > ul > li .form-tit > span {
+	display: block;
+	color: #999;
+	line-height: 1.3;
+	font-size: 1rem;
+	margin-top: .4rem;
+}
+
+.form-list > ul > li .form-cont {
+	margin-top: 1rem;
 }
 
 /*! jQuery UI - v1.12.1 - 2017-11-05
