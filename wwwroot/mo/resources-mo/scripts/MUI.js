@@ -525,6 +525,21 @@ var MUI = MUI || {
 				}
 			});
 		},
+		removeToast: 0,
+		toastMessage: function(message){
+			var that = this,
+				toast = document.getElementById('toast');
+
+			toast.classList.contains('active') ?
+				(clearTimeout(that.removeToast), that.removeToast = setTimeout(function () {
+					document.getElementById('toast').classList.remove('active')
+				}, 1000)) :
+				that.removeToast = setTimeout(function () {
+					document.getElementById('toast').classList.remove('active')
+				}, 1000)
+			toast.classList.add('active'),
+				toast.innerText = message
+		},
 
 	},
 	iscrolls: {

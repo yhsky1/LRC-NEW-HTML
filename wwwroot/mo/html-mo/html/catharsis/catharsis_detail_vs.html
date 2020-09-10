@@ -214,8 +214,7 @@
 
     </main>
     
-    <div class="bottomAlert">
-        <span>투표완료 되었습니다.</span>
+    <div id="toast" class="toast-message">
     </div>
 
 
@@ -233,7 +232,7 @@
 
         $('.detail-vs-cont .radio-box input').on('change',function(e){
             if(e.target.value){
-                $('.bottomAlert').addClass('active');
+                MUI.event.toastMessage('투표완료 되었습니다.');
             }
         });
 	})

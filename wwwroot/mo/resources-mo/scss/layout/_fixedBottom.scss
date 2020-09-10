@@ -86,13 +86,25 @@
     }
 }
 
-.bottomAlert {
+.toast-message {
     @include Position( $position:fixed, $bottom: 0, $left:0);
     @include Bold;
-    width: 100%;
+    @include Align-middle;
+    width: calc(100% - 2rem);
     height: 4.1rem;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.6);
     color: #fff;
+    opacity: 0;
+    visibility: hidden;
+    transform: translate3d(0, 115%, 0);
+    transition: opacity .5s, visibility .5s, transform .5s;
+    margin:1rem;
+    border-radius: 1rem;
+    &.active {
+        opacity: 1;
+        visibility: visible;
+        transform: translate3d(0, 0, 0);
+    }
 }
 
 .fixedBottom.close ~ .fixedRight {

@@ -4335,7 +4335,7 @@ button.active .unlike {
 /*
 	fixedBottom : z-index: 41, 
 	풀팝업: z-index: 45, 
-	딤: z-index: 50, 
+	딤, bottomAlert(토스트메시지): z-index: 50, 
 	일반팝업, 슬라이드 팝업: z-index: 60, 
 	패널(drawer): z-index: 70, 
 */
