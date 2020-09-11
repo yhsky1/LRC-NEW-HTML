@@ -38,6 +38,22 @@ $(function(){
         });
     }
 
+    //drawer버튼 열기
+    MUI.event.toggle('.btn-drawer', null, true, function(logic, layer) {
+        console.log(11);
+        $BODY.addClass("fixed");
+        $('.btn-drawer-close').addClass('active');
+        logic();
+    });
+
+    //drawer버튼 닫기
+    MUI.event.toggle('.btn-drawer-close', null, true, function(logic, layer) {
+        $BODY.removeClass("fixed");
+        $('.btn-drawer').removeClass('active');
+        logic();
+        $('.drawer').scrollTop(0);
+    });
+
     //gotop
     if($('.fixedRight .btn-goTop').length){
         MUI.event.goTop($('.fixedRight .btn-goTop'));
@@ -61,8 +77,29 @@ $(function(){
 		});
     }
 
-    /* 레이어팝업-------------------------------------------------*/
+    //하단 퀵메뉴 모션
+    if($('.fixedBottom').length) { MUI.event.fixedBottom($('.fixedBottom')); }
 
+    //댓글쓰기 키업이벤트
+    if($('.unit-text-write-wrap').length) {
+        var keyTarget = $('.unit-text-write-wrap');
+        keyTarget.on('keyup', 'textarea', function(e){
+            if(e.target.value) {
+                keyTarget.find('button').addClass('active');
+            }
+            else{
+                keyTarget.find('button').removeClass('active');
+            }
+        });
+        keyTarget.on('blur', 'textarea',function(e){
+            keyTarget.removeClass('active');
+        });
+        keyTarget.on('focus', 'textarea',function(e){
+            keyTarget.addClass('active');
+        });
+    }
+    
+/* 레이어팝업start-------------------------------------------------*/
     //제휴카드 혜택안내 풀팝업
     if($('.layer-cards').length) {
         MUI.layer.openClick('.layer-cards-open', LAYER_DIM, LAYER_PARENT, function(show){
@@ -203,6 +240,8 @@ $(function(){
             hide();
         });
     }
+
+    //풀 팝업 공통 닫기
     if($('.layer-full').length) {
         MUI.layer.closeClick('.layer-full-close', LAYER_DIM, LAYER_PARENT, function(hide){
             //console.log('close');
@@ -228,22 +267,7 @@ $(function(){
         //console.log('close');
         hide();
     });
-
-    //drawer버튼 열기
-    MUI.event.toggle('.btn-drawer', null, true, function(logic, layer) {
-        console.log(11);
-        $BODY.addClass("fixed");
-        $('.btn-drawer-close').addClass('active');
-        logic();
-    });
-
-    //drawer버튼 닫기
-    MUI.event.toggle('.btn-drawer-close', null, true, function(logic, layer) {
-        $BODY.removeClass("fixed");
-        $('.btn-drawer').removeClass('active');
-        logic();
-        $('.drawer').scrollTop(0);
-    });
+/* -------------------------------------------------레이어팝업end*/
 
 
 /* 견적start-------------------------------------------------*/
@@ -323,7 +347,7 @@ $(function(){
 
 
 /* 기획전start-------------------------------------------------*/
-    //기획전 상단 슬리이더
+    //기획전 상단 슬라이더
     if($('.exhibition-wrap .exhibition-view-list').length) {
         MUI.slide.init($('.exhibition-wrap .exhibition-view-list'), 'slick', {
 				slidesToScroll: 1, 
@@ -352,11 +376,44 @@ $(function(){
             }
         });
     }
-
-
 /* -------------------------------------------------기획전end*/
 
 
+/* 계약start-------------------------------------------------*/
+    //계약화면 메뉴 라디오버튼 선택
+    if($('.contract-wrap .menu-radio-box').length) {
+        $('.contract-wrap .menu-radio-box').on('change', '.radio-box input', function(e){
+            if(e.target.value === 'N'){
+                $('.contract-wrap .detail-layer-normal').addClass('active');
+            }
+            else{
+                $('.contract-wrap .detail-layer-normal').removeClass('active');
+            }
+        });
+        $('.contract-wrap .menu-radio-box').on('change', '.radio-box input', function(e){
+            if(e.target.value === 'I'){
+                $('.contract-wrap .detail-layer-integrated').addClass('active');
+            }
+            else{
+                $('.contract-wrap .detail-layer-integrated').removeClass('active');
+            }
+        });
+    }
+/* -------------------------------------------------계약end*/
+
+/* 카타르시스start-------------------------------------------------*/
+    //고객후기 레이어팝업 상단 슬리이더
+    if($('.layer-write-detail .detail-view-list').length) {
+        MUI.slide.init('.layer-write-detail .detail-view-list','swiper', {
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+            },
+        });
+    }
+/* -------------------------------------------------카타르시스end*/
+
+/* 로그인start-------------------------------------------------*/
     //로그인 견적화면 메뉴 라디오버튼 선택
     if($('.login-wrap .menu-radio-box').length) {
         $('.login-wrap .menu-radio-box').on('change', '.radio-box input', function(e){
@@ -385,44 +442,15 @@ $(function(){
             logic();
         });
     }
+/* -------------------------------------------------로그인end*/
 
-    //계약화면 메뉴 라디오버튼 선택
-    if($('.contract-wrap .menu-radio-box').length) {
-        $('.contract-wrap .menu-radio-box').on('change', '.radio-box input', function(e){
-            if(e.target.value === 'N'){
-                $('.contract-wrap .detail-layer-normal').addClass('active');
-            }
-            else{
-                $('.contract-wrap .detail-layer-normal').removeClass('active');
-            }
-        });
-        $('.contract-wrap .menu-radio-box').on('change', '.radio-box input', function(e){
-            if(e.target.value === 'I'){
-                $('.contract-wrap .detail-layer-integrated').addClass('active');
-            }
-            else{
-                $('.contract-wrap .detail-layer-integrated').removeClass('active');
-            }
-        });
-    }
 
-    //고객후기 레이어팝업 상단 슬리이더
-    if($('.layer-write-detail .detail-view-list').length) {
-        MUI.slide.init('.layer-write-detail .detail-view-list','swiper', {
-            loop: true,
-            pagination: {
-                el: '.swiper-pagination',
-            },
-        });
-    }
+
+
+
+
+
     
-    
-    //하단 퀵메뉴 모션
-    if($('.fixedBottom').length) { MUI.event.fixedBottom($('.fixedBottom')); }
-
-
-
-
     //일반 레이어팝업 테스트 ---추후삭제
     MUI.layer.openClick('#layer-open2', LAYER_DIM, LAYER_PARENT, function(show){
         console.log('open');
@@ -433,47 +461,9 @@ $(function(){
         hide();
     });
 
-    //메이슨리 테스트--동적테이블 ---추후삭제
-    var content =
-        '<div class="grid-item">'
-            +'<img src="https://images.unsplash.com/photo-1552584010-ca8bbbd5bd18?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjYxOTE2fQ" alt="">'
-            +'<span>1</span>'
-        +'</div>'
-        +'<div class="grid-item">'
-            +'<img src="https://images.unsplash.com/photo-1552644867-3c98a63f38eb?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjYxOTE2fQ" alt="">'
-            +'<span>2</span>'
-        +'</div>'
-        +'<div class="grid-item">'
-            +'<img src="https://images.unsplash.com/photo-1552620543-31d952829801?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjYxOTE2fQ" alt="">'
-            +'<span>3</span>'
-        +'</div>'
-        +'<div class="grid-item">'
-            +'<img src="https://images.unsplash.com/photo-1552602989-715150494024?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjYxOTE2fQ" alt="">'
-            +'<span>4</span>'
-        +'</div>'
-        ;
-
-        $('.list-more').on('click', function(){
-            console.log('리스트 추가');
-            var $content = $( content );
-            // add jQuery object
-            $('.grid').append( $content ).masonry( 'appended', $content );
-        });
-
 
     /*브라우저 모든 resources 다운 완료시점(프레임)*/
     $(window).on('load', function(){
-
-        /*
-        //Masonry 테스트1
-        MUI.Masonry.init($('.grid'), {
-            // options
-            //horizontalOrder: true,
-            itemSelector: '.grid-item',
-            fitwidth: true,
-            
-        });
-        */
 
     });
 
