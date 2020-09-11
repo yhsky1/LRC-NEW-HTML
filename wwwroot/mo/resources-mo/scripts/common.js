@@ -172,6 +172,7 @@ $(function(){
         MUI.layer.openClick('.layer-filter-open', LAYER_DIM, LAYER_PARENT, function(show){
             //alert('open');
             show();
+            if(typeof(openSearchPop) === 'function') openSearchPop();
         });
 
         //필터 슬라이드 내 슬라이드

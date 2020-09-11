@@ -379,6 +379,9 @@
                                     box-sizing: border-box;
                                     transition: border-color .4s;
                                     position: relative;
+                                    background-repeat: no-repeat;
+                                    background-position: center center;
+                                    background-size: 130%;
                                     .flag {
                                         @include Position($bottom: -.8rem, $left: .3rem);
                                         background-color:#fff;
