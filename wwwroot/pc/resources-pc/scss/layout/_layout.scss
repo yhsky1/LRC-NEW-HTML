@@ -14,6 +14,44 @@
     color: #fff;
     background-color: #f40404;
 }
+
+.path-wrap {
+    margin-top:50px;
+    .inner {
+        @include Align-between;
+        > strong {
+            @include Bold;
+            font-size: 15px;
+            color:#F04040;
+        }
+        > ul {
+            @include Align-middle-left;
+            > li {
+                @include Align-middle-left;
+                > a{
+                    font-size: 13px;
+                }
+                > b{
+                    font-size: 13px;
+                    color:#999;
+                }
+                & + li{
+                    &:before {
+                        display: block;
+                        content: '>';
+                        color: #999;
+                        margin: 0 6px;
+                    }
+                    > a {
+                        color: #999;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
 #wrap {
     
 }
