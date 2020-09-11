@@ -97,6 +97,21 @@ $(function(){
             keyTarget.addClass('active');
         });
     }
+
+    //주소검색 키업이벤트
+    if($('.layer-address').length) {
+        var addressTarget = $('.layer-address .layer-address-top');
+        addressTarget.on('keyup', 'input', function(e){
+            if(e.target.value) {
+                addressTarget.find('button').addClass('active');
+            }
+            else{
+                addressTarget.find('button').removeClass('active');
+            }
+        });
+    }
+
+
 /* -------------------------------------------------유틸end*/
     
 /* 레이어팝업start-------------------------------------------------*/
@@ -477,8 +492,7 @@ $(function(){
 /* -------------------------------------------------로그인end*/
     
     
-    //하단 퀵메뉴 모션
-    if($('.fixedBottom').length) { MUI.event.fixedBottom($('.fixedBottom')); }
+
 
 
 
