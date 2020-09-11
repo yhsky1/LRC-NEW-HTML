@@ -1,5 +1,3 @@
-console.log(MUI);
-
 /*dom tree 생성이전 시점(프레임)*/
 //rem폰트설정
 MUI.resize.font();
@@ -12,7 +10,8 @@ $(function(){
         TOUCH_CLICK = ('ontouchstart' in window) ? 'touchstart' : 'click',
         LAYER_PARENT = '.layer-wrap',
         LAYER_DIM = '.bg-dimmed';
-    
+
+/* 유틸start-------------------------------------------------*/
     //호스트환경 체크
     MUI.resize.chk($BODY);
 
@@ -98,6 +97,7 @@ $(function(){
             keyTarget.addClass('active');
         });
     }
+/* -------------------------------------------------유틸end*/
     
 /* 레이어팝업start-------------------------------------------------*/
     //제휴카드 혜택안내 풀팝업
