@@ -1964,48 +1964,21 @@ a.btn {
 	right: 55%;
 }
 
-.show-layer {
+/*
+	fixedBottom : z-index: 41, 
+	풀팝업: z-index: 45, 
+	딤, bottomAlert(토스트메시지): z-index: 50, 
+	일반팝업, 슬라이드 팝업: z-index: 60, 
+	패널(drawer): z-index: 70, 
+*/
+body.fixed {
 	overflow: hidden;
-}
-
-.layer-wrap {
 	position: fixed;
-	top: 0;
-	left: 0;
-	z-index: 500;
-	width: 100%;
-	height: 100%;
+}
+
+.bg-dimmed {
+	font: 0/0 a;
 	display: none;
-	overflow: auto;
-}
-
-.layer-wrap.active {
-	display: block;
-}
-
-.layer-box {
-	position: absolute;
-	top: 110px;
-	left: 50%;
-	z-index: 10;
-	-webkit-box-sizing: border-box;
-	   -moz-box-sizing: border-box;
-	        box-sizing: border-box;
-	margin-bottom: 50px;
-	padding-top: 40px;
-	padding-right: 40px;
-	padding-bottom: 40px;
-	padding-left: 40px;
-	border-top: 5px solid #0061a0;
-	background-color: #fff;
-	-webkit-transform: translateX(-50%);
-	   -moz-transform: translateX(-50%);
-	    -ms-transform: translateX(-50%);
-	     -o-transform: translateX(-50%);
-	        transform: translateX(-50%);
-}
-
-.layer-dim {
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -2013,179 +1986,7 @@ a.btn {
 	height: 100%;
 	background-color: #000;
 	opacity: 0.5;
-	-ms-pointer-events: none;
-	pointer-events: none;
-}
-
-.layer-close {
-	position: absolute;
-	top: 20px;
-	right: 20px;
-}
-
-.layer-partner .layer-head {
-	margin-bottom: 64px;
-}
-
-.layer-partner .layer-head h1 {
-	color: #333;
-	font-size: 42px;
-	font-weight: 700;
-	text-align: center;
-}
-
-.layer-partner .layer-foot {
-	margin: 30px 0;
-	text-align: center;
-}
-
-.layer-partner .layer-foot .btn {
-	width: 160px;
-}
-
-.layer-partner .layer-box {
-	width: 720px;
-}
-
-.layer-partner .layer-search {
-	text-align: right;
-	margin-bottom: 30px;
-}
-
-.layer-partner .layer-search .label {
-	float: left;
-	margin-top: 8px;
-}
-
-.layer-partner .layer-search .form-inline {
-	display: inline-block;
-}
-
-.layer-partner .layer-search .input-box {
-	width: 220px;
-}
-
-.layer-partner .layer-sort {
-	text-align: right;
-	margin-bottom: 10px;
-}
-
-.layer-partner .layer-sort:after {
-	content: '';
-	display: block;
-	clear: both;
-}
-
-.layer-partner .layer-sort .selectbox-inline {
-	width: 140px;
-}
-
-.layer-partner .layer-sort .label {
-	float: left;
-	margin-top: 12px;
-	font-size: 14px;
-}
-
-.layer-partner .layer-sort .label em {
-	color: #0061a0;
-	text-decoration: underline;
-}
-
-.layer-partner .layer-partner-list {
-	border-top: 1px solid #000;
-	border-bottom: 1px solid #ccc;
-	background-color: #f9f9f9;
-}
-
-.layer-partner .layer-partner-list:after {
-	content: '';
-	display: block;
-	clear: both;
-}
-
-.layer-partner .layer-partner-list dt,
-.layer-partner .layer-partner-list dd {
-	float: left;
-	padding-top: 23px;
-	padding-left: 20px;
-	padding-bottom: 10px;
-}
-
-.layer-partner .layer-partner-list dt {
-	font-weight: bold;
-	width: 33%;
-}
-
-.layer-partner .layer-partner-list dd {
-	color: #717171;
-	font-size: 14px;
-}
-
-.layer-partner .layer-partner-list dd span {
-	white-space: nowrap;
-	display: inline-block;
-	margin-right: 20px;
-	margin-bottom: 20px;
-}
-
-.layer-partner .layer-partner-list .btn {
-	line-height: 0;
-	width: 26px;
-	height: 26px;
-	padding: 0;
-}
-
-.layer-partner .pagination-wrap {
-	margin-top: 40px;
-	margin-bottom: 40px;
-}
-
-.layer-partner .table .cell-title {
-	color: #0061a0;
-	font-weight: bold;
-}
-
-.layer-partner .table-thead > ul {
-	padding-top: 57px;
-}
-
-.layer-partner .table-thead > ul > li:first-child > *:before {
-	top: -58px;
-	line-height: 57px;
-	height: 57px;
-}
-
-.layer-table table {
-	width: 100%;
-}
-
-.layer-table thead th {
-	padding: 18px 0;
-	border-bottom: 1px solid #000;
-	text-align: center;
-}
-
-.layer-table tbody td {
-	padding: 17px 0;
-	text-align: center;
-	border-bottom: 1px solid #ccc;
-	vertical-align: middle;
-}
-
-.layer-table tbody td .checkbox {
-	display: inline-block;
-	width: 20px;
-	height: 20px;
-	margin-right: 0;
-}
-
-.layer-table tbody td .checkbox input[type="checkbox"] + label {
-	padding-left: 0;
-}
-
-.layer-table tbody td .btn-link {
-	margin: 0;
-	padding: 0;
+	z-index: 50;
 }
 
 .selectbox {

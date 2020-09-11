@@ -24,12 +24,54 @@
 <body>
 	<!--header 컴포넌트-->
 	<header class="header">
+
+		<!--해더상단-->
 		<div class="header-top">
-			<h1><a href="#none">해더부분</a></h1>
+			<div class="inner">
+				<a href="#container" class="skip_nav">본문 바로가기</a>
+				<h1><a href="#none">해더부분</a></h1>
+				<ul id="extra_menu" class="extra_menu">
+					<li class="btn_layer" id="btnLogin"><a href="#none">로그인</a></li>
+					<li class="join"><a href="javascript:fnHpCallLpointScreen('JOIN_MEMBER')" class="lPointAutoChange">회원가입</a></li>							
+					<li class="customer">
+						<a href="/customer/faq.do?mnCd=MNCD06001">고객센터</a>
+						<div class="link" style="display: none;">
+							<ul>
+								<li><a href="/customer/faq.do?mnCd=MNCD06001">FAQ</a></li>
+								<li><a href="/customer/notice.do?mnCd=MNCD06008">공지사항</a></li>
+								<li><a href="/customer/consultation.do?mnCd=MNCD06002">일반 문의</a></li>
+								<li><a href="/customer/saleconsultation.do?mnCd=MNCD06003">전문상담신청</a></li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</div>
 		</div>
+		<!--//해더상단-->
+
+		<!--해더네비-->
 		<nav class="header-nav">
-			네비부분
+			<div class="inner">
+				<ul>
+					<li>
+						<a href="#"></a>
+					</li>
+					<li>
+						<a href="#"></a>
+					</li>
+					<li>
+						<a href="#"></a>
+					</li>
+					<li>
+						<a href="#"></a>
+					</li>
+					<li>
+						<a href="#"></a>
+					</li>
+				</ul>
+			</div>
 		</nav>
+		<!--//해더네비-->
 
 	</header>
 	<!--//header 컴포넌트-->
