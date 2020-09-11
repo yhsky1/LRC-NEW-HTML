@@ -302,8 +302,8 @@
     }
     &.layerclose03 {
         @include Background($sprite:'ico-close03', $size:100% auto, $position:center center);
-        width: 2.1rem;
-		height: 2.1rem;
+        width: 2rem;
+		height: 2rem;
     }
     &.magnifier {
         @include Background($sprite:'ico-magnifier', $size:100% auto, $position:center center);
