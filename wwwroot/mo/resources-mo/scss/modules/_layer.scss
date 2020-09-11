@@ -588,7 +588,7 @@ body.fixed {
 				
 			}
 		}
-		&.layer-write{
+		&.layer-review-write{
 			&-info{
 				.full-top{
 					background-color:#2B2B2B;
@@ -598,9 +598,9 @@ body.fixed {
 					}
 				}
 				.full-cont{
-					.layer-write-info{
+					.layer-review-write-info{
 						padding: 1.7rem 0;
-						.write-info-top{
+						.layer-review-write-info-top{
 							strong{
 								display:block;
 								line-height: 1.3;
@@ -609,7 +609,7 @@ body.fixed {
 								margin-bottom: 1.5rem;
 							}
 						}
-						.layer-write-guide{
+						.layer-review-write-guide{
 							margin-bottom: 1.5rem;
 							& > ul{
 								& > li{
@@ -630,7 +630,7 @@ body.fixed {
 				}
 			}
 			&-detail{
-				.layer-write-detail{
+				.layer-review-write-detail{
 					.detail-view-list{
 						padding-bottom:2rem;
 					}
@@ -764,12 +764,8 @@ body.fixed {
 						}
 						.unit-text-write-wrap{
 							margin-top:1rem;
-							.unit-text-write{
-								position: relative;
-								bottom:auto;
-								left:auto;
-								padding:0;
-								background-color:#fff;
+							textarea{
+								height: 23.5rem;	
 							}
 						}
 						.img-info{
@@ -809,6 +805,12 @@ body.fixed {
 								border-top: 1px solid #EBEBEB;
 							}
 						}
+					}
+				}
+				.layer-review-write-cont-box{
+					margin-top:1.7rem;
+					& > .inner{
+						margin-top:0;
 					}
 				}
 			}

@@ -293,9 +293,9 @@
 
 .catharsis-wrap .section-list .catharsis-list-tv .unit-pro ul li {
 	display: inline-block;
-	width: 23.5rem;
 	margin-right: 1.5rem;
 	vertical-align: middle;
+	max-width: 23.5rem;
 }
 
 .catharsis-wrap .section-list .catharsis-list-tv .unit-pro ul li a {
@@ -319,10 +319,10 @@
 
 .catharsis-wrap .section-list .catharsis-list-tv .unit-pro ul li .text {
 	white-space: normal;
-	margin-left: 1.3rem;
+	margin: .9rem 1.3rem 0;
 	display: inline-block;
 	vertical-align: top;
-	margin-top: .9rem;
+	height: 100%;
 }
 
 .catharsis-wrap .section-list .catharsis-list-tv .unit-pro ul li .text strong {

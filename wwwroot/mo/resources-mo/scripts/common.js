@@ -151,6 +151,30 @@ $(function(){
         });
     }
 
+    //후기작성 안내문구 풀팝업
+    if($('.layer-review-write-info').length) {
+        MUI.layer.openClick('.layer-review-write-info-open', LAYER_DIM, LAYER_PARENT, function(show){
+            //console.log('open');
+            show();
+        });
+    }
+
+    //고객후기 풀팝업
+    if($('.layer-review-write-detail').length) {
+        MUI.layer.openClick('.layer-review-write-detail-open', LAYER_DIM, LAYER_PARENT, function(show){
+            //console.log('open');
+            show();
+        });
+    }
+
+    //후기작성 풀팝업
+    if($('.layer-review-write-default').length) {
+        MUI.layer.openClick('.layer-review-write-default-open', LAYER_DIM, LAYER_PARENT, function(show){
+            //console.log('open');
+            show();
+        });
+    }
+
     //본인인증 슬라이드 팝업
     if($('.layer-certification').length) {
         MUI.layer.openClick('.layer-certification-open', LAYER_DIM, LAYER_PARENT, function(show){
@@ -404,8 +428,8 @@ $(function(){
 
 /* 카타르시스start-------------------------------------------------*/
     //고객후기 레이어팝업 상단 슬리이더
-    if($('.layer-write-detail .detail-view-list').length) {
-        MUI.slide.init('.layer-write-detail .detail-view-list','swiper', {
+    if($('.layer-review-write-detail .detail-view-list').length) {
+        MUI.slide.init('.layer-review-write-detail .detail-view-list','swiper', {
             loop: true,
             pagination: {
                 el: '.swiper-pagination',
@@ -444,9 +468,10 @@ $(function(){
         });
     }
 /* -------------------------------------------------로그인end*/
-
-
-
+    
+    
+    //하단 퀵메뉴 모션
+    if($('.fixedBottom').length) { MUI.event.fixedBottom($('.fixedBottom')); }
 
 
 
