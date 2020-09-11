@@ -126,6 +126,7 @@ input, button, select, textarea {
 	   -moz-border-radius: 0;
 	        border-radius: 0;
 	background-color: transparent;
+	outline: none;
 }
 
 caption, legend, hr {

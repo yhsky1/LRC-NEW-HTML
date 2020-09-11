@@ -935,7 +935,7 @@ button.swiper-pagination-bullet {
 .swiper-button-prev {
 	font: 0/0 a;
 	background-repeat: no-repeat;
-	background-image: url("../../resources-mo/images/icons/ico-slide-prev.png");
+	background-image: url("../../resources-pc/images/icons/ico-slide-prev.png");
 	background-position: center center;
 	-webkit-background-size: 0.9rem 0.9rem;
 	   -moz-background-size: 0.9rem;
@@ -947,7 +947,7 @@ button.swiper-pagination-bullet {
 .swiper-button-next {
 	font: 0/0 a;
 	background-repeat: no-repeat;
-	background-image: url("../../resources-mo/images/icons/ico-slide-next.png");
+	background-image: url("../../resources-pc/images/icons/ico-slide-next.png");
 	background-position: center center;
 	-webkit-background-size: 0.9rem 0.9rem;
 	   -moz-background-size: 0.9rem;
@@ -1193,193 +1193,32 @@ button.swiper-pagination-bullet {
 	        border-radius: 0;
 }
 
-.btn-group {
-	margin: 40px 0;
-	text-align: center;
-}
-
-.btn-group:after {
-	content: '';
-	display: block;
-	clear: both;
-}
-
-.btn-group .btn {
-	margin: 0 8px;
-}
-
-.btn-group-justified {
-	padding-top: 10px;
-}
-
-.btn-group-justified:after {
-	content: '';
-	display: block;
-	clear: both;
-}
-
 .btn {
 	display: inline-block;
+	vertical-align: middle;
 	height: 40px;
-	padding: 0 40px;
-	color: #fff;
-	font-weight: 700;
-	font-size: 14px;
-	-webkit-border-radius: 2px;
-	   -moz-border-radius: 2px;
-	        border-radius: 2px;
-	-webkit-box-shadow: 0px 3px 0px rgba(0, 0, 0, 0.1);
-	   -moz-box-shadow: 0px 3px 0px rgba(0, 0, 0, 0.1);
-	        box-shadow: 0px 3px 0px rgba(0, 0, 0, 0.1);
+	padding: 0 15px;
 	-webkit-box-sizing: border-box;
 	   -moz-box-sizing: border-box;
 	        box-sizing: border-box;
-	vertical-align: middle;
+	line-height: 1;
+	color: #2B2B2B;
 }
 
-.btn-default {
-	color: #525252;
-	border: 1px solid #747474;
-	background-color: #ffff;
-}
-
-.btn-default:hover, .btn-default.active {
-	color: #fff;
-	border: 1px solid #5a5a5a;
-	background-color: #5a5a5a;
-}
-
-.btn-simple {
-	color: #888;
-	border: 1px solid #ccc;
-	-webkit-box-shadow: none;
-	   -moz-box-shadow: none;
-	        box-shadow: none;
-}
-
-.btn-simple.active {
-	color: #0074b2;
-	border-color: #0074b2;
-}
-
-.btn-link {
-	padding: 0 0 0 15px;
-	color: #0061a0;
-	-webkit-box-shadow: none;
-	   -moz-box-shadow: none;
-	        box-shadow: none;
-	text-decoration: underline;
-	position: relative;
-}
-
-.btn-link .icon-larr {
-	position: absolute;
-	left: 0;
-	top: 50%;
-	margin-top: -3px;
-}
-
-.btn-primary {
-	background-color: #000;
-}
-
-.btn-secondary {
-	background-color: #0061a0;
-}
-
-.btn-secondary-light {
-	background-color: #007abc;
-}
-
-.btn-dark {
-	background-color: #5a5a5a;
-}
-
-.btn-light {
-	background-color: #828282;
-}
-
-.btn-more {
-	position: relative;
-	padding-right: 22px;
-	color: #0074b2;
-	font-size: 14px;
-	text-decoration: none;
-}
-
-.btn-more .icon {
-	position: absolute;
-	right: 6px;
-	bottom: 27px;
-}
-
-.btn-more .icon:before, .btn-more .icon:after {
-	content: '';
-	position: absolute;
-	right: 0;
-	display: inline-block;
-	width: 2px;
-	height: 12px;
-	background-color: #2377c5;
-}
-
-.btn-more .icon:after {
-	top: 0;
-	-webkit-transform: rotate(90deg);
-	   -moz-transform: rotate(90deg);
-	    -ms-transform: rotate(90deg);
-	     -o-transform: rotate(90deg);
-	        transform: rotate(90deg);
-}
-
-.btn-search, .btn-cancel, .btn-modify, .btn-submit {
-	display: inline-block;
-	padding: 0 20px;
-}
-
-.btn-search {
-	background-color: #5a5a5a;
-}
-
-.btn-review, .btn-auth {
-	width: 90px;
-	height: 30px;
-	line-height: 30px;
-	padding: 0;
-	margin: 4px 0;
-	-webkit-box-shadow: none;
-	   -moz-box-shadow: none;
-	        box-shadow: none;
-}
-
-.btn-minus {
-	width: 26px;
-	height: 26px;
-	padding: 0;
-}
-
-.btn-plus {
-	width: 26px;
-	height: 26px;
-	padding: 0;
-}
-
-a.btn {
-	display: -webkit-inline-box;
-	display: -webkit-inline-flex;
-	display: -moz-inline-box;
-	display: -ms-inline-flexbox;
-	display: inline-flex;
-	-webkit-box-align: center;
-	-webkit-align-items: center;
-	   -moz-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
-	-webkit-box-pack: center;
-	-webkit-justify-content: center;
-	   -moz-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
+.btn-family {
+	background-color: #fff;
+	border: 1px solid #EBEBEB;
+	-webkit-border-radius: 5px;
+	   -moz-border-radius: 5px;
+	        border-radius: 5px;
+	font-size: 13px;
+	padding-right: 35px;
+	background-repeat: no-repeat;
+	background-image: url("../../resources-pc/images/icons/ico-select3.png");
+	background-position: center right 15px;
+	-webkit-background-size: 6px 6px;
+	   -moz-background-size: 6px;
+	        background-size: 6px;
 }
 
 .icon {
@@ -2014,7 +1853,7 @@ body.fixed {
 	padding: 0 2.5rem 0 .9rem;
 	width: 100%;
 	background-repeat: no-repeat;
-	background-image: url("../../resources-mo/images/icons/ico-arrow-down.png");
+	background-image: url("../../resources-pc/images/icons/ico-arrow-down.png");
 	background-position: center right 0.9rem;
 	-webkit-background-size: 0.9rem 0.9rem;
 	   -moz-background-size: 0.9rem;
@@ -2025,7 +1864,7 @@ body.fixed {
 	font-size: 1rem;
 	padding-right: .8rem;
 	background-repeat: no-repeat;
-	background-image: url("../../resources-mo/images/icons/ico-select2.png");
+	background-image: url("../../resources-pc/images/icons/ico-select2.png");
 	background-position: center right;
 	-webkit-background-size: 0.5rem 0.5rem;
 	   -moz-background-size: 0.5rem;
@@ -2091,7 +1930,7 @@ body.fixed {
 	display: inline-block;
 	vertical-align: middle;
 	background-repeat: no-repeat;
-	background-image: url("../../resources-mo/images/icons/ico-radio-off.png");
+	background-image: url("../../resources-pc/images/icons/ico-radio-off.png");
 	background-position: center center;
 	-webkit-background-size: 92% auto;
 	   -moz-background-size: 92% auto;
@@ -2115,7 +1954,7 @@ body.fixed {
 
 .inputR input:checked + label:before {
 	background-repeat: no-repeat;
-	background-image: url("../../resources-mo/images/icons/ico-radio-on.png");
+	background-image: url("../../resources-pc/images/icons/ico-radio-on.png");
 	background-position: center center;
 	-webkit-background-size: 92% auto;
 	   -moz-background-size: 92% auto;
@@ -2155,7 +1994,7 @@ body.fixed {
 	display: inline-block;
 	vertical-align: middle;
 	background-repeat: no-repeat;
-	background-image: url("../../resources-mo/images/icons/ico-chk-off.png");
+	background-image: url("../../resources-pc/images/icons/ico-chk-off.png");
 	background-position: center center;
 	-webkit-background-size: 92% auto;
 	   -moz-background-size: 92% auto;
@@ -2179,7 +2018,7 @@ body.fixed {
 
 .inputC input:checked + label:before {
 	background-repeat: no-repeat;
-	background-image: url("../../resources-mo/images/icons/ico-chk-on.png");
+	background-image: url("../../resources-pc/images/icons/ico-chk-on.png");
 	background-position: center center;
 	-webkit-background-size: 92% auto;
 	   -moz-background-size: 92% auto;
@@ -2230,7 +2069,7 @@ body.fixed {
 	top: 0.7rem;
 	right: 0.7rem;
 	background-repeat: no-repeat;
-	background-image: url("../../resources-mo/images/icons/ico-radio-off.png");
+	background-image: url("../../resources-pc/images/icons/ico-radio-off.png");
 	background-position: center center;
 	-webkit-background-size: 92% auto;
 	   -moz-background-size: 92% auto;
@@ -2247,7 +2086,7 @@ body.fixed {
 
 .radioIconBox > input:checked + label:after {
 	background-repeat: no-repeat;
-	background-image: url("../../resources-mo/images/icons/ico-radio-on.png");
+	background-image: url("../../resources-pc/images/icons/ico-radio-on.png");
 	background-position: center center;
 	-webkit-background-size: 92% auto;
 	   -moz-background-size: 92% auto;
@@ -2298,7 +2137,7 @@ body.fixed {
 	top: 50%;
 	left: 0.7rem;
 	background-repeat: no-repeat;
-	background-image: url("../../resources-mo/images/icons/ico-radio-off.png");
+	background-image: url("../../resources-pc/images/icons/ico-radio-off.png");
 	background-position: center center;
 	-webkit-background-size: 92% auto;
 	   -moz-background-size: 92% auto;
@@ -2310,7 +2149,7 @@ body.fixed {
 
 .iconBox input[type='checkbox'] + label:after {
 	background-repeat: no-repeat;
-	background-image: url("../../resources-mo/images/icons/ico-chk-off.png");
+	background-image: url("../../resources-pc/images/icons/ico-chk-off.png");
 	background-position: center center;
 	-webkit-background-size: 92% auto;
 	   -moz-background-size: 92% auto;
@@ -2325,7 +2164,7 @@ body.fixed {
 
 .iconBox input:checked + label:after {
 	background-repeat: no-repeat;
-	background-image: url("../../resources-mo/images/icons/ico-radio-on.png");
+	background-image: url("../../resources-pc/images/icons/ico-radio-on.png");
 	background-position: center center;
 	-webkit-background-size: 92% auto;
 	   -moz-background-size: 92% auto;
@@ -2334,7 +2173,7 @@ body.fixed {
 
 .iconBox input[type='checkbox']:checked + label:after {
 	background-repeat: no-repeat;
-	background-image: url("../../resources-mo/images/icons/ico-chk-on.png");
+	background-image: url("../../resources-pc/images/icons/ico-chk-on.png");
 	background-position: center center;
 	-webkit-background-size: 95% auto;
 	   -moz-background-size: 95% auto;
@@ -2527,7 +2366,7 @@ body.fixed {
 	top: -1rem;
 	left: 50%;
 	background-repeat: no-repeat;
-	background-image: url("../../resources-mo/images/icons/ico-arrow.png");
+	background-image: url("../../resources-pc/images/icons/ico-arrow.png");
 	background-position: center center;
 	-webkit-background-size: 100% auto;
 	   -moz-background-size: 100% auto;

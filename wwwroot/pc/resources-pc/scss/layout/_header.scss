@@ -20,16 +20,15 @@
 					& + li{
 						&:before {
 							display: block;
-							content: '';
-							width: 1px;
-							height: 13px;
-							background-color: #E5E5E5;
+							content: '|';
+							color: #E5E5E5;
 							margin: 0 15px;
+							font-size: 17px;
 						}
 					}
 					&.customer {
 						> a{
-							padding-right: .8rem;
+							padding-right: 15px;
 							@include Background($sprite:'ico-select2', $size:6px, $position: center right); 
 						}
 					}
