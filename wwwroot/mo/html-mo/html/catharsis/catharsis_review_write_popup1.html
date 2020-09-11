@@ -68,7 +68,7 @@
 						</ul>
 					</div>
 					<div class="catharsis-top-btn">
-						<button type="button" class="btn btn-default layer-review-write-info-open active" data-layer="layer-review-write-info">후기 작성</button>
+						<button type="button" class="btn btn-default layer-infos-open active" data-layer="layer-infos">후기 작성</button>
 					</div>
 				</div>
 
@@ -189,10 +189,10 @@
     </footer>
     
     <!--layer-full 후기작성 안내문구 컴포넌트-->
-    <div class="layer-wrap layer-full layer-review-write-info" data-type="full">
+    <div class="layer-wrap layer-full layer-infos" data-type="full">
         <!--상단-->
         <div class="full-top">
-            <button type="button" class="btn btn-pannel layer-full-close" data-layer="layer-review-write-info"><i class="icon layerclose02">닫기 버튼</i></button>
+            <button type="button" class="btn btn-pannel layer-full-close" data-layer="layer-infos"><i class="icon layerclose02">닫기 버튼</i></button>
             <h4>
                 후기 작성 포인트 지급기준 안내
             </h4>
@@ -202,11 +202,11 @@
         <div class="full-inner">
             <div class="full-cont">
 
-                <div class="layer-review-write-info">
-                    <div class="layer-review-write-info-top">
+                <div class="layer-infos">
+                    <div class="layer-infos-top">
                         <strong>고객후기 등록 혜택 안내</strong>
 					</div>
-					<div class="layer-review-write-guide">
+					<div class="layer-infos-guide">
 						<ul>
 							<li><i class="icon listCircle"></i>계약기간 내 언제든지 작성 및 수정이 가능합니다.</li>
 							<li><i class="icon listCircle"></i>주제와 무관한 내용(악의성, 홍보성), 욕설이 포함된 내용일 경우 노출 제한 및 포인트 지급 대상에서 제외됩니다.</li>
@@ -215,10 +215,10 @@
 							<li><i class="icon listCircle"></i>포인트 지급을 위해서는 L포인트 카드가 필요하며, 카드번호가 없을 시 적립과 사용이 불가합니다.</li>
 						</ul>
 					</div>
-					<div class="layer-review-write-info-top">
+					<div class="layer-infos-top">
                         <strong>다음 내용이 포함될 경우 작성자에게 통지 없이 게시가 중단될 수 있습니다.</strong>
 					</div>
-					<div class="layer-review-write-guide">
+					<div class="layer-infos-guide">
 						<ul>
 							<li><i class="icon listCircle"></i>욕설, 비방 등 모욕을 주거나 명예를 손상시키는 내용</li>
 							<li><i class="icon listCircle"></i>후기 성격에 맞지 않거나 불성실한 내용, 반복문자 또는 영리 목적의 홍보,광고 저작권, 초상권 등 타인의 권리 혹은 개인정보(신용카드 번호, 전화번호 등) 침해 우려가 있는 내용</li>
@@ -245,17 +245,9 @@
 	$(function(){
         $('.header-top.sub h1').text('CAR타르시스');
         
-        $('.layer-review-write-info-open').trigger('click');
-        $('.layer-review-write-info-open').trigger('touchstart');
+        $('.layer-infos-open').trigger('click');
+        $('.layer-infos-open').trigger('touchstart');
 
-        $('.layer-review-write-top .inputT input').on('keyup', function(e){
-            if(e.target.value) {
-                $('.layer-review-write-top > button').addClass('active');
-            }
-            else{
-                $('.layer-review-write-top > button').removeClass('active');
-            }
-		});
 
 	})
 	</script>

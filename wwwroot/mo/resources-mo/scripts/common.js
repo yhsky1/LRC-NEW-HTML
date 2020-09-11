@@ -152,8 +152,8 @@ $(function(){
     }
 
     //후기작성 안내문구 풀팝업
-    if($('.layer-review-write-info').length) {
-        MUI.layer.openClick('.layer-review-write-info-open', LAYER_DIM, LAYER_PARENT, function(show){
+    if($('.layer-infos').length) {
+        MUI.layer.openClick('.layer-infos-open', LAYER_DIM, LAYER_PARENT, function(show){
             //console.log('open');
             show();
         });

@@ -8,7 +8,16 @@
 
 	.header-nav {
 		.inner{
-			
+			height: 60px;
+			@include Align-middle-right;
+			> ul {
+				@include Align-middle-left;
+				> li {
+					> a{
+						@include Bold;
+					}
+				}
+			}
 		}
 	}
 	
