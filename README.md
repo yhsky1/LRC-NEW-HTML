@@ -43,14 +43,14 @@ Undefined: 정책 적용 안함.<br />
     - SCSS, CSS2.1, CSS3
 4. 제이쿼리 버전 : v1.9.1
 5. 크로스브라우저 범위
-    - IE8,9,10,11,edge, Firefox, Chrome 
+    - IE11,edge, Firefox, Chrome 
     ※ round 및 shadow 효과 반영되지 않음. (IE8,9)
 6. 모바일 대표디바이스
     - 대표 디바이스 설정 안되어 있음. 
     ※ 테블릿 화면 노출 정의 필요
 7. 웹 접근성 준수 범위 : 준수
 8. 해상도 
-    컨텐츠 기본 넓이값 - 1030px
+    컨텐츠 기본 넓이값 - 1080px
     ※ 양쪽 사이드바 1250px 이하시 display:none 처리
 
 ### `■ 네이밍 규칙`

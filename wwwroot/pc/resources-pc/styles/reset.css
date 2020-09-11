@@ -1,5 +1,14 @@
+@charset "UTF-8";
+/*인라인 가로스크롤*/
+/*폰트만 삭제시킴*/
+/*투명도 믹스인*/
+/*포지션 믹스인*/
+/*백그라운드 믹스인*/
+/* 말줄임표 */
+/*미디어쿼리 믹스인*/
 html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, strong, em, img, sub, sup, address, cite, pre, code, del, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed, figure, figcaption, footer, header, menu, nav, output, section, summary, time, mark, audio, video {
+	line-height: 1;
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -74,18 +83,36 @@ html {
 }
 
 body {
-	font: 13px/1.3 'Noto Sans KR', sans-serif;
-	letter-spacing: -.05em;
+	font-size: 15px;
+	font-family: "ManropeL", "NotoL", serif;
+	letter-spacing: -.5px;
 	word-break: break-all;
 	color: #111;
 	background-color: #fff;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-flow: column;
+	   -moz-box-orient: vertical;
+	   -moz-box-direction: normal;
+	    -ms-flex-flow: column;
+	        flex-flow: column;
+	min-height: 100vh;
+	color: #2B2B2B;
+	font-size: 15px;
 }
 
 input, button, select, textarea {
+	line-height: 1;
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 1em;
+	color: #2B2B2B;
+	font-size: 15px;
 	font-family: inherit;
 	color: inherit;
 	-webkit-box-sizing: border-box;
@@ -121,7 +148,138 @@ a {
 }
 
 strong, b {
-	font-weight: 700;
+	font-weight: normal;
+	color: #2B2B2B;
+	font-size: 15px;
+	line-height: 1;
+}
+
+label {
+	cursor: pointer;
+}
+
+input::-webkit-input-placeholder {
+	color: #C1C1C1;
+	line-height: normal;
+}
+
+input:-moz-placeholder {
+	color: #C1C1C1;
+	line-height: normal;
+}
+
+input::-moz-placeholder {
+	color: #C1C1C1;
+	line-height: normal;
+}
+
+input:-ms-input-placeholder {
+	color: #C1C1C1;
+	line-height: normal;
+}
+
+input::-ms-input-placeholder {
+	color: #C1C1C1;
+	line-height: normal;
+}
+
+input::placeholder {
+	color: #C1C1C1;
+	line-height: normal;
+}
+
+textarea::-webkit-input-placeholder {
+	color: #C1C1C1;
+}
+
+textarea:-moz-placeholder {
+	color: #C1C1C1;
+}
+
+textarea::-moz-placeholder {
+	color: #C1C1C1;
+}
+
+textarea:-ms-input-placeholder {
+	color: #C1C1C1;
+}
+
+textarea::-ms-input-placeholder {
+	color: #C1C1C1;
+}
+
+textarea::placeholder {
+	color: #C1C1C1;
+}
+
+@font-face {
+	font-family: "SpoqaL";
+	src: url("../fonts/Spoqa/Spoqa-Light.woff") format("woff"), url("../fonts/Spoqa/Spoqa-Light.woff2") format("woff2");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "SpoqaB";
+	src: url("../fonts/Spoqa/Spoqa-Bold.woff") format("woff"), url("../fonts/Spoqa/Spoqa-Bold.woff2") format("woff2");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "SpoqaR";
+	src: url("../fonts/Spoqa/Spoqa-Regular.woff") format("woff"), url("../fonts/Spoqa/Spoqa-Regular.woff2") format("woff2");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "SpoqaT";
+	src: url("../fonts/Spoqa/Spoqa-Thin.woff") format("woff"), url("../fonts/Spoqa/Spoqa-Thin.woff2") format("woff2");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "NotoL";
+	src: url("../fonts/Noto/notokr-light.woff") format("woff"), url("../fonts/Noto/notokr-light.woff2") format("woff2");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "NotoR";
+	src: url("../fonts/Noto/notokr-regular.woff") format("woff"), url("../fonts/Noto/notokr-regular.woff2") format("woff2");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "NotoM";
+	src: url("../fonts/Noto/notokr-medium.woff") format("woff"), url("../fonts/Noto/notokr-medium.woff2") format("woff2");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "NotoB";
+	src: url("../fonts/Noto/notokr-bold.woff") format("woff"), url("../fonts/Noto/notokr-bold.woff2") format("woff2");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "ManropeL";
+	src: url("../fonts/Manrope/Manrope-Light.woff") format("woff"), url("../fonts/Manrope/Manrope-Light.woff2") format("woff2");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "ManropeB";
+	src: url("../fonts/Manrope/Manrope-Bold.woff") format("woff"), url("../fonts/Manrope/Manrope-Bold.woff2") format("woff2");
+	font-weight: normal;
+	font-style: normal;
 }
 
 .clear {
@@ -163,6 +321,19 @@ strong, b {
 .margin-a {
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.txtBold {
+	font-family: "ManropeB", "NotoM", serif;
+	font-weight: normal;
+}
+
+.texRed {
+	color: #F04040;
+}
+
+.texGreen {
+	color: #20BBC4;
 }
 
 .pd-0 {

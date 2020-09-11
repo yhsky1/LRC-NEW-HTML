@@ -9,13 +9,21 @@ $extra-small-devices: 320px;
 		clear: both;
 	}
 }
+@mixin Nomal {
+	font-family:"ManropeL", "NotoL", serif;
+	font-weight: normal;
+}
+@mixin Bold {
+	font-family:"ManropeB", "NotoM", serif;
+	font-weight: normal;
+}
 
-@mixin Icon-font {
-	font-style: normal;
-	font-family: 'metlife-icon';
-	text-rendering: auto;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+@mixin NoscrollBar {
+	scrollbar-width: none;
+    -ms-overflow-style: none;
+	&::-webkit-scrollbar {
+		display: none;
+	}
 }
 
 @mixin Vertical-inline {
@@ -23,16 +31,75 @@ $extra-small-devices: 320px;
 	vertical-align: middle;
 }
 
+@mixin Align-box {
+	display: flex;
+	flex-wrap: wrap;
+}
+
 @mixin Align-middle {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+@mixin Align-middle-column {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-flow: column;
+}
+@mixin Align-middle-left {
+	display: flex;
+	align-items: center;
+}
+@mixin Align-middle-right {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+@mixin Align-top-left {
+	display: flex;
+	align-items: flex-start;
+	justify-content: left;
+}
+@mixin Align-bottom-middle {
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+}
+@mixin Align-between {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+@mixin Align-between-top {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
 }
 
 @mixin Inline-align-middle {
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
+}
+
+@mixin Inline-align-top {
+	display: inline-flex;
+	align-items: flex-start;
+	justify-content: center;
+}
+
+
+/*인라인 가로스크롤*/
+@mixin Inline-scrolling {
+	box-sizing: border-box;
+	font-size:0;
+	overflow-x: visible;
+    overflow-y: hidden;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+	width: 100%;
+	padding-bottom: .2rem;
 }
 
 /*폰트만 삭제시킴*/
@@ -48,6 +115,7 @@ $extra-small-devices: 320px;
 }
 
 /*포지션 믹스인*/
+//@include Position($top: 0, $left: 0)
 @mixin Position($position:absolute, $top: null, $right: null, $bottom: null, $left: null) {
 	position: $position;
 	top: $top;
@@ -57,13 +125,13 @@ $extra-small-devices: 320px;
 }
 
 /*백그라운드 믹스인*/
-//@include sprite($sprite:'error', $type:'png', $x:right, $y:center); ---  사용법
-//@include sprite($sprite:'error', $type:'jpg', $y:0); ---  사용법
-//@include sprite($sprite:'error', $type:'jpg', $x:20%, $y:20%, $size:100%); ---  사용법
-@mixin Background($sprite, $type, $x:0, $y:0, $size:auto) {
+//@include Background($sprite:'error', $type:'png', $position:right center); ---  사용법
+//@include Background($sprite:'error', $type:'jpg', $y:0); ---  사용법
+//@include Background($sprite:'error', $type:'jpg', $position:20% 20%, $size:100%); ---  사용법
+@mixin Background($sprite, $type:'png', $position:0 0, $size:auto, $path:'icons') {
 	background-repeat: no-repeat;
-	background-image: url('../../resources/images/icons/#{$sprite}.#{$type}');
-	background-position: $x, $y;
+	background-image: url('../../resources-mo/images/#{$path}/#{$sprite}.#{$type}');
+	background-position: $position;
 	background-size: $size;
 }
 
