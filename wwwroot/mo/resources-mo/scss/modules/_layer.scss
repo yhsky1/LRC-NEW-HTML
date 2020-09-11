@@ -594,7 +594,7 @@ body.fixed {
 			&-detail{
 				.layer-review-write-detail{
 					.detail-view-list{
-						padding-bottom:2rem;
+						padding-bottom:2.9rem;
 					}
 					.swiper-pagination-wrap{
 						@include Position($bottom:0, $left:0);
@@ -705,66 +705,96 @@ body.fixed {
 				}
 			}
 			&-default{
-				.text-cont{
-					padding:1.7rem 0;
-					.list-cont{
-						margin-bottom:1rem;
-						strong{
-							display: block;
-							@include Bold;
+				.unit-text{
+					margin-top:0;
+					padding-top:0;
+					border-radius:0;
+					.text-cont{
+						padding:0 0 1.7rem;
+						.list-cont{
 							margin-bottom:1rem;
-						}
-						.unit-normal{
-							padding:1.8rem 0;
-							@include Align-middle;
-							margin-top:0;
-						}
-						.guide{
-							font-size: 1rem;
-							color: #999;
-							line-height: 1.3;
-						}
-						.unit-text-write-wrap{
-							margin-top:1rem;
-							textarea{
-								height: 23.5rem;	
+							strong{
+								display: block;
+								@include Bold;
+								margin-bottom:1rem;
 							}
-						}
-						.img-info{
-							position: relative;
-							padding:1.5rem 0 0;
-							& > ul{
-								margin-left:0;
-								& > li{
-									position: relative;
-									margin-bottom:1rem;
-									& > span{
-										padding-left:.6rem;
-										font-size: 1rem;
-										color: #999;
-										line-height: 1.3;
-									}
-									& > b{
-										@include Bold;
-										font-size: 1rem;
-										line-height: 1.3;
-									}
-									&:after{
-										display:block;
-										content:"";
-										@include Background($sprite:'ico-circle', $size:100% auto, $position:center center);
-										width: 2px;
-										height: 2px;
-										@include Position($position:absolute, $top: 50%, $left: 0);
-										transform: translateY(-50%);
-										border-radius: 50%;
+							.unit-normal{
+								padding:1.8rem 0;
+								@include Align-middle;
+								margin-top:0;
+								.click-star {
+									i{
+										width:2.1rem;
+										height:2.1rem;
+										cursor: pointer;
 									}
 								}
 							}
-						}
-						.chk-agree-cols{
-							.chk-agree-top{
-								border-top: 1px solid #EBEBEB;
+							.guide{
+								font-size: 1rem;
+								color: #999;
+								line-height: 1.3;
+							}
+							.review-text-write-wrap{
+								margin-top:1rem;
+								textarea{
+									height: 23.5rem;	
+								}
+							}
+							.img-info{
+								position: relative;
+								padding:1.5rem 0 0;
+								& > ul{
+									margin-left:0;
+									& > li{
+										position: relative;
+										margin-bottom:1rem;
+										& > span{
+											padding-left:.6rem;
+											font-size: 1rem;
+											color: #999;
+											line-height: 1.3;
+										}
+										& > b{
+											@include Bold;
+											font-size: 1rem;
+											line-height: 1.3;
+										}
+										&:after{
+											display:block;
+											content:"";
+											@include Background($sprite:'ico-circle', $size:100% auto, $position:center center);
+											width: 2px;
+											height: 2px;
+											@include Position($position:absolute, $top: 50%, $left: 0);
+											transform: translateY(-50%);
+											border-radius: 50%;
+										}
+									}
+								}
+							}
+							.inputF{
+								.img{
+									width:100%;
+									height:100%;
+									position: absolute;
+									top:0;
+									left:0;
+									z-index: 1;
+								}
+							}
+							.chk-agree-cols{
+								.chk-agree-top{
+									border-top: 1px solid #EBEBEB;
+									.chk-agree-txt{
+										padding:1.4rem 0;
+										@include Align-top-left;
+										line-height: 1.3;
+										@include Vertical-inline;
+										font-size: 1.2rem;
+										margin-left: .4rem;
+									}
+								}
 							}
 						}
 					}

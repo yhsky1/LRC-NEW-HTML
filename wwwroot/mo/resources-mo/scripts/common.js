@@ -436,6 +436,13 @@ $(function(){
             },
         });
     }
+    if($('.click-star').length) {
+        $('.click-star .star').click(function(e){
+            $(this).parents().children('.star').removeClass('active');
+            $(this).addClass('active').prevAll('.star').addClass('active');
+            return false;
+        });
+    }
 /* -------------------------------------------------카타르시스end*/
 
 /* 로그인start-------------------------------------------------*/
