@@ -352,10 +352,10 @@ var MUI = MUI || {
 			}
 
 		},
-		taps: function(tab_nav, callback){
-			var target = tab_nav + '.tab-nav li';
-			//console.log(target);
-			$(document).on('click', target, function(e){
+		taps: function(tab_nav, touch, callback){
+			var EventType = touch ? this.TOUCH_CLICK : 'click',
+				target = tab_nav + '.tab-nav li';
+			$(document).on(EventType, target, function(e){
 				var $this = $(this);
 				var $layer = $(tab_nav + '.tab-cont');
 				var idx = $this.index();

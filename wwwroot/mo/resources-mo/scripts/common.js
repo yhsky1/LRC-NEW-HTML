@@ -113,6 +113,15 @@ $(function(){
 
 
 /* -------------------------------------------------유틸end*/
+
+/* 탭 전환start-------------------------------------------------*/
+if($('.specials-list .tab-normal').length){
+
+    MUI.event.taps('.specials-list .tab-normal', false, function(swap){
+        swap();
+    });
+}
+/* -------------------------------------------------탭 전환end*/
     
 /* 레이어팝업start-------------------------------------------------*/
     //제휴카드 혜택안내 풀팝업
@@ -417,6 +426,23 @@ $(function(){
         });
     }
 /* -------------------------------------------------기획전end*/
+
+/* 특가상품start-------------------------------------------------*/
+    //특가상품 상단 슬라이더
+    if($('.specials-wrap .specials-view-list').length) {
+        MUI.slide.init($('.specials-wrap .specials-view-list'), 'slick', {
+				slidesToScroll: 1, 
+				infinite: false,
+				autoplay: false,
+                arrows: false,
+                slidesToShow: 2,
+                //centerMode: true,
+                variableWidth: true,
+                //dots: true,
+
+        });
+    }
+/* -------------------------------------------------특가상품end*/
 
 
 /* 계약start-------------------------------------------------*/

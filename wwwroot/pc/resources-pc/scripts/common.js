@@ -29,8 +29,8 @@ if($('.chk-agree-list').length){
 /* -------------------------------------------------유틸end*/
 
 /* 탭 전환start-------------------------------------------------*/
-if($('.tab-normal').length){
-    MUI.event.taps('.tab-normal', function(swap){
+if($('.layer-login .tab-normal').length){
+    MUI.event.taps('.layer-login .tab-normal', false, function(swap){
         if($(".layer-login-iscroll").length){
             setTimeout(function(){
                 MUI.layer.calculate('.layer-login');

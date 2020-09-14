@@ -1,3 +1,70 @@
 .specials-wrap {
+    background-color: #EFF2F7;
+    padding-bottom: 4rem;
+
+    .section-list {
+        .specials-view {
+            h3 {
+                font-size: 2.2rem;
+                @include Bold;
+                text-align: center;
+            }
+            .specials-view-list {
+                .slick-slide {
+                    display: inline-block;
+                    width:13rem !important;
+                    vertical-align: top;
+                    text-align: left;
+                    padding-left: 1.7rem;
+                    > a{
+                        position: relative;
+                        @include Align-middle-column;
+                        background-color: #fff;
+                    }
+                }
+            }
+
+        }
+        .specials-list {
+            background-color: #fff;
+            padding: 1rem 1.7rem 2.6rem;
+            border-radius: 1.5rem;
+            .specials-list-top {
+                @include Align-middle;
+                > h3 {
+                    position: relative;
+                    font-size: 2.6rem;
+                    @include Bold;
+                    line-height: 1;
+                    left:3.6rem;
+                    > b {
+                        font-size: 2.6rem;
+                        line-height: 1;
+                    }
+                    > span {
+                        @include Nomal;
+                        color:#999;
+                        font-size: 1rem;
+                        line-height: 1;
+                        display: block;
+                        margin-top: .4rem;
+                    }
+                }
+                &:after{
+                    position: relative;
+                    z-index: 1;
+                    display: block;
+                    content: '';
+                    width: 12rem;
+                    height: 7.5rem;
+                    margin-left:2rem;
+                    @include Background($sprite:'bg-shin2', $size:100% auto, $position:center center, $path:'bgs');
+                }
+            }
+        }
+        .specials-bn {
+            padding: 3rem 1.7rem 0;
+        }
+    }
 
 }

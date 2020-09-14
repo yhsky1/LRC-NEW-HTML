@@ -1166,6 +1166,7 @@ button.swiper-pagination-bullet {
 	-webkit-border-radius: 15px 15px 0 0;
 	   -moz-border-radius: 15px 15px 0 0;
 	        border-radius: 15px 15px 0 0;
+	border-bottom: 1px solid #2B2B2B;
 }
 
 .tab-nav > ul > li.active button {

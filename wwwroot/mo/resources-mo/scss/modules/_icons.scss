@@ -483,6 +483,15 @@ button.active .unlike{
             background-color: #B4B8BF;
         }
     }
+    &.num {
+        @include Position($top: 0, $left: 0);
+        background-color: #1E1E1E;
+        color: #fff;
+        height: 1.7rem;
+        width: 1.7rem;
+        border-radius: 0 0 .8rem 0;
+        @include Bold;
+    }
 }
 
 .flag-wrap {

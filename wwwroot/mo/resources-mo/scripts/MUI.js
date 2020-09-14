@@ -345,16 +345,16 @@ var MUI = MUI || {
 			}
 
 		},
-		taps: function(tab_nav, callback){
-			var target = tab_nav + '.tab_nav li';
-			//console.log(target);
-			$(document).on('click', target, function(e){
+		taps: function(tab_nav, touch, callback){
+			var EventType = touch ? this.TOUCH_CLICK : 'click',
+				target = tab_nav + '.tab-nav li';
+			$(document).on(EventType, target, function(){
 				var $this = $(this);
-				var $layer = $(tab_nav + '.tab_cont');
+				var $layer = $(tab_nav + '.tab-cont');
 				var idx = $this.index();
 
 				function swap(){
-					$this.addClass('on').siblings().removeClass('on');
+					$this.addClass('active').siblings().removeClass('active');
 					$layer.find('> div').eq(idx).show().siblings().hide();
 				} 
 				if(callback){
@@ -363,7 +363,6 @@ var MUI = MUI || {
 				else{
 					swap();
 				}
-				e.preventDefault();
 			});
 		},
 		calander: function(target, option, callback){
