@@ -96,28 +96,32 @@ var MUI = MUI || {
 	},
 	slide: {
 		init: function(target, sort, option){
-			if(sort == 'slick') {
-				//console.log('slick');
+			if(sort === 'slick') {
 				return target.slick(option);
+			}
+			if(sort === 'swiper') {
+				return new Swiper(target, option);
 			}
 		},
 	},
 	layer: {
+		TOUCH_CLICK: ('ontouchstart' in window) ? 'touchstart' : 'click',
 		scrollTop: 0,
 		calculate: function(layer){
 			var layer = $(layer),
-				layerIn = layer.find('.pop_inner'),
+				layerIn = layer.find('.pop-inner'),
 				winH = $(window).height(),
 				winW = $(window).width();
-				layerIn.find('.pop_scroll').removeAttr('style');
+				layerIn.find('.popup-cont').removeAttr('style');
 
 			var layerH = layer.height(),
 				layerW = layer.width(),
-				marginH = parseInt(layerIn.css('marginTop')) + parseInt(layerIn.css('marginBottom'));
+				marginH = parseInt(layerIn.css('marginTop')) + parseInt(layerIn.css('marginBottom')) + parseInt(layerIn.find('.popup-top').height());
 			//console.log(layer, winH, winW, layerH, layerW, marginH);
+			//console.log(marginH, layerIn.find('.popup-top').height());
 			
 			if(winH < layerH){
-				layerIn.find('.pop_scroll').css({
+				layerIn.find('.popup-cont').css({
 					height: winH - marginH,
 					overflow: 'auto',
 				});
@@ -127,7 +131,7 @@ var MUI = MUI || {
 				});
 			}
 			else{
-				layerIn.find('.pop_scroll').removeAttr('style');
+				layerIn.find('.popup-cont').removeAttr('style');
 				layer.css({
 					top: (winH - layerH) / 2,
 					left: (winW - layerW) / 2,
@@ -136,9 +140,8 @@ var MUI = MUI || {
 
 		},
 		openClick: function(target, dimmed, parent, callback){
-            var that = this,
-				TOUCH_CLICK = ('ontouchstart' in window) ? 'touchstart' : 'click';
-            $(document).on(TOUCH_CLICK, target, function(e){
+			var that = this;
+            $(document).on(this.TOUCH_CLICK, target, function(e){
                 var layer = '.'+$(this).data('layer');
                 var targetDom = $(this);
                 //that.scrollTop = $(window).scrollTop();
@@ -149,30 +152,47 @@ var MUI = MUI || {
                 else{
                     show();
                 }
-                
                 function show(){
-                    that.open(layer, dimmed, parent);
-                }
+					that.open(layer, dimmed, parent);
+				}
             });
         },
         open: function(layer, dimmed, parent, callback){
-            var that = this;
+			var that = this;
             that.scrollTop = $(window).scrollTop();
             $('body').addClass('fixed');
             $('body').css({top:-that.scrollTop});
-            if(dimmed) $(dimmed).fadeIn();
 			if(callback) callback(layer);
-            $(parent + layer).show();
+			if($(layer).data('type') === 'full') {
+				$(dimmed).addClass('type-full');
+				$(dimmed).hide();
+				$(layer).css({opacity:1});
+				$(layer).addClass('active');
+				return;
+			}
+			if(dimmed) $(dimmed).delay(300).fadeIn();
+			if($(layer).data('type') === 'slide') {
+				$(dimmed).addClass('type-slide');
+				$('.layer-full').addClass('fixed');
+				//$(layer).css({opacity:1, 'max-height': $(window).height()-$('header').height()});
+				$(layer).css({opacity:1});
+				$(layer).addClass('active');
+				return;
+			}
+			console.log(parent + layer);
+			$(dimmed).addClass('type-popup');
+			$(parent + layer).addClass('active');
             that.calculate(layer);
             $(window).on('resize.layer', function(){
                 that.calculate(layer);
             });
         },
         closeClick: function(target, dimmed, parent, callback){
-            var that = this;
-            $(document).on('click', target, function(e){
+			var that = this
+            $(document).on(this.TOUCH_CLICK, target, function(e){
                 var layer;
-                var targetDom = $(this);
+				var targetDom = $(this);
+				//console.log(targetDom.data('layer'));
                 if(target == dimmed){
                     layer = parent;
                 }
@@ -188,32 +208,50 @@ var MUI = MUI || {
                 }
 
                 function hide() {
-                    that.close(layer, dimmed, parent);
+					that.close(layer, dimmed, parent);
                 }
 
-                e.preventDefault();
             });
         },
         close :function(layer, dimmed, parent, callback){
-            var that = this;
-            if(layer != dimmed) {
-				$(layer).hide();
-            }
-            else {
-                $(parent).hide();
-            }
-			if(dimmed) $(dimmed).fadeOut();
+			//console.log(layer);
+			var that = this;
 			if(callback) callback(layer);
             $('body').removeClass('fixed');
             $('body').css({top:0});
 			$(window).scrollTop(that.scrollTop);
-            $(window).off('resize.layer');
+			//console.log(layer === '.layer-wrap');
+			if((layer === '.layer-wrap')) {
+				if(!$(dimmed).hasClass ('type-popup')) {
+					$('.layer-full').addClass('active');
+					$('.layer-full').css({opacity:1});
+				}
+				$('.layer-slide').removeClass('active');
+				setTimeout(function(){
+					$('.layer-slide').css({opacity:0});
+				}, 400);
+			}
+			else{
+				$(layer).removeClass('active');
+				setTimeout(function(){
+					$(layer).css({opacity:0});
+				}, 400);
+			}
+			$('.layer-full').removeClass('fixed');
+			$('.layer-popup').removeClass('active');
+			if(dimmed) $(dimmed).fadeOut();
+			$(dimmed).removeClass('type-full');
+			$(dimmed).removeClass('type-slide');
+			$(dimmed).removeClass('type-popup');
+			$(window).off('resize.layer');
+            
         },
 	},
 	event: {
-		toggle: function(target, parent, callback){
-
-			$(document).on('click', target, function(e) {
+		TOUCH_CLICK: ('ontouchstart' in window) ? 'touchstart' : 'click',
+		toggle: function(target, parent, touch, callback){
+			var EventType = touch ? this.TOUCH_CLICK : 'click';
+			$(document).on(EventType, target, function(e) {
 				var $this = $(this);
 				var $targetDiv = $(target);
 				var layer = $('.' + $this.data('target'));
@@ -221,23 +259,23 @@ var MUI = MUI || {
 				var onClass = $this.data('on');
 				var siblings = $this.data('siblings');
 				var $parent =$(parent);
-				console.log(sort, onClass, siblings, $parent);
+				//console.log(sort, onClass, siblings, $parent);
 
 				function logic(){
 					
 					if(onClass){
 						
-						if(parent === null ? $this.hasClass('on') : layer.is(':visible')){
-							$this.removeClass('on');
-							layer.removeClass('on');
+						if(parent === null ? $this.hasClass('active') : layer.is(':visible')){
+							$this.removeClass('active');
+							layer.removeClass('active');
 						}
 						else{
 							if(siblings){
-								$targetDiv.removeClass('on');
-								$parent.removeClass('on');
+								$targetDiv.removeClass('active');
+								$parent.removeClass('active');
 							}
-							$this.addClass('on');
-							layer.addClass('on');
+							$this.addClass('active');
+							layer.addClass('active');
 						}	
 					}
 	
@@ -282,7 +320,7 @@ var MUI = MUI || {
 				}
 
 				if(callback) {
-					callback(logic, layer);
+					callback(logic, layer, target);
 				}
 				else{
 					logic();
@@ -296,21 +334,15 @@ var MUI = MUI || {
             	e.preventDefault();
 			});
 		}, 
-		topScrollCh: function(target, parent){
-			if(parent.hasClass('pc')){
-				var winScroll = $(window).scrollTop();
-				if(winScroll == 0){
-					target.fadeOut();
-					$('#header .inner').removeClass('on');
-				}
-				else{
-					target.fadeIn();
-					$('#header .inner').addClass('on');
-				}
+		topScrollCh: function(target){
+			var winScroll = $(window).scrollTop();
+			if(winScroll == 0){
+				target.addClass('close-topBt');
 			}
 			else{
-				return;
+				target.removeClass('close-topBt');
 			}
+
 		},
 		taps: function(tab_nav, callback){
 			var target = tab_nav + '.tab_nav li';
@@ -427,7 +459,89 @@ var MUI = MUI || {
 
 				beScrollTop = enScrollTop;
 			});
-		},	
+		},
+		fixedBottomScrollvalue: 0,
+		fixedBottom: function($target){
+			var that = this;
+			$(window).on('scroll', function() {
+				that.fixedBottomCaculate($target);
+			});
+		},
+		fixedBottomCaculate: function($target){
+			var initScrollvalue = $(window).scrollTop(),                          
+				MaxScroll = $(document).height() - $(window).height();  //최대 가능한 스크롤 범위
+				
+			//console.log('스크롤 가능한 최대값: ' + MaxScroll);
+			//console.log('현재 스크롤 값: ' +  initScrollvalue);
+
+			//IOS 스크롤 시 스크롤 바운스 범위 지정
+			if(initScrollvalue < (MaxScroll - 100) && this.fixedBottomScrollvalue > 50){
+				//console.log('fixedBottomScrollvalue', this.fixedBottomScrollvalue);
+				//console.log('최대 바운스 범위');
+				if(initScrollvalue > this.fixedBottomScrollvalue){
+					//console.log('스크롤 다운');
+					$target.addClass('close');
+				}else{
+					//console.log('스크롤 업');
+					$target.removeClass('close');
+				}
+			}else{
+				//console.log('마지막 스크롤, 최상단 바운스 되는중');
+			}
+
+			//최종 스크롤 값 기준 데이터 리턴
+			this.fixedBottomScrollvalue = initScrollvalue;
+		},
+		navCenter: function($target, active){
+			var $activeTarget = $target.find('.'+active),
+				left = $activeTarget.offset().left,
+				width = $activeTarget.outerWidth(true);
+			$target.scrollLeft(left - ($(document).width() - width) / 2);
+		},
+		goTarget: function(target){
+			$(document).on('click', target, function(e){
+				var hrefString = $(this).data('target'),
+					offsetTop = $('.' + hrefString).offset(),
+					fixHeight = 40, //추후변동
+					navHeight = $('.detail-layer-nav').height();
+				//console.log(hrefString, offsetTop, navHeight);
+				if(offsetTop){
+					offsetTop = offsetTop.top - navHeight - fixHeight;
+					$('html, body').stop().animate({'scrollTop': offsetTop}, 500,function(){
+						//console.log('callback');
+					});
+					$(this).siblings().removeClass('active');
+				}
+			});
+		},
+		scrollTaps: function(scrollTop, $target, $nav){
+			var navHeight = $('.detail-layer-nav').height(),
+				fixHeight = 40; //추후변동
+			$target.each(function(){
+				var top_of_element = $(this).offset().top;
+				var idx = $(this).attr('data-link');
+				if((scrollTop >= top_of_element - navHeight - fixHeight - 5) ){
+					$nav.siblings().removeClass('active');
+					$nav.eq(idx).addClass('active');
+				}
+			});
+		},
+		removeToast: 0,
+		toastMessage: function(message){
+			var that = this,
+				toast = document.getElementById('toast');
+
+			toast.classList.contains('active') ?
+				(clearTimeout(that.removeToast), that.removeToast = setTimeout(function () {
+					document.getElementById('toast').classList.remove('active')
+				}, 1000)) :
+				that.removeToast = setTimeout(function () {
+					document.getElementById('toast').classList.remove('active')
+				}, 1000)
+			toast.classList.add('active'),
+				toast.innerText = message
+		},
+
 	},
 	iscrolls: {
         cash: null,
@@ -458,7 +572,9 @@ var MUI = MUI || {
 			}
 		},
 	},
-
+	Masonry: {
+		init: function($target, option){
+			return $target.masonry(option);
+		},
+	},
 };
-/* 코어 end */
-

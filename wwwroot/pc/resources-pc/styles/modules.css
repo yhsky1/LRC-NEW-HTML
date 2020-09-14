@@ -1839,6 +1839,39 @@ body.fixed {
 	z-index: 50;
 }
 
+.layer-wrap {
+	line-height: 1;
+	z-index: 60;
+}
+
+.layer-popup {
+	position: fixed;
+	width: 100%;
+	display: none;
+}
+
+.layer-popup.active {
+	display: block !important;
+	opacity: 1 !important;
+}
+
+.layer-popup .pop-inner {
+	overflow: hidden;
+	-webkit-border-radius: 20px;
+	   -moz-border-radius: 20px;
+	        border-radius: 20px;
+	background-color: #f4f4f4;
+	margin: 10px;
+	position: relative;
+}
+
+.layer-popup .pop-cont {
+	position: relative;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	     box-sizing: border-box;
+}
+
 .selectbox {
 	-webkit-box-sizing: border-box;
 	   -moz-box-sizing: border-box;

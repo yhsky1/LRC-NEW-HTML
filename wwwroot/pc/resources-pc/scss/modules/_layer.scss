@@ -26,3 +26,31 @@ body.fixed {
 	opacity: 0.5;
 	z-index: 50;
 }
+
+.layer {
+	&-wrap {
+		line-height: 1;
+		z-index: 60;
+	}
+
+		//팝업 형태
+		&-popup {
+			position: fixed;
+			width:100%;
+			display: none;
+			&.active {
+				display: block !important;
+				opacity: 1 !important;
+			}
+			.pop-inner {
+				overflow: hidden;
+				border-radius:20px;
+				background-color:#f4f4f4;
+				margin:10px;
+				position: relative;
+			}
+			.pop-cont {
+				position: relative;-webkit-box-sizing:border-box;box-sizing:border-box;
+			}
+		}
+}
