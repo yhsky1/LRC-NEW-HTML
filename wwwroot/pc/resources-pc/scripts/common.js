@@ -15,7 +15,14 @@ $(function(){
 //전체동의 열고 닫기
 if($('.chk-agree-list').length){
     MUI.event.toggle('.chk-agree-list .agree-toggle-btn', '.chk-agree-list .agree-toggle-cont', false, function(logic, layer) {
-        //console.log('toggle');
+        console.log(layer);
+        if($(".layer-login-iscroll").length){
+            setTimeout(function(){
+                MUI.layer.calculate('.layer-login');
+                $(".layer-login-iscroll")[0].iscrolls.refresh();
+            },500);
+        }
+
         logic();
     });
 }
@@ -84,7 +91,6 @@ if($(".layer-login-iscroll").length){
         $(".layer-login-iscroll")[0].iscrolls.refresh();
     });
 }
-
 
 /* -------------------------------------------------아이스크롤end*/
 
