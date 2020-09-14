@@ -11,6 +11,22 @@ $(function(){
         LAYER_DIM = '.bg-dimmed';
 
 
+/* 유틸start-------------------------------------------------*/
+if($('.tab-normal').length){
+    MUI.event.taps('.tab-normal', function(swap){
+        if($(".layer-login-iscroll").length){
+            setTimeout(function(){
+                MUI.layer.calculate('.layer-login');
+                $(".layer-login-iscroll")[0].iscrolls.refresh();
+            },500);
+        }
+
+        swap();
+    });
+}
+
+/* -------------------------------------------------유틸end*/
+
 
 /* 레이어팝업start-------------------------------------------------*/
     //로그인 레이어팝업
@@ -34,6 +50,10 @@ $(function(){
 /* -------------------------------------------------레이어팝업end*/
 
 
+/* 로그인start-------------------------------------------------*/
+
+/* -------------------------------------------------로그인end*/
+
 
 
 
@@ -45,12 +65,15 @@ $(window).on('load', function(){
 
 /* 아이스크롤start-------------------------------------------------*/
 if($(".layer-login-iscroll").length){
-    new IScroll(".layer-login-iscroll", { 
+    $(".layer-login-iscroll")[0].iscrolls = new IScroll(".layer-login-iscroll", { 
         scrollbars: true,
         mouseWheel: true,
         interactiveScrollbars: true,
         shrinkScrollbars: 'scale',
         fadeScrollbars: true,
+    });
+    $(window).on("resize",function(){
+        $(".layer-login-iscroll")[0].iscrolls.refresh();
     });
 }
 

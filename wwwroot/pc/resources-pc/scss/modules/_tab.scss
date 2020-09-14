@@ -1,50 +1,37 @@
 .tab{
-	&-menu{
-		max-width: 880px;
-		margin: 40px auto 65px;
-		border: 1px solid #0061a0;
-		border-left: none;
-		ul{
-			display: table;
-			table-layout: fixed;
+	&-nav{
+		> ul {
 			width: 100%;
-		}
-		li{
-			display: table-cell;
-			height: 40px;
-			border-left: 1px solid #0061a0;
-			text-align: center;
-			//background-color: #fff;
-			box-sizing: border-box;
-			a{
-				display: block;
-				color: #0061a0;
-				font-size: 14px;
-				font-weight: 700;
-				line-height: 40px;
-			}
-			&.active{
-				background-color: #0061a0;
-				a{
-					color: #fff;
+			@include Align-box;
+			> li {
+				button {
+					@include Align-middle;
+					background-color: #EFF2F7;
+					height: 60px;
+					width: 100%;
+					border-radius: 15px 15px 0 0;
+				}
+				&.active {
+					button {
+						background-color: #2B2B2B;
+						color: #fff;
+						@include Bold;
+					}
 				}
 			}
-			&.is-mobile{
-				display: none;
+			&.tab-col2 > li {
+				width: 50%;
+			}
+			&.tab-col3 > li {
+				width: 33.333%;
+			}
+			&.tab-col4 > li {
+				width: 25%;
+			}
+			&.tab-col5 > li {
+				width: 20%;
 			}
 		}
 	}
 }
 
-.tab-btns{
-	display: block;
-	max-width: 880px;
-	margin: 0 auto;
-	.btn{
-		display: inline-block;
-		margin: 0 2px;
-		padding: 0;
-		box-shadow: none;
-		border-radius: 0;
-	}
-}

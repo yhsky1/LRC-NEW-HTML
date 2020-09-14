@@ -118,12 +118,15 @@ var MUI = MUI || {
 				layerW = layer.width(),
 				marginH = parseInt(layerIn.css('marginTop')) + parseInt(layerIn.css('marginBottom')) + parseInt(layerIn.find('.popup-top').height());
 			//console.log(layer, winH, winW, layerH, layerW, marginH);
-			//console.log(marginH, layerIn.find('.popup-top').height());
+			console.log(winH, layerH, marginH, layerIn.find('.popup-top').height());
 			
 			if(winH < layerH){
 				layerIn.find('.popup-cont').css({
 					height: winH - marginH,
 					//'overflow-y': 'auto',
+				});
+				layerIn.find('.iscroll-in').css({
+					'padding-bottom': '80px'
 				});
 				layer.css({
 					top: 0,
@@ -132,6 +135,9 @@ var MUI = MUI || {
 			}
 			else{
 				layerIn.find('.popup-cont').removeAttr('style');
+				layerIn.find('.iscroll-in').css({
+					'padding-bottom': '40px'
+				});
 				layer.css({
 					top: (winH - layerH) / 2,
 					left: (winW - layerW) / 2,
@@ -345,15 +351,15 @@ var MUI = MUI || {
 
 		},
 		taps: function(tab_nav, callback){
-			var target = tab_nav + '.tab_nav li';
+			var target = tab_nav + '.tab-nav li';
 			//console.log(target);
 			$(document).on('click', target, function(e){
 				var $this = $(this);
-				var $layer = $(tab_nav + '.tab_cont');
+				var $layer = $(tab_nav + '.tab-cont');
 				var idx = $this.index();
 
 				function swap(){
-					$this.addClass('on').siblings().removeClass('on');
+					$this.addClass('active').siblings().removeClass('active');
 					$layer.find('> div').eq(idx).show().siblings().hide();
 				} 
 				if(callback){

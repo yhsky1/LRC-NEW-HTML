@@ -45,18 +45,28 @@ body.fixed {
 		.pop-inner {
 			border-radius:20px;
 			background-color:#fff;
-			margin:10px;
+			margin:30px;
 			position: relative;
 			box-shadow: 0 1px 15px rgba(96, 97, 112, 0.5);
 		}
 		.popup-top {
 			position: relative;
 			z-index: 1;
+			height: 75px;
+			@include Align-bottom-middle;
+			> h4 {
+				font-size: 26px;
+				@include Bold;
+			}
 		}
 		.popup-cont {
 			position: relative;
 			box-sizing:border-box;
 			overflow: hidden;
+			.iscroll-in {
+				padding-bottom: 40px;
+
+			}
 		}
 
 		//로그인 팝업
@@ -65,9 +75,11 @@ body.fixed {
 			.layer-login-close {
 				@include Position($top: -27px, $right: 40px);
 			}
-			
+			.tab-nav {
+				margin: 40px 20px 0;
+			}
 			.layer-login-normal {
-				padding: 45px 20px 40px;
+				padding: 45px 20px 0px;
 				> h2 {
 					font-size: 26px;
 					@include Bold;
@@ -109,7 +121,7 @@ body.fixed {
 					margin-top: 30px;
 				}
 				.login-normal-bottom {
-					margin-top: 40px;
+					margin: 40px 0 0;
 					> strong {
 						position: relative;
 						width: 205px;
