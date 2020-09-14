@@ -117,7 +117,7 @@ $(function(){
 /* 레이어팝업start-------------------------------------------------*/
     //제휴카드 혜택안내 풀팝업
     if($('.layer-cards').length) {
-        MUI.layer.openClick('.layer-cards-open', LAYER_DIM, LAYER_PARENT, function(show){
+        MUI.layer.openClick('.layer-cards-open', LAYER_DIM, LAYER_PARENT, true, function(show){
             //console.log('open');
             show();
 
@@ -144,7 +144,7 @@ $(function(){
 
     //운전면허 정보안내 풀팝업
     if($('.layer-license').length) {
-        MUI.layer.openClick('.layer-license-open', LAYER_DIM, LAYER_PARENT, function(show){
+        MUI.layer.openClick('.layer-license-open', LAYER_DIM, LAYER_PARENT, true, function(show){
             //console.log('open');
             show();
         });
@@ -152,7 +152,7 @@ $(function(){
 
     //주소찾기 풀팝업
     if($('.layer-address').length) {
-        MUI.layer.openClick('.layer-address-open', LAYER_DIM, LAYER_PARENT, function(show){
+        MUI.layer.openClick('.layer-address-open', LAYER_DIM, LAYER_PARENT, true, function(show){
             //console.log('open');
             show();
         });
@@ -160,7 +160,7 @@ $(function(){
 
     //게시글작성 풀팝업
     if($('.layer-write').length) {
-        MUI.layer.openClick('.layer-write-open', LAYER_DIM, LAYER_PARENT, function(show){
+        MUI.layer.openClick('.layer-write-open', LAYER_DIM, LAYER_PARENT, true, function(show){
             //console.log('open');
             show();
         });
@@ -168,7 +168,7 @@ $(function(){
 
     //후기작성 안내문구 풀팝업
     if($('.layer-infos').length) {
-        MUI.layer.openClick('.layer-infos-open', LAYER_DIM, LAYER_PARENT, function(show){
+        MUI.layer.openClick('.layer-infos-open', LAYER_DIM, LAYER_PARENT, true, function(show){
             //console.log('open');
             show();
         });
@@ -176,7 +176,7 @@ $(function(){
 
     //고객후기 풀팝업
     if($('.layer-review-write-detail').length) {
-        MUI.layer.openClick('.layer-review-write-detail-open', LAYER_DIM, LAYER_PARENT, function(show){
+        MUI.layer.openClick('.layer-review-write-detail-open', LAYER_DIM, LAYER_PARENT, true, function(show){
             //console.log('open');
             show();
         });
@@ -184,7 +184,7 @@ $(function(){
 
     //후기작성 풀팝업
     if($('.layer-review-write-default').length) {
-        MUI.layer.openClick('.layer-review-write-default-open', LAYER_DIM, LAYER_PARENT, function(show){
+        MUI.layer.openClick('.layer-review-write-default-open', LAYER_DIM, LAYER_PARENT, true, function(show){
             //console.log('open');
             show();
         });
@@ -192,7 +192,7 @@ $(function(){
 
     //본인인증 슬라이드 팝업
     if($('.layer-certification').length) {
-        MUI.layer.openClick('.layer-certification-open', LAYER_DIM, LAYER_PARENT, function(show){
+        MUI.layer.openClick('.layer-certification-open', LAYER_DIM, LAYER_PARENT, true, function(show){
             //console.log('open');
             show();
         });
@@ -200,7 +200,7 @@ $(function(){
 
     //차량선택 슬라이드 팝업
     if($('.layer-carSelect').length) {
-        MUI.layer.openClick('.layer-carSelect-open', LAYER_DIM, LAYER_PARENT, function(show){
+        MUI.layer.openClick('.layer-carSelect-open', LAYER_DIM, LAYER_PARENT, true, function(show){
             //console.log('open');
             show();
         });
@@ -208,7 +208,7 @@ $(function(){
 
     //필터 슬라이드 팝업
     if($('.layer-filter').length) {
-        MUI.layer.openClick('.layer-filter-open', LAYER_DIM, LAYER_PARENT, function(show){
+        MUI.layer.openClick('.layer-filter-open', LAYER_DIM, LAYER_PARENT, true, function(show){
             //alert('open');
             show();
             if(typeof(openSearchPop) === 'function') openSearchPop();
@@ -266,7 +266,7 @@ $(function(){
 
     //프로모션 슬라이드 팝업
     if($('.layer-promotion').length) {
-        MUI.layer.openClick('.layer-promotion-open', LAYER_DIM, LAYER_PARENT, function(show){
+        MUI.layer.openClick('.layer-promotion-open', LAYER_DIM, LAYER_PARENT, false, function(show){
             //console.log('open');
             show();
         });
@@ -275,7 +275,7 @@ $(function(){
 
     //슬라이드 팝업 공통 닫기
     if($('.layer-slide').length) {
-        MUI.layer.closeClick('.layer-slide-close', LAYER_DIM, LAYER_PARENT, function(hide){
+        MUI.layer.closeClick('.layer-slide-close', LAYER_DIM, LAYER_PARENT, true, function(hide){
             //console.log('close');
             hide();
         });
@@ -283,7 +283,7 @@ $(function(){
 
     //풀 팝업 공통 닫기
     if($('.layer-full').length) {
-        MUI.layer.closeClick('.layer-full-close', LAYER_DIM, LAYER_PARENT, function(hide){
+        MUI.layer.closeClick('.layer-full-close', LAYER_DIM, LAYER_PARENT, true, function(hide){
             //console.log('close');
             hide();
         });
@@ -291,19 +291,19 @@ $(function(){
 
     //로그인 레이어팝업
     if($('.login-wrap').length) {
-        MUI.layer.openClick('.layer-login-open', LAYER_DIM, LAYER_PARENT, function(show){
+        MUI.layer.openClick('.layer-login-open', LAYER_DIM, LAYER_PARENT, true, function(show){
             $('.drawer').removeClass('active');
             $('.btn-drawer').removeClass('active');
             show();
         });
-        MUI.layer.closeClick('.layer-login-close', LAYER_DIM, LAYER_PARENT, function(hide){
+        MUI.layer.closeClick('.layer-login-close', LAYER_DIM, LAYER_PARENT, true, function(hide){
             console.log('close');
             hide();
         });
     }
 
     //bg-dimmed 클릭시 열린 레이어 들 닫기
-    MUI.layer.closeClick(LAYER_DIM, LAYER_DIM, LAYER_PARENT, function(hide){
+    MUI.layer.closeClick(LAYER_DIM, LAYER_DIM, LAYER_PARENT, true, function(hide){
         //console.log('close');
         hide();
     });
@@ -499,11 +499,11 @@ $(function(){
 
     
     //일반 레이어팝업 테스트 ---추후삭제
-    MUI.layer.openClick('#layer-open2', LAYER_DIM, LAYER_PARENT, function(show){
+    MUI.layer.openClick('#layer-open2', LAYER_DIM, LAYER_PARENT, true, function(show){
         console.log('open');
         show();
     });
-    MUI.layer.closeClick('#layer-close2', LAYER_DIM, LAYER_PARENT, function(hide){
+    MUI.layer.closeClick('#layer-close2', LAYER_DIM, LAYER_PARENT, true, function(hide){
         console.log('close');
         hide();
     });

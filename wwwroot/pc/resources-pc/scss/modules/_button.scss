@@ -48,6 +48,37 @@
 			pointer-events: auto;
 		}
 	}
+	&-white {
+		width: 100%;
+		border-radius: 15px;
+		font-size: 16px;
+		border: 1px solid #EBEBEB;
+		background-color: #fff;
+		@include Bold;
+		@include Align-middle;
+	}
+	&-blue {
+		width: 100%;
+		color: #fff;
+		border-radius: 15px;
+		font-size: 16px;
+		border: 1px solid #20BBC4;
+		background-color: #20BBC4;
+		@include Bold;
+		@include Align-middle;
+		border-radius: 0;
+	}
+	&-red {
+		width: 100%;
+		color: #fff;
+		border-radius: 15px;
+		font-size: 16px;
+		border: 1px solid #F04040;
+		background-color: #F04040;
+		@include Bold;
+		@include Align-middle;
+		border-radius: 0;
+	}
 	&-sns-naver {
 		@include Background($sprite:'ico-naver_login', $position: center center); 
 		@include Hide_txt;
@@ -65,5 +96,28 @@
 		@include Hide_txt;
 		width: 55px;
 		height: 55px;
+	}
+	&-toggle {
+		width: 1.7rem;
+		height: 1.7rem;
+		position: relative;
+		cursor: pointer;
+		&:after {
+			display: block;
+			content: '';
+			@include Position($top: 50%, $right: 50%);
+			@include Background($sprite:'ico-arrow-down', $size:100% auto, $position:center center);
+			width: .9rem;
+			height: .9rem;
+			margin: -.45rem -.45rem 0 0;
+			transition: transform .5s;
+			transform: rotate(0deg);
+		}
+		&.gray:after {
+			@include Background($sprite:'ico-arrow-down2', $size:100% auto, $position:center center);
+		}
+		&.active:after {
+			transform: rotate(180deg);
+		}
 	}
 }

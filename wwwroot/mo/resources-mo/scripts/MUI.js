@@ -138,9 +138,10 @@ var MUI = MUI || {
 			}
 
 		},
-		openClick: function(target, dimmed, parent, callback){
-			var that = this;
-            $(document).on(this.TOUCH_CLICK, target, function(e){
+		openClick: function(target, dimmed, parent, touch, callback){
+			var that = this,
+				EventType = touch ? this.TOUCH_CLICK : 'click';
+            $(document).on(EventType, target, function(e){
                 var layer = '.'+$(this).data('layer');
                 var targetDom = $(this);
                 //that.scrollTop = $(window).scrollTop();
@@ -186,9 +187,10 @@ var MUI = MUI || {
                 that.calculate(layer);
             });
         },
-        closeClick: function(target, dimmed, parent, callback){
-			var that = this
-            $(document).on(this.TOUCH_CLICK, target, function(e){
+        closeClick: function(target, dimmed, parent, touch, callback){
+			var that = this,
+				EventType = touch ? this.TOUCH_CLICK : 'click';
+            $(document).on(EventType, target, function(e){
                 var layer;
 				var targetDom = $(this);
 				//console.log(targetDom.data('layer'));

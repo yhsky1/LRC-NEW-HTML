@@ -118,7 +118,7 @@ var MUI = MUI || {
 				layerW = layer.width(),
 				marginH = parseInt(layerIn.css('marginTop')) + parseInt(layerIn.css('marginBottom')) + parseInt(layerIn.find('.popup-top').height());
 			//console.log(layer, winH, winW, layerH, layerW, marginH);
-			console.log(winH, layerH, marginH, layerIn.find('.popup-top').height());
+			//console.log(winH, layerH, marginH, layerIn.find('.popup-top').height());
 			
 			if(winH < layerH){
 				layerIn.find('.popup-cont').css({
@@ -145,9 +145,10 @@ var MUI = MUI || {
 			}
 
 		},
-		openClick: function(target, dimmed, parent, callback){
-			var that = this;
-            $(document).on(this.TOUCH_CLICK, target, function(e){
+		openClick: function(target, dimmed, parent, touch, callback){
+			var that = this,
+				EventType = touch ? this.TOUCH_CLICK : 'click';
+            $(document).on(EventType, target, function(e){
                 var layer = '.'+$(this).data('layer');
                 var targetDom = $(this);
                 //that.scrollTop = $(window).scrollTop();
@@ -193,9 +194,10 @@ var MUI = MUI || {
                 that.calculate(layer);
             });
         },
-        closeClick: function(target, dimmed, parent, callback){
-			var that = this
-            $(document).on(this.TOUCH_CLICK, target, function(e){
+        closeClick: function(target, dimmed, parent, touch, callback){
+			var that = this,
+				EventType = touch ? this.TOUCH_CLICK : 'click';
+            $(document).on(EventType, target, function(e){
                 var layer;
 				var targetDom = $(this);
 				//console.log(targetDom.data('layer'));

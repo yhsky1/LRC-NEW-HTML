@@ -284,25 +284,18 @@
 	> ul {
 		> li {
 			& + li {
-				margin-top: 1.8rem;
+				margin-top: 35px;
 			}
 			.form-tit {
 				> strong {
 					display: block;
-					font-size: 1.2rem;
 					line-height: 1.3;
 					@include Bold;
 				}
-				> span {
-					display: block;
-					color:#999;
-					line-height: 1.3;
-					font-size:1rem;
-					margin-top:.4rem;
-				}
+
 			}
 			.form-cont {
-				margin-top: 1rem;
+				margin-top: 15px;
 			}
 		}
 	}

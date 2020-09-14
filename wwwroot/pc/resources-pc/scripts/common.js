@@ -12,6 +12,16 @@ $(function(){
 
 
 /* 유틸start-------------------------------------------------*/
+//전체동의 열고 닫기
+if($('.chk-agree-list').length){
+    MUI.event.toggle('.chk-agree-list .agree-toggle-btn', '.chk-agree-list .agree-toggle-cont', false, function(logic, layer) {
+        //console.log('toggle');
+        logic();
+    });
+}
+/* -------------------------------------------------유틸end*/
+
+/* 탭 전환start-------------------------------------------------*/
 if($('.tab-normal').length){
     MUI.event.taps('.tab-normal', function(swap){
         if($(".layer-login-iscroll").length){
@@ -24,17 +34,15 @@ if($('.tab-normal').length){
         swap();
     });
 }
-
-/* -------------------------------------------------유틸end*/
-
+/* -------------------------------------------------탭 전환end*/
 
 /* 레이어팝업start-------------------------------------------------*/
     //로그인 레이어팝업
     if($('.layer-login').length) {
-        MUI.layer.openClick('.layer-login-open', LAYER_DIM, LAYER_PARENT, function(show){
+        MUI.layer.openClick('.layer-login-open', LAYER_DIM, LAYER_PARENT, true, function(show){
             show();
         });
-        MUI.layer.closeClick('.layer-login-close', LAYER_DIM, LAYER_PARENT, function(hide){
+        MUI.layer.closeClick('.layer-login-close', LAYER_DIM, LAYER_PARENT, true, function(hide){
             console.log('close');
             hide();
         });

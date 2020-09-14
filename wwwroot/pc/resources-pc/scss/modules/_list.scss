@@ -2,51 +2,53 @@
 	> li {
 		width: 100%;
 		.inner {
-			margin: .8rem 0 0;
+			width: auto;
+			margin: 10px 0 0;
 		}
 	}
 }
 .list-type-col2 {
 	@include Align-box;
-	margin-left: -.4rem;
-    width: 103%;
+	margin-left: -5px;
+    width: 102%;
 	> li {
 		width: 50%;
 		.inner {
-			margin: .8rem .4rem 0;
+			width: auto;
+			margin: 10px 5px 0;
 		}
 	}
 }
 .list-type-col3 {
 	@include Align-box;
-	margin-left: -.4rem;
-    width: 103%;
+	margin-left: -5px;
+    width: 102%;
 	> li {
 		width: 33.333%;
 		.inner {
-			margin: .8rem .4rem 0;
+			margin: 10px 5px 0;
 		}
 	}
 }
 .list-type-col4 {
 	@include Align-box;
-	margin-left: -.4rem;
-    width: 103%;
+	margin-left: -5px;
+    width: 102%;
 	> li {
 		width: 25%;
 		.inner {
-			margin: .8rem .4rem 0;
+			margin: 10px 5px 0;
 		}
 	}
 }
 .list-type-col5 {
 	@include Align-box;
-	margin-left: -.4rem;
-    width: 103%;
+	margin-left: -5px;
+    width: 102%;
 	> li {
 		width: 20%;
 		.inner {
-			margin: .8rem .4rem 0;
+			margin: 10px 5px 0;
 		}
 	}
 }
