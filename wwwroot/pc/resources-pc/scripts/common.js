@@ -14,7 +14,7 @@ $(function(){
 
 /* 레이어팝업start-------------------------------------------------*/
     //로그인 레이어팝업
-    if($('.login-wrap').length) {
+    if($('.layer-login').length) {
         MUI.layer.openClick('.layer-login-open', LAYER_DIM, LAYER_PARENT, function(show){
             show();
         });
@@ -24,7 +24,7 @@ $(function(){
         });
     }
 
-    
+
 
     //bg-dimmed 클릭시 열린 레이어 들 닫기
     MUI.layer.closeClick(LAYER_DIM, LAYER_DIM, LAYER_PARENT, function(hide){
@@ -36,9 +36,25 @@ $(function(){
 
 
 
-    /*브라우저 모든 resources 다운 완료시점(프레임)*/
-    $(window).on('load', function(){
 
+});
+
+
+/*브라우저 모든 resources 다운 완료시점(프레임)*/
+$(window).on('load', function(){
+
+/* 아이스크롤start-------------------------------------------------*/
+if($(".layer-login-iscroll").length){
+    new IScroll(".layer-login-iscroll", { 
+        scrollbars: true,
+        mouseWheel: true,
+        interactiveScrollbars: true,
+        shrinkScrollbars: 'scale',
+        fadeScrollbars: true,
     });
+}
+
+
+/* -------------------------------------------------아이스크롤end*/
 
 });

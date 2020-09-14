@@ -2,7 +2,11 @@
     @include Vertical-inline;
     @include Hide_txt;
     flex: none;
-    
+    &.loginClose {
+        @include Background($sprite:'ico-close', $position:center center);
+        width: 15px;
+        height: 15px;
+    }
 
 
 }

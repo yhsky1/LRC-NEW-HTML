@@ -13,4 +13,57 @@
 		padding-right: 35px;
 		@include Background($sprite:'ico-select3', $size:6px, $position: center right 15px); 
 	}
+	&-blackC{
+		background-color: #2B2B2B;
+		border: 1px solid #2B2B2B;
+		border-radius: 100%;
+		width: 54px;
+		height: 54px;
+		padding:0;
+	}
+	&-default{
+		width: 100%;
+		height: 68px;
+		color: #fff;
+		border-radius: 10px;
+		font-size: 18px;
+		border: 1px solid #B4B8BF;
+		background-color: #B4B8BF;
+		pointer-events: none;
+		@include Bold;
+		&.noRadius {
+			border-radius: 0;
+		}
+		&.active {
+			border: 1px solid #F04040;
+			background-color: #F04040;
+			pointer-events: auto;
+		}
+		&.eventsAuto {
+			pointer-events: auto;
+		}
+		&.black {
+			border: 1px solid #2B2B2B;
+			background-color: #2B2B2B;
+			pointer-events: auto;
+		}
+	}
+	&-sns-naver {
+		@include Background($sprite:'ico-naver_login', $position: center center); 
+		@include Hide_txt;
+		width: 55px;
+		height: 55px;
+	}
+	&-sns-kakao {
+		@include Background($sprite:'ico-kakao_login', $position: center center); 
+		@include Hide_txt;
+		width: 55px;
+		height: 55px;
+	}
+	&-sns-fb {
+		@include Background($sprite:'ico-fb_login', $position: center center); 
+		@include Hide_txt;
+		width: 55px;
+		height: 55px;
+	}
 }

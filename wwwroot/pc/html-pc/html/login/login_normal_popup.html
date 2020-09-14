@@ -15,8 +15,8 @@
 <script src="../../../resources-pc/scripts/jquery/jquery-1.9.1.min.js"></script>
 <script src="../../../resources-pc/scripts/jquery/jquery-ui.min.js"></script>
 <script src="../../../resources-pc/scripts/jquery/plugins/slick.min.js"></script>
-<script src="../../../resources-mo/scripts/jquery/plugins/swiper.min.js"></script>
-<script src="../../../resources-pc/scripts/jquery/plugins/iscroll.js"></script>
+<script src="../../../resources-pc/scripts/jquery/plugins/swiper.min.js"></script>
+<script src="../../../resources-pc/scripts/jquery/plugins/iscroll.min.js"></script>
 <script src="../include_sub_header.js"></script><!--인크루드용..-->
 <script src="../include_footer.js"></script><!--인크루드용..-->
 <script src="../../../resources-pc/scripts/MUI.js"></script>
@@ -36,6 +36,7 @@
 
 
 		<div>
+			<button type="button" class="layer-login-open" data-layer="layer-login">로그인버튼</button>
 			컨텐츠영역1<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 			컨텐츠영역2<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 		</div>
@@ -52,40 +53,71 @@
 
 
 	<!-- 로그인 레이어 -->
-	<div class="layer-wrap layer-popup login-wrap">
+	<div class="layer-wrap layer-popup layer-login">
 		<div class="pop-inner">
-			<button type="button" class="layer-close-bt icon filterClose detail-layer-close layer-login-close" data-layer="login-wrap">닫기</button>
 			<div class="popup-top">
-				<h2 class="detail-layer-tit-h">L.POINT 통합회원</h2>
-				<h3 class="detail-layer-descri">
-					<p>로그인하시면 견적비교는 물론,</p>
-					<p><span>특가 프로모션 및 이벤트 참여</span>가 가능해요!</p>
-				</h3>
+				<button type="button" class="btn btn-blackC layer-login-close" data-layer="layer-login"><i class="icon loginClose"></i></button>
+				<!--<h4>로그인</h4>-->
 			</div>
-			<div class="popup-cont">
-				<div class="detail-layer-inputT inputT"><input type="text" id="" name="" title="ID" placeholder="아이디를 입력하세요"></div>
-				<div class="detail-layer-inputT inputT"><input type="text" id="" name="" title="PW" placeholder="비밀번호를 입력하세요"></div>
-				<div class="detail-layer-iconBox iconBox"><input type="checkbox" id="auto_login" name="auto_login"><label for="auto_login">자동로그인</label></div>
-				<div class="detail-layer-submit"><button type="submit" class="btn btn-default eventsAuto">로그인</button></div>
-				<div class="detail-layer-search">
-					<ul class="list-type-col3 btn-group">
-						<li><div class="inner"><a href="#none" class="btn">아이디찾기</a></div></li>
-						<li><div class="inner"><a href="#none" class="btn">비밀번호찾기</a></div></li>
-						<li><div class="inner"><a href="#none" class="btn">회원가입</a></div></li>
-					</ul>
+			<div class="popup-cont layer-login-iscroll">
+				<div class="iscroll-in">
+
+					<div class="layer-login-normal">
+						<h2>L.POINT 통합회원</h2>
+						<h3>
+							로그인하시면 견적비교는 물론,<br/>
+							<span class="texRed">특가 프로모션 및 이벤트 참여</span>가 가능해요!
+						</h3>
+
+						<div class="login-normal-input">
+							<div class="inputT">
+								<input type="text" id="" name="" title="ID" placeholder="아이디를 입력하세요">
+								<em class="error-txt">※ 아이디를 입력해주세요!</em>
+							</div>
+							<div class="inputT"><input type="password" id="" name="" title="PW" placeholder="비밀번호를 입력하세요"></div>
+						</div>
+						<div class="login-normal-chk">
+							<div class="inputC">
+								<input type="checkbox" name="auto_login" id="auto_login">
+								<label for="auto_login">
+									<span>아이디 저장</span>
+								</label>
+							</div>
+							<ul class="login-normal-search">
+								<li><a href="#none">아이디찾기</a></li>
+								<li><a href="#none">비밀번호찾기</a></li>
+								<li><a href="#none">회원가입</a></li>
+							</ul>
+						</div>
+
+						<div class="login-normal-submit">
+							<button type="submit" class="btn btn-default">로그인</button>
+						</div>
+						
+
+						<div class="login-normal-bottom">
+							<strong><span>또는 다른 로그인</span></strong>
+							<ul class="login-normal-sns">
+								<li>
+									<button type="button" class="btn btn-sns-naver">네이버</button>
+								</li>
+								<li>
+									<button type="button" class="btn btn-sns-kakao">카카오</button>
+								</li>
+								<li>
+									<button type="button" class="btn btn-sns-fb">페이스북</button>
+								</li>
+							</ul>
+						</div>
+
+
+					</div>
+					
+
+					
+					
 				</div>
-				<div class="detail-layer-sns-tit-h align-c"><span>또는 다른 로그인</span></div>
-				<ul class="detail-layer-sns align-c">
-					<li>
-						<button type="button" class="detail-sns-naver"><i></i><span>네이버</span></button>
-					</li>
-					<li>
-						<button type="button" class="detail-sns-kakao"><i></i><span>카카오</span></button>
-					</li>
-					<li>
-						<button type="button" class="detail-sns-fb"><i></i><span>페이스북</span></button>
-					</li>
-				</ul>
+				
 			</div>
 		</div>
 	</div>

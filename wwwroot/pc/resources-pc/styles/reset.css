@@ -337,6 +337,16 @@ textarea::placeholder {
 	color: #20BBC4;
 }
 
+.iScrollVerticalScrollbar.iScrollLoneScrollbar {
+	right: 8px !important;
+	width: 4px !important;
+}
+
+.iScrollVerticalScrollbar.iScrollLoneScrollbar .iScrollIndicator {
+	background-color: #E1E1E1 !important;
+	border: 0 !important;
+}
+
 .pd-0 {
 	padding: 0px;
 }

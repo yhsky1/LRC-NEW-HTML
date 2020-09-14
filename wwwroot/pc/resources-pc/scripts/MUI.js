@@ -123,7 +123,7 @@ var MUI = MUI || {
 			if(winH < layerH){
 				layerIn.find('.popup-cont').css({
 					height: winH - marginH,
-					overflow: 'auto',
+					//'overflow-y': 'auto',
 				});
 				layer.css({
 					top: 0,
