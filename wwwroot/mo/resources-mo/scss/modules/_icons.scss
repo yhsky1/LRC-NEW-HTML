@@ -67,9 +67,19 @@
         width: 2.2rem;
         height: 2.2rem;
     }
+    &.fuelL02 {
+        @include Background($sprite:'ico-fuel-l02', $size:100% auto, $position:center center);
+        width: 1.6rem;
+        height: 2.2rem;
+    }
     &.fuelH {
         @include Background($sprite:'ico-fuel-h', $size:100% auto, $position:center center);
         width: 2.2rem;
+        height: 2.2rem;
+    }
+    &.fuelH02 {
+        @include Background($sprite:'ico-fuel-h02', $size:100% auto, $position:center center);
+        width: 2.6rem;
         height: 2.2rem;
     }
     &.fuelE {

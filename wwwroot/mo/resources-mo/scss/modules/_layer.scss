@@ -842,6 +842,8 @@ body.fixed {
 			.full-top{
 				background-color:#2B2B2B;
 				color:#fff;
+				justify-content: left;
+				padding-left:1.7rem;
 				.layer-full-close{
 					color:#fff;
 				}
@@ -856,6 +858,9 @@ body.fixed {
 							font-size:1.4rem;
 							@include Bold;
 							margin-bottom: 1.5rem;
+							.txt-red{
+								color:#F04040;
+							}
 						}
 					}
 					.layer-infos-guide{
@@ -869,11 +874,93 @@ body.fixed {
 								i{
 									margin-right:.6rem;
 								}
+								strong{
+									@include Bold;
+								}
+								& > ul{
+									& > li{
+										padding-left: .8rem;
+										margin-top:.6rem;
+										font-size:1.1rem;
+										& > strong{
+											font-size:1.1rem;
+										}
+									}
+								}
 							}
 							& > li:first-child{
 								margin-top:0;		
 							}
 						}
+						&-tip{
+							& > ul{
+								& > li{
+									text-indent: -2.4rem;
+									padding-left: 2.4rem;
+									font-size:1.1rem;
+								}
+								& > li +  li{
+									text-indent:0;
+								}
+							}
+						}
+					}
+					.layer-infos-txt-box{
+						@include Align-between;
+						padding: 1.2rem;
+						background-color: #F9FAFC;
+						border: 1px solid #EBEBEB;
+						border-radius: 1rem;
+						font-size: 1.1rem;
+						margin-bottom: 1.5rem;
+						&-noboder{
+							border:0 none;
+							background-color:#EFF2F7;
+							@include Align-middle-column;
+							align-items: flex-start;
+							& > strong{
+								@include Bold;
+								display:block;
+								margin-bottom: 1.2rem;
+							}
+							& > ul{
+								& > li{
+									line-height: 1.4;
+								}
+							}
+						}
+					}
+				}
+				.unit-normal{
+					margin-top:0;
+					.option-wrap{
+						margin-top:0;
+					}
+				}
+			}
+			&.type-fuel{
+				.list-type-col2{
+					margin-left:0;
+					width:100%;
+					& > li{
+						width:75%;
+						margin-top:0;
+						& > .icon_info_box_fuel{
+							@include Align-middle;
+							box-sizing: border-box;
+							border: .15rem solid #EBEBEB;
+							border-radius: 1rem;
+							position: relative;
+							padding: 1.1rem 1.5rem;
+							width:4.7rem;
+							margin-top:.4rem;
+							& > .fuelD{
+								width:1.6rem;
+							}
+						}
+					}
+					& > li:first-child{
+						width:25%;
 					}
 				}
 			}
