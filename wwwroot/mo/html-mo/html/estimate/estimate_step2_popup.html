@@ -80,8 +80,8 @@
 								<li>복합 12.0km/l</li>
 							</ul>
 							<div class="btn-group">
-								<button type="button" class="btn btn-simple">상세정보</button>
-								<button type="button" class="btn btn-simple">제원/가격표</button>
+								<button type="button" class="btn btn-simple layer-infos-open" data-layer="type-detail">상세정보</button>
+								<button type="button" class="btn btn-simple layer-infos-open" data-layer="type-table">제원/가격표</button>
 							</div>
 						</div>
 						
@@ -559,7 +559,7 @@
 											</ul>
 											<div class="model-toggle-cont toggle-cont-age">
 												<div class="radio-box">
-													<h4>대물조건 <button type="button"><i class="icon info"></i></button></h4>
+													<h4>대물조건 <button type="button" class="layer-infos-open" data-layer="type-substitute"><i class="icon info"></i></button></h4>
 													<select class="selectbox" name="" id="">
 														<option value="">선택하세요</option>
 														<option value="">선택1</option>
@@ -567,7 +567,7 @@
 													</select>
 												</div>
 												<div class="radio-box">
-													<h4>자손 <button type="button"><i class="icon info"></i></button></h4>
+													<h4>자손 <button type="button" class="layer-infos-open" data-layer="type-damage"><i class="icon info"></i></button></h4>
 													<select class="selectbox" name="" id="">
 														<option value="">선택하세요</option>
 														<option value="">선택1</option>
@@ -575,7 +575,7 @@
 													</select>
 												</div>
 												<div class="radio-box">
-													<h4>무보험차상해 <button type="button"><i class="icon info"></i></button></h4>
+													<h4>무보험차상해 <button type="button" class="layer-infos-open" data-layer="type-uninsured"><i class="icon info"></i></button></h4>
 													<ul class="iconList col3">
 														<li>
 															<input type="radio" name="radio99" id="radio99-1">
@@ -1186,6 +1186,191 @@
     </div>
 	<!--//layer-full 약정 주행거리 컴포넌트-->
 
+	<!--layer-full 상세정보 컴포넌트-->
+    <div class="layer-wrap layer-full layer-infos type-detail" data-type="full">
+		<!--상단-->
+        <div class="full-top">
+            <button type="button" class="btn btn-pannel layer-full-close" data-layer="type-detail"><i class="icon layerclose02">닫기 버튼</i></button>
+            <h4>
+                상세정보
+            </h4>
+        </div>
+        <!--//상단-->
+        <!--컨텐츠-->
+        <div class="full-inner">
+            <div class="full-cont">
+
+                <div class="layer-infos unit-normal">
+					<div class="option-wrap">
+						<ul>
+							<li>
+								<div class="layer-infos-top">
+									<strong>상세정보</strong>
+								</div>
+								<div class="layer-infos-guide">
+									<ul>
+										<li><i class="icon listCircle"></i>상세정보</li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+            </div>
+        </div>
+        <!--//컨텐츠-->
+    </div>
+	<!--//layer-full 상세정보 컴포넌트-->
+
+	<!--layer-full 제원/가격표 컴포넌트-->
+    <div class="layer-wrap layer-full layer-infos type-table" data-type="full">
+		<!--상단-->
+        <div class="full-top">
+            <button type="button" class="btn btn-pannel layer-full-close" data-layer="type-table"><i class="icon layerclose02">닫기 버튼</i></button>
+            <h4>
+                제원/가격표
+            </h4>
+        </div>
+        <!--//상단-->
+        <!--컨텐츠-->
+        <div class="full-inner">
+            <div class="full-cont">
+
+                <div class="layer-infos unit-normal">
+					<div class="option-wrap">
+						<ul>
+							<li>
+								<div class="layer-infos-top">
+									<strong>제원/가격표</strong>
+								</div>
+								<div class="layer-infos-guide">
+									<ul>
+										<li><i class="icon listCircle"></i>제원/가격표</li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+            </div>
+        </div>
+        <!--//컨텐츠-->
+    </div>
+	<!--//layer-full 제원/가격표 컴포넌트-->
+
+	<!--layer-full 대물조건 컴포넌트-->
+    <div class="layer-wrap layer-full layer-infos type-substitute" data-type="full">
+		<!--상단-->
+        <div class="full-top">
+            <button type="button" class="btn btn-pannel layer-full-close" data-layer="type-substitute"><i class="icon layerclose02">닫기 버튼</i></button>
+            <h4>
+                대물조건
+            </h4>
+        </div>
+        <!--//상단-->
+        <!--컨텐츠-->
+        <div class="full-inner">
+            <div class="full-cont">
+
+                <div class="layer-infos unit-normal">
+					<div class="option-wrap">
+						<ul>
+							<li>
+								<div class="layer-infos-top">
+									<strong>대물조건</strong>
+								</div>
+								<div class="layer-infos-guide">
+									<ul>
+										<li><i class="icon listCircle"></i>대물조건</li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+            </div>
+        </div>
+        <!--//컨텐츠-->
+    </div>
+	<!--//layer-full 대물조건 컴포넌트-->
+
+	<!--layer-full 자손 컴포넌트-->
+    <div class="layer-wrap layer-full layer-infos type-damage" data-type="full">
+		<!--상단-->
+        <div class="full-top">
+            <button type="button" class="btn btn-pannel layer-full-close" data-layer="type-damage"><i class="icon layerclose02">닫기 버튼</i></button>
+            <h4>
+                자손
+            </h4>
+        </div>
+        <!--//상단-->
+        <!--컨텐츠-->
+        <div class="full-inner">
+            <div class="full-cont">
+
+                <div class="layer-infos unit-normal">
+					<div class="option-wrap">
+						<ul>
+							<li>
+								<div class="layer-infos-top">
+									<strong>자손</strong>
+								</div>
+								<div class="layer-infos-guide">
+									<ul>
+										<li><i class="icon listCircle"></i>자손</li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+            </div>
+        </div>
+        <!--//컨텐츠-->
+    </div>
+	<!--//layer-full 자손 컴포넌트-->
+
+	<!--layer-full 자손 컴포넌트-->
+    <div class="layer-wrap layer-full layer-infos type-uninsured" data-type="full">
+		<!--상단-->
+        <div class="full-top">
+            <button type="button" class="btn btn-pannel layer-full-close" data-layer="type-uninsured"><i class="icon layerclose02">닫기 버튼</i></button>
+            <h4>
+                무보험차상해
+            </h4>
+        </div>
+        <!--//상단-->
+        <!--컨텐츠-->
+        <div class="full-inner">
+            <div class="full-cont">
+
+                <div class="layer-infos unit-normal">
+					<div class="option-wrap">
+						<ul>
+							<li>
+								<div class="layer-infos-top">
+									<strong>무보험차상해</strong>
+								</div>
+								<div class="layer-infos-guide">
+									<ul>
+										<li><i class="icon listCircle"></i>무보험차상해</li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+            </div>
+        </div>
+        <!--//컨텐츠-->
+    </div>
+	<!--//layer-full 자손 컴포넌트-->
+
 
 
 
@@ -1193,8 +1378,6 @@
     <script>
 	$(function(){
 		$('.header-top.sub h1').text('모델/옵션 선택');
-
-		$('.layer-infos-open').trigger('click');
 	})
 	</script>
 	<!--//상단 타이틀(추후삭제)-->
