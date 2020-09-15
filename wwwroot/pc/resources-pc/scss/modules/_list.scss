@@ -790,36 +790,36 @@
 	&-wrap {
 		@include Align-middle;
 		.btn-paging-prev {
-			margin-right: .38rem;
+			margin-right: 5px;
 		}
 		.btn-paging-next {
-			margin-left: .38rem;
+			margin-left: 5px;
 		}
 	}
 	&-list {
 		@include Align-box;
 		li {
-			margin: 0 .38rem;
+			margin: 0 5px;
 			a {
 				@include Align-middle;
-				width: 3.4rem;
-				height: 2.8rem;
+				width: 47px;
+				height: 40px;
 				box-sizing: border-box;
 				border: 1px solid #EBEBEB;
 				background-color: #fff;
-				font-size: 1.1rem;
-				border-radius: .5rem;
+				font-size: 15px;
+				border-radius: 10px;
 			}
 			strong{
 				@include Align-middle;
-				width: 3.4rem;
-				height: 2.8rem;
+				width: 47px;
+				height: 40px;
 				box-sizing: border-box;
 				border: 1px solid #2B2B2B;
 				background-color: #2B2B2B;
 				color: #fff;
-				font-size: 1.1rem;
-				border-radius: .5rem;
+				font-size: 15px;
+				border-radius: 10px;
 				@include Bold;
 			}
 		}

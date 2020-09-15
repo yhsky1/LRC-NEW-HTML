@@ -1499,6 +1499,76 @@ button.swiper-pagination-bullet {
 	padding-bottom: 1px;
 }
 
+.btn-paging-prev {
+	font: 0/0 a;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	   -moz-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	   -moz-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	background-repeat: no-repeat;
+	background-image: url("../../resources-pc/images/icons/ico-paging-prev.png");
+	background-position: center center;
+	-webkit-background-size: auto auto;
+	   -moz-background-size: auto;
+	        background-size: auto;
+	width: 47px;
+	height: 40px;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+	border: 1px solid #EBEBEB;
+	background-color: #fff;
+	-webkit-border-radius: 10px;
+	   -moz-border-radius: 10px;
+	        border-radius: 10px;
+}
+
+.btn-paging-next {
+	font: 0/0 a;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	   -moz-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	   -moz-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	background-repeat: no-repeat;
+	background-image: url("../../resources-pc/images/icons/ico-paging-next.png");
+	background-position: center center;
+	-webkit-background-size: auto auto;
+	   -moz-background-size: auto;
+	        background-size: auto;
+	width: 47px;
+	height: 40px;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+	border: 1px solid #EBEBEB;
+	background-color: #fff;
+	-webkit-border-radius: 10px;
+	   -moz-border-radius: 10px;
+	        border-radius: 10px;
+}
+
 .icon {
 	display: inline-block;
 	vertical-align: middle;
@@ -3300,11 +3370,11 @@ button.active .filter {
 }
 
 .pagination-wrap .btn-paging-prev {
-	margin-right: .38rem;
+	margin-right: 5px;
 }
 
 .pagination-wrap .btn-paging-next {
-	margin-left: .38rem;
+	margin-left: 5px;
 }
 
 .pagination-list {
@@ -3319,7 +3389,7 @@ button.active .filter {
 }
 
 .pagination-list li {
-	margin: 0 .38rem;
+	margin: 0 5px;
 }
 
 .pagination-list li a {
@@ -3338,17 +3408,17 @@ button.active .filter {
 	   -moz-box-pack: center;
 	    -ms-flex-pack: center;
 	        justify-content: center;
-	width: 3.4rem;
-	height: 2.8rem;
+	width: 47px;
+	height: 40px;
 	-webkit-box-sizing: border-box;
 	   -moz-box-sizing: border-box;
 	        box-sizing: border-box;
 	border: 1px solid #EBEBEB;
 	background-color: #fff;
-	font-size: 1.1rem;
-	-webkit-border-radius: .5rem;
-	   -moz-border-radius: .5rem;
-	        border-radius: .5rem;
+	font-size: 15px;
+	-webkit-border-radius: 10px;
+	   -moz-border-radius: 10px;
+	        border-radius: 10px;
 }
 
 .pagination-list li strong {
@@ -3367,18 +3437,18 @@ button.active .filter {
 	   -moz-box-pack: center;
 	    -ms-flex-pack: center;
 	        justify-content: center;
-	width: 3.4rem;
-	height: 2.8rem;
+	width: 47px;
+	height: 40px;
 	-webkit-box-sizing: border-box;
 	   -moz-box-sizing: border-box;
 	        box-sizing: border-box;
 	border: 1px solid #2B2B2B;
 	background-color: #2B2B2B;
 	color: #fff;
-	font-size: 1.1rem;
-	-webkit-border-radius: .5rem;
-	   -moz-border-radius: .5rem;
-	        border-radius: .5rem;
+	font-size: 15px;
+	-webkit-border-radius: 10px;
+	   -moz-border-radius: 10px;
+	        border-radius: 10px;
 	font-family: "ManropeB", "NotoB", serif;
 	font-weight: normal;
 }

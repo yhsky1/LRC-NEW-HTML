@@ -516,6 +516,10 @@
 	margin-top: 5px;
 }
 
+.estimate-wrap .section-list .inner .pagination-wrap {
+	margin-top: 60px;
+}
+
 .layer-login-normal {
 	padding: 45px 20px 0px;
 }

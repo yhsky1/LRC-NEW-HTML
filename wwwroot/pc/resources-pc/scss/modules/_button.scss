@@ -150,4 +150,26 @@
 		font-size: 14px;
 		padding-bottom: 1px;
 	}
+	&-paging-prev {
+		@include Hide_txt;
+		@include Align-middle;
+		@include Background($sprite:'ico-paging-prev', $position:center center);
+		width: 47px;
+		height: 40px;
+		box-sizing: border-box;
+		border: 1px solid #EBEBEB;
+		background-color: #fff;
+		border-radius: 10px;
+	}
+	&-paging-next {
+		@include Hide_txt;
+		@include Align-middle;
+		@include Background($sprite:'ico-paging-next', $position:center center);
+		width: 47px;
+		height: 40px;
+		box-sizing: border-box;
+		border: 1px solid #EBEBEB;
+		background-color: #fff;
+		border-radius: 10px;
+	}
 }
