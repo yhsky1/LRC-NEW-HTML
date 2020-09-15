@@ -38,6 +38,41 @@
         width: 16px;
         height: 16px;
     }
+    &.info {
+        @include Background($sprite:'ico-info', $position:center center);
+        width: 20px;
+        height: 20px;
+    }
+    &.info2 {
+        @include Background($sprite:'ico-info2', $position:center center);
+        width: 20px;
+        height: 20px;
+    }
+    &.fuelG {
+        @include Background($sprite:'ico-fuel-g', $position:center center);
+        width: 35px;
+        height: 35px;
+    }
+    &.fuelD {
+        @include Background($sprite:'ico-fuel-d', $position:center center);
+        width: 35px;
+        height: 35px;
+    }
+    &.fuelL {
+        @include Background($sprite:'ico-fuel-l', $position:center center);
+        width: 35px;
+        height: 35px;
+    }
+    &.fuelH {
+        @include Background($sprite:'ico-fuel-h', $position:center center);
+        width: 35px;
+        height: 35px;
+    }
+    &.fuelE {
+        @include Background($sprite:'ico-fuel-e', $position:center center);
+        width: 35px;
+        height: 35px;
+    }
 
 
 }

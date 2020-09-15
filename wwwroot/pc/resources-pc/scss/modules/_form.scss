@@ -1,13 +1,13 @@
 .selectbox {
 	box-sizing: border-box;
 	border: 1px solid #EBEBEB;
-	border-radius: 1rem;
+	border-radius: 15px;
 	position: relative;
 	background-color: #fff;
 	height: 60px;
-	padding: 0 2.5rem 0 .9rem;
+	padding: 0 45px 0 20px;
 	width: 100%;
-	@include Background($sprite:'ico-arrow-down', $size:.9rem, $position: center right .9rem); 
+	@include Background($sprite:'ico-arrow-down', $size:14px, $position: center right 20px); 
 }
 .select-normal {
 	font-size: 1rem;
@@ -101,7 +101,7 @@
 	width: 100%;
 	& > input{
 		border:1px solid #EBEBEB;
-		border-radius: 1rem;
+		border-radius: 15px;
 		background-color: #fff;
 		height: 60px;
 		padding:0 20px;
@@ -114,24 +114,24 @@
 		@include Align-middle;
 		transition: all .4s;
 		box-sizing: border-box;
-		border: .15rem solid #EBEBEB;
+		border: 1px solid #EBEBEB;
 		flex-flow: column;
-		border-radius: 1rem;
+		border-radius: 15px;
 		position: relative;
 		&::after {
 			display: block;
 			content: '';
-			@include Position($top: .7rem, $right: .7rem);
-			@include Background($sprite:'ico-radio-off', $type:'png', $size:92% auto, $position:center center);
-			width: 1.5rem;
-			height: 1.5rem;
+			@include Position($top: 10px, $right: 10px);
+			@include Background($sprite:'ico-radio-off', $position:center center);
+			width: 20px;
+			height: 20px;
 		}
 	}
 	> input:checked + label {
 		border-color: #2B2B2B;
 		@include Bold;
 		&:after {
-			@include Background($sprite:'ico-radio-on', $type:'png', $size:92% auto, $position:center center);
+			@include Background($sprite:'ico-radio-on', $position:center center);
 		}
 	}
 	> input {
@@ -208,22 +208,6 @@
 	&.col3 li {width: 33.333%;}
 	&.col4 li {width: 25%;}
 	&.col5 li {width: 20%;}
-}
-
-.inputT{
-	display: inline-block;
-	vertical-align: middle;
-	box-sizing: border-box;
-	position: relative;
-	width: 100%;
-	& > input{
-		border:1px solid #EBEBEB;
-		border-radius: 1rem;
-		background-color: #fff;
-		height: 60px;
-		padding:0 1.2rem;
-		width: 100%;
-	}
 }
 
 .chk-agree-list {

@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=1200, initial-scale=1">
+<title>롯데렌터카</title>
+<link rel="shortcut icon" href="../../../resources-pc/images/favicon.ico">
+<link rel="stylesheet" href="../../../resources-pc/styles/reset.css">
+<link rel="stylesheet" href="../../../resources-pc/styles/layout.css">
+<link rel="stylesheet" href="../../../resources-pc/styles/modules.css">
+<link rel="stylesheet" href="../../../resources-pc/styles/contents.css">
+
+<script src="../../../resources-pc/scripts/jquery/jquery-1.9.1.min.js"></script>
+<script src="../../../resources-pc/scripts/jquery/jquery-ui.min.js"></script>
+<script src="../../../resources-pc/scripts/jquery/plugins/slick.min.js"></script>
+<script src="../../../resources-pc/scripts/jquery/plugins/swiper.min.js"></script>
+<script src="../../../resources-pc/scripts/jquery/plugins/iscroll.js"></script>
+<script src="../include_sub_header.js"></script><!--인크루드용..-->
+<script src="../include_footer.js"></script><!--인크루드용..-->
+<script src="../../../resources-pc/scripts/MUI.js"></script>
+<script src="../../../resources-pc/scripts/common.js"></script>
+
+</head>
+
+<body>
+	<!--header 컴포넌트-->
+	<header class="header">
+	</header>
+	<!--//header 컴포넌트-->
+
+	<!--container 컴포넌트-->
+	<main id="wrap">
+
+
+
+		<div class="estimate-wrap">
+
+			<div class="title-box-wrap">
+				<div class="inner">
+					<h2>모델/옵션 선택</h2>
+					<div class="steps-indicator">
+						<ul>
+							
+							<li class="complete"><b><i class="icon stepsChk"></i></b></li>
+							<li class="active"><b>2</b></li>
+							<li><b>3</b></li>
+							<li><b>4</b></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="section-detail">
+
+                <div class="detail-view">
+
+                    <div class="inner">
+
+                        <div class="detail-view-list-wrap">
+                            <div class="swiper-container detail-view-list">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="bg-car" style="background-image: url(../../../resources-pc/images/@temp-estimate-list06.png);">자동차이미지</div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="bg-car" style="background-image: url(../../../resources-pc/images/@temp-estimate-list06.png);">자동차이미지</div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="bg-car" style="background-image: url(../../../resources-pc/images/@temp-estimate-list06.png);">자동차이미지</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination-wrap">
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="detail-view-infos">
+                            <div class="logo"><img src="../../../resources-pc/images/common/logo-renault.png" alt="로고"></div>
+                            <h2>르노삼성 QM6</h2>
+                            <ul>
+                                <li>SUV/RV</li>
+                                <li>가솔린/LPG</li>
+                                <li>1600cc</li>
+                                <li>복합 12.0km/l</li>
+                            </ul>
+                            <div class="btn-group">
+								<button type="button" class="btn btn-simple mid">상세정보</button>
+								<button type="button" class="btn btn-simple mid">제원/가격표</button>
+							</div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="detail-layout">
+
+                    <div class="detail-layer-nav-wrap">
+                        <div class="detail-layer-nav">
+                            <div class="inner">
+                                <button type="button" class="menu-link active" data-target="item-step1">연료</button>
+                                <button type="button" class="menu-link" data-target="item-step2">모델</button>
+                                <button type="button" class="menu-link" data-target="item-step3">색상</button>
+                                <button type="button" class="menu-link" data-target="item-step4">옵션</button>
+                                <button type="button" class="menu-link" data-target="item-step5">용품</button>
+                                <button type="button" class="menu-link" data-target="item-step6">계약조건</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form action="">
+                        <div class="detail-layer-items-wrap">
+                            <div class="inner">
+                                <div class="detail-sticky-items">
+                                    <div class="detail-sticky"></div>
+                                </div>
+                                <div class="detail-layer-items">
+
+                                    <!--Step 1-->
+                                    <div class="layer-item item-step1" data-link="0">
+                                        <h3>
+                                            <span>Step 1</span>
+                                            <strong>연료 선택 <button type="button"><i class="icon info2"></i></button></strong>
+                                        </h3>
+                                        <div class="item-cont">
+                                            <div class="radio-box">
+                                                <ul class="list-type-col3">
+                                                    <li>
+                                                        <div class="radioIconBox inner">
+                                                            <input type="radio" name="radio1" id="radio1-1" value="G">
+                                                            <label for="radio1-1">
+                                                                <i class="icon fuelG"></i>
+                                                                <span>가솔린</span>
+                                                            </label>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="radioIconBox inner">
+                                                            <input type="radio" name="radio1" id="radio1-2" value="D">
+                                                            <label for="radio1-2">
+                                                                <i class="icon fuelD"></i>
+                                                                <span>디젤</span>
+                                                            </label>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="radioIconBox inner">
+                                                            <input type="radio" name="radio1" id="radio1-3" value="L">
+                                                            <label for="radio1-3">
+                                                                <i class="icon fuelL"></i>
+                                                                <span>LPG</span>
+                                                            </label>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="radioIconBox inner">
+                                                            <input type="radio" name="radio1" id="radio1-4" value="H">
+                                                            <label for="radio1-4">
+                                                                <i class="icon fuelH"></i>
+                                                                <span>하이브리드</span>
+                                                            </label>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="radioIconBox inner">
+                                                            <input type="radio" name="radio1" id="radio1-5" value="E">
+                                                            <label for="radio1-5">
+                                                                <i class="icon fuelE"></i>
+                                                                <span>전기차</span>
+                                                            </label>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="electric">
+                                                <select class="selectbox" name="" id="">
+                                                    <option value="">선택해주세요</option>
+                                                    <option value="">선택해주세요</option>
+                                                    <option value="">2선택해주세요선택해주세요</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--//Step 1-->
+    
+                                    <!--Step 2-->
+                                    <div class="layer-item item-step2" data-link="1">
+                                        <h3>
+                                            <span>Step 2</span>
+                                            <strong>모델 선택</strong>
+                                        </h3>
+                                        <div class="item-cont">
+                                            <div class="guide">
+                                                모델별 사양 및 옵션 세부사항이 변경되거나
+                                                실제와 다를 수 있습니다.
+                                                정확한 정보는 각 제조사별 홈페이지를 참고해 주세요.
+                                            </div>
+                                            <div class="model-all">전체모델 <b>6</b></div>
+                                            <div class="model-list">
+                                                <ul>
+                                                    <li>
+                                                        <div class="model-toggle-btn" data-target="toggle-cont-01" data-on="true" data-siblings="true">
+                                                            <span>QM6 (g) 2.0 2wd</span>
+                                                        </div>
+                                                        <div class="model-toggle-cont toggle-cont-01">
+                                                            <div class="iconBox">
+                                                                <input type="radio" name="radio3" id="radio3-1">
+                                                                <label for="radio3-1">
+                                                                    <span>RE <i class="flag best">BEST</i></span>
+                                                                    <strong>28,380,000원</strong>
+                                                                </label>
+                                                            </div>
+                                                            <div class="iconBox">
+                                                                <input type="radio" name="radio3" id="radio3-2">
+                                                                <label for="radio3-2">
+                                                                    <span>RE <i class="flag low">최저가</i></span>
+                                                                    <strong>28,380,000원</strong>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="model-toggle-btn" data-target="toggle-cont-02" data-on="true" data-siblings="true">
+                                                            <span>QM6 (g) 3.0 4wd</span>
+                                                        </div>
+                                                        <div class="model-toggle-cont toggle-cont-02">
+                                                            <div class="iconBox">
+                                                                <input type="radio" name="radio33" id="radio33-1">
+                                                                <label for="radio33-1">
+                                                                    <span>RE <i class="flag best">BEST</i></span>
+                                                                    <strong>28,380,000원</strong>
+                                                                </label>
+                                                            </div>
+    
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="model-toggle-btn" data-target="toggle-cont-03" data-on="true" data-siblings="true">
+                                                            <span>QM6 (g) 3.0 4wd 3.0 4wd (D) 1.7 노블레스 스페셜</span>
+                                                        </div>
+                                                        <div class="model-toggle-cont toggle-cont-03">
+                                                            <div class="iconBox">
+                                                                <input type="radio" name="radio333" id="radio333-1">
+                                                                <label for="radio333-1">
+                                                                    <span>RE <i class="flag best">BEST</i></span>
+                                                                    <strong>28,380,000원</strong>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--//Step 2-->
+    
+                                    <!--Step 3-->
+                                    <div class="layer-item item-step3" data-link="2">
+                                        <h3>
+                                            <span>Step 3</span>
+                                            <strong>색상 선택</strong>
+                                        </h3>
+                                        <div class="item-cont">
+                                            
+                                        </div>
+                                    </div>
+                                    <!--//Step 3-->
+    
+                                    <!--Step 4-->
+                                    <div class="layer-item item-step4" data-link="3">
+                                        <h3>
+                                            <span>Step 4</span>
+                                            <strong>차량 옵션 선택</strong>
+                                        </h3>
+                                        <div class="item-cont">
+                                            
+                                        </div>
+                                    </div>
+                                    <!--//Step 4-->
+    
+                                    <!--Step 5-->
+                                    <div class="layer-item item-step5" data-link="4">
+                                        <h3>
+                                            <span>Step 5</span>
+                                            <strong>차량 용품 선택</strong>
+                                        </h3>
+                                        <div class="item-cont">
+                                            
+                                        </div>
+                                    </div>
+                                    <!--//Step 5-->
+    
+                                    <!--Step 6-->
+                                    <div class="layer-item item-step6" data-link="5">
+                                        <h3>
+                                            <span>Step 6</span>
+                                            <strong>계약조건 선택</strong>
+                                        </h3>
+                                        <div class="item-cont">
+                                            
+                                        </div>
+                                    </div>
+                                    <!--//Step 6-->
+                                    
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
+                    </form>
+
+                </div>
+
+            </div>
+			
+		</div>
+
+
+
+	</main>
+	<!--//container 컴포넌트-->
+
+	<!--footer 컴포넌트-->
+	<footer class="footer">
+
+	</footer>
+	<!--//footer 컴포넌트-->
+
+
+</body>
+</html>
+

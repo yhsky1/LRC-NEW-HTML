@@ -1470,8 +1470,11 @@ button.swiper-pagination-bullet {
 }
 
 .btn-simple.mid {
-	height: 3.2rem;
-	padding: 0 1.7rem;
+	height: 40px;
+	padding: 0 15px;
+	-webkit-border-radius: 20px;
+	   -moz-border-radius: 20px;
+	        border-radius: 20px;
 }
 
 .btn-link {
@@ -1641,6 +1644,83 @@ button.swiper-pagination-bullet {
 	        background-size: auto;
 	width: 16px;
 	height: 16px;
+}
+
+.icon.info {
+	background-repeat: no-repeat;
+	background-image: url("../../resources-pc/images/icons/ico-info.png");
+	background-position: center center;
+	-webkit-background-size: auto auto;
+	   -moz-background-size: auto;
+	        background-size: auto;
+	width: 20px;
+	height: 20px;
+}
+
+.icon.info2 {
+	background-repeat: no-repeat;
+	background-image: url("../../resources-pc/images/icons/ico-info2.png");
+	background-position: center center;
+	-webkit-background-size: auto auto;
+	   -moz-background-size: auto;
+	        background-size: auto;
+	width: 20px;
+	height: 20px;
+}
+
+.icon.fuelG {
+	background-repeat: no-repeat;
+	background-image: url("../../resources-pc/images/icons/ico-fuel-g.png");
+	background-position: center center;
+	-webkit-background-size: auto auto;
+	   -moz-background-size: auto;
+	        background-size: auto;
+	width: 35px;
+	height: 35px;
+}
+
+.icon.fuelD {
+	background-repeat: no-repeat;
+	background-image: url("../../resources-pc/images/icons/ico-fuel-d.png");
+	background-position: center center;
+	-webkit-background-size: auto auto;
+	   -moz-background-size: auto;
+	        background-size: auto;
+	width: 35px;
+	height: 35px;
+}
+
+.icon.fuelL {
+	background-repeat: no-repeat;
+	background-image: url("../../resources-pc/images/icons/ico-fuel-l.png");
+	background-position: center center;
+	-webkit-background-size: auto auto;
+	   -moz-background-size: auto;
+	        background-size: auto;
+	width: 35px;
+	height: 35px;
+}
+
+.icon.fuelH {
+	background-repeat: no-repeat;
+	background-image: url("../../resources-pc/images/icons/ico-fuel-h.png");
+	background-position: center center;
+	-webkit-background-size: auto auto;
+	   -moz-background-size: auto;
+	        background-size: auto;
+	width: 35px;
+	height: 35px;
+}
+
+.icon.fuelE {
+	background-repeat: no-repeat;
+	background-image: url("../../resources-pc/images/icons/ico-fuel-e.png");
+	background-position: center center;
+	-webkit-background-size: auto auto;
+	   -moz-background-size: auto;
+	        background-size: auto;
+	width: 35px;
+	height: 35px;
 }
 
 button.active .filter {
@@ -3552,20 +3632,20 @@ body.fixed {
 	   -moz-box-sizing: border-box;
 	        box-sizing: border-box;
 	border: 1px solid #EBEBEB;
-	-webkit-border-radius: 1rem;
-	   -moz-border-radius: 1rem;
-	        border-radius: 1rem;
+	-webkit-border-radius: 15px;
+	   -moz-border-radius: 15px;
+	        border-radius: 15px;
 	position: relative;
 	background-color: #fff;
 	height: 60px;
-	padding: 0 2.5rem 0 .9rem;
+	padding: 0 45px 0 20px;
 	width: 100%;
 	background-repeat: no-repeat;
 	background-image: url("../../resources-pc/images/icons/ico-arrow-down.png");
-	background-position: center right 0.9rem;
-	-webkit-background-size: 0.9rem 0.9rem;
-	   -moz-background-size: 0.9rem;
-	        background-size: 0.9rem;
+	background-position: center right 20px;
+	-webkit-background-size: 14px 14px;
+	   -moz-background-size: 14px;
+	        background-size: 14px;
 }
 
 .select-normal {
@@ -3745,9 +3825,9 @@ body.fixed {
 
 .inputT > input {
 	border: 1px solid #EBEBEB;
-	-webkit-border-radius: 1rem;
-	   -moz-border-radius: 1rem;
-	        border-radius: 1rem;
+	-webkit-border-radius: 15px;
+	   -moz-border-radius: 15px;
+	        border-radius: 15px;
 	background-color: #fff;
 	height: 60px;
 	padding: 0 20px;
@@ -3777,7 +3857,7 @@ body.fixed {
 	-webkit-box-sizing: border-box;
 	   -moz-box-sizing: border-box;
 	        box-sizing: border-box;
-	border: .15rem solid #EBEBEB;
+	border: 1px solid #EBEBEB;
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
 	-webkit-flex-flow: column;
@@ -3785,9 +3865,9 @@ body.fixed {
 	   -moz-box-direction: normal;
 	    -ms-flex-flow: column;
 	        flex-flow: column;
-	-webkit-border-radius: 1rem;
-	   -moz-border-radius: 1rem;
-	        border-radius: 1rem;
+	-webkit-border-radius: 15px;
+	   -moz-border-radius: 15px;
+	        border-radius: 15px;
 	position: relative;
 }
 
@@ -3795,16 +3875,16 @@ body.fixed {
 	display: block;
 	content: '';
 	position: absolute;
-	top: 0.7rem;
-	right: 0.7rem;
+	top: 10px;
+	right: 10px;
 	background-repeat: no-repeat;
 	background-image: url("../../resources-pc/images/icons/ico-radio-off.png");
 	background-position: center center;
-	-webkit-background-size: 92% auto;
-	   -moz-background-size: 92% auto;
-	        background-size: 92% auto;
-	width: 1.5rem;
-	height: 1.5rem;
+	-webkit-background-size: auto auto;
+	   -moz-background-size: auto;
+	        background-size: auto;
+	width: 20px;
+	height: 20px;
 }
 
 .radioIconBox > input:checked + label {
@@ -3817,9 +3897,9 @@ body.fixed {
 	background-repeat: no-repeat;
 	background-image: url("../../resources-pc/images/icons/ico-radio-on.png");
 	background-position: center center;
-	-webkit-background-size: 92% auto;
-	   -moz-background-size: 92% auto;
-	        background-size: 92% auto;
+	-webkit-background-size: auto auto;
+	   -moz-background-size: auto;
+	        background-size: auto;
 }
 
 .radioIconBox > input {
@@ -3994,27 +4074,6 @@ body.fixed {
 
 .iconList.col5 li {
 	width: 20%;
-}
-
-.inputT {
-	display: inline-block;
-	vertical-align: middle;
-	-webkit-box-sizing: border-box;
-	   -moz-box-sizing: border-box;
-	        box-sizing: border-box;
-	position: relative;
-	width: 100%;
-}
-
-.inputT > input {
-	border: 1px solid #EBEBEB;
-	-webkit-border-radius: 1rem;
-	   -moz-border-radius: 1rem;
-	        border-radius: 1rem;
-	background-color: #fff;
-	height: 60px;
-	padding: 0 1.2rem;
-	width: 100%;
 }
 
 .chk-agree-list {

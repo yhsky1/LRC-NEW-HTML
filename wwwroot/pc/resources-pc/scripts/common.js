@@ -138,6 +138,74 @@ if($('.layer-login .tab-normal').length){
     });
 /* -------------------------------------------------레이어팝업end*/
 
+/* 견적start-------------------------------------------------*/
+//견적 상단 슬리이더
+    if($('.estimate-wrap .detail-view-list').length) {
+        MUI.slide.init('.estimate-wrap .detail-view-list','swiper', {
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+            },
+        });
+    }
+
+    //견적 스티키 
+    if($('.estimate-wrap .detail-layer-nav').length) {
+        $(window).on('scroll', function(e) {
+            var scrollPos = window.scrollY || window.pageYOffset,
+                $target = $('.detail-layer-nav-wrap'),
+                targetPos = $target.offset().top;
+
+            if(scrollPos >= targetPos) {
+                $target.addClass('fixed');
+            }
+            else{
+                $target.removeClass('fixed');
+            }
+        });
+    }
+
+    //견적 스티키 2
+    if($('.estimate-wrap .detail-sticky-items').length) {
+        $(window).on('scroll', function(e) {
+            var scrollPos = window.scrollY || window.pageYOffset,
+                $target = $('.detail-sticky-items'),
+                targetPos = $target.offset().top;
+
+            if(scrollPos >= targetPos) {
+                $target.addClass('fixed');
+            }
+            else{
+                $target.removeClass('fixed');
+            }
+        });
+    }
+
+    //견적 텝이동
+    if($('.estimate-wrap .detail-layer-nav').length) {
+        MUI.event.goTarget('.menu-link');
+
+        $(window).on('scroll', function(){
+            var scrollTop = $(this).scrollTop();
+            MUI.event.scrollTaps(scrollTop, $('.estimate-wrap .layer-item'), $('.estimate-wrap .menu-link'));
+        });
+    }
+    
+    //견적 step1 라디오버튼 선택
+    if($('.estimate-wrap .item-step1').length) {
+        $('.estimate-wrap .item-step1').on('change', '.radio-box input', function(e){
+            if(e.target.value === 'E'){
+                $('.estimate-wrap .electric').addClass('active');
+            }
+            else{
+                $('.estimate-wrap .electric').removeClass('active');
+            }
+        });
+    }
+
+/* -------------------------------------------------견적end*/
+
+
 
 /* 로그인start-------------------------------------------------*/
 
