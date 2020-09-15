@@ -8,7 +8,8 @@ $(function(){
     var $BODY = $('body'),
         TOUCH_CLICK = ('ontouchstart' in window) ? 'touchstart' : 'click',
         LAYER_PARENT = '.layer-wrap',
-        LAYER_DIM = '.bg-dimmed';
+        LAYER_DIM = '.bg-dimmed',
+        IScrollObj = null;
 
 
 /* 유틸start-------------------------------------------------*/
@@ -16,10 +17,10 @@ $(function(){
 if($('.chk-agree-list').length){
     MUI.event.toggle('.chk-agree-list .agree-toggle-btn', '.chk-agree-list .agree-toggle-cont', false, function(logic, layer) {
         console.log(layer);
-        if($(".layer-login-iscroll").length){
+        if($(".layer-login").hasClass('active')){
             setTimeout(function(){
                 MUI.layer.calculate('.layer-login');
-                $(".layer-login-iscroll")[0].iscrolls.refresh();
+                IScrollObj.refresh();
             },500);
         }
 
@@ -31,10 +32,10 @@ if($('.chk-agree-list').length){
 /* 탭 전환start-------------------------------------------------*/
 if($('.layer-login .tab-normal').length){
     MUI.event.taps('.layer-login .tab-normal', false, function(swap){
-        if($(".layer-login-iscroll").length){
+        if($(".layer-login").hasClass('active')){
             setTimeout(function(){
                 MUI.layer.calculate('.layer-login');
-                $(".layer-login-iscroll")[0].iscrolls.refresh();
+                IScrollObj.refresh();
             },500);
         }
 
@@ -46,12 +47,25 @@ if($('.layer-login .tab-normal').length){
 /* 레이어팝업start-------------------------------------------------*/
     //로그인 레이어팝업
     if($('.layer-login').length) {
-        MUI.layer.openClick('.layer-login-open', LAYER_DIM, LAYER_PARENT, true, function(show){
+        MUI.layer.openClick('.layer-login-open', LAYER_DIM, LAYER_PARENT, true, function(show, layer){
             show();
+            //console.log(layer);
+            /*아이스크롤 */
+            IScrollObj = new IScroll(layer + ' .layer-iscroll', { 
+                scrollbars: true,
+                mouseWheel: true,
+                interactiveScrollbars: true,
+                shrinkScrollbars: 'scale',
+                fadeScrollbars: true,
+            });
         });
         MUI.layer.closeClick('.layer-login-close', LAYER_DIM, LAYER_PARENT, true, function(hide){
             console.log('close');
             hide();
+            if(IScrollObj) {
+                IScrollObj.destroy();
+                IScrollObj = null;
+            }
         });
     }
 
@@ -71,6 +85,13 @@ if($('.layer-login .tab-normal').length){
 
 
 
+/*브라우저 리사이즈*/
+if($(".layer-iscroll").length){
+    $(window).on("resize",function(){
+        IScrollObj.refresh();
+    });
+}
+
 
 });
 
@@ -79,18 +100,7 @@ if($('.layer-login .tab-normal').length){
 $(window).on('load', function(){
 
 /* 아이스크롤start-------------------------------------------------*/
-if($(".layer-login-iscroll").length){
-    $(".layer-login-iscroll")[0].iscrolls = new IScroll(".layer-login-iscroll", { 
-        scrollbars: true,
-        mouseWheel: true,
-        interactiveScrollbars: true,
-        shrinkScrollbars: 'scale',
-        fadeScrollbars: true,
-    });
-    $(window).on("resize",function(){
-        $(".layer-login-iscroll")[0].iscrolls.refresh();
-    });
-}
+
 
 /* -------------------------------------------------아이스크롤end*/
 

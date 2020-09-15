@@ -186,7 +186,7 @@ var MUI = MUI || {
 				$(layer).addClass('active');
 				return;
 			}
-			console.log(parent + layer);
+			//console.log(parent + layer);
 			$(dimmed).addClass('type-popup');
 			$(parent + layer).addClass('active');
             that.calculate(layer);
