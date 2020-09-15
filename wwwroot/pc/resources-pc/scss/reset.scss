@@ -18,7 +18,7 @@ select::-ms-expand {display:none;}
 [disabled] {cursor:default;}
 
 html {overflow-y:scroll; font-size:62.5%;}
-body {font-size: 15px;font-family:"ManropeL", "NotoL", serif;letter-spacing:-.5px; word-break:break-all; color:#111; background-color:#fff;
+body {width: 100%;font-size: 15px;font-family:"ManropeL", "NotoL", serif;letter-spacing:-.5px; word-break:break-all; color:#111; background-color:#fff;
 display: flex;flex-flow: column; min-height: 100vh;color: #2B2B2B;font-size: 15px;}
 input, button, select, textarea {line-height: 1;margin:0; padding:0; border:0; color: #2B2B2B;font-size: 15px;font-family:inherit; color:inherit; 
 box-sizing:border-box; appearance:none; vertical-align:middle; border-radius:0; background-color:transparent;outline: none;}

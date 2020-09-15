@@ -83,6 +83,7 @@ html {
 }
 
 body {
+	width: 100%;
 	font-size: 15px;
 	font-family: "ManropeL", "NotoL", serif;
 	letter-spacing: -.5px;
