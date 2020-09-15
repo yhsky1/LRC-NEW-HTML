@@ -52,11 +52,11 @@ body.fixed {
 		.popup-top {
 			position: relative;
 			z-index: 1;
-			height: 75px;
-			@include Align-bottom-middle;
 			> h4 {
+				@include Align-bottom-middle;
 				font-size: 26px;
 				@include Bold;
+				height: 75px;
 			}
 		}
 		.popup-cont {

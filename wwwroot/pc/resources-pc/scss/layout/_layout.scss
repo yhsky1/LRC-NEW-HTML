@@ -16,7 +16,7 @@
 }
 
 .path-wrap {
-    margin-top:50px;
+    margin: 50px 0 25px;
     .inner {
         @include Align-between;
         > strong {
@@ -46,6 +46,62 @@
                         color: #999;
                     }
                 }
+            }
+        }
+    }
+}
+
+.title-box-wrap {
+    margin-bottom: 50px;
+    > .inner {
+        @include Align-middle-left;
+    }
+    h2 {
+        font-size: 32px;
+        @include Bold;
+        line-height: 1;
+    }
+    .steps-indicator {
+        margin-left: 40px;
+        > ul {
+            @include Align-middle-left;
+            > li {
+                position: relative;
+                > b {
+                    border: 1px solid #ccc;
+                    color: #ccc;
+                    font-size: 14px;
+                    width: 29px;
+                    height: 29px;
+                    @include Align-middle;
+                    @include Bold;
+                    border-radius: 100%;
+                }
+                & + li {
+                    padding-left: 25px;
+                    &:after {
+                        display: block;
+                        content: '';
+                        @include Position($top: 50%, $left: 0);
+                        width: 25px;
+                        height: 1px;
+                        background-color: #ccc;
+                        margin-top: -.5px;
+                    }
+                }
+                &.active {
+                    b{
+                        background-color: #333;
+                        border-color: #333;
+                        color: #fff;
+                    }
+                }
+                &.complete {
+                    b{
+                        border-color: #333;
+                    }
+                }
+                
             }
         }
     }

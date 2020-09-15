@@ -10,45 +10,76 @@
 .list-type-col2 {
 	@include Align-box;
 	margin-left: -5px;
-    width: 102%;
+    width: 101%;
 	> li {
 		width: 50%;
 		.inner {
 			width: auto;
-			margin: 10px 5px 0;
+			margin: 0 5px;
+		}
+	}
+	&.margin20 {
+		margin-left: -10px;
+		width: 102%;
+		.inner {
+			margin: 0 10px;
 		}
 	}
 }
 .list-type-col3 {
 	@include Align-box;
 	margin-left: -5px;
-    width: 102%;
+    width: 101%;
 	> li {
 		width: 33.333%;
 		.inner {
-			margin: 10px 5px 0;
+			width: auto;
+			margin: 0 5px;
+		}
+	}
+	&.margin20 {
+		margin-left: -10px;
+		width: 102%;
+		.inner {
+			margin: 0 10px;
 		}
 	}
 }
 .list-type-col4 {
 	@include Align-box;
 	margin-left: -5px;
-    width: 102%;
+    width: 101%;
 	> li {
 		width: 25%;
 		.inner {
-			margin: 10px 5px 0;
+			width: auto;
+			margin: 0 5px;
+		}
+	}
+	&.margin20 {
+		margin-left: -10px;
+		width: 102%;
+		.inner {
+			margin: 0 10px;
 		}
 	}
 }
 .list-type-col5 {
 	@include Align-box;
 	margin-left: -5px;
-    width: 102%;
+    width: 101%;
 	> li {
 		width: 20%;
 		.inner {
-			margin: 10px 5px 0;
+			width: auto;
+			margin: 0 5px;
+		}
+	}
+	&.margin20 {
+		margin-left: -10px;
+		width: 102%;
+		.inner {
+			margin: 0 10px;
 		}
 	}
 }

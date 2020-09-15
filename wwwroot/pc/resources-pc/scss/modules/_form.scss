@@ -211,22 +211,23 @@
 }
 
 .chk-agree-list {
-	margin-top: 1.4rem;
+	margin-top: 30px;
 	label {
 		padding: 20px 0;
 	}
 	.chk-agree-all {
-		border-bottom: 1px solid #EBEBEB;
+		border: 1px solid #EBEBEB;
+		padding:0 20px;
+		border-radius: 15px;
 	}
 	.chk-agree-cols {
 		
 		li {
 			border-bottom: 1px solid #EBEBEB;
-			
 		}
 		.chk-agree-top {
 			@include Align-between;
-			padding-right: 1.2rem;
+			padding: 0 15px 0 20px;
 			position: relative;
 		}
 		.agree-toggle-cont {

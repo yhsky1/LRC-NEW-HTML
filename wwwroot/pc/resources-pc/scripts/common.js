@@ -19,7 +19,6 @@ if($('.chk-agree-list').length){
         console.log(layer);
         if($(".layer-login").hasClass('active')){
             setTimeout(function(){
-                MUI.layer.calculate('.layer-login');
                 IScrollObj.refresh();
             },500);
         }
@@ -27,6 +26,64 @@ if($('.chk-agree-list').length){
         logic();
     });
 }
+
+//필터 범위 슬라이드
+if($('.section-filter-result').length) {
+    $('#slider-price').slider({
+        range: true,
+        min: 0,							// 최저
+        max: 80,						// 최고
+        orientation: 'horizontal',		// 바타입 수평
+        step: 20,						// 스텝
+        values: [0, 80],				// 디폴트 값
+        start: function(event, ui) {	// start
+        },
+        slide: function(event, ui) {	// mouse movement
+        },
+        stop: function(event, ui) {		// stop
+        },
+        change: function(event, ui) {
+            var min = ui.values[0],
+                max = ui.values[1];
+
+                console.log(ui, min, max);
+            // update form fields
+            $('#min_slider_price').val(min);
+            $('#max_slider_price').val(max);
+
+            $('.price_box_case .price-txt span').each(function(idx, item){
+                var text = $(item).text(),
+                    minTxt = min === 0 ? min + '원' : min + '만원',
+                    maxTxt = max + '만원',
+                    minRegex = RegExp(minTxt),
+                    maxRegex = RegExp(maxTxt);
+                if(minRegex.test(text) || maxRegex.test(text)) {
+                    $(item).addClass('active');
+                }
+                else{
+                    $(item).removeClass('active');
+                }
+            });
+
+        }
+    });
+
+    $('.section-filter-result .price-all').on('click', function(e) {
+        console.log(11);
+        $('#slider-price').slider('values', [0, 80]);
+    });
+    $('.section-filter-result .filter-reset-btn').on('click', function(e) {
+        $('#slider-price').slider('values', [0, 80]);
+        $('.section-filter-result input').prop('checked', false);
+    });
+}
+
+//필터 버튼 토글
+MUI.event.toggle('.filter-result-open', null, true, function(logic, layer) {
+    logic();
+});
+
+
 /* -------------------------------------------------유틸end*/
 
 /* 탭 전환start-------------------------------------------------*/
@@ -34,7 +91,6 @@ if($('.layer-login .tab-normal').length){
     MUI.event.taps('.layer-login .tab-normal', false, function(swap){
         if($(".layer-login").hasClass('active')){
             setTimeout(function(){
-                MUI.layer.calculate('.layer-login');
                 IScrollObj.refresh();
             },500);
         }
@@ -60,7 +116,7 @@ if($('.layer-login .tab-normal').length){
             });
         });
         MUI.layer.closeClick('.layer-login-close', LAYER_DIM, LAYER_PARENT, true, function(hide){
-            console.log('close');
+            //console.log('close');
             hide();
             if(IScrollObj) {
                 IScrollObj.destroy();
@@ -75,6 +131,10 @@ if($('.layer-login .tab-normal').length){
     MUI.layer.closeClick(LAYER_DIM, LAYER_DIM, LAYER_PARENT, function(hide){
         //console.log('close');
         hide();
+        if(IScrollObj) {
+            IScrollObj.destroy();
+            IScrollObj = null;
+        }
     });
 /* -------------------------------------------------레이어팝업end*/
 
