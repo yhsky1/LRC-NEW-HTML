@@ -655,7 +655,6 @@
                                     content: '보기';
                                     transition: transform .5s;
                                     transform: rotate(0deg);
-                                    height: 1.1rem;
                                     background-image: none;
                                     border-bottom:1px solid #2B2B2B;
                                     @include Position($top: 38%, $right: 0);
