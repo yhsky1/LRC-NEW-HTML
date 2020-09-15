@@ -88,6 +88,12 @@ $extra-small-devices: 320px;
 	align-items: flex-start;
 	justify-content: center;
 }
+@mixin Inline-align-top-left-flex-wrap {
+	display: inline-flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	flex-wrap : wrap;
+}
 
 
 /*인라인 가로스크롤*/

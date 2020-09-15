@@ -1220,25 +1220,13 @@ button.swiper-pagination-bullet {
 	        background-size: 6px;
 }
 
-.btn-blackC {
-	background-color: #2B2B2B;
-	border: 1px solid #2B2B2B;
-	-webkit-border-radius: 100%;
-	   -moz-border-radius: 100%;
-	        border-radius: 100%;
-	width: 54px;
-	height: 54px;
-	padding: 0;
-}
-
 .btn-default {
 	width: 100%;
-	height: 68px;
 	color: #fff;
-	-webkit-border-radius: 10px;
-	   -moz-border-radius: 10px;
-	        border-radius: 10px;
-	font-size: 18px;
+	-webkit-border-radius: 1rem;
+	   -moz-border-radius: 1rem;
+	        border-radius: 1rem;
+	font-size: 1.4rem;
 	border: 1px solid #B4B8BF;
 	background-color: #B4B8BF;
 	pointer-events: none;
@@ -3569,7 +3557,7 @@ body.fixed {
 	        border-radius: 1rem;
 	position: relative;
 	background-color: #fff;
-	height: 4.1rem;
+	height: 60px;
 	padding: 0 2.5rem 0 .9rem;
 	width: 100%;
 	background-repeat: no-repeat;
@@ -4006,6 +3994,27 @@ body.fixed {
 
 .iconList.col5 li {
 	width: 20%;
+}
+
+.inputT {
+	display: inline-block;
+	vertical-align: middle;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+	position: relative;
+	width: 100%;
+}
+
+.inputT > input {
+	border: 1px solid #EBEBEB;
+	-webkit-border-radius: 1rem;
+	   -moz-border-radius: 1rem;
+	        border-radius: 1rem;
+	background-color: #fff;
+	height: 60px;
+	padding: 0 1.2rem;
+	width: 100%;
 }
 
 .chk-agree-list {

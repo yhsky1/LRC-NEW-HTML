@@ -16,3 +16,9 @@
 @import "./contents/_footerMenu.scss";
 @import "./contents/_consulting.scss";
 @import "./contents/_error.scss";
+
+.inner {
+    width: 1080px;
+    margin: 0 auto;
+    position: relative;
+}
