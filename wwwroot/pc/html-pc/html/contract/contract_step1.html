@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi">
+<meta name="viewport" content="width=1200, initial-scale=1">
 <title>롯데렌터카</title>
 <link rel="shortcut icon" href="../../../resources-pc/images/favicon.ico">
 <link rel="stylesheet" href="../../../resources-pc/styles/reset.css">
@@ -13,9 +13,11 @@
 <link rel="stylesheet" href="../../../resources-pc/styles/contents.css">
 
 <script src="../../../resources-pc/scripts/jquery/jquery-1.9.1.min.js"></script>
+<script src="../../../resources-pc/scripts/jquery/jquery-ui.min.js"></script>
+<script src="../../../resources-pc/scripts/jquery/plugins/slick.min.js"></script>
 <script src="../../../resources-pc/scripts/jquery/plugins/swiper.min.js"></script>
-
-<script src="../include_sub_header_type1.js"></script><!--인크루드용..-->
+<script src="../../../resources-pc/scripts/jquery/plugins/iscroll.js"></script>
+<script src="../include_sub_header-type2.js"></script><!--인크루드용..-->
 <script src="../include_footer.js"></script><!--인크루드용..-->
 <script src="../../../resources-pc/scripts/MUI.js"></script>
 <script src="../../../resources-pc/scripts/common.js"></script>
@@ -24,80 +26,12 @@
 
 <body>
 
+	<!--header 컴포넌트-->
 	<header class="header">
-
-		<!--해더상단-->
-		<div class="header-top">
-			<div class="inner">
-				<a href="#container" class="skip_nav">본문 바로가기</a>
-				<h1><a href="#none"><img src="../../../resources-pc/images/common/logo-header.png" alt="LOTTE rental"/></a></h1>
-				<ul class="extra-menu">
-					<li id="btnLogin"><a href="#none">로그인</a></li>
-					<li><a href="javascript:fnHpCallLpointScreen('JOIN_MEMBER')" class="lPointAutoChange">회원가입</a></li>							
-					<li class="customer">
-						<a href="/customer/faq.do?mnCd=MNCD06001">고객센터</a>
-						<div class="link" style="display: none;">
-							<ul>
-								<li><a href="/customer/faq.do?mnCd=MNCD06001">FAQ</a></li>
-								<li><a href="/customer/notice.do?mnCd=MNCD06008">공지사항</a></li>
-								<li><a href="/customer/consultation.do?mnCd=MNCD06002">일반 문의</a></li>
-								<li><a href="/customer/saleconsultation.do?mnCd=MNCD06003">전문상담신청</a></li>
-							</ul>
-						</div>
-					</li>
-				</ul>
-			</div>
-		</div>
-        <!--//해더상단-->
-        
-        <!--해더네비-->
-		<nav class="header-nav">
-			<div class="inner">
-				<ul>
-					<li>
-						<a href="#">프로모션</a>
-					</li>
-					<li>
-						<a href="#">심<b>夜</b>신차</a>
-					</li>
-					<li>
-						<a href="#">특가모아보기</a>
-					</li>
-					<li>
-						<a href="#">이벤트</a>
-					</li>
-					<li>
-						<a href="#">고객후기</a>
-					</li>
-					<li>
-						<a href="#">신차장TV</a>
-					</li>
-				</ul>
-			</div>
-		</nav>
-		<!--//해더네비-->
-
 	</header>
-    <!--//header 컴포넌트-->
+	<!--//header 컴포넌트-->
     
-    <div class="path-wrap">
-        <div class="inner">
-            <strong>계약</strong>
-            <ul>
-                <li>
-                    <a href="">HOME</a>
-                </li>
-                <li>
-                    <a href="">계약</a>
-                </li>
-                <li>
-                    <b>계약정보입력</b>
-                </li>
-            </ul>
-        </div>
-    </div>
-
-
+    
 	<main id="wrap" >
         <!--계약-->
         <div class="contract-wrap">
@@ -153,8 +87,9 @@
                                     </h3>
                                 </div>
                                 <div class="position-r">
-                                    <div class="coupon-all">사용가능 쿠폰 <b>6</b></div>
                                     <div class="item-cont">
+                                        <div class="coupon-all">사용가능 쿠폰 <b>6</b></div>
+                                    
                                         <select class="selectbox" name="" id="">
                                             <option value="">2020년 8월 계약승인 고객쿠폰</option>
                                             <option value="">2020년 9월 계약승인 고객쿠폰</option>
@@ -369,7 +304,7 @@
                                                                     <span>신용카드 자동이체 동의</span>
                                                                 </label>
                                                             </div> 
-                                                            <button type="button" class="btn-toggle gray agree-toggle-btn layer-infos-open" data-layer="type-contract-card"></button>
+                                                            <button type="button" class="agree-toggle-btn" data-layer="type-contract-card"></button>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -398,7 +333,6 @@
                                                         <h4>계좌번호</h4>
                                                         <div class="detail-layer-inputT inputT"><input type="text" id="" name="" title="계좌번호를 입력해주세요" placeholder="계좌번호를 입력해주세요" value=""></div>
                                                     </li>
-                                                    
                                                 </ul>
                                                 <p class="guide">※ 자동이체의 경우 계약자의 이름(개인사업자는 대표자명)과 CMS계좌 예금주가 일치해야 합니다. 예금주명이 상이하거나 사업자명이 포함된 경우 정상적인 인증이 되지 않습니다.</p>
                                                 <p class="guide">※ 계좌번호는 계좌 개설 당시의 계좌번호로만 입력해주세요. 임의로 생성된 평생계좌 번호(휴대폰 번호 등)는 자동이체 불가합니다. 이로 인한 대여료 미납 시 연등 불이익이 발생할 수 있습니다.</p>
@@ -471,62 +405,12 @@
                     <div class="detail-layer-submit"><button type="button" id="layer-open2" data-layer="layer-common" class="btn btn-default eventsAuto active">다음</button></div>
                 </div>
             </div>
-
-			</div>
-			
-
 		</div>
 		<!--//계약-->
-
 	</main>
-
-	<!-- 오류 레이어 -->
-	<div class="contract-layer-wrap layer-wrap layer-popup layer-common">
-		<div class="pop-inner">
-			<div class="pop-cont section-detail">
-				<div class="detail-layer-top align-c">
-					<i class="icon exclamation"></i>
-					<h2 class="detail-layer-tit-h">신차장기렌터카에 <br>이미 계약한 내역이 있습니다.</h2>
-					<h3 class="detail-layer-descri">
-						<p>고객님께서는 <span>2017년 12일 10일</span><br>계약한 내역이 있습니다.</p>
-						<p>계약내용은 마이페이지에서 확인 가능합니다.</p>
-					</h3>
-				</div>
-				<div class="detail-layer-cont">
-					<ul class="list-type-col2 detail-layer-list-btn">
-						<li>
-							<div class="detail-layer-submit"><button type="submit" class="btn btn-white">메인으로 가기</button></div>
-						</li>
-						<li>
-							<div class="detail-layer-submit"><button type="submit" class="btn btn-red">마이페이지</button></div>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- //오류 레이어 -->
-
-
 	<footer class="footer">
 	</footer>
-
-	
-
-
-
-
-	<!--상단 타이틀(추후삭제)-->
-    <script>
-	$(function(){
-		$('.header-top.sub h1').text('계약');
-
-		$('.layer-infos-open').trigger('click');
-	})
-	</script>
-	<!--//상단 타이틀(추후삭제)-->
-
-
 </body>
 </html>
+
 
