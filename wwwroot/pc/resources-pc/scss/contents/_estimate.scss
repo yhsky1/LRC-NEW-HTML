@@ -428,7 +428,7 @@
                 border-radius: 20px;
                 padding: 40px;
                 box-sizing: border-box;
-
+                margin-left:auto;
                 h2 {
                     font-size: 26px;
                     @include Bold;
@@ -457,11 +457,27 @@
                     > button {margin-right: 10px;}
                 }
             }
+            .detail-view-rest {
+                @include Position($top: -20px, $right: 0);
+                width: 340px;
+                height: 40px;
+                @include Align-middle;
+                @include Bold;
+                color:#fff;
+                border-radius: 20px;
+                background-color:#20BBC4;
+                &.ty2 {
+                    background-color:#1374E8;
+                }
+            }
         }
 
         .detail-layout {
             .detail-layer-nav-wrap {
                 height: 98px;
+                > .inner {
+                    @include Align-between;
+                }
                 .detail-layer-nav {
                     position: relative;
                     height: 98px;
@@ -486,6 +502,19 @@
                     top:0;
 
                     border-bottom: 1px solid #EBEBEB;
+                }
+                .guide {
+                    display: flex;
+                    align-items: center;
+                    margin-right: 25px;
+                    p {
+                        font-size:13px;
+                        margin-left:15px;
+                        b{
+                            font-size:13px;
+                            color: #F04040;
+                        }
+                    }
                 }
             }
             .detail-sticky-items {
@@ -532,6 +561,9 @@
                                             strong{color: #999;}
                                         }
                                     }
+                                }
+                                &.active {
+                                    background-color: #FAFAFA;
                                 }
                             }
                         }

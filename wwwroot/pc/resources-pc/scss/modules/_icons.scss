@@ -17,6 +17,11 @@
         width: 15px;
         height: 15px;
     }
+    &.fast2 {
+        @include Background($sprite:'ico-estimate-btn01', $position:center center);
+        width: 30px;
+        height: 30px;
+    }
     &.pro {
         @include Background($sprite:'ico-estimate-btn2', $position:center center);
         width: 15px;
@@ -27,6 +32,11 @@
             height: 30px;
             background-color: #02B174;
         }
+    }
+    &.pro2 {
+        @include Background($sprite:'ico-estimate-btn02', $position:center center);
+        width: 30px;
+        height: 30px;
     }
     &.filter {
         @include Background($sprite:'ico-select-off', $position:center center);
@@ -87,11 +97,17 @@
         height: 40px;
     }
     &.heart {
-        @include Background($sprite:'ico-heart', $size:100% auto, $position:center center);
+        @include Background($sprite:'ico-heart', $position:center center);
         width: 16px;
         height: 16px;
     }
-
+    &.speak {
+        @include Background($sprite:'ico-speak', $size:14px, $position:center center);
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        border:1px solid #EBEBEB;
+    }
 
 }
 
@@ -149,6 +165,18 @@ button.active .filter{
         background-color:#406FF0;
         i {margin-right: 5px;}
     }
+    &.fast2 {
+        @include Align-middle-column;
+        @include Bold;
+        font-size: 13px;
+        color: #fff;
+        height: 80px;
+        width: 80px;
+        padding:0;
+        border-radius: 100%;
+        background-color:#406FF0;
+        i {margin-bottom: 5px;}
+    }
     &.pro {
         @include Position($top: 10px, $left: 10px);
         @include Bold;
@@ -159,6 +187,18 @@ button.active .filter{
         padding: 0 10px;
         background-color:#02B174;
         i {margin-right: 5px;}
+    }
+    &.pro2 {
+        @include Align-middle-column;
+        @include Bold;
+        font-size: 13px;
+        color: #fff;
+        height: 80px;
+        width: 80px;
+        padding:0;
+        border-radius: 100%;
+        background-color:#02B174;
+        i {margin-bottom: 5px;}
     }
     &.time {
         @include Position($top:0, $left: 1.3rem);
@@ -226,5 +266,17 @@ button.active .filter{
     font-size: 0;
     .flag {
         margin-right: 10px;
+    }
+}
+
+.flag-big-wrap {
+    @include Position($top: 30px, $left: 0);
+    @include Align-middle-left;
+    z-index: 2;
+    .flag {
+        position: relative;
+        & + .flag {
+            left: -10px;
+        }
     }
 }
