@@ -18,6 +18,9 @@
                     line-height: 1;
                     height: 30px;
                     @include Align-middle;
+                    img {
+                        mix-blend-mode: multiply;
+                    }
                 }
                 > span {
                     display: block;
@@ -26,11 +29,14 @@
                     line-height: 1;
                 }
                 &.all {
-                    background-color: #F5F9FF;
                     > b {
                         @include Bold;
                         font-size: 21px;
                     }
+
+                }
+                &.active {
+                    background-color: #F5F9FF;
                     > span {
                         @include Bold;
                     }
@@ -466,17 +472,22 @@
                     }
                     &.item-step2 {
                         position: relative;
+                        .item-cont {
+                            margin-bottom: 0;
+                        }
                         .guide {
-                            
+                            color: #999;
+                            font-size: 13px;
+                            width: 350px;
+                            @include Position($top: 55px, $right: 70px);
                         }
                         .model-all {
-                            padding: 2.3rem 1.7rem 1.7rem;
+                            padding: 0 70px 15px; 
                             @include Bold;
-                            b {color: #F04040;margin-left: .4rem;}
+                            b {color: #F04040;margin-left: 5px;}
                         }
                         .model-list {
-                            ul {border-top: 1px solid #EBEBEB;}
-                            li {border-bottom: 1px solid #EBEBEB;}
+                            li {border-top: 1px solid #EBEBEB;}
                         }
                         .model-toggle-btn {
                             padding:30px 70px;
@@ -508,16 +519,118 @@
                         }
                     }
                     &.item-step3 {
-
+                        .color-list {
+                            padding: 0 60px 0 70px;
+                            & + .color-list{
+                                margin-top: 35px;
+                            }
+                            .list-top {
+                                @include Align-middle-left;
+                                h4 {@include Bold;}
+                                > span {
+                                    margin-left:15px;
+                                }
+                            }
+                        }
+                        ul {
+                            @include Align-box;
+                            li{
+                                @include Inline-align-middle;
+                                margin: 10px 10px 0 0;
+                                input {display: none;}
+                                label {
+                                    @include Hide_txt;
+                                    display: block;
+                                    width: 60px;
+                                    height: 60px;
+                                    border-radius: 15px;
+                                    border: 1px solid #EBEBEB;
+                                    cursor: pointer;
+                                    box-sizing: border-box;
+                                    transition: border-color .4s;
+                                    position: relative;
+                                    background-repeat: no-repeat;
+                                    background-position: center center;
+                                    background-size: 130%;
+                                    .flag {
+                                        @include Position($bottom: -6px, $left: 3.5px);
+                                        background-color:#fff;
+                                        margin: 0;
+                                    }
+                                }
+                                input:checked + label {
+                                    border-color: #2B2B2B;
+                                    &:after {
+                                        display:block;
+                                        content: '';
+                                        @include Position($top: 50%, $left: 50%);
+                                        @include Background($sprite:'ico-chk', $size:20px, $position:center center);
+                                        width: 20px;
+                                        height: 20px;
+                                        margin: -10px 0 0 -10px;
+                                    }
+                                    &:before {
+                                        display:block;
+                                        content: '';
+                                        @include Position($top: 0, $left: 0);
+                                        width: 100%;
+                                        height: 100%;
+                                        border-radius: 1rem;
+                                        background-color: rgba(0, 0, 0, 0.05);
+                                    }
+                                }
+                            }
+                        }
                     }
                     &.item-step4 {
-
+                        .item-cont {
+                            position: relative;
+                        }
+                        .guide {
+                            color: #999;
+                            font-size: 14px;
+                            @include Position($top: -25px, $right: 70px);
+                        }
+                        .chk-box {
+                            padding: 0 70px;
+                        }
                     }
                     &.item-step5 {
-
+                        .item-cont {
+                            position: relative;
+                        }
+                        .guide {
+                            color: #999;
+                            font-size: 14px;
+                            @include Position($top: -25px, $right: 70px);
+                        }
+                        .chk-box {
+                            padding: 0 70px;
+                        }
                     }
                     &.item-step6 {
-
+                        .radio-box {
+                            margin-top: 2.6rem;
+                            padding: 0 70px;
+                            position: relative;
+                            h4 {
+                                @include Bold;
+                                @include Align-middle;
+                                justify-content: left;
+                                margin-bottom: 1rem;
+                                button {
+                                    margin-left: .4rem;
+                                }
+                            }
+                            .model-toggle-cont {
+                                .radio-box {
+                                    padding: 0 30px;
+                                }
+                            }
+                        }
+                        .btn-toggle {
+                            @include Position($top: 0, $right: 1.7rem)
+                        }
                     }
                 }
             }

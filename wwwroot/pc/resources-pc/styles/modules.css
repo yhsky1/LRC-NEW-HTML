@@ -1220,6 +1220,17 @@ button.swiper-pagination-bullet {
 	        background-size: 6px;
 }
 
+.btn-blackC {
+	background-color: #2B2B2B;
+	border: 1px solid #2B2B2B;
+	-webkit-border-radius: 100%;
+	   -moz-border-radius: 100%;
+	        border-radius: 100%;
+	width: 54px;
+	height: 54px;
+	padding: 0;
+}
+
 .btn-default {
 	width: 100%;
 	color: #fff;
@@ -3931,13 +3942,31 @@ body.fixed {
 	   -moz-box-sizing: border-box;
 	        box-sizing: border-box;
 	border: 1px solid #EBEBEB;
-	-webkit-border-radius: 1rem;
-	   -moz-border-radius: 1rem;
-	        border-radius: 1rem;
+	-webkit-border-radius: 15px;
+	   -moz-border-radius: 15px;
+	        border-radius: 15px;
 	position: relative;
 	background-color: #fff;
-	height: 4.1rem;
-	padding: 0 .9rem 0 2.6rem;
+	height: 60px;
+	padding: 0 20px 0 50px;
+}
+
+.iconBox label > span {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	   -moz-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	   -moz-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 }
 
 .iconBox label:after {
@@ -3945,25 +3974,25 @@ body.fixed {
 	content: '';
 	position: absolute;
 	top: 50%;
-	left: 0.7rem;
+	left: 20px;
 	background-repeat: no-repeat;
 	background-image: url("../../resources-pc/images/icons/ico-radio-off.png");
 	background-position: center center;
-	-webkit-background-size: 92% auto;
-	   -moz-background-size: 92% auto;
-	        background-size: 92% auto;
-	width: 1.5rem;
-	height: 1.5rem;
-	margin-top: -.75rem;
+	-webkit-background-size: auto auto;
+	   -moz-background-size: auto;
+	        background-size: auto;
+	width: 20px;
+	height: 20px;
+	margin-top: -10px;
 }
 
 .iconBox input[type='checkbox'] + label:after {
 	background-repeat: no-repeat;
 	background-image: url("../../resources-pc/images/icons/ico-chk-off.png");
 	background-position: center center;
-	-webkit-background-size: 92% auto;
-	   -moz-background-size: 92% auto;
-	        background-size: 92% auto;
+	-webkit-background-size: auto auto;
+	   -moz-background-size: auto;
+	        background-size: auto;
 }
 
 .iconBox input:checked + label {
@@ -3976,18 +4005,18 @@ body.fixed {
 	background-repeat: no-repeat;
 	background-image: url("../../resources-pc/images/icons/ico-radio-on.png");
 	background-position: center center;
-	-webkit-background-size: 92% auto;
-	   -moz-background-size: 92% auto;
-	        background-size: 92% auto;
+	-webkit-background-size: auto auto;
+	   -moz-background-size: auto;
+	        background-size: auto;
 }
 
 .iconBox input[type='checkbox']:checked + label:after {
 	background-repeat: no-repeat;
 	background-image: url("../../resources-pc/images/icons/ico-chk-on.png");
 	background-position: center center;
-	-webkit-background-size: 95% auto;
-	   -moz-background-size: 95% auto;
-	        background-size: 95% auto;
+	-webkit-background-size: auto auto;
+	   -moz-background-size: auto;
+	        background-size: auto;
 }
 
 .iconBox input {
@@ -3995,7 +4024,7 @@ body.fixed {
 }
 
 .iconBox + .iconBox {
-	margin-top: .6rem;
+	margin-top: 10px;
 }
 
 .iconList {
@@ -4003,9 +4032,9 @@ body.fixed {
 	   -moz-box-sizing: border-box;
 	        box-sizing: border-box;
 	border: 1px solid #EBEBEB;
-	-webkit-border-radius: 1rem;
-	   -moz-border-radius: 1rem;
-	        border-radius: 1rem;
+	-webkit-border-radius: 15px;
+	   -moz-border-radius: 15px;
+	        border-radius: 15px;
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: -moz-box;
@@ -4028,7 +4057,7 @@ body.fixed {
 .iconList li label {
 	cursor: pointer;
 	background-color: #F9FAFC;
-	height: 4.2rem;
+	height: 60px;
 	display: block;
 	-webkit-box-sizing: border-box;
 	   -moz-box-sizing: border-box;
