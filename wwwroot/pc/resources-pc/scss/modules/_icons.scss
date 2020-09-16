@@ -85,11 +85,12 @@ button.active .filter{
 
 
 .flag {
-    height: 30px;
+    height: 20px;
     border-radius: 15px;
-    padding: 0 10x;
-    font-size: 13px;
+    padding: 0 10px;
+    font-size: 12px;
     box-sizing: border-box;
+    line-height: 1;
     @include Inline-align-middle;
     @include Nomal;
     &.best {

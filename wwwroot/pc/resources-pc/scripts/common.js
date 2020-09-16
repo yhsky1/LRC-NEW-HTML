@@ -203,6 +203,16 @@ if($('.layer-login .tab-normal').length){
         });
     }
 
+    //견적 step2 모델 선택
+    if($('.estimate-wrap .item-step2').length) {
+        MUI.event.toggle('.item-step2 .model-toggle-btn', '.item-step2 .model-toggle-cont', false, function(logic, layer) {
+            //console.log('toggle');
+            $('.estimate-wrap .item-step2 input').prop('checked', false);
+            logic();
+        });
+    }
+    
+
 /* -------------------------------------------------견적end*/
 
 

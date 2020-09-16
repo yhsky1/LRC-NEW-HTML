@@ -379,8 +379,9 @@
             .detail-layer-nav-wrap {
                 height: 98px;
                 .detail-layer-nav {
+                    position: relative;
                     height: 98px;
-                    width: 100%;
+                    width: 700px;
                     @include Align-middle-left;
                     button {
                         height:48px;
@@ -399,7 +400,7 @@
                     top:0;
                     background-color: #FFF;
                     z-index: 1;
-                    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+                    border-bottom: 1px solid #EBEBEB;
                 }
             }
             .detail-sticky-items {
@@ -467,6 +468,43 @@
                         position: relative;
                         .guide {
                             
+                        }
+                        .model-all {
+                            padding: 2.3rem 1.7rem 1.7rem;
+                            @include Bold;
+                            b {color: #F04040;margin-left: .4rem;}
+                        }
+                        .model-list {
+                            ul {border-top: 1px solid #EBEBEB;}
+                            li {border-bottom: 1px solid #EBEBEB;}
+                        }
+                        .model-toggle-btn {
+                            padding:30px 70px;
+                            cursor: pointer;
+                            position: relative;
+                            &:after {
+                                display: block;
+                                content: '';
+                                @include Position($top: 30px, $right: 70px);
+                                @include Background($sprite:'ico-arrow-down', $size:14px, $position:center center);
+                                width: 15px;
+                                height: 15px;
+                                transition: transform .5s;
+                                transform: rotate(0deg);
+                            }
+                            &.active {
+                                background-color: #F9FAFC;
+                                padding-bottom: 0;
+                                @include Bold;
+                            }
+                            &.active:after {
+                                transform: rotate(180deg);
+                            }
+                        }
+                        .model-toggle-cont {
+                            display: none;
+                            background-color: #F9FAFC;
+                            padding: 30px 70px 20px;
                         }
                     }
                     &.item-step3 {
