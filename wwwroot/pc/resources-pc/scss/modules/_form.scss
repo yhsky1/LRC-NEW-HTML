@@ -144,44 +144,47 @@
 		transition: all .4s;
 		box-sizing: border-box;
 		border: 1px solid #EBEBEB;
-		border-radius: 1rem;
+		border-radius: 15px;
 		position: relative;
 		background-color: #fff;
-		height: 4.1rem;
-		padding: 0 .9rem 0 2.6rem;
+		height: 60px;
+		padding: 0 20px 0 50px;
+		> span {
+			@include Align-middle;
+		}
 		&:after {
 			display: block;
 			content: '';
-			@include Position($top: 50%, $left: .7rem);
-			@include Background($sprite:'ico-radio-off', $type:'png', $size:92% auto, $position:center center);
-			width: 1.5rem;
-			height: 1.5rem;
-			margin-top: -.75rem;
+			@include Position($top: 50%, $left: 20px);
+			@include Background($sprite:'ico-radio-off', $position:center center);
+			width: 20px;
+			height: 20px;
+			margin-top: -10px;
 		}
 	}
 	input[type='checkbox'] + label:after{
-		@include Background($sprite:'ico-chk-off', $type:'png', $size:92% auto, $position:center center);
+		@include Background($sprite:'ico-chk-off', $position:center center);
 	}
 	input:checked + label {
 		border-color: #2B2B2B;
 		@include Bold;
 		&:after {
-			@include Background($sprite:'ico-radio-on', $type:'png', $size:92% auto, $position:center center);
+			@include Background($sprite:'ico-radio-on', $position:center center);
 		}
 	}
 	input[type='checkbox']:checked + label:after{
-		@include Background($sprite:'ico-chk-on', $type:'png', $size:95% auto, $position:center center);
+		@include Background($sprite:'ico-chk-on', $position:center center);
 	}
 	input {
 		display: none;
 	}
-	& + .iconBox {margin-top:.6rem;}
+	& + .iconBox {margin-top:10px;}
 }
 
 .iconList {
 	box-sizing: border-box;
 	border: 1px solid #EBEBEB;
-	border-radius: 1rem;
+	border-radius: 15px;
 	@include Align-box;
 	overflow: hidden;
 	li {
@@ -192,7 +195,7 @@
 		label {
 			cursor: pointer;
 			background-color: #F9FAFC;
-			height: 4.2rem;
+			height: 60px;
 			display: block;
 			box-sizing: border-box;
 			@include Align-middle;

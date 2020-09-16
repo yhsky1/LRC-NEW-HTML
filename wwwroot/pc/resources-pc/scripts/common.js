@@ -211,6 +211,20 @@ if($('.layer-login .tab-normal').length){
             logic();
         });
     }
+
+    //견적 step6 계약조건 선택
+    if($('.estimate-wrap .item-step6').length) {
+        MUI.event.toggle('.item-step6 .model-toggle-btn', '.item-step6 .model-toggle-cont', true, function(logic, layer) {
+            //console.log('toggle');
+            logic();
+        });
+    }
+    //견적 기본정보 토글
+    if($('.summary-table-wrap .summary-toggle-btn').length) {
+        MUI.event.toggle('.summary-table-wrap .summary-toggle-btn', '.summary-table-wrap .summary-toggle-cont', true, function(logic, layer) {
+            logic();
+        });
+    }
     
 
 /* -------------------------------------------------견적end*/
