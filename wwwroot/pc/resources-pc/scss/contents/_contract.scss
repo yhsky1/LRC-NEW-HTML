@@ -734,31 +734,39 @@
         }
         
     }
+    .error-cont {
+        @include Align-middle;
+    }
    
     .detail-layer-top {
-        position: relative;
-        display: flex;
-        flex-flow: column;
-        align-items:left;
-        justify-content: center;
-        background-color: #fff;
-        padding:0 1.7rem;
-        overflow: hidden;
-        border-radius: 2rem 2rem 0 0;
-        .normal{
-            margin:0 auto;
-            color:#2B2B2B;
-            padding: 4.2rem 0 2.2rem 0;
-            & > strong{
-                font-size:2.8rem;
-                @include Bold;
-            }
-            & > em{
-                display:block;
-                font-size:1rem;
-                color:#999;
-                padding-top:.4rem;
-            }
+        padding:40px;
+        border:1px solid #EBEBEB;
+        border-radius: 12px;
+        & > i.exclamation {
+            @include Background($sprite:'ico-exclamation_mark', $type:'png', $position:center center);
+            background-repeat: no-repeat;
+            width:82px;
+            height:83px;
+         }
+        & > .detail-layer-tit-h {
+            margin-top:20px;
+            font-size:26px;
+            font-weight:normal;
+            font-family: "ManropeB", "NotoB", serif;
+        }
+        & > .detail-layer-descri {
+            margin-top:20px;
+            font-size:15px;
+            font-weight:normal;
+            font-family: "ManropeL", "NotoL", serif;
+        }
+        & > .detail-layer-descri > p > span {
+            color:#F04040;
+        }
+    }
+    .detail-layer-cont {
+        & > ul > li > div.detail-layer-submit > button {
+            border-radius: 15px;
         }
     }
     
