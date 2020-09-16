@@ -530,7 +530,8 @@ var MUI = MUI || {
 				var idx = $(this).attr('data-link');
 				if((scrollTop >= top_of_element - navHeight - fixHeight) ){
 					$nav.siblings().removeClass('active');
-					$nav.eq(idx).addClass('active');
+					//$nav.eq(idx).addClass('active');
+					$nav.siblings('.link'+idx).addClass('active');
 				}
 			});
 		},

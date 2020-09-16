@@ -154,10 +154,20 @@ if($('.layer-login .tab-normal').length){
         $(window).on('scroll', function(e) {
             var scrollPos = window.scrollY || window.pageYOffset,
                 $target = $('.detail-layer-nav-wrap'),
+                $parent = $('.detail-layer-items-wrap'),
+                stickyPos = $parent.height() - $target.find('.detail-layer-nav').height();
+                parentBottomPos = $parent.offset().top + stickyPos;
                 targetPos = $target.offset().top;
 
             if(scrollPos >= targetPos) {
-                $target.addClass('fixed');
+                if(scrollPos >= parentBottomPos){ 
+                    $target.removeClass('fixed');
+                    $target.find('.detail-layer-nav').css({top: $parent.height()});
+                }
+                else{
+                    $target.addClass('fixed');
+                    $target.find('.detail-layer-nav').css({top: 0});
+                }
             }
             else{
                 $target.removeClass('fixed');
@@ -170,13 +180,44 @@ if($('.layer-login .tab-normal').length){
         $(window).on('scroll', function(e) {
             var scrollPos = window.scrollY || window.pageYOffset,
                 $target = $('.detail-sticky-items'),
+                $parent = $('.detail-layer-items-wrap'),
+                targetScroll = $target.find('.detail-sticky-iscroll'),
+                parentBottomPos = $parent.offset().top + $parent.height() - $target.find('.detail-sticky').height();
                 targetPos = $target.offset().top;
 
+
             if(scrollPos >= targetPos) {
-                $target.addClass('fixed');
+                if(scrollPos >= parentBottomPos){
+                    $target.removeClass('fixed');
+                    $target.find('.detail-sticky').css({top: $parent.height()-$target.find('.detail-sticky').height()});
+                    if(IScrollObj) {
+                        IScrollObj.destroy();
+                        IScrollObj = null;
+                        targetScroll.removeAttr('style');
+                    }
+                }
+                else {
+                    $target.addClass('fixed');
+                    $target.find('.detail-sticky').css({top: 0});
+                    if(!IScrollObj ){
+                        IScrollObj = new IScroll('.detail-sticky', { 
+                            scrollbars: true,
+                            mouseWheel: true,
+                            interactiveScrollbars: true,
+                            shrinkScrollbars: 'scale',
+                            fadeScrollbars: true,
+                        });
+                    }
+                }
+                
             }
             else{
                 $target.removeClass('fixed');
+                if(IScrollObj) {
+                    IScrollObj.destroy();
+                    IScrollObj = null;
+                    targetScroll.removeAttr('style');
+                }
             }
         });
     }
@@ -253,6 +294,7 @@ $(window).on('load', function(){
 
 /* 아이스크롤start-------------------------------------------------*/
 
+    
 
 /* -------------------------------------------------아이스크롤end*/
 
