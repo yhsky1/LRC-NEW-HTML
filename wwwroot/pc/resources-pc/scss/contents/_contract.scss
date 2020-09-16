@@ -678,23 +678,141 @@
         }
         
         .detail-layer-items {
-            border-radius: 1.5rem;
             overflow:hidden;
-            border-top:1px solid #ebebeb;
+            border-bottom:1px solid #ebebeb;
             margin-bottom: 20px;
         
             & > div {
                 @include Align-top-left;
                 padding:40px 0;
+                border-top:1px solid #ebebeb;
+                & > div.position-l { 
+                    width: 40%;
+                }
+                & > div.position-r { 
+                    width: 60%;
+                    & > div.item-cont {
+                        margin-bottom:50px;
+                    } 
+                    & > div.item-cont:last-child {
+                        margin-bottom:0;
+                    } 
+                    & > div.item-cont h4 {
+                        font-size :18px;
+                        font-family: "ManropeL", "NotoL", serif;
+                    }
+                    & > div.item-cont h5{
+                        margin-top:22px;
+                    }
+
+                    .table {
+                        margin:17px 0 0;
+                        border: 1px solid #ebebeb;
+                        border-radius: 15px;
+                        & > table th {
+                            background-color:#F9FAFC;
+                            font-size:15px;
+                            font-family: "ManropeL", "NotoL", serif;
+                            padding:20px 30px;
+                        }
+                        & > table td {
+                            font-size:15px;
+                            font-family: "ManropeB", "NotoB", serif;
+                            padding:20px 30px;
+                        }
+
+                        & > table tr:first-child th {
+                            border-top: 0;
+                            border-radius: 15px 0 0 0;
+                        }
+                        & > table tr:last-child th {
+                            border-radius: 0 0 0 15px;
+                        }
+                        
+                        & > table tr:first-child td {
+                            border-top: 0;
+                        }
+                        
+                        & > table td > p {
+                            margin-top:12px;
+                            font-size:13px;
+                            font-family: "ManropeL", "NotoL", serif;
+                        }
+                    }
+                    .table2 {
+                        & > table tr:first-child th {
+                            border-radius: 0;
+                        }
+                        & > table tr th {
+                            border-left:1px solid #ebebeb;
+                            vertical-align: middle;
+                            text-align: center;
+                            border-top:0;
+                        }
+                        & > table tr td {
+                            border-top:0;
+                            border-left:1px solid #ebebeb;
+                            vertical-align: middle;
+                            text-align: center;
+                        }
+                        & > table td.align-l { 
+                            text-align:left;
+                        }
+                        & > table tr th:first-child {
+                            border-left: 0;
+                            border-radius: 15px 0 0 0;
+                        }
+                        & > table tr th:last-child {
+                            border-left: 0;
+                            border-radius: 0 15px 0 0;
+                        }
+                        & > table tr td:first-child {
+                            border-left: 0;
+                        }
+                        
+                    }
+                    .table3 {
+                        & > table tr:first-child {
+                            border-radius: 15px 0 0 0;
+                        }
+                        & > table tr:nth-child(3) th {
+                            border-radius: 0;
+                        }
+                        & > table tr:nth-child(5) th {
+                            border-radius: 0;
+                        }
+
+                    }
+                    .table4 {
+                        & > table tr th:first-child {
+                            border-radius: 15px 0 0 15px;
+                        }
+                    } 
+                    .con-box {
+                        margin:17px 0;
+                        background-color: #fafafa;
+                        border:1px solid #ebebeb;
+                        padding:20px 30px;
+                        & > div.overflow-y {
+                            height:120px;
+                            overflow-y: scroll;
+                        }
+                    }
+                    .chk-agree-list {
+                        margin:0 0 22px;
+                    }
+                    .chk-agree-list > div > div.chk-agree-top { 
+                        padding:0;
+                    }
+                    .chk-agree-list > div > div.chk-agree-top label { 
+                        padding:0;
+                    }
+                    
+
+                }
                 
             } 
-            & > div > div.position-l { 
-                width: 40%;
-            }
-            & > div > div.position-r { 
-                width: 60%; 
-            }
-        
+
         }
         
         .layer-item {
