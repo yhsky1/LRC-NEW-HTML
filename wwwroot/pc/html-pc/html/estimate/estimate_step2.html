@@ -16,7 +16,7 @@
 <script src="../../../resources-pc/scripts/jquery/jquery-ui.min.js"></script>
 <script src="../../../resources-pc/scripts/jquery/plugins/slick.min.js"></script>
 <script src="../../../resources-pc/scripts/jquery/plugins/swiper.min.js"></script>
-<script src="../../../resources-pc/scripts/jquery/plugins/iscroll.js"></script>
+<script src="../../../resources-pc/scripts/jquery/plugins/iscroll.min.js"></script>
 <script src="../include_sub_header.js"></script><!--인크루드용..-->
 <script src="../include_footer.js"></script><!--인크루드용..-->
 <script src="../../../resources-pc/scripts/MUI.js"></script>
@@ -98,25 +98,165 @@
 
                 <div class="detail-layout">
 
-                    <div class="detail-layer-nav-wrap">
-                        <div class="inner">
-                            <div class="detail-layer-nav">
-                                <button type="button" class="menu-link active" data-target="item-step1">연료</button>
-                                <button type="button" class="menu-link" data-target="item-step2">모델</button>
-                                <button type="button" class="menu-link" data-target="item-step3">색상</button>
-                                <button type="button" class="menu-link" data-target="item-step4">옵션</button>
-                                <button type="button" class="menu-link" data-target="item-step5">용품</button>
-                                <button type="button" class="menu-link" data-target="item-step6">계약조건</button>
+                    <div class="detail-layer-cont">
+                        <div class="detail-layer-nav-wrap">
+                            <div class="inner">
+                                <div class="detail-layer-nav">
+                                    <button type="button" class="menu-link active" data-target="item-step1">연료</button>
+                                    <button type="button" class="menu-link" data-target="item-step2">모델</button>
+                                    <button type="button" class="menu-link" data-target="item-step3">색상</button>
+                                    <button type="button" class="menu-link" data-target="item-step4">옵션</button>
+                                    <button type="button" class="menu-link" data-target="item-step5">용품</button>
+                                    <button type="button" class="menu-link" data-target="item-step6">계약조건</button>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <form action="">
                         <div class="detail-layer-items-wrap">
+                            <form action="">
                             <div class="inner">
+
                                 <div class="detail-sticky-items">
-                                    <div class="detail-sticky"></div>
+                                    <div class="detail-sticky">
+                                        <div class="detail-sticky-iscroll">
+                                            <div class="detail-sticky-conts">
+                                                <ul>
+                                                    <li>
+                                                        <div class="detail-sticky-infos">
+                                                            <strong>연료</strong>
+                                                            <div>
+                                                                <span><b>가솔린</b></span>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="detail-sticky-infos">
+                                                            <strong>모델</strong>
+                                                            <div>
+                                                                <span><b>QM6 (G) 20.0 2WD SE</b></span>
+                                                                <span><b>차량가 24,450,000원</b></span>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="detail-sticky-infos">
+                                                            <strong>색상</strong>
+                                                            <div>
+                                                                <span>외장 : <b>어반 그레이</b></span>
+                                                                <span>내장 : <b>베이지</b></span>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="detail-sticky-infos">
+                                                            <strong>차량 옵션</strong>
+                                                            <div>
+                                                                <span><b>기본 옵션</b></span>
+                                                                <span><b>트렁크 라이너</b></span>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="detail-sticky-infos">
+                                                            <strong>차량 용품</strong>
+                                                            <div>
+                                                                <span><b>르노 삼성(온라인 전용 혜택)</b></span>
+                                                                <span>선택해주세요</span>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="detail-sticky-infos">
+                                                            <strong>계약조건</strong>
+                                                        </div>
+                                                        <ul>
+                                                            <li>
+                                                                <div class="detail-sticky-infos">
+                                                                    <strong>계약기간</strong>
+                                                                    <div>
+                                                                        <span>선택해주세요</span>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="detail-sticky-infos">
+                                                                    <strong>선납금</strong>
+                                                                    <div>
+                                                                        <span>선택해주세요</span>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="detail-sticky-infos">
+                                                                    <strong>보증금</strong>
+                                                                    <div>
+                                                                        <span>선택해주세요</span>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="detail-sticky-infos">
+                                                                    <strong>보증증권</strong>
+                                                                    <div>
+                                                                        <span>선택해주세요</span>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="detail-sticky-infos">
+                                                                    <strong>보험연령</strong>
+                                                                    <div>
+                                                                        <span>선택해주세요</span>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="detail-sticky-infos">
+                                                                    <strong>대물 조건</strong>
+                                                                    <div>
+                                                                        <span><b>1천만원</b></span>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="detail-sticky-infos">
+                                                                    <strong>자손</strong>
+                                                                    <div>
+                                                                        <span><b>자손1천5백만원</b></span>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="detail-sticky-infos">
+                                                                    <strong>무보험차상해</strong>
+                                                                    <div>
+                                                                        <span><b>2억원</b></span>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="detail-sticky-infos">
+                                                                    <strong>주행거리</strong>
+                                                                    <div>
+                                                                        <span>선택해주세요</span>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                        
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="detail-sticky-btns">
+                                                <div class="bottom-in">
+                                                    <button type="button" class="btn btn-white"><i class="icon heart"></i><span>999+</span></button>
+                                                    <button type="button" class="btn btn-red">견적내러가기</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
+
                                 <div class="detail-layer-items">
 
                                     <!--Step 1-->
@@ -646,11 +786,153 @@
                                     <!--//Step 6-->
                                     
                                 </div>
+
                             </div>
-                            
+                            </form>
                         </div>
-                        
-                    </form>
+                    </div>
+
+                    <div class="detail-layer-pro">
+                        <div class="inner">
+                            <h3>프로모션 차량</h3>
+                            <div class="section-list">
+                                <div class="inner">
+                                    <ul class="list-type-col4 margin20">
+                                        <li>
+                                            <a href="#">
+                                                <div class="inner">
+                                                    <div class="img">
+                                                        <div class="flag pro"><i class="icon pro"></i> 프로모션</div>
+                                                        <img src="../../../resources-pc/images/@temp-estimate-list01.png" alt="더미 이미지">
+                                                    </div>
+                                                    <div class="text">
+                                                        <b>BMW 320</b>
+                                                        <strong>디젤 프리미어 2.2D</strong>
+                                                        <span>월 289,500원</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <div class="inner">
+                                                    <div class="img">
+                                                        <div class="flag pro"><i class="icon pro"></i> 프로모션</div>
+                                                        <img src="../../../resources-pc/images/@temp-estimate-list01.png" alt="더미 이미지">
+                                                    </div>
+                                                    <div class="text">
+                                                        <b>쏘나타</b>
+                                                        <strong>디젤 프리미어 2.2D</strong>
+                                                        <span>월 289,500원</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <div class="inner">
+                                                    <div class="img">
+                                                        <div class="flag pro"><i class="icon pro"></i> 프로모션</div>
+                                                        <img src="../../../resources-pc/images/@temp-estimate-list01.png" alt="더미 이미지">
+                                                    </div>
+                                                    <div class="text">
+                                                        <b>쏘나타</b>
+                                                        <strong>디젤 프리미어 2.2D</strong>
+                                                        <span>월 289,500원</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <div class="inner">
+                                                    <div class="img">
+                                                        <div class="flag pro"><i class="icon pro"></i> 프로모션</div>
+                                                        <img src="../../../resources-pc/images/@temp-estimate-list01.png" alt="더미 이미지">
+                                                    </div>
+                                                    <div class="text">
+                                                        <b>쏘나타</b>
+                                                        <strong>디젤 프리미어 2.2D</strong>
+                                                        <span>월 289,500원</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>    
+                            </div>
+                        </div>
+						
+                    </div>
+                    
+                    <div class="detail-layer-bn">
+                        <div class="inner">
+                            <a href="#">
+                                <img src="../../../resources-pc/images/@temp-estimate-bn01.png" alt="bn">
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="detail-layer-review">
+						<h3>고객후기</h3>
+						<ul>
+							<li>
+								<a href="#">
+									<div class="inner">
+										<div class="img">
+											<img src="../../../resources-mo/images/@temp-estimate-list04.png" alt="더미 이미지">
+										</div>
+										<div class="text">
+											<strong>
+												심사도 빠르고 담당 매니저님 배정은
+												2~4일 정도 코로나 때문에 바쁜일정에
+												2~4일 정도 코로나 때문에 바쁜일정에
+											</strong>
+											<span>QM6 볼드 에디션</span>
+										</div>
+										<div class="evaluation">
+											<div class="name">20대  |  여성</div>
+											<div class="star">
+												<i class="icon star active">별</i>
+												<i class="icon star active">별</i>
+												<i class="icon star active">별</i>
+												<i class="icon star">별</i>
+												<i class="icon star">별</i>
+											</div>
+										</div>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<div class="inner">
+										<div class="img">
+											<img src="../../../resources-mo/images/@temp-estimate-list04.png" alt="더미 이미지">
+										</div>
+										<div class="text">
+											<strong>
+												심사도 빠르고 담당 매니저님 배정은
+												2~4일 정도 코로나 때문에 바쁜일정에
+												2~4일 정도 코로나 때문에 바쁜일정에
+											</strong>
+											<span>QM6 볼드 에디션</span>
+										</div>
+										<div class="evaluation">
+											<div class="name">20대  |  남성</div>
+											<div class="star">
+												<i class="icon star active">별</i>
+												<i class="icon star active">별</i>
+												<i class="icon star">별</i>
+												<i class="icon star">별</i>
+												<i class="icon star">별</i>
+											</div>
+										</div>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+
 
                 </div>
 

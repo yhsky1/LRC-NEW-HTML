@@ -73,6 +73,11 @@
         width: 35px;
         height: 35px;
     }
+    &.heart {
+        @include Background($sprite:'ico-heart', $size:100% auto, $position:center center);
+        width: 16px;
+        height: 16px;
+    }
 
 
 }

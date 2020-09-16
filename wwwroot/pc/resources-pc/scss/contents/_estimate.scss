@@ -249,6 +249,12 @@
                     .text {
                         margin-top:20px;
                         padding: 0 15px;
+                        > b {
+                            display: block;
+                            font-size: 15px;
+                            @include Bold;
+                            margin-bottom:7px;
+                        }
                         > strong {
                             display: block;
                         }
@@ -256,7 +262,8 @@
                             display: block;
                             font-size: 18px;
                             @include Bold;
-                            margin-top:5px;
+                            margin-top:7px;
+                            line-height: 1;
                         }
                     }
                 }
@@ -388,6 +395,8 @@
                     position: relative;
                     height: 98px;
                     width: 700px;
+                    background-color: #FFF;
+                    z-index: 1;
                     @include Align-middle-left;
                     button {
                         height:48px;
@@ -404,14 +413,87 @@
                 &.fixed .detail-layer-nav{
                     position: fixed;
                     top:0;
-                    background-color: #FFF;
-                    z-index: 1;
+
                     border-bottom: 1px solid #EBEBEB;
                 }
             }
             .detail-sticky-items {
+                @include Position($top: 0, $right: 0);
+                width: 340px;
                 .detail-sticky {
-
+                    position: relative;
+                    .detail-sticky-conts {
+                        border: 1px solid #EBEBEB;
+                        border-radius: 20px;
+                        width: 340px;
+                        background-color: #fff;
+                        .detail-sticky-infos {
+                            @include Align-between-top;
+                            > strong {
+                                width: 85px;
+                                line-height: 1.3;
+                                flex: none;
+                            }
+                            > div {
+                                > span {
+                                    display: block;
+                                    line-height: 1.3;
+                                    text-align: right;
+                                    > b {
+                                        @include Bold;
+                                    }
+                                    & + span {
+                                        margin-top: 12px;
+                                    }
+                                }
+                            }
+                        }
+                        > ul {
+                            > li {
+                                padding:20px 30px;
+                                & + li {
+                                    border-top: 1px solid #EBEBEB;
+                                }
+                                > ul {
+                                    > li {
+                                        margin-top: 10px;
+                                        .detail-sticky-infos {
+                                            strong{color: #999;}
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        
+                    }
+                    .detail-sticky-btns {
+                        margin-top: 20px;
+                        padding-bottom: 20px;
+                        .bottom-in {
+                            @include Align-between;
+                            .btn {
+                                height: 60px;
+                                border-radius: 15px;
+                            }
+                            .btn-white {
+                                width: 80px;
+                                padding: 0;
+                                > span {
+                                    font-size: 13px;
+                                    color:#F04040;
+                                    margin-left:5px;
+                                }
+                            }
+                            .btn-red {
+                                width: 250px;
+                            }
+                        }
+                    }
+                }
+                &.fixed .detail-sticky{
+                    position: fixed;
+                    top:0;
+                    height: 100vh;
                 }
             }
             .detail-layer-items {
@@ -424,7 +506,7 @@
                         border-top:1px solid #EBEBEB;
                     }
                     h3 {
-                        padding:40px 80px 0;
+                        padding:40px 70px 0;
                         > span {
                             @include Bold;
                             font-size: 13px;
@@ -610,16 +692,15 @@
                     }
                     &.item-step6 {
                         .radio-box {
-                            margin-top: 2.6rem;
+                            margin-top: 25px;
                             padding: 0 70px;
                             position: relative;
                             h4 {
                                 @include Bold;
-                                @include Align-middle;
-                                justify-content: left;
-                                margin-bottom: 1rem;
+                                @include Align-middle-left;
+                                margin-bottom: 15px;
                                 button {
-                                    margin-left: .4rem;
+                                    margin-left: 5px;
                                 }
                             }
                             .model-toggle-cont {
@@ -629,10 +710,45 @@
                             }
                         }
                         .btn-toggle {
-                            @include Position($top: 0, $right: 1.7rem)
+                            @include Position($top: 0, $right: 70px)
+                        }
+                        .model-toggle-cont {
+                            background-color: #F9FAFC;
+                            border: 1px solid #EBEBEB;
+                            border-radius: 15px;
+                            margin-top: 10px;
+                            padding-bottom:20px;
+                            display: none;
+                            .radio-box {
+                                label{
+                                    background-color: #fff;
+                                }
+                            }
                         }
                     }
                 }
+            }
+
+            .detail-layer-cont {
+                border-bottom: 1px solid #EBEBEB;
+                padding-bottom: 55px;
+            }
+
+            .detail-layer-pro {
+                margin-top: 65px;
+                h3 {
+                    font-size: 26px;
+                    line-height: 1;
+                    @include Bold;
+                    margin-bottom: 35px;
+                }
+                .section-list {
+                    li {margin-top:0}
+                }
+            }
+
+            .detail-layer-bn {
+                margin-top: 65px;
             }
             
         }

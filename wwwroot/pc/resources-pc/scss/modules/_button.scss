@@ -105,7 +105,7 @@
 			display: block;
 			content: '';
 			@include Position($top: 50%, $right: 50%);
-			@include Background($sprite:'ico-arrow-down', $position:center center);
+			@include Background($sprite:'ico-arrow-down', $size:14px, $position:center center);
 			width: 14px;
 			height: 14px;
 			margin: -7px -7px 0 0;
@@ -113,7 +113,7 @@
 			transform: rotate(0deg);
 		}
 		&.gray:after {
-			@include Background($sprite:'ico-arrow-down2', $position:center center);
+			@include Background($sprite:'ico-arrow-down2', $size:14px, $position:center center);
 		}
 		&.active:after {
 			transform: rotate(180deg);

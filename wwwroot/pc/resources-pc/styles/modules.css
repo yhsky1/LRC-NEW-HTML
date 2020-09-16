@@ -1408,9 +1408,9 @@ button.swiper-pagination-bullet {
 	background-repeat: no-repeat;
 	background-image: url("../../resources-pc/images/icons/ico-arrow-down.png");
 	background-position: center center;
-	-webkit-background-size: auto auto;
-	   -moz-background-size: auto;
-	        background-size: auto;
+	-webkit-background-size: 14px 14px;
+	   -moz-background-size: 14px;
+	        background-size: 14px;
 	width: 14px;
 	height: 14px;
 	margin: -7px -7px 0 0;
@@ -1431,9 +1431,9 @@ button.swiper-pagination-bullet {
 	background-repeat: no-repeat;
 	background-image: url("../../resources-pc/images/icons/ico-arrow-down2.png");
 	background-position: center center;
-	-webkit-background-size: auto auto;
-	   -moz-background-size: auto;
-	        background-size: auto;
+	-webkit-background-size: 14px 14px;
+	   -moz-background-size: 14px;
+	        background-size: 14px;
 }
 
 .btn-toggle.active:after {
@@ -1732,6 +1732,17 @@ button.swiper-pagination-bullet {
 	        background-size: auto;
 	width: 35px;
 	height: 35px;
+}
+
+.icon.heart {
+	background-repeat: no-repeat;
+	background-image: url("../../resources-pc/images/icons/ico-heart.png");
+	background-position: center center;
+	-webkit-background-size: 100% auto;
+	   -moz-background-size: 100% auto;
+	        background-size: 100% auto;
+	width: 16px;
+	height: 16px;
 }
 
 button.active .filter {
