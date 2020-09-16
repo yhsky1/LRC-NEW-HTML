@@ -1734,6 +1734,37 @@ button.swiper-pagination-bullet {
 	height: 35px;
 }
 
+.icon.star {
+	background-repeat: no-repeat;
+	background-image: url("../../resources-pc/images/icons/ico-star_off.png");
+	background-position: center center;
+	-webkit-background-size: auto auto;
+	   -moz-background-size: auto;
+	        background-size: auto;
+	width: 14px;
+	height: 14px;
+}
+
+.icon.star.active {
+	background-repeat: no-repeat;
+	background-image: url("../../resources-pc/images/icons/ico-star_on.png");
+	background-position: center center;
+	-webkit-background-size: auto auto;
+	   -moz-background-size: auto;
+	        background-size: auto;
+}
+
+.icon.video {
+	background-repeat: no-repeat;
+	background-image: url("../../resources-pc/images/icons/ico-play.png");
+	background-position: center center;
+	-webkit-background-size: auto auto;
+	   -moz-background-size: auto;
+	        background-size: auto;
+	width: 40px;
+	height: 40px;
+}
+
 .icon.heart {
 	background-repeat: no-repeat;
 	background-image: url("../../resources-pc/images/icons/ico-heart.png");

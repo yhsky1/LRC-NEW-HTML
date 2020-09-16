@@ -73,6 +73,19 @@
         width: 35px;
         height: 35px;
     }
+    &.star {
+        @include Background($sprite:'ico-star_off', $position:center center);
+        width: 14px;
+        height: 14px;
+        &.active {
+            @include Background($sprite:'ico-star_on', $position:center center);
+        }
+    }
+    &.video {
+        @include Background($sprite:'ico-play', $position:center center);
+        width: 40px;
+        height: 40px;
+    }
     &.heart {
         @include Background($sprite:'ico-heart', $size:100% auto, $position:center center);
         width: 16px;

@@ -268,8 +268,79 @@
                     }
                 }
             }
+        }
+    }
+
+    .section-review-list {
+        .inner {
+            > ul {
+                > li {
+                    > a {
+                        display: block;
+                    }
+                    .img {
+                        border-radius: 20px;
+                        overflow: hidden;
+                        background-color: #EFF2F7;
+                        img {
+                            mix-blend-mode: multiply;
+                        }
+                    }
+                    .text {
+                        white-space: normal;
+                        margin-top:1.3rem;
+                        strong {
+                            @include Ellipsis($lines:2);
+                            line-height: 1.3;
+                            word-break: keep-all;
+                        }
+                        span {
+                            display: block;
+                            @include Bold;
+                            margin-top: 7px;
+                        }
+                    }
+                    .evaluation { 
+                        margin-top: 10px;
+                        @include Align-between;
+                        .name {color: #999;}
+                        .star {
+                            font-size: 0;
+                            i {
+                                margin-left: 5px;
+                            }
+                        }
+                    }
+                }
+            }
             .pagination-wrap {
                 margin-top:60px;
+            }
+        }
+    }
+
+    .section-video-list {
+        .inner {
+            > ul {
+                > li {
+                    > a {
+                        display: block;
+                    }
+                    .img {
+                        border-radius: 20px;
+                        overflow: hidden;
+                        background-color: #EFF2F7;
+                        position: relative;
+                        img {
+                            mix-blend-mode: multiply;
+                        }
+                        i {
+                            @include Position($top:50%, $left:50%);
+                            margin: -10px 0 0 -10px;
+                            z-index: 1;
+                        }
+                    }
+                }
             }
         }
     }
@@ -743,13 +814,40 @@
                     margin-bottom: 35px;
                 }
                 .section-list {
-                    li {margin-top:0}
+                    li {
+                        margin-top:0;
+                        .text {
+                            padding:0;
+                        }
+                    }
                 }
             }
 
             .detail-layer-bn {
                 margin-top: 65px;
             }
+
+            .detail-layer-review {
+                margin-top: 65px;
+                h3 {
+                    font-size: 26px;
+                    line-height: 1;
+                    @include Bold;
+                    margin-bottom: 35px;
+                }
+            }
+
+            .detail-layer-video {
+                margin-top: 65px;
+                h3 {
+                    font-size: 26px;
+                    line-height: 1;
+                    @include Bold;
+                    margin-bottom: 35px;
+                }
+            }
+
+
             
         }
 
